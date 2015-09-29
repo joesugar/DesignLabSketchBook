@@ -1,4 +1,10 @@
-
+-- This is the i2c core from OpenCores adapted for use  --
+-- with the Papilio DesignLab IDE and a Wishbone        --
+-- interface.  It was only necessary to update the top  --
+-- level file so that the only include here.  The others--
+-- are included as part of the DesignLab libraries.     --
+-- The original copyright is included below.            --
+-- J. Consugar  September 2015                          --
 
 -- This code is provided for free and may be used and   --
 -- distributed without restriction provided that the    --

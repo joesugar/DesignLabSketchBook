@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;clk&quot; LOC = &quot;P89&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(15)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">clk</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;clk&quot; LOC = &quot;P89&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(15)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(15)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">clk</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_Period_1 = PERIOD &quot;CLK&quot; 31.00 ns HIGH 50%;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(16)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos; or &apos;TimeGrp&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_Period_2 = PERIOD &quot;ext_pins_in(0)&quot; 31.00 ns HIGH 50%;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(18)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos; or &apos;TimeGrp&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">ext_pins_in(0)</arg>&apos;.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(0)&quot; LOC = &quot;P18&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(75)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(0)&quot; LOC = &quot;P18&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(75)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(75)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(75)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(75)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(1)&quot; LOC = &quot;P23&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(76)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(1)&quot; LOC = &quot;P23&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(76)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(76)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(76)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(76)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(2)&quot; LOC = &quot;P26&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(77)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(2)&quot; LOC = &quot;P26&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(77)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(77)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(77)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(77)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(3)&quot; LOC = &quot;P33&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(78)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(3)&quot; LOC = &quot;P33&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(78)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(78)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(78)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(78)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(4)&quot; LOC = &quot;P35&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(79)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(4)&quot; LOC = &quot;P35&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(79)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(79)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(79)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(79)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(5)&quot; LOC = &quot;P40&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(80)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(5)&quot; LOC = &quot;P40&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(80)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(80)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(80)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(80)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(6)&quot; LOC = &quot;P53&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(81)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(6)&quot; LOC = &quot;P53&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(81)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(81)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(81)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(81)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(7)&quot; LOC = &quot;P57&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(82)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(7)&quot; LOC = &quot;P57&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(82)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(82)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(82)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(82)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(8)&quot; LOC = &quot;P60&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(83)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(8)&quot; LOC = &quot;P60&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(83)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(83)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(83)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(83)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(9)&quot; LOC = &quot;P62&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(84)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(9)&quot; LOC = &quot;P62&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(84)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(84)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(84)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(84)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(10)&quot; LOC = &quot;P65&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(85)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(10)&quot; LOC = &quot;P65&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(85)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(85)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(85)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(85)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(11)&quot; LOC = &quot;P67&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(86)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(11)&quot; LOC = &quot;P67&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(86)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(86)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(86)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(86)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(12)&quot; LOC = &quot;P70&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(87)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(12)&quot; LOC = &quot;P70&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(87)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(87)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(87)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(87)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(13)&quot; LOC = &quot;P79&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(88)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(13)&quot; LOC = &quot;P79&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(88)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(88)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(88)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(88)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(14)&quot; LOC = &quot;P84&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(89)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(14)&quot; LOC = &quot;P84&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(89)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(89)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(89)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(89)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WA(15)&quot; LOC = &quot;P86&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(90)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WA(15)&quot; LOC = &quot;P86&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(90)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(90)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(90)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(90)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WA(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(0)&quot; LOC = &quot;P85&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(93)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(0)&quot; LOC = &quot;P85&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(93)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(93)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(93)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(93)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(1)&quot; LOC = &quot;P83&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(94)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(1)&quot; LOC = &quot;P83&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(94)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(94)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(94)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(94)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(2)&quot; LOC = &quot;P78&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(95)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(2)&quot; LOC = &quot;P78&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(95)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(95)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(95)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(95)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(3)&quot; LOC = &quot;P71&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(96)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(3)&quot; LOC = &quot;P71&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(96)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(96)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(96)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(96)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(4)&quot; LOC = &quot;P68&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(97)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(4)&quot; LOC = &quot;P68&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(97)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(97)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(97)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(97)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(5)&quot; LOC = &quot;P66&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(98)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(5)&quot; LOC = &quot;P66&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(98)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(98)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(98)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(98)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(6)&quot; LOC = &quot;P63&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(99)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(6)&quot; LOC = &quot;P63&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(99)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(99)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(99)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(99)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(7)&quot; LOC = &quot;P61&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(100)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(7)&quot; LOC = &quot;P61&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(100)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(100)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(100)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(100)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(8)&quot; LOC = &quot;P58&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(101)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(8)&quot; LOC = &quot;P58&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(101)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(101)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(101)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(101)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(9)&quot; LOC = &quot;P54&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(102)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(9)&quot; LOC = &quot;P54&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(102)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(102)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(102)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(102)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(10)&quot; LOC = &quot;P41&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(103)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(10)&quot; LOC = &quot;P41&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(103)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(103)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(103)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(103)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(11)&quot; LOC = &quot;P36&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(104)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(11)&quot; LOC = &quot;P36&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(104)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(104)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(104)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(104)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(12)&quot; LOC = &quot;P34&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(105)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(12)&quot; LOC = &quot;P34&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(105)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(105)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(105)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(105)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(13)&quot; LOC = &quot;P32&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(106)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(13)&quot; LOC = &quot;P32&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(106)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(106)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(106)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(106)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(14)&quot; LOC = &quot;P25&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(107)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(14)&quot; LOC = &quot;P25&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(107)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(107)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(107)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(107)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WB(15)&quot; LOC = &quot;P22&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(108)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WB(15)&quot; LOC = &quot;P22&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(108)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(108)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(108)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(108)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WB(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(0)&quot; LOC = &quot;P91&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(111)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(0)&quot; LOC = &quot;P91&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(111)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(111)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(111)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(111)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(1)&quot; LOC = &quot;P92&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(112)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(1)&quot; LOC = &quot;P92&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(112)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(112)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(112)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(112)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(2)&quot; LOC = &quot;P94&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(113)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(2)&quot; LOC = &quot;P94&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(113)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(113)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(113)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(113)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(3)&quot; LOC = &quot;P95&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(114)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(3)&quot; LOC = &quot;P95&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(114)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(114)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(114)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(114)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(4)&quot; LOC = &quot;P98&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(115)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(4)&quot; LOC = &quot;P98&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(115)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(115)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(115)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(115)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(4)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(5)&quot; LOC = &quot;P2&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(116)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(5)&quot; LOC = &quot;P2&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(116)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(116)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(116)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(116)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(5)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(6)&quot; LOC = &quot;P3&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(117)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(6)&quot; LOC = &quot;P3&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(117)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(117)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(117)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(117)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(6)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(7)&quot; LOC = &quot;P4&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(118)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(7)&quot; LOC = &quot;P4&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(118)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(118)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(118)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(118)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(7)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(8)&quot; LOC = &quot;P5&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(119)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(8)&quot; LOC = &quot;P5&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(119)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(119)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(119)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(119)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(8)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(9)&quot; LOC = &quot;P9&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(120)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(9)&quot; LOC = &quot;P9&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(120)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(120)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(120)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(120)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(9)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(10)&quot; LOC = &quot;P10&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(121)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(10)&quot; LOC = &quot;P10&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(121)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(121)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(121)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(121)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(10)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(11)&quot; LOC = &quot;P11&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(122)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(11)&quot; LOC = &quot;P11&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(122)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(122)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(122)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(122)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(11)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(12)&quot; LOC = &quot;P12&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(123)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(12)&quot; LOC = &quot;P12&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(123)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(123)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(123)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(123)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(12)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(13)&quot; LOC = &quot;P15&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(124)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(13)&quot; LOC = &quot;P15&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(124)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(124)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(124)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(124)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(13)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(14)&quot; LOC = &quot;P16&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(125)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(14)&quot; LOC = &quot;P16&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(125)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(125)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(125)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(125)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(14)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;WC(15)&quot; LOC = &quot;P17&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(126)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;WC(15)&quot; LOC = &quot;P17&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(126)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(126)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(126)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(126)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">WC(15)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rxd&quot;  LOC = &quot;P88&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(129)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">rxd</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;rxd&quot;  LOC = &quot;P88&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(129)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(129)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">rxd</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;txd&quot;  LOC = &quot;P90&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(131)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">txd</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;txd&quot;  LOC = &quot;P90&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(131)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(131)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">txd</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(131)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">txd</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(131)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">txd</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;SPI_CS&quot;   LOC = &quot;P24&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(135)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_CS</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;SPI_CS&quot;   LOC = &quot;P24&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(135)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(135)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_CS</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = SLOW |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(135)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_CS</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(135)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_CS</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;SPI_SCK&quot;  LOC = &quot;P50&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(137)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_SCK</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;SPI_SCK&quot;  LOC = &quot;P50&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(137)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(137)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_SCK</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(137)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_SCK</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(137)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_SCK</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;SPI_MISO&quot; LOC = &quot;P44&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(139)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_MISO</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;SPI_MISO&quot; LOC = &quot;P44&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(139)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(139)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_MISO</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;SLEW = FAST |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(139)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_MISO</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;DRIVE = 8;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(139)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_MISO</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;SPI_MOSI&quot; LOC = &quot;P27&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(141)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_MOSI</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;SPI_MOSI&quot; LOC = &quot;P27&quot; |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(141)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(141)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">SPI_MOSI</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(17)]</arg> is overridden on the design object <arg fmt="%s" index="2">ext_pins_in&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;*&quot; IOSTANDARD = LVCMOS33;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(12)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(130)]</arg> is overridden on the design object <arg fmt="%s" index="2">ext_pins_in&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;*&quot; IOSTANDARD = LVCMOS33;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(12)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(132)]</arg> is overridden on the design object <arg fmt="%s" index="2">ext_pins_out&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;*&quot; IOSTANDARD = LVCMOS33;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(12)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(136)]</arg> is overridden on the design object <arg fmt="%s" index="2">ext_pins_out&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;*&quot; IOSTANDARD = LVCMOS33;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(12)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(138)]</arg> is overridden on the design object <arg fmt="%s" index="2">ext_pins_out&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;*&quot; IOSTANDARD = LVCMOS33;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(12)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 |&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(140)]</arg> is overridden on the design object <arg fmt="%s" index="2">ext_pins_in&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;*&quot; IOSTANDARD = LVCMOS33;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(12)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS33 ;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(142)]</arg> is overridden on the design object <arg fmt="%s" index="2">ext_pins_out&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;*&quot; IOSTANDARD = LVCMOS33;&gt; [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/PSL_Papilio_One_500K/papilio_one.ucf(12)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clk_1Mhz</arg> with clock driver <arg fmt="%s" index="2">XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/clkfx_inst_1mhz</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/vgaclkout</arg> with clock driver <arg fmt="%s" index="2">XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/vgainst</arg> drives no clock pins
+</msg>
+
+</messages>
+

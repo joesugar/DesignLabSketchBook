@@ -1,0 +1,5 @@
+work	"../PSK31.vhd"
+DesignLab	"../dds_acc.vhd"
+DesignLab	"../dds_rom.vhd"
+DesignLab	"../phase_acc.vhd"
+DesignLab	"../phase_shifter.vhd"

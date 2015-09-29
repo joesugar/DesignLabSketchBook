@@ -1,0 +1,3 @@
+vhdl DesignLab "../dds_rom.vhd"
+vhdl DesignLab "../dds_acc.vhd"
+vhdl work "../NCO.vhd"

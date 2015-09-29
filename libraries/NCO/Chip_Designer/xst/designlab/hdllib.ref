@@ -1,0 +1,6 @@
+EN dds_rom NULL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../dds_rom.vhd sub00/vhpl02 1443301243
+AR dds_rom rtl /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../dds_rom.vhd sub00/vhpl03 1443301244
+AR nco behavioral /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../NCO.vhd sub00/vhpl05 1443300794
+EN nco NULL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../NCO.vhd sub00/vhpl04 1443300793
+AR dds_acc arch /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../dds_acc.vhd sub00/vhpl01 1443301242
+EN dds_acc NULL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../dds_acc.vhd sub00/vhpl00 1443301241

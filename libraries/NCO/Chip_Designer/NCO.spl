@@ -1,0 +1,7 @@
+[Inputs]
+=wishbone_in[100:0]=
+[Outputs]
+nco_clk_out
+=wishbone_out[100:0]=
+=nco_out[7:0]=
+[BiDir]

@@ -1,0 +1,907 @@
+Release 14.2 - xst P.28xd (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: Papilio_One_500K.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Papilio_One_500K.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Papilio_One_500K"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-vq100
+
+---- Source Options
+Top Module Name                    : Papilio_One_500K
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../../../../../libraries/VGA_ZXSpectrum" "../../../../../libraries/AVR_Wishbone_Bridge" "../../../../../libraries/Benchy" "../../../../../libraries/Robot_Control_Library" "../../../../../libraries/Building_Blocks" "../../../../../libraries/VGA_ZPUino" "../../../../../libraries/HQVGA" "../../../../../libraries/Papilio_Hardware" "../../../../../libraries/BitCoin_Miner" "../../../../../libraries/Clocks" "../../../../../libraries/ZPUino_2" "../../../../../libraries/RGB_Matrix" "../../../../../libraries/Gameduino" "../../../../../libraries/ZPUino_Wishbone_Peripherals" "../../../../../libraries/clocks" "../../../i2c" "../../../Template_DesignLab_Library" "../.."  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/NCO/dds_acc.vhd" in Library DesignLab.
+Architecture arch of Entity dds_acc is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/NCO/dds_rom.vhd" in Library DesignLab.
+Architecture rtl of Entity dds_rom is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/ZPUino_2/pad.vhd" in Library DesignLab.
+Architecture behave of Entity isync is up to date.
+Architecture behave of Entity iopad is up to date.
+Architecture behave of Entity ipad is up to date.
+Architecture behave of Entity opad is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" in Library work.
+Architecture behavioral of Entity papilio_one_500k is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/Building_Blocks/bus8.vhd" in Library DesignLab.
+Architecture behavioral of Entity bus8 is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/Papilio_Hardware/Papilio_Default_Wing_Pinout.vhd" in Library DesignLab.
+Architecture behavioral of Entity papilio_default_wing_pinout is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/Papilio_Hardware/Wing_GPIO.vhd" in Library DesignLab.
+Architecture behavioral of Entity wing_gpio is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd" in Library DesignLab.
+Architecture behave of Entity zpuino_papilio_one_500k_v2 is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/NCO/NCO.vhd" in Library DesignLab.
+Entity <nco> compiled.
+Entity <nco> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Papilio_One_500K> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Wing_GPIO> in library <DesignLab> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Papilio_Default_Wing_Pinout> in library <DesignLab> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ZPUino_Papilio_One_500K_V2> in library <DesignLab> (architecture <behave>).
+
+Analyzing hierarchy for entity <NCO> in library <DesignLab> (architecture <behavioral>) with generics.
+	DDS_INC_HI_WIDTH = 8
+	DDS_ROM_ADDRESS_WIDTH = 8
+	DDS_ROM_DATA_WIDTH = 8
+
+Analyzing hierarchy for entity <bus8> in library <DesignLab> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <iopad> in library <DesignLab> (architecture <behave>).
+
+Analyzing hierarchy for entity <dds_acc> in library <DesignLab> (architecture <arch>) with generics.
+	M_HI = 256
+	M_LO = 16777216
+	N_HI = 8
+	N_LO = 24
+
+Analyzing hierarchy for entity <dds_rom> in library <DesignLab> (architecture <rtl>) with generics.
+	ADDR_WIDTH = 8
+	DATA_WIDTH = 8
+
+Analyzing hierarchy for entity <isync> in library <DesignLab> (architecture <behave>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Papilio_One_500K> in library <work> (Architecture <behavioral>).
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH0' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH1' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH2' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH3' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH4' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH5' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH6' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH7' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AL7' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_0' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_1' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_2' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_3' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_4' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_5' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'clk_96Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'clk_1Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'clk_osc_32Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_6_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_8_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_9_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_10_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_11_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_12_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_13_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_14_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_video_out' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'vgaclkout' of component 'ZPUino_Papilio_One_500K_V2'.
+Entity <Papilio_One_500K> analyzed. Unit <Papilio_One_500K> generated.
+
+Analyzing Entity <Wing_GPIO> in library <DesignLab> (Architecture <behavioral>).
+Entity <Wing_GPIO> analyzed. Unit <Wing_GPIO> generated.
+
+Analyzing Entity <Papilio_Default_Wing_Pinout> in library <DesignLab> (Architecture <behavioral>).
+WARNING:Xst:819 - "/home/joseph/DesignLab/libraries/Papilio_Hardware/Papilio_Default_Wing_Pinout.vhd" line 286: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <gpio_spp_read>
+Entity <Papilio_Default_Wing_Pinout> analyzed. Unit <Papilio_Default_Wing_Pinout> generated.
+
+Analyzing Entity <iopad> in library <DesignLab> (Architecture <behave>).
+Entity <iopad> analyzed. Unit <iopad> generated.
+
+Analyzing Entity <isync> in library <DesignLab> (Architecture <behave>).
+    Set user-defined property "INIT =  0" for instance <ff1> in unit <isync>.
+    Set user-defined property "INIT =  0" for instance <ff2> in unit <isync>.
+Entity <isync> analyzed. Unit <isync> generated.
+
+Analyzing Entity <ZPUino_Papilio_One_500K_V2> in library <DesignLab> (Architecture <behave>).
+WARNING:Xst:2211 - "/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd" line 212: Instantiating black box module <ZPUino_Papilio_One_V2_blackbox>.
+Entity <ZPUino_Papilio_One_500K_V2> analyzed. Unit <ZPUino_Papilio_One_500K_V2> generated.
+
+Analyzing generic Entity <NCO> in library <DesignLab> (Architecture <behavioral>).
+	DDS_INC_HI_WIDTH = 8
+	DDS_ROM_ADDRESS_WIDTH = 8
+	DDS_ROM_DATA_WIDTH = 8
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/NCO.vhd" line 143: Unconnected output port 'carry' of component 'dds_acc'.
+Entity <NCO> analyzed. Unit <NCO> generated.
+
+Analyzing generic Entity <dds_acc> in library <DesignLab> (Architecture <arch>).
+	M_HI = 256
+	M_LO = 16777216
+	N_HI = 8
+	N_LO = 24
+WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/libraries/NCO/dds_acc.vhd" line 108: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <inc_lo>, <r_reg_hi>, <inc_hi>
+Entity <dds_acc> analyzed. Unit <dds_acc> generated.
+
+Analyzing generic Entity <dds_rom> in library <DesignLab> (Architecture <rtl>).
+	ADDR_WIDTH = 8
+	DATA_WIDTH = 8
+Entity <dds_rom> analyzed. Unit <dds_rom> generated.
+
+Analyzing Entity <bus8> in library <DesignLab> (Architecture <behavioral>).
+Entity <bus8> analyzed. Unit <bus8> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Wing_GPIO>.
+    Related source file is "/home/joseph/DesignLab/libraries/Papilio_Hardware/Wing_GPIO.vhd".
+Unit <Wing_GPIO> synthesized.
+
+
+Synthesizing Unit <bus8>.
+    Related source file is "/home/joseph/DesignLab/libraries/Building_Blocks/bus8.vhd".
+Unit <bus8> synthesized.
+
+
+Synthesizing Unit <dds_acc>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/NCO/dds_acc.vhd".
+WARNING:Xst:646 - Signal <r_next_lo<24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r_next_hi<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 9-bit adder for signal <r_next_hi$add0000> created at line 143.
+    Found 9-bit subtractor for signal <r_next_hi$addsub0000> created at line 148.
+    Found 9-bit comparator greater for signal <r_next_hi$cmp_gt0000> created at line 144.
+    Found 25-bit subtractor for signal <r_next_lo$addsub0000> created at line 130.
+    Found 8-bit register for signal <r_reg_hi>.
+    Found 24-bit register for signal <r_reg_lo>.
+    Found 25-bit adder for signal <temp_hi$add0000> created at line 119.
+    Found 9-bit adder for signal <temp_hi$addsub0000> created at line 131.
+    Found 25-bit comparator greater for signal <temp_hi$cmp_gt0000> created at line 125.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <dds_acc> synthesized.
+
+
+Synthesizing Unit <dds_rom>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/NCO/dds_rom.vhd".
+    Found 256x8-bit ROM for signal <data_o$rom0000> created at line 83.
+    Summary:
+	inferred   1 ROM(s).
+Unit <dds_rom> synthesized.
+
+
+Synthesizing Unit <ZPUino_Papilio_One_500K_V2>.
+    Related source file is "/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd".
+WARNING:Xst:2563 - Inout <ext_pins_inout<6>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<32>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<27>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<7>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<33>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<28>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<8>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<34>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<29>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<9>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<40>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<35>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<41>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<36>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<42>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<37>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<43>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<38>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<44>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<39>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<50>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<45>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<51>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<46>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<52>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<47>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<53>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<48>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<54>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<49>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<60>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<55>> is never assigned. Tied to value Z.
+WARNING:Xst:647 - Input <ext_pins_in<100:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <ext_pins_inout<61>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<56>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<62>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<57>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<63>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<58>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<64>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<59>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<70>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<65>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<100>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<71>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<66>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<72>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<67>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<73>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<68>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<74>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<69>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<80>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<75>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<81>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<76>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<82>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<77>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<83>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<78>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<10>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<84>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<79>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<11>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<90>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<85>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<12>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<91>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<86>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<13>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<92>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<87>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<14>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<93>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<88>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<15>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<20>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<94>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<89>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<0>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<21>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<16>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<95>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<1>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<22>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<17>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<96>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<2>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<23>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<18>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<97>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<3>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<19>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<24>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<98>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<4>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<30>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<25>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<99>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<5>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<31>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<26>> is never assigned. Tied to value Z.
+WARNING:Xst:1780 - Signal <sram_wb_we_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_stb_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_stall_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_sel_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_rst_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_dat_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_dat_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_cyc_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_clk_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_adr_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_ack_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clk_off_3ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 101-bit tristate buffer for signal <ext_pins_out>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<100>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<99>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<98>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<97>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<96>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<95>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<94>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<93>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<92>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<91>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<90>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<89>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<88>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<87>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<86>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<85>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<84>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<83>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<82>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<81>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<80>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<79>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<78>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<77>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<76>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<75>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<74>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<73>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<72>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<71>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<70>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<69>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<68>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<67>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<66>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<65>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<64>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<63>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<62>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<61>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<60>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<59>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<58>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<57>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<56>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<55>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<54>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<53>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<52>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<51>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<50>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<49>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<48>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<47>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<46>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<45>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<44>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<43>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<42>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<41>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<40>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<39>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<38>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<37>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<36>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<35>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<34>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<33>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<32>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<31>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<30>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<29>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<28>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<27>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<26>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<25>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<24>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<23>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<22>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<21>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<20>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<19>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<18>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<17>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<16>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<15>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<14>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<13>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<12>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<11>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<10>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<9>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<8>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<7>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<6>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<5>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<4>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<3>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<2>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<1>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<0>>.
+    Summary:
+	inferred 202 Tristate(s).
+Unit <ZPUino_Papilio_One_500K_V2> synthesized.
+
+
+Synthesizing Unit <NCO>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/NCO/NCO.vhd".
+WARNING:Xst:1305 - Output <wishbone_out<100:34>> is never assigned. Tied to value 0000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:647 - Input <wishbone_in<100:62>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wishbone_in<27:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit adder for signal <nco_out>.
+    Found 8-bit register for signal <dds_acc_inc_hi>.
+    Found 24-bit register for signal <dds_acc_inc_lo>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <NCO> synthesized.
+
+
+Synthesizing Unit <isync>.
+    Related source file is "/home/joseph/DesignLab/libraries/ZPUino_2/pad.vhd".
+Unit <isync> synthesized.
+
+
+Synthesizing Unit <iopad>.
+    Related source file is "/home/joseph/DesignLab/libraries/ZPUino_2/pad.vhd".
+    Found 1-bit tristate buffer for signal <PAD>.
+    Summary:
+	inferred   1 Tristate(s).
+Unit <iopad> synthesized.
+
+
+Synthesizing Unit <Papilio_Default_Wing_Pinout>.
+    Related source file is "/home/joseph/DesignLab/libraries/Papilio_Hardware/Papilio_Default_Wing_Pinout.vhd".
+WARNING:Xst:1305 - Output <gpio_bus_in<200:98>> is never assigned. Tied to value 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:1305 - Output <gpio_bus_in<48>> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <gpio_bus_out<200:148>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <gpio_t<48>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <gpio_spp_read<48:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <gpio_spp_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <gpio_o<48>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <gpio_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <Papilio_Default_Wing_Pinout> synthesized.
+
+
+Synthesizing Unit <Papilio_One_500K>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/NCO/circuit/500K/Papilio_One_500K.vhf".
+WARNING:Xst:653 - Signal <XLXI_52_wishbone_slot_video_in_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_52_wishbone_slot_9_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_52_wishbone_slot_8_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_52_wishbone_slot_6_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_52_wishbone_slot_14_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_52_wishbone_slot_13_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_52_wishbone_slot_12_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_52_wishbone_slot_11_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_52_wishbone_slot_10_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_5_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_4_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_3_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_2_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_1_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <Papilio_One_500K> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 256x8-bit ROM                                         : 1
+# Adders/Subtractors                                   : 6
+ 25-bit adder                                          : 1
+ 25-bit subtractor                                     : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 2
+ 9-bit subtractor                                      : 1
+# Registers                                            : 4
+ 24-bit register                                       : 2
+ 8-bit register                                        : 2
+# Comparators                                          : 2
+ 25-bit comparator greater                             : 1
+ 9-bit comparator greater                              : 1
+# Tristates                                            : 250
+ 1-bit tristate buffer                                 : 250
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../../../../../libraries/ZPUino_2/ZPUino_Papilio_One_V2_blackbox.ngc>.
+Loading core <ZPUino_Papilio_One_V2_blackbox> for timing and area information for instance <Inst_ZPUino_Papilio_One_V2_blackbox>.
+WARNING:Xst:1290 - Hierarchical block <XLXI_26> is unconnected in block <Papilio_One_500K>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 256x8-bit ROM                                         : 1
+# Adders/Subtractors                                   : 6
+ 24-bit subtractor                                     : 1
+ 25-bit adder                                          : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 160
+ Flip-Flops                                            : 160
+# Comparators                                          : 2
+ 25-bit comparator greater                             : 1
+ 9-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit Papilio_Default_Wing_Pinout: 9 internal tristates are replaced by logic (pull-up yes): WingType_mosi_AH<0>, WingType_mosi_AH<1>, WingType_mosi_AH<2>, WingType_mosi_AH<3>, WingType_mosi_AH<4>, WingType_mosi_AH<5>, WingType_mosi_AH<6>, WingType_mosi_AH<7>, WingType_mosi_AL<7>.
+
+Optimizing unit <Papilio_One_500K> ...
+
+Optimizing unit <dds_acc> ...
+
+Optimizing unit <NCO> ...
+
+Optimizing unit <Papilio_Default_Wing_Pinout> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Papilio_One_500K, actual ratio is 48.
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_27> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_27_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/prefr.valid> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/prefr.valid_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_2> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_2_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_4> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_4_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_31_BRB5> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following 3 FFs/Latches : <zpuino/core/exr.tos_31_BRB5_1> <zpuino/core/exr.tos_31_BRB5_2> <zpuino/core/exr.tos_31_BRB5_3> 
+INFO:Xst:2260 - The FF/Latch <rstgen/rstcount_zero_q> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <rstgen/rstcount_zero_q_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/memory/ramregs.do_wait> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/memory/ramregs.do_wait_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd5> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd5_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd9> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd9_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_31_BRB6> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following 3 FFs/Latches : <zpuino/core/exr.tos_31_BRB6_1> <zpuino/core/exr.tos_31_BRB6_2> <zpuino/core/exr.tos_31_BRB6_3> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd14> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd14_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_27> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_27_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/prefr.valid> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/prefr.valid_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_2> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_2_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_4> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_4_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_31_BRB5> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following 3 FFs/Latches : <zpuino/core/exr.tos_31_BRB5_1> <zpuino/core/exr.tos_31_BRB5_2> <zpuino/core/exr.tos_31_BRB5_3> 
+INFO:Xst:2260 - The FF/Latch <rstgen/rstcount_zero_q> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <rstgen/rstcount_zero_q_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/memory/ramregs.do_wait> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/memory/ramregs.do_wait_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd5> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd5_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd9> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd9_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_31_BRB6> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following 3 FFs/Latches : <zpuino/core/exr.tos_31_BRB6_1> <zpuino/core/exr.tos_31_BRB6_2> <zpuino/core/exr.tos_31_BRB6_3> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd14> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd14_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 160
+ Flip-Flops                                            : 160
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Papilio_One_500K.ngr
+Top Level Output File Name         : Papilio_One_500K
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 351
+
+Cell Usage :
+# BELS                             : 5165
+#      GND                         : 2
+#      INV                         : 78
+#      LUT1                        : 104
+#      LUT2                        : 422
+#      LUT2_D                      : 20
+#      LUT2_L                      : 27
+#      LUT3                        : 688
+#      LUT3_D                      : 52
+#      LUT3_L                      : 51
+#      LUT4                        : 1969
+#      LUT4_D                      : 46
+#      LUT4_L                      : 238
+#      MUXCY                       : 587
+#      MUXF5                       : 462
+#      MUXF6                       : 14
+#      MUXF7                       : 5
+#      MUXF8                       : 1
+#      VCC                         : 2
+#      XORCY                       : 397
+# FlipFlops/Latches                : 2070
+#      FD                          : 221
+#      FDC                         : 32
+#      FDCE                        : 32
+#      FDE                         : 1135
+#      FDP                         : 2
+#      FDR                         : 177
+#      FDRE                        : 281
+#      FDRS                        : 14
+#      FDRSE                       : 1
+#      FDS                         : 74
+#      FDSE                        : 101
+# RAMS                             : 18
+#      RAMB16_S2_S2                : 16
+#      RAMB16_S36_S36              : 1
+#      RAMB16_S9_S9                : 1
+# Shift Registers                  : 34
+#      SRL16                       : 2
+#      SRL16E                      : 32
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 253
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      IOBUF                       : 39
+#      OBUF                        : 13
+#      OBUFT                       : 198
+# DCMs                             : 2
+#      DCM_SP                      : 2
+# MULTs                            : 3
+#      MULT18X18SIO                : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-5 
+
+ Number of Slices:                     2266  out of   4656    48%  
+ Number of Slice Flip Flops:           2070  out of   9312    22%  
+ Number of 4 input LUTs:               3729  out of   9312    40%  
+    Number used as logic:              3695
+    Number used as Shift registers:      34
+ Number of IOs:                         351
+ Number of bonded IOBs:                 252  out of     66   381% (*) 
+ Number of BRAMs:                        18  out of     20    90%  
+ Number of MULT18X18SIOs:                 3  out of     20    15%  
+ Number of GCLKs:                         5  out of     24    20%  
+ Number of DCMs:                          2  out of      4    50%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+ext_pins_in<0>                     | clkgen_inst/DCM_inst:CLKFX| 2125  |
+-----------------------------------+---------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                 | Buffer(FF name)                                                     | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_13_in<60>(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/rstgen/rstout_or00001:O)       | NONE(XLXI_53/dds_acc_inc_hi_0)                                      | 64    |
+XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q_or0000(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q_or00001:O)| NONE(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q)| 2     |
+-----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 24.152ns (Maximum Frequency: 41.404MHz)
+   Minimum input arrival time before clock: 1.829ns
+   Maximum output required time after clock: 8.315ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ext_pins_in<0>'
+  Clock period: 24.152ns (frequency: 41.404MHz)
+  Total number of paths / destination ports: 80533 / 4955
+-------------------------------------------------------------------------
+Delay:               8.051ns (Levels of Logic = 7)
+  Source:            XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_24 (FF)
+  Destination:       XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_stb (FF)
+  Source Clock:      ext_pins_in<0> rising 3.0X
+  Destination Clock: ext_pins_in<0> rising 3.0X
+
+  Data Path: XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_24 to XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_stb
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             14   0.514   1.002  zpuino/io/addr_save_q_24 (wishbone_slot_13_in<25>)
+     LUT4_D:I0->O         32   0.612   1.225  zpuino/io/slot_cyc_i_5_cmp_eq00001 (zpuino/io/slot_cyc_i_5_cmp_eq0000)
+     LUT2:I0->O            2   0.612   0.449  zpuino/io/slot_cyc_i_5_mux00001 (wishbone_slot_5_in<1>)
+     end scope: 'XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox'
+     LUT2:I1->O            1   0.612   0.509  XLXI_53/wishbone_out_1_and00001 (XLXN_502<1>)
+     begin scope: 'XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox'
+     LUT4:I0->O            1   0.612   0.000  zpuino/io/io_device_ack_wg_lut<4> (zpuino/io/io_device_ack_wg_lut<4>)
+     MUXCY:S->O            2   0.641   0.383  zpuino/io/io_device_ack_wg_cy<4> (zpuino/io/io_device_ack)
+     LUT4:I3->O            1   0.612   0.000  zpuino/io/io_stb_rstpot (zpuino/io/io_stb_rstpot)
+     FD:D                      0.268          zpuino/io/io_stb
+    ----------------------------------------
+    Total                      8.051ns (4.483ns logic, 3.568ns route)
+                                       (55.7% logic, 44.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ext_pins_in<0>'
+  Total number of paths / destination ports: 41 / 41
+-------------------------------------------------------------------------
+Offset:              1.829ns (Levels of Logic = 2)
+  Source:            ext_pins_in<1> (PAD)
+  Destination:       XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/ibufmiso/sync/Mshreg_ff2 (FF)
+  Destination Clock: ext_pins_in<0> rising 3.0X
+
+  Data Path: ext_pins_in<1> to XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/ibufmiso/sync/Mshreg_ff2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  ext_pins_in_1_IBUF (ext_pins_in_1_IBUF)
+     begin scope: 'XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox'
+     SRL16:D                   0.366          ibufmiso/sync/Mshreg_ff2
+    ----------------------------------------
+    Total                      1.829ns (1.472ns logic, 0.357ns route)
+                                       (80.5% logic, 19.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ext_pins_in<0>'
+  Total number of paths / destination ports: 452 / 51
+-------------------------------------------------------------------------
+Offset:              8.315ns (Levels of Logic = 6)
+  Source:            XLXI_53/dds_acc_inst/r_reg_hi_1 (FF)
+  Destination:       WING_AH3 (PAD)
+  Source Clock:      ext_pins_in<0> rising 3.0X
+
+  Data Path: XLXI_53/dds_acc_inst/r_reg_hi_1 to WING_AH3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             63   0.514   1.233  XLXI_53/dds_acc_inst/r_reg_hi_1 (XLXI_53/dds_acc_inst/r_reg_hi_1)
+     LUT3:I0->O            6   0.612   0.638  XLXI_53/dds_rom_inst/Mrom_data_o_rom0000251 (XLXI_53/dds_rom_inst/Mrom_data_o_rom000025)
+     LUT4:I1->O            1   0.612   0.000  XLXI_53/dds_rom_inst/Mrom_data_o_rom0000371_61 (XLXI_53/dds_rom_inst/Mrom_data_o_rom0000371_61)
+     MUXF5:I1->O           1   0.278   0.000  XLXI_53/dds_rom_inst/Mrom_data_o_rom0000371_5_f5 (XLXI_53/dds_rom_inst/Mrom_data_o_rom0000371_5_f5)
+     MUXF6:I0->O           1   0.451   0.000  XLXI_53/dds_rom_inst/Mrom_data_o_rom0000371_3_f6 (XLXI_53/dds_rom_inst/Mrom_data_o_rom0000371_3_f6)
+     MUXF7:I1->O           1   0.451   0.357  XLXI_53/dds_rom_inst/Mrom_data_o_rom0000371_2_f7 (XLXN_517<3>)
+     OBUF:I->O                 3.169          WING_AH3_OBUF (WING_AH3)
+    ----------------------------------------
+    Total                      8.315ns (6.087ns logic, 2.228ns route)
+                                       (73.2% logic, 26.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.75 secs
+ 
+--> 
+
+
+Total memory usage is 213048 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  177 (   0 filtered)
+Number of infos    :   22 (   0 filtered)
+

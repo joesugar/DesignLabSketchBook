@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">WING_AH0</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">WING_AH1</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">WING_AH2</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">WING_AH3</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">WING_AH4</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">WING_AH5</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">WING_AH6</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="754" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">WING_AH7</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Flex_Pin_in_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Flex_Pin_in_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Flex_Pin_in_2</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Flex_Pin_in_3</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Flex_Pin_in_4</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Flex_Pin_in_5</arg>&apos; of component &apos;<arg fmt="%s" index="4">Papilio_Default_Wing_Pinout</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">clk_96Mhz</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">clk_1Mhz</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">clk_osc_32Mhz</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wishbone_slot_6_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wishbone_slot_8_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wishbone_slot_9_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wishbone_slot_10_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wishbone_slot_11_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wishbone_slot_12_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wishbone_slot_13_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wishbone_slot_14_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wishbone_slot_video_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">vgaclkout</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZPUino_Papilio_One_500K_V2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf</arg>&quot; line <arg fmt="%d" index="2">421</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">bus0</arg>&apos; of component &apos;<arg fmt="%s" index="4">bus8</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/libraries/Papilio_Hardware/Papilio_Default_Wing_Pinout.vhd</arg>&quot; line <arg fmt="%d" index="2">286</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;gpio_spp_read&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd</arg>&quot; line <arg fmt="%d" index="2">212</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ZPUino_Papilio_One_V2_blackbox</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/PSK31/PSK31.vhd</arg>&quot; line <arg fmt="%d" index="2">217</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">carry</arg>&apos; of component &apos;<arg fmt="%s" index="4">zpuino_dds_acc</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/PSK31/PSK31.vhd</arg>&quot; line <arg fmt="%d" index="2">418</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;psk_xmit_data_flag&gt;, &lt;psk_xmit_reg_flag&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/PSK31/dds_acc.vhd</arg>&quot; line <arg fmt="%d" index="2">108</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;inc_lo&gt;, &lt;r_reg_hi&gt;, &lt;inc_hi&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/PSK31/phase_shifter.vhd</arg>&quot; line <arg fmt="%d" index="2">101</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">shift_stream&lt;0&gt;.shift_mask</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">7</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/PSK31/phase_shifter.vhd</arg>&quot; line <arg fmt="%d" index="2">130</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;phase_in&gt;, &lt;i_data_in&gt;, &lt;q_data_in&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.shift_mask</arg>&gt; in unit &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">shift_stream&lt;1&gt;.shift_mask</arg>&gt; in unit &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000010</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">shift_stream&lt;2&gt;.shift_mask</arg>&gt; in unit &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000100</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">shift_stream&lt;3&gt;.shift_mask</arg>&gt; in unit &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">shift_stream&lt;4&gt;.shift_mask</arg>&gt; in unit &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt; has a constant value of <arg fmt="%s" index="3">00010000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">shift_stream&lt;5&gt;.shift_mask</arg>&gt; in unit &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt; has a constant value of <arg fmt="%s" index="3">00100000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.shift_mask</arg>&gt; in unit &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.shift_mask</arg>&gt; in unit &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt; has a constant value of <arg fmt="%s" index="3">10000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">r_next_lo&lt;24&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">r_next_hi&lt;8&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.shift_mask</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.q_data&lt;6:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data&lt;6:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.shift_mask</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">shift_stream&lt;5&gt;.shift_mask</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">shift_stream&lt;4&gt;.shift_mask</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">shift_stream&lt;3&gt;.shift_mask</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">shift_stream&lt;2&gt;.shift_mask</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">shift_stream&lt;1&gt;.shift_mask</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.shift_mask</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;6&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;32&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;27&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;7&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;33&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;28&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;8&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;34&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;29&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;9&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;40&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;35&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;41&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;36&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;42&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;37&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;43&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;38&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;44&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;39&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;50&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;45&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;51&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;46&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;52&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;47&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;53&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;48&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;54&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;49&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;60&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;55&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ext_pins_in&lt;100:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;61&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;56&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;62&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;57&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;63&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;58&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;64&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;59&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;70&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;65&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;100&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;71&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;66&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;72&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;67&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;73&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;68&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;74&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;69&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;80&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;75&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;81&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;76&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;82&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;77&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;83&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;78&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;10&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;84&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;79&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;11&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;90&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;85&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;12&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;91&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;86&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;13&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;92&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;87&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;14&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;93&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;88&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;15&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;20&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;94&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;89&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;0&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;21&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;16&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;95&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;1&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;22&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;17&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;96&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;2&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;23&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;18&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;97&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;3&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;19&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;24&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;98&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;4&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;30&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;25&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;99&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;5&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;31&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">ext_pins_inout&lt;26&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_we_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_stb_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_stall_o</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_sel_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_rst_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_dat_o</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_dat_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_cyc_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_clk_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_adr_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_wb_ack_o</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">clk_off_3ns</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">wishbone_out&lt;100:34&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wishbone_in&lt;100:62&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wishbone_in&lt;27:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">q_data_out</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">q_audio_out</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">psk_dat_o</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">phase_shift_index</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">phase_out</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">i_audio_out</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">gpio_bus_in&lt;200:98&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">gpio_bus_in&lt;48&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">gpio_bus_out&lt;200:148&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">gpio_t&lt;48&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">gpio_spp_read&lt;48:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">gpio_spp_data</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">gpio_o&lt;48&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">gpio_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_48_wishbone_slot_video_in_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_48_wishbone_slot_9_out_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_48_wishbone_slot_8_out_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_48_wishbone_slot_6_out_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_48_wishbone_slot_14_out_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_48_wishbone_slot_13_out_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_48_wishbone_slot_12_out_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_48_wishbone_slot_11_out_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_48_wishbone_slot_10_out_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_47_Flex_Pin_out_5_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_47_Flex_Pin_out_4_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_47_Flex_Pin_out_3_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_47_Flex_Pin_out_2_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_47_Flex_Pin_out_1_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_47_Flex_Pin_out_0_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">14 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;shift_stream&lt;0&gt;.q_data_14&gt; &lt;shift_stream&lt;0&gt;.q_data_13&gt; &lt;shift_stream&lt;0&gt;.q_data_9&gt; &lt;shift_stream&lt;0&gt;.q_data_11&gt; &lt;shift_stream&lt;0&gt;.q_data_10&gt; &lt;shift_stream&lt;0&gt;.q_data_6&gt; &lt;shift_stream&lt;0&gt;.q_data_8&gt; &lt;shift_stream&lt;0&gt;.q_data_7&gt; &lt;shift_stream&lt;0&gt;.q_data_3&gt; &lt;shift_stream&lt;0&gt;.q_data_5&gt; &lt;shift_stream&lt;0&gt;.q_data_4&gt; &lt;shift_stream&lt;0&gt;.q_data_0&gt; &lt;shift_stream&lt;0&gt;.q_data_2&gt; &lt;shift_stream&lt;0&gt;.q_data_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;1&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;1&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;2&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;2&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;2&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;3&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;3&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;3&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;3&gt;.phase_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;4&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;4&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;4&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;4&gt;.phase_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;4&gt;.phase_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;5&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;5&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;5&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;5&gt;.phase_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;5&gt;.phase_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;5&gt;.phase_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.phase_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.phase_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.phase_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.phase_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.q_data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.q_data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.q_data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.q_data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.q_data_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;6&gt;.q_data_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mapped_phase_rom0000_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_49</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.q_data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.q_data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.q_data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.q_data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.q_data_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.q_data_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.q_data_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_stream&lt;7&gt;.i_data_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpuino_phase_shifter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mapped_phase_rom0000_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PSK31</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.q_data_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.i_data_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.i_data_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.i_data_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.i_data_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.i_data_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.i_data_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_stream&lt;0&gt;.i_data_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpuino_phase_shifter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">Papilio_Default_Wing_Pinout</arg>: <arg fmt="%d" index="2">8</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;0&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;1&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;1&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;2&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;2&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;2&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;3&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;3&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;3&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;3&gt;.phase_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;4&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;4&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;4&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;4&gt;.phase_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;4&gt;.phase_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;5&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;5&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;5&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;5&gt;.phase_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;5&gt;.phase_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;5&gt;.phase_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.phase_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.phase_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.phase_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.phase_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.phase_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.phase_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.phase_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.phase_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.phase_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.phase_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.phase_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.q_data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.q_data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.q_data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.q_data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.q_data_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;6&gt;.q_data_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.q_data_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.q_data_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.q_data_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.q_data_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.q_data_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.q_data_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.q_data_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.q_data_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_49/phase_shifter/shift_stream&lt;7&gt;.i_data_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_save_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_save_27_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/prefr.valid</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/prefr.valid_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_save_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_save_2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_save_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_save_4_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_31_BRB5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_31_BRB5_1&gt; &lt;zpuino/core/exr.tos_31_BRB5_2&gt; &lt;zpuino/core/exr.tos_31_BRB5_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">rstgen/rstcount_zero_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;rstgen/rstcount_zero_q_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/memory/ramregs.do_wait</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/memory/ramregs.do_wait_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.state_FSM_FFd5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.state_FSM_FFd5_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.state_FSM_FFd9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.state_FSM_FFd9_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_31_BRB6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_31_BRB6_1&gt; &lt;zpuino/core/exr.tos_31_BRB6_2&gt; &lt;zpuino/core/exr.tos_31_BRB6_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.state_FSM_FFd14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.state_FSM_FFd14_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_save_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_save_27_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/prefr.valid</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/prefr.valid_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_save_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_save_2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_save_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_save_4_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_31_BRB5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_31_BRB5_1&gt; &lt;zpuino/core/exr.tos_31_BRB5_2&gt; &lt;zpuino/core/exr.tos_31_BRB5_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">rstgen/rstcount_zero_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;rstgen/rstcount_zero_q_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/memory/ramregs.do_wait</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/memory/ramregs.do_wait_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.state_FSM_FFd5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.state_FSM_FFd5_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.state_FSM_FFd9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.state_FSM_FFd9_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_31_BRB6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_31_BRB6_1&gt; &lt;zpuino/core/exr.tos_31_BRB6_2&gt; &lt;zpuino/core/exr.tos_31_BRB6_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.state_FSM_FFd14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.state_FSM_FFd14_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="new" > (*) More than 100% of Device resources are used
+</msg>
+
+</messages>
+

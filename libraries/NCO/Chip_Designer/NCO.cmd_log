@@ -1,0 +1,8 @@
+vhdtdtfi -lib DesignLab ../dds_rom.vhd -lib DesignLab ../dds_acc.vhd -lib DesignLab ../../NCO_/NCO.vhd -prj Chip_Designer -o NCO.spl -module NCO -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib DesignLab ../dds_rom.vhd -lib DesignLab ../dds_acc.vhd -lib work ../NCO.vhd -prj Chip_Designer -o NCO.spl -module NCO -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w NCO.spl /home/joseph/DesignLab/sketchbook/libraries/NCO/NCO.sym 
+vhdtdtfi -lib DesignLab ../dds_rom.vhd -lib DesignLab ../dds_acc.vhd -lib work ../NCO.vhd -prj Chip_Designer -o NCO.spl -module NCO -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w NCO.spl /home/joseph/DesignLab/sketchbook/libraries/NCO/NCO.sym 
+vhdtdtfi -lib DesignLab ../dds_rom.vhd -lib DesignLab ../dds_acc.vhd -lib DesignLab ../NCO.vhd -prj Chip_Designer -o NCO.spl -module NCO -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib DesignLab ../dds_rom.vhd -lib DesignLab ../dds_acc.vhd -lib work ../NCO.vhd -prj Chip_Designer -o NCO.spl -module NCO -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w NCO.spl /home/joseph/DesignLab/sketchbook/libraries/NCO/NCO.sym 

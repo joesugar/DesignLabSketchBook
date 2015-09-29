@@ -1,0 +1,1371 @@
+Release 14.2 - xst P.28xd (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: Papilio_One_500K.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Papilio_One_500K.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Papilio_One_500K"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-vq100
+
+---- Source Options
+Top Module Name                    : Papilio_One_500K
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../../../../libraries/VGA_ZXSpectrum" "../../../../libraries/AVR_Wishbone_Bridge" "../../../../libraries/Benchy" "../../../../libraries/Robot_Control_Library" "../../../../libraries/Building_Blocks" "../../../../libraries/VGA_ZPUino" "../../../../libraries/HQVGA" "../../../../libraries/Papilio_Hardware" "../../../../libraries/BitCoin_Miner" "../../../../libraries/Clocks" "../../../../libraries/ZPUino_2" "../../../../libraries/RGB_Matrix" "../../../../libraries/Gameduino" "../../../../libraries/ZPUino_Wishbone_Peripherals" "../../../../libraries/clocks" "../../../libraries/i2c" "../../../libraries/Template_DesignLab_Library" "../../../libraries/PSK31" "../../../libraries/NCO"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/PSK31/dds_acc.vhd" in Library DesignLab.
+Architecture arch of Entity zpuino_dds_acc is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/PSK31/dds_rom.vhd" in Library DesignLab.
+Architecture rtl of Entity zpuino_dds_rom is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/PSK31/phase_acc.vhd" in Library DesignLab.
+Architecture arch of Entity zpuino_phase_acc is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/PSK31/phase_shifter.vhd" in Library DesignLab.
+Architecture arch of Entity zpuino_phase_shifter is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/ZPUino_2/pad.vhd" in Library DesignLab.
+Architecture behave of Entity isync is up to date.
+Architecture behave of Entity iopad is up to date.
+Architecture behave of Entity ipad is up to date.
+Architecture behave of Entity opad is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" in Library work.
+Architecture behavioral of Entity papilio_one_500k is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/Building_Blocks/bus8.vhd" in Library DesignLab.
+Architecture behavioral of Entity bus8 is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/Papilio_Hardware/Papilio_Default_Wing_Pinout.vhd" in Library DesignLab.
+Architecture behavioral of Entity papilio_default_wing_pinout is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/Papilio_Hardware/Wing_GPIO.vhd" in Library DesignLab.
+Architecture behavioral of Entity wing_gpio is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd" in Library DesignLab.
+Architecture behave of Entity zpuino_papilio_one_500k_v2 is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/PSK31/PSK31.vhd" in Library DesignLab.
+Entity <psk31> compiled.
+Entity <psk31> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Papilio_One_500K> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Wing_GPIO> in library <DesignLab> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Papilio_Default_Wing_Pinout> in library <DesignLab> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ZPUino_Papilio_One_500K_V2> in library <DesignLab> (architecture <behave>).
+
+Analyzing hierarchy for entity <PSK31> in library <DesignLab> (architecture <behavioral>) with generics.
+	D2A_DATA_WIDTH = 8
+	DDS_INC_HI_WIDTH = 8
+	DDS_ROM_ADDRESS_WIDTH = 8
+	DDS_ROM_DATA_WIDTH = 8
+	IQ_BUS_WIDTH = 8
+	NUMBER_OF_SHIFTS = 7
+	PSK_ROM_ADDRESS_WIDTH = 8
+	PSK_ROM_DATA_WIDTH = 8
+	pskwidth = 8
+
+Analyzing hierarchy for entity <bus8> in library <DesignLab> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <iopad> in library <DesignLab> (architecture <behave>).
+
+Analyzing hierarchy for entity <zpuino_dds_acc> in library <DesignLab> (architecture <arch>) with generics.
+	M_HI = 256
+	M_LO = 16777216
+	N_HI = 8
+	N_LO = 24
+
+Analyzing hierarchy for entity <zpuino_dds_rom> in library <DesignLab> (architecture <rtl>) with generics.
+	ADDR_WIDTH = 8
+	DATA_WIDTH = 8
+
+Analyzing hierarchy for entity <zpuino_phase_acc> in library <DesignLab> (architecture <arch>) with generics.
+	M_HI = 256
+	M_LO = 12000
+	N_HI = 8
+	N_LO = 24
+	PSK_0 = '0'
+	PSK_1 = '1'
+
+Analyzing hierarchy for entity <zpuino_phase_shifter> in library <DesignLab> (architecture <arch>) with generics.
+	BUS_WIDTH = 8
+	NUMBER_OF_SHIFTS = 7
+
+Analyzing hierarchy for entity <isync> in library <DesignLab> (architecture <behave>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Papilio_One_500K> in library <work> (Architecture <behavioral>).
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH0' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH1' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH2' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH3' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH4' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH5' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH6' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected inout port 'WING_AH7' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_0' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_1' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_2' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_3' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_4' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 299: Unconnected output port 'Flex_Pin_in_5' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'clk_96Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'clk_1Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'clk_osc_32Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_6_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_8_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_9_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_10_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_11_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_12_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_13_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_14_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'wishbone_slot_video_out' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 375: Unconnected output port 'vgaclkout' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf" line 421: Unconnected output port 'bus0' of component 'bus8'.
+Entity <Papilio_One_500K> analyzed. Unit <Papilio_One_500K> generated.
+
+Analyzing Entity <Wing_GPIO> in library <DesignLab> (Architecture <behavioral>).
+Entity <Wing_GPIO> analyzed. Unit <Wing_GPIO> generated.
+
+Analyzing Entity <Papilio_Default_Wing_Pinout> in library <DesignLab> (Architecture <behavioral>).
+WARNING:Xst:819 - "/home/joseph/DesignLab/libraries/Papilio_Hardware/Papilio_Default_Wing_Pinout.vhd" line 286: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <gpio_spp_read>
+Entity <Papilio_Default_Wing_Pinout> analyzed. Unit <Papilio_Default_Wing_Pinout> generated.
+
+Analyzing Entity <iopad> in library <DesignLab> (Architecture <behave>).
+Entity <iopad> analyzed. Unit <iopad> generated.
+
+Analyzing Entity <isync> in library <DesignLab> (Architecture <behave>).
+    Set user-defined property "INIT =  0" for instance <ff1> in unit <isync>.
+    Set user-defined property "INIT =  0" for instance <ff2> in unit <isync>.
+Entity <isync> analyzed. Unit <isync> generated.
+
+Analyzing Entity <ZPUino_Papilio_One_500K_V2> in library <DesignLab> (Architecture <behave>).
+WARNING:Xst:2211 - "/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd" line 212: Instantiating black box module <ZPUino_Papilio_One_V2_blackbox>.
+Entity <ZPUino_Papilio_One_500K_V2> analyzed. Unit <ZPUino_Papilio_One_500K_V2> generated.
+
+Analyzing generic Entity <PSK31> in library <DesignLab> (Architecture <behavioral>).
+	D2A_DATA_WIDTH = 8
+	DDS_INC_HI_WIDTH = 8
+	DDS_ROM_ADDRESS_WIDTH = 8
+	DDS_ROM_DATA_WIDTH = 8
+	IQ_BUS_WIDTH = 8
+	NUMBER_OF_SHIFTS = 7
+	PSK_ROM_ADDRESS_WIDTH = 8
+	PSK_ROM_DATA_WIDTH = 8
+	pskwidth = 8
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/PSK31/PSK31.vhd" line 217: Unconnected output port 'carry' of component 'zpuino_dds_acc'.
+WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/libraries/PSK31/PSK31.vhd" line 418: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <psk_xmit_data_flag>, <psk_xmit_reg_flag>
+Entity <PSK31> analyzed. Unit <PSK31> generated.
+
+Analyzing generic Entity <zpuino_dds_acc> in library <DesignLab> (Architecture <arch>).
+	M_HI = 256
+	M_LO = 16777216
+	N_HI = 8
+	N_LO = 24
+WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/libraries/PSK31/dds_acc.vhd" line 108: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <inc_lo>, <r_reg_hi>, <inc_hi>
+Entity <zpuino_dds_acc> analyzed. Unit <zpuino_dds_acc> generated.
+
+Analyzing generic Entity <zpuino_dds_rom> in library <DesignLab> (Architecture <rtl>).
+	ADDR_WIDTH = 8
+	DATA_WIDTH = 8
+Entity <zpuino_dds_rom> analyzed. Unit <zpuino_dds_rom> generated.
+
+Analyzing generic Entity <zpuino_phase_acc> in library <DesignLab> (Architecture <arch>).
+	M_HI = 256
+	M_LO = 12000
+	N_HI = 8
+	N_LO = 24
+	PSK_0 = '0'
+	PSK_1 = '1'
+Entity <zpuino_phase_acc> analyzed. Unit <zpuino_phase_acc> generated.
+
+Analyzing generic Entity <zpuino_phase_shifter> in library <DesignLab> (Architecture <arch>).
+	BUS_WIDTH = 8
+	NUMBER_OF_SHIFTS = 7
+WARNING:Xst:1610 - "/home/joseph/DesignLab/sketchbook/libraries/PSK31/phase_shifter.vhd" line 101: Width mismatch. <shift_stream<0>.shift_mask> has a width of 8 bits but assigned expression is 7-bit wide.
+WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/libraries/PSK31/phase_shifter.vhd" line 130: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <phase_in>, <i_data_in>, <q_data_in>
+INFO:Xst:2679 - Register <shift_stream<0>.shift_mask> in unit <zpuino_phase_shifter> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <shift_stream<1>.shift_mask> in unit <zpuino_phase_shifter> has a constant value of 00000010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <shift_stream<2>.shift_mask> in unit <zpuino_phase_shifter> has a constant value of 00000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <shift_stream<3>.shift_mask> in unit <zpuino_phase_shifter> has a constant value of 00001000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <shift_stream<4>.shift_mask> in unit <zpuino_phase_shifter> has a constant value of 00010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <shift_stream<5>.shift_mask> in unit <zpuino_phase_shifter> has a constant value of 00100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <shift_stream<6>.shift_mask> in unit <zpuino_phase_shifter> has a constant value of 01000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <shift_stream<7>.shift_mask> in unit <zpuino_phase_shifter> has a constant value of 10000000 during circuit operation. The register is replaced by logic.
+Entity <zpuino_phase_shifter> analyzed. Unit <zpuino_phase_shifter> generated.
+
+Analyzing Entity <bus8> in library <DesignLab> (Architecture <behavioral>).
+Entity <bus8> analyzed. Unit <bus8> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Wing_GPIO>.
+    Related source file is "/home/joseph/DesignLab/libraries/Papilio_Hardware/Wing_GPIO.vhd".
+Unit <Wing_GPIO> synthesized.
+
+
+Synthesizing Unit <bus8>.
+    Related source file is "/home/joseph/DesignLab/libraries/Building_Blocks/bus8.vhd".
+Unit <bus8> synthesized.
+
+
+Synthesizing Unit <zpuino_dds_acc>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/PSK31/dds_acc.vhd".
+WARNING:Xst:646 - Signal <r_next_lo<24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r_next_hi<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 9-bit adder for signal <r_next_hi$add0000> created at line 143.
+    Found 9-bit subtractor for signal <r_next_hi$addsub0000> created at line 148.
+    Found 9-bit comparator greater for signal <r_next_hi$cmp_gt0000> created at line 144.
+    Found 25-bit subtractor for signal <r_next_lo$addsub0000> created at line 130.
+    Found 8-bit register for signal <r_reg_hi>.
+    Found 24-bit register for signal <r_reg_lo>.
+    Found 25-bit adder for signal <temp_hi$add0000> created at line 119.
+    Found 9-bit adder for signal <temp_hi$addsub0000> created at line 131.
+    Found 25-bit comparator greater for signal <temp_hi$cmp_gt0000> created at line 125.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <zpuino_dds_acc> synthesized.
+
+
+Synthesizing Unit <zpuino_dds_rom>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/PSK31/dds_rom.vhd".
+    Found 256x8-bit ROM for signal <data_o$rom0000> created at line 83.
+    Summary:
+	inferred   1 ROM(s).
+Unit <zpuino_dds_rom> synthesized.
+
+
+Synthesizing Unit <zpuino_phase_acc>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/PSK31/phase_acc.vhd".
+    Found 24-bit adder for signal <$add0000> created at line 126.
+    Found 1-bit register for signal <data_out_enable>.
+    Found 1-bit register for signal <r_inversion>.
+    Found 8-bit register for signal <r_reg_hi>.
+    Found 8-bit up accumulator for signal <r_reg_hi_next>.
+    Found 8-bit adder for signal <r_reg_hi_next$add0000> created at line 113.
+    Found 24-bit register for signal <r_reg_lo>.
+    Found 24-bit up counter for signal <r_reg_lo_next>.
+    Found 24-bit adder for signal <r_reg_lo_next$add0000> created at line 114.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Accumulator(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <zpuino_phase_acc> synthesized.
+
+
+Synthesizing Unit <zpuino_phase_shifter>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/PSK31/phase_shifter.vhd".
+WARNING:Xst:646 - Signal <shift_stream<7>.shift_mask> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_stream<7>.q_data<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_stream<7>.i_data<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_stream<6>.shift_mask> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_stream<5>.shift_mask> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_stream<4>.shift_mask> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_stream<3>.shift_mask> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_stream<2>.shift_mask> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_stream<1>.shift_mask> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_stream<0>.shift_mask> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 15-bit adder for signal <shift_right_i$addsub0000> created at line 183.
+    Found 15-bit adder for signal <shift_right_i$addsub0001> created at line 183.
+    Found 15-bit adder for signal <shift_right_i$addsub0002> created at line 183.
+    Found 15-bit adder for signal <shift_right_i$addsub0003> created at line 183.
+    Found 15-bit adder for signal <shift_right_i$addsub0004> created at line 183.
+    Found 15-bit adder for signal <shift_right_i$addsub0005> created at line 183.
+    Found 15-bit adder for signal <shift_right_i$addsub0006> created at line 183.
+    Found 15-bit comparator less for signal <shift_right_i$cmp_lt0000> created at line 182.
+    Found 15-bit comparator less for signal <shift_right_i$cmp_lt0001> created at line 182.
+    Found 15-bit comparator less for signal <shift_right_i$cmp_lt0002> created at line 182.
+    Found 15-bit comparator less for signal <shift_right_i$cmp_lt0003> created at line 182.
+    Found 15-bit comparator less for signal <shift_right_i$cmp_lt0004> created at line 182.
+    Found 15-bit comparator less for signal <shift_right_i$cmp_lt0005> created at line 182.
+    Found 15-bit comparator less for signal <shift_right_i$cmp_lt0006> created at line 182.
+    Found 15-bit adder for signal <shift_right_q$addsub0000> created at line 186.
+    Found 15-bit adder for signal <shift_right_q$addsub0001> created at line 186.
+    Found 15-bit adder for signal <shift_right_q$addsub0002> created at line 186.
+    Found 15-bit adder for signal <shift_right_q$addsub0003> created at line 186.
+    Found 15-bit adder for signal <shift_right_q$addsub0004> created at line 186.
+    Found 15-bit adder for signal <shift_right_q$addsub0005> created at line 186.
+    Found 15-bit adder for signal <shift_right_q$addsub0006> created at line 186.
+    Found 15-bit comparator less for signal <shift_right_q$cmp_lt0000> created at line 185.
+    Found 15-bit comparator less for signal <shift_right_q$cmp_lt0001> created at line 185.
+    Found 15-bit comparator less for signal <shift_right_q$cmp_lt0002> created at line 185.
+    Found 15-bit comparator less for signal <shift_right_q$cmp_lt0003> created at line 185.
+    Found 15-bit comparator less for signal <shift_right_q$cmp_lt0004> created at line 185.
+    Found 15-bit comparator less for signal <shift_right_q$cmp_lt0005> created at line 185.
+    Found 15-bit comparator less for signal <shift_right_q$cmp_lt0006> created at line 185.
+    Found 15-bit register for signal <shift_stream<0>.i_data>.
+    Found 15-bit adder for signal <shift_stream<0>.i_data$addsub0000> created at line 167.
+    Found 8-bit register for signal <shift_stream<0>.phase>.
+    Found 15-bit register for signal <shift_stream<0>.q_data>.
+    Found 15-bit register for signal <shift_stream<1>.i_data>.
+    Found 15-bit addsub for signal <shift_stream<1>.i_data$mux0001>.
+    Found 8-bit register for signal <shift_stream<1>.phase>.
+    Found 15-bit register for signal <shift_stream<1>.q_data>.
+    Found 15-bit addsub for signal <shift_stream<1>.q_data$mux0001>.
+    Found 15-bit register for signal <shift_stream<2>.i_data>.
+    Found 15-bit addsub for signal <shift_stream<2>.i_data$mux0001>.
+    Found 8-bit register for signal <shift_stream<2>.phase>.
+    Found 15-bit register for signal <shift_stream<2>.q_data>.
+    Found 15-bit addsub for signal <shift_stream<2>.q_data$mux0001>.
+    Found 15-bit register for signal <shift_stream<3>.i_data>.
+    Found 15-bit addsub for signal <shift_stream<3>.i_data$mux0001>.
+    Found 8-bit register for signal <shift_stream<3>.phase>.
+    Found 15-bit register for signal <shift_stream<3>.q_data>.
+    Found 15-bit addsub for signal <shift_stream<3>.q_data$mux0001>.
+    Found 15-bit register for signal <shift_stream<4>.i_data>.
+    Found 15-bit addsub for signal <shift_stream<4>.i_data$mux0001>.
+    Found 8-bit register for signal <shift_stream<4>.phase>.
+    Found 15-bit register for signal <shift_stream<4>.q_data>.
+    Found 15-bit addsub for signal <shift_stream<4>.q_data$mux0001>.
+    Found 15-bit register for signal <shift_stream<5>.i_data>.
+    Found 15-bit addsub for signal <shift_stream<5>.i_data$mux0001>.
+    Found 8-bit register for signal <shift_stream<5>.phase>.
+    Found 15-bit register for signal <shift_stream<5>.q_data>.
+    Found 15-bit addsub for signal <shift_stream<5>.q_data$mux0001>.
+    Found 15-bit register for signal <shift_stream<6>.i_data>.
+    Found 15-bit addsub for signal <shift_stream<6>.i_data$mux0001>.
+    Found 8-bit register for signal <shift_stream<6>.phase>.
+    Found 15-bit register for signal <shift_stream<6>.q_data>.
+    Found 15-bit addsub for signal <shift_stream<6>.q_data$mux0001>.
+    Found 15-bit register for signal <shift_stream<7>.i_data>.
+    Found 15-bit addsub for signal <shift_stream<7>.i_data$mux0001>.
+    Found 8-bit register for signal <shift_stream<7>.phase>.
+    Found 15-bit register for signal <shift_stream<7>.q_data>.
+    Found 15-bit addsub for signal <shift_stream<7>.q_data$mux0001>.
+    Summary:
+	inferred 304 D-type flip-flop(s).
+	inferred  29 Adder/Subtractor(s).
+	inferred  14 Comparator(s).
+Unit <zpuino_phase_shifter> synthesized.
+
+
+Synthesizing Unit <ZPUino_Papilio_One_500K_V2>.
+    Related source file is "/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd".
+WARNING:Xst:2563 - Inout <ext_pins_inout<6>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<32>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<27>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<7>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<33>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<28>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<8>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<34>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<29>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<9>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<40>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<35>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<41>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<36>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<42>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<37>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<43>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<38>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<44>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<39>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<50>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<45>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<51>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<46>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<52>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<47>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<53>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<48>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<54>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<49>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<60>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<55>> is never assigned. Tied to value Z.
+WARNING:Xst:647 - Input <ext_pins_in<100:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <ext_pins_inout<61>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<56>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<62>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<57>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<63>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<58>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<64>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<59>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<70>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<65>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<100>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<71>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<66>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<72>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<67>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<73>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<68>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<74>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<69>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<80>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<75>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<81>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<76>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<82>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<77>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<83>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<78>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<10>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<84>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<79>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<11>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<90>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<85>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<12>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<91>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<86>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<13>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<92>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<87>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<14>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<93>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<88>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<15>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<20>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<94>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<89>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<0>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<21>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<16>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<95>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<1>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<22>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<17>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<96>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<2>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<23>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<18>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<97>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<3>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<19>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<24>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<98>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<4>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<30>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<25>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<99>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<5>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<31>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <ext_pins_inout<26>> is never assigned. Tied to value Z.
+WARNING:Xst:1780 - Signal <sram_wb_we_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_stb_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_stall_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_sel_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_rst_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_dat_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_dat_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_cyc_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_clk_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_adr_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sram_wb_ack_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clk_off_3ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 101-bit tristate buffer for signal <ext_pins_out>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<100>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<99>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<98>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<97>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<96>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<95>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<94>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<93>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<92>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<91>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<90>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<89>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<88>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<87>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<86>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<85>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<84>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<83>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<82>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<81>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<80>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<79>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<78>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<77>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<76>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<75>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<74>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<73>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<72>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<71>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<70>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<69>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<68>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<67>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<66>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<65>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<64>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<63>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<62>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<61>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<60>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<59>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<58>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<57>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<56>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<55>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<54>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<53>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<52>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<51>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<50>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<49>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<48>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<47>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<46>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<45>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<44>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<43>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<42>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<41>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<40>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<39>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<38>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<37>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<36>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<35>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<34>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<33>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<32>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<31>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<30>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<29>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<28>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<27>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<26>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<25>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<24>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<23>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<22>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<21>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<20>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<19>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<18>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<17>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<16>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<15>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<14>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<13>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<12>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<11>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<10>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<9>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<8>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<7>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<6>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<5>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<4>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<3>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<2>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<1>>.
+    Found 1-bit tristate buffer for signal <ext_pins_inout<0>>.
+    Summary:
+	inferred 202 Tristate(s).
+Unit <ZPUino_Papilio_One_500K_V2> synthesized.
+
+
+Synthesizing Unit <PSK31>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/PSK31/PSK31.vhd".
+WARNING:Xst:1305 - Output <wishbone_out<100:34>> is never assigned. Tied to value 0000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:647 - Input <wishbone_in<100:62>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wishbone_in<27:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <q_data_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <q_audio_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <psk_dat_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <phase_shift_index> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <phase_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <i_audio_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 256x8-bit ROM for signal <mapped_phase$rom0000> created at line 206.
+    Found 8-bit register for signal <dds_acc_inc_hi_i>.
+    Found 24-bit register for signal <dds_acc_inc_lo_i>.
+    Found 8-bit register for signal <phase_in>.
+    Found 1-bit register for signal <psk_output_enable>.
+    Found 1-bit register for signal <psk_serial_data_in>.
+    Found 16-bit register for signal <psk_xmit_data>.
+    Found 1-bit register for signal <psk_xmit_data_flag>.
+    Found 16-bit register for signal <psk_xmit_reg>.
+    Found 1-bit register for signal <psk_xmit_reg_flag>.
+    Found 1-bit xor2 for signal <wishbone_out_3$xor0000>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  76 D-type flip-flop(s).
+Unit <PSK31> synthesized.
+
+
+Synthesizing Unit <isync>.
+    Related source file is "/home/joseph/DesignLab/libraries/ZPUino_2/pad.vhd".
+Unit <isync> synthesized.
+
+
+Synthesizing Unit <iopad>.
+    Related source file is "/home/joseph/DesignLab/libraries/ZPUino_2/pad.vhd".
+    Found 1-bit tristate buffer for signal <PAD>.
+    Summary:
+	inferred   1 Tristate(s).
+Unit <iopad> synthesized.
+
+
+Synthesizing Unit <Papilio_Default_Wing_Pinout>.
+    Related source file is "/home/joseph/DesignLab/libraries/Papilio_Hardware/Papilio_Default_Wing_Pinout.vhd".
+WARNING:Xst:1305 - Output <gpio_bus_in<200:98>> is never assigned. Tied to value 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:1305 - Output <gpio_bus_in<48>> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <gpio_bus_out<200:148>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <gpio_t<48>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <gpio_spp_read<48:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <gpio_spp_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <gpio_o<48>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <gpio_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <Papilio_Default_Wing_Pinout> synthesized.
+
+
+Synthesizing Unit <Papilio_One_500K>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/PSK31/circuit/500K/Papilio_One_500K.vhf".
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_video_in_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_9_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_8_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_6_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_14_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_13_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_12_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_11_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_10_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_5_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_4_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_3_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_2_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_1_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_47_Flex_Pin_out_0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <Papilio_One_500K> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 256x8-bit ROM                                         : 2
+# Adders/Subtractors                                   : 37
+ 15-bit adder                                          : 15
+ 15-bit addsub                                         : 14
+ 24-bit adder                                          : 2
+ 25-bit adder                                          : 1
+ 25-bit subtractor                                     : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 2
+ 9-bit subtractor                                      : 1
+# Counters                                             : 1
+ 24-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 8-bit up accumulator                                  : 1
+# Registers                                            : 81
+ 1-bit register                                        : 52
+ 15-bit register                                       : 14
+ 16-bit register                                       : 2
+ 24-bit register                                       : 3
+ 8-bit register                                        : 10
+# Comparators                                          : 16
+ 15-bit comparator less                                : 14
+ 25-bit comparator greater                             : 1
+ 9-bit comparator greater                              : 1
+# Tristates                                            : 250
+ 1-bit tristate buffer                                 : 250
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../../../../libraries/ZPUino_2/ZPUino_Papilio_One_V2_blackbox.ngc>.
+Loading core <ZPUino_Papilio_One_V2_blackbox> for timing and area information for instance <Inst_ZPUino_Papilio_One_V2_blackbox>.
+WARNING:Xst:1290 - Hierarchical block <XLXI_26> is unconnected in block <Papilio_One_500K>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <shift_stream<0>.q_data_12> in Unit <phase_shifter> is equivalent to the following 14 FFs/Latches, which will be removed : <shift_stream<0>.q_data_14> <shift_stream<0>.q_data_13> <shift_stream<0>.q_data_9> <shift_stream<0>.q_data_11> <shift_stream<0>.q_data_10> <shift_stream<0>.q_data_6> <shift_stream<0>.q_data_8> <shift_stream<0>.q_data_7> <shift_stream<0>.q_data_3> <shift_stream<0>.q_data_5> <shift_stream<0>.q_data_4> <shift_stream<0>.q_data_0> <shift_stream<0>.q_data_2> <shift_stream<0>.q_data_1> 
+WARNING:Xst:1710 - FF/Latch <shift_stream<0>.q_data_12> (without init value) has a constant value of 0 in block <phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <shift_stream<0>.phase_0> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<1>.phase_0> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<1>.phase_1> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<2>.phase_0> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<2>.phase_1> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<2>.phase_2> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<3>.phase_0> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<3>.phase_1> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<3>.phase_2> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<3>.phase_3> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<4>.phase_0> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<4>.phase_1> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<4>.phase_2> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<4>.phase_3> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<4>.phase_4> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<5>.phase_0> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<5>.phase_1> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<5>.phase_2> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<5>.phase_3> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<5>.phase_4> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<5>.phase_5> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.phase_0> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.phase_1> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.phase_2> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.phase_3> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.phase_4> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.phase_5> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.phase_6> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.q_data_0> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.q_data_1> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.q_data_2> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.q_data_3> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.q_data_4> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<6>.q_data_5> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_0> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_1> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_2> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_3> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_4> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_5> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_6> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_7> of sequential type is unconnected in block <phase_shifter>.
+WARNING:Xst:2677 - Node <mapped_phase_rom0000_0> of sequential type is unconnected in block <XLXI_49>.
+WARNING:Xst:2677 - Node <shift_stream<7>.q_data_0> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.q_data_1> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.q_data_2> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.q_data_3> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.q_data_4> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.q_data_5> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.q_data_6> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_0> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_1> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_2> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_3> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_4> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_5> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <shift_stream<7>.i_data_6> of sequential type is unconnected in block <zpuino_phase_shifter>.
+WARNING:Xst:2677 - Node <mapped_phase_rom0000_0> of sequential type is unconnected in block <PSK31>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 256x8-bit ROM                                         : 2
+# Adders/Subtractors                                   : 37
+ 15-bit adder                                          : 15
+ 15-bit addsub                                         : 14
+ 24-bit adder                                          : 2
+ 24-bit subtractor                                     : 1
+ 25-bit adder                                          : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 2
+# Counters                                             : 1
+ 24-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 8-bit up accumulator                                  : 1
+# Registers                                            : 528
+ Flip-Flops                                            : 528
+# Comparators                                          : 16
+ 15-bit comparator less                                : 14
+ 25-bit comparator greater                             : 1
+ 9-bit comparator greater                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <shift_stream<0>.q_data_12> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_14> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_13> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_9> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_11> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_10> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_6> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_8> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_7> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_3> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_5> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_4> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_0> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_2> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_1> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shift_stream<0>.i_data_6> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_3> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_5> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_4> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_0> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_2> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_1> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2042 - Unit Papilio_Default_Wing_Pinout: 8 internal tristates are replaced by logic (pull-up yes): WingType_mosi_AH<0>, WingType_mosi_AH<1>, WingType_mosi_AH<2>, WingType_mosi_AH<3>, WingType_mosi_AH<4>, WingType_mosi_AH<5>, WingType_mosi_AH<6>, WingType_mosi_AH<7>.
+
+Optimizing unit <Papilio_One_500K> ...
+
+Optimizing unit <zpuino_dds_acc> ...
+
+Optimizing unit <zpuino_phase_shifter> ...
+
+Optimizing unit <zpuino_phase_acc> ...
+
+Optimizing unit <Papilio_Default_Wing_Pinout> ...
+
+Optimizing unit <PSK31> ...
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<0>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<1>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<1>.phase_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<2>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<2>.phase_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<2>.phase_2> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<3>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<3>.phase_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<3>.phase_2> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<3>.phase_3> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<4>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<4>.phase_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<4>.phase_2> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<4>.phase_3> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<4>.phase_4> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<5>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<5>.phase_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<5>.phase_2> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<5>.phase_3> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<5>.phase_4> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<5>.phase_5> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.phase_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.phase_2> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.phase_3> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.phase_4> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.phase_5> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.phase_6> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.phase_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.phase_2> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.phase_3> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.phase_4> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.phase_5> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.phase_6> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.phase_7> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.q_data_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.q_data_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.q_data_2> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.q_data_3> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.q_data_4> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<6>.q_data_5> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_7> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_8> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_9> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_10> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_11> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_12> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_13> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_14> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.i_data_7> of sequential type is unconnected in block <Papilio_One_500K>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Papilio_One_500K, actual ratio is 58.
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_27> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_27_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/prefr.valid> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/prefr.valid_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_2> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_2_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_4> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_4_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_31_BRB5> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following 3 FFs/Latches : <zpuino/core/exr.tos_31_BRB5_1> <zpuino/core/exr.tos_31_BRB5_2> <zpuino/core/exr.tos_31_BRB5_3> 
+INFO:Xst:2260 - The FF/Latch <rstgen/rstcount_zero_q> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <rstgen/rstcount_zero_q_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/memory/ramregs.do_wait> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/memory/ramregs.do_wait_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd5> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd5_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd9> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd9_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_31_BRB6> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following 3 FFs/Latches : <zpuino/core/exr.tos_31_BRB6_1> <zpuino/core/exr.tos_31_BRB6_2> <zpuino/core/exr.tos_31_BRB6_3> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd14> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd14_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_27> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_27_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/prefr.valid> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/prefr.valid_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_2> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_2_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_4> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_4_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_31_BRB5> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following 3 FFs/Latches : <zpuino/core/exr.tos_31_BRB5_1> <zpuino/core/exr.tos_31_BRB5_2> <zpuino/core/exr.tos_31_BRB5_3> 
+INFO:Xst:2260 - The FF/Latch <rstgen/rstcount_zero_q> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <rstgen/rstcount_zero_q_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/memory/ramregs.do_wait> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/memory/ramregs.do_wait_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd5> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd5_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd9> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd9_1> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_31_BRB6> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following 3 FFs/Latches : <zpuino/core/exr.tos_31_BRB6_1> <zpuino/core/exr.tos_31_BRB6_2> <zpuino/core/exr.tos_31_BRB6_3> 
+INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.state_FSM_FFd14> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.state_FSM_FFd14_1> 
+
+Final Macro Processing ...
+
+Processing Unit <Papilio_One_500K> :
+	Found 4-bit shift register for signal <XLXI_49/phase_shifter/shift_stream<4>.phase_5>.
+	Found 5-bit shift register for signal <XLXI_49/phase_shifter/shift_stream<5>.phase_6>.
+	Found 6-bit shift register for signal <XLXI_49/phase_shifter/shift_stream<6>.phase_7>.
+Unit <Papilio_One_500K> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 471
+ Flip-Flops                                            : 471
+# Shift Registers                                      : 3
+ 4-bit shift register                                  : 1
+ 5-bit shift register                                  : 1
+ 6-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Papilio_One_500K.ngr
+Top Level Output File Name         : Papilio_One_500K
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 351
+
+Cell Usage :
+# BELS                             : 6799
+#      GND                         : 2
+#      INV                         : 108
+#      LUT1                        : 324
+#      LUT2                        : 573
+#      LUT2_D                      : 25
+#      LUT2_L                      : 28
+#      LUT3                        : 851
+#      LUT3_D                      : 53
+#      LUT3_L                      : 51
+#      LUT4                        : 2190
+#      LUT4_D                      : 49
+#      LUT4_L                      : 244
+#      MUXCY                       : 996
+#      MUXF5                       : 477
+#      MUXF6                       : 15
+#      MUXF7                       : 5
+#      MUXF8                       : 1
+#      VCC                         : 2
+#      XORCY                       : 805
+# FlipFlops/Latches                : 2392
+#      FD                          : 224
+#      FDC                         : 266
+#      FDCE                        : 54
+#      FDCP                        : 47
+#      FDE                         : 1151
+#      FDP                         : 2
+#      FDR                         : 177
+#      FDRE                        : 281
+#      FDRS                        : 14
+#      FDRSE                       : 1
+#      FDS                         : 74
+#      FDSE                        : 101
+# RAMS                             : 18
+#      RAMB16_S2_S2                : 16
+#      RAMB16_S36_S36              : 1
+#      RAMB16_S9_S9                : 1
+# Shift Registers                  : 37
+#      SRL16                       : 5
+#      SRL16E                      : 32
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 253
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      IOBUF                       : 40
+#      OBUF                        : 12
+#      OBUFT                       : 198
+# DCMs                             : 2
+#      DCM_SP                      : 2
+# MULTs                            : 3
+#      MULT18X18SIO                : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-5 
+
+ Number of Slices:                     2685  out of   4656    57%  
+ Number of Slice Flip Flops:           2392  out of   9312    25%  
+ Number of 4 input LUTs:               4533  out of   9312    48%  
+    Number used as logic:              4496
+    Number used as Shift registers:      37
+ Number of IOs:                         351
+ Number of bonded IOBs:                 252  out of     66   381% (*) 
+ Number of BRAMs:                        18  out of     20    90%  
+ Number of MULT18X18SIOs:                 3  out of     20    15%  
+ Number of GCLKs:                         5  out of     24    20%  
+ Number of DCMs:                          2  out of      4    50%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+ext_pins_in<0>                     | clkgen_inst/DCM_inst:CLKFX| 2450  |
+-----------------------------------+---------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                 | Buffer(FF name)                                                     | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_13_in<60>(XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/rstgen/rstout_or00001:O)       | NONE(XLXI_49/dds_acc/r_reg_hi_0)                                    | 320   |
+XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q_or0000(XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q_or00001:O)| NONE(XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q)| 2     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_10_and0000(XLXI_49/phase_shifter/shift_stream<0>_i_data_10_and00001:O)                            | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_10)               | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_10_and0001(XLXI_49/phase_shifter/shift_stream<0>_i_data_10_and00011:O)                            | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_10)               | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_11_and0000(XLXI_49/phase_shifter/shift_stream<0>_i_data_11_and000011:O)                           | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_11)               | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_11_and0001(XLXI_49/phase_shifter/shift_stream<0>_i_data_11_and000111:O)                           | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_11)               | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_12_and0000(XLXI_49/phase_shifter/shift_stream<0>_i_data_12_and000011:O)                           | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_12)               | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_12_and0001(XLXI_49/phase_shifter/shift_stream<0>_i_data_12_and000111:O)                           | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_12)               | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_13_and0000(XLXI_49/phase_shifter/shift_stream<0>_i_data_13_and00001:O)                            | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_13)               | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_13_and0001(XLXI_49/phase_shifter/shift_stream<0>_i_data_13_and00011:O)                            | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_13)               | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_14_and0000(XLXI_49/phase_shifter/shift_stream<0>_i_data_14_and00002:O)                            | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_14)               | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_14_and0001(XLXI_49/phase_shifter/shift_stream<0>_i_data_14_and00011:O)                            | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_14)               | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_7_and0000(XLXI_49/phase_shifter/shift_stream<0>_i_data_7_and00001:O)                              | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_7)                | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_7_and0001(XLXI_49/phase_shifter/shift_stream<0>_i_data_7_and00011:O)                              | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_7)                | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_8_and0000(XLXI_49/phase_shifter/shift_stream<0>_i_data_8_and00001:O)                              | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_8)                | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_8_and0001(XLXI_49/phase_shifter/shift_stream<0>_i_data_8_and00011:O)                              | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_8)                | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_9_and0000(XLXI_49/phase_shifter/shift_stream<0>_i_data_9_and00001:O)                              | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_9)                | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_i_data_9_and0001(XLXI_49/phase_shifter/shift_stream<0>_i_data_9_and00011:O)                              | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_9)                | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_1_and0000(XLXI_49/phase_shifter/shift_stream<0>_phase_1_and00001:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_1)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_1_and0001(XLXI_49/phase_shifter/shift_stream<0>_phase_1_and00011:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_1)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_2_and0000(XLXI_49/phase_shifter/shift_stream<0>_phase_2_and00001:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_2)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_2_and0001(XLXI_49/phase_shifter/shift_stream<0>_phase_2_and00011:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_2)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_3_and0000(XLXI_49/phase_shifter/shift_stream<0>_phase_3_and00001:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_3)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_3_and0001(XLXI_49/phase_shifter/shift_stream<0>_phase_3_and00011:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_3)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_4_and0000(XLXI_49/phase_shifter/shift_stream<0>_phase_4_and00001:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_4)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_4_and0001(XLXI_49/phase_shifter/shift_stream<0>_phase_4_and00011:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_4)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_5_and0000(XLXI_49/phase_shifter/shift_stream<0>_phase_5_and00001:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_5)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_5_and0001(XLXI_49/phase_shifter/shift_stream<0>_phase_5_and00011:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_5)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_6_and0000(XLXI_49/phase_shifter/shift_stream<0>_phase_6_and00001:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_6)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_6_and0001(XLXI_49/phase_shifter/shift_stream<0>_phase_6_and00011:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_6)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_7_and0000(XLXI_49/phase_shifter/shift_stream<0>_phase_7_and00001:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_7)                 | 1     |
+XLXI_49/phase_shifter/shift_stream<0>_phase_7_and0001(XLXI_49/phase_shifter/shift_stream<0>_phase_7_and00011:O)                                | NONE(XLXI_49/phase_shifter/shift_stream<0>.phase_7)                 | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_0__and0000(XLXI_49/psk_phase_acc/r_reg_hi_next_0__and00001:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_0)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_0__and0001(XLXI_49/psk_phase_acc/r_reg_hi_next_0__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_0)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_1__and0000(XLXI_49/psk_phase_acc/r_reg_hi_next_1__and00001:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_1)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_1__and0001(XLXI_49/psk_phase_acc/r_reg_hi_next_1__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_1)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_2__and0000(XLXI_49/psk_phase_acc/r_reg_hi_next_2__and00001:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_2)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_2__and0001(XLXI_49/psk_phase_acc/r_reg_hi_next_2__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_2)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_3__and0000(XLXI_49/psk_phase_acc/r_reg_hi_next_3__and000011:O)                                             | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_3)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_3__and0001(XLXI_49/psk_phase_acc/r_reg_hi_next_3__and000111:O)                                             | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_3)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_4__and0000(XLXI_49/psk_phase_acc/r_reg_hi_next_4__and000011:O)                                             | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_4)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_4__and0001(XLXI_49/psk_phase_acc/r_reg_hi_next_4__and000111:O)                                             | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_4)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_5__and0000(XLXI_49/psk_phase_acc/r_reg_hi_next_5__and000011:O)                                             | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_5)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_5__and0001(XLXI_49/psk_phase_acc/r_reg_hi_next_5__and000111:O)                                             | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_5)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_6__and0000(XLXI_49/psk_phase_acc/r_reg_hi_next_6__and000011:O)                                             | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_6)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_6__and0001(XLXI_49/psk_phase_acc/r_reg_hi_next_6__and000111:O)                                             | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_6)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_7__and0000(XLXI_49/psk_phase_acc/r_reg_hi_next_7__and000011:O)                                             | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_7)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_hi_next_7__and0001(XLXI_49/psk_phase_acc/r_reg_hi_next_7__and000111:O)                                             | NONE(XLXI_49/psk_phase_acc/r_reg_hi_next_7)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_0__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_0__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_0)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_0__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_0__and00021:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_0)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_10__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_10__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_10)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_10__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_10__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_10)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_11__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_11__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_11)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_11__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_11__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_11)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_12__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_12__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_12)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_12__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_12__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_12)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_13__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_13__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_13)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_13__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_13__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_13)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_14__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_14__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_14)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_14__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_14__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_14)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_15__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_15__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_15)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_15__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_15__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_15)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_16__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_16__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_16)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_16__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_16__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_16)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_17__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_17__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_17)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_17__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_17__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_17)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_18__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_18__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_18)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_18__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_18__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_18)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_19__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_19__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_19)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_19__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_19__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_19)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_1__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_1__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_1)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_1__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_1__and00021:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_1)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_20__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_20__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_20)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_20__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_20__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_20)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_21__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_21__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_21)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_21__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_21__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_21)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_22__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_22__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_22)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_22__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_22__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_22)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_23__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_23__and00011:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_23)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_23__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_23__and00021:O)                                            | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_23)                        | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_2__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_2__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_2)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_2__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_2__and00021:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_2)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_3__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_3__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_3)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_3__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_3__and00021:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_3)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_4__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_4__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_4)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_4__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_4__and00021:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_4)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_5__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_5__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_5)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_5__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_5__and00021:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_5)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_6__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_6__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_6)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_6__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_6__and00021:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_6)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_7__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_7__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_7)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_7__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_7__and00021:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_7)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_8__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_8__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_8)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_8__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_8__and00021:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_8)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_9__and0001(XLXI_49/psk_phase_acc/r_reg_lo_next_9__and00011:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_9)                         | 1     |
+XLXI_49/psk_phase_acc/r_reg_lo_next_9__and0002(XLXI_49/psk_phase_acc/r_reg_lo_next_9__and00021:O)                                              | NONE(XLXI_49/psk_phase_acc/r_reg_lo_next_9)                         | 1     |
+-----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 30.349ns (Maximum Frequency: 32.950MHz)
+   Minimum input arrival time before clock: 1.829ns
+   Maximum output required time after clock: 5.447ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ext_pins_in<0>'
+  Clock period: 30.349ns (frequency: 32.950MHz)
+  Total number of paths / destination ports: 108329 / 5315
+-------------------------------------------------------------------------
+Delay:               10.116ns (Levels of Logic = 36)
+  Source:            XLXI_49/psk_phase_acc/r_reg_lo_next_1 (FF)
+  Destination:       XLXI_49/psk_phase_acc/r_reg_hi_next_7 (FF)
+  Source Clock:      ext_pins_in<0> rising 3.0X
+  Destination Clock: ext_pins_in<0> rising 3.0X
+
+  Data Path: XLXI_49/psk_phase_acc/r_reg_lo_next_1 to XLXI_49/psk_phase_acc/r_reg_hi_next_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCP:C->Q             4   0.514   0.651  XLXI_49/psk_phase_acc/r_reg_lo_next_1 (XLXI_49/psk_phase_acc/r_reg_lo_next_1)
+     LUT1:I0->O            1   0.612   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<1>_rt (XLXI_49/psk_phase_acc/Madd__add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<1> (XLXI_49/psk_phase_acc/Madd__add0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<2> (XLXI_49/psk_phase_acc/Madd__add0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<3> (XLXI_49/psk_phase_acc/Madd__add0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<4> (XLXI_49/psk_phase_acc/Madd__add0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<5> (XLXI_49/psk_phase_acc/Madd__add0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<6> (XLXI_49/psk_phase_acc/Madd__add0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<7> (XLXI_49/psk_phase_acc/Madd__add0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<8> (XLXI_49/psk_phase_acc/Madd__add0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<9> (XLXI_49/psk_phase_acc/Madd__add0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<10> (XLXI_49/psk_phase_acc/Madd__add0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<11> (XLXI_49/psk_phase_acc/Madd__add0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<12> (XLXI_49/psk_phase_acc/Madd__add0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<13> (XLXI_49/psk_phase_acc/Madd__add0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<14> (XLXI_49/psk_phase_acc/Madd__add0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<15> (XLXI_49/psk_phase_acc/Madd__add0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<16> (XLXI_49/psk_phase_acc/Madd__add0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<17> (XLXI_49/psk_phase_acc/Madd__add0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<18> (XLXI_49/psk_phase_acc/Madd__add0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<19> (XLXI_49/psk_phase_acc/Madd__add0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<20> (XLXI_49/psk_phase_acc/Madd__add0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<21> (XLXI_49/psk_phase_acc/Madd__add0000_cy<21>)
+     MUXCY:CI->O           0   0.051   0.000  XLXI_49/psk_phase_acc/Madd__add0000_cy<22> (XLXI_49/psk_phase_acc/Madd__add0000_cy<22>)
+     XORCY:CI->O           1   0.699   0.360  XLXI_49/psk_phase_acc/Madd__add0000_xor<23> (XLXI_49/psk_phase_acc/_add0000<23>)
+     LUT4:I3->O            1   0.612   0.000  XLXI_49/psk_phase_acc/r_reg_lo_next_cmp_eq0000_wg_lut<5> (XLXI_49/psk_phase_acc/r_reg_lo_next_cmp_eq0000_wg_lut<5>)
+     MUXCY:S->O           25   0.752   1.140  XLXI_49/psk_phase_acc/r_reg_lo_next_cmp_eq0000_wg_cy<5> (XLXI_49/psk_phase_acc/r_reg_lo_next_cmp_eq0000)
+     LUT2:I1->O            1   0.612   0.000  XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_lut<0> (XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<0> (XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<1> (XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<2> (XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<3> (XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<4> (XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<5> (XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<5>)
+     MUXCY:CI->O           0   0.052   0.000  XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<6> (XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_cy<6>)
+     XORCY:CI->O           1   0.699   0.387  XLXI_49/psk_phase_acc/r_reg_hi_next_Madd__add0000_xor<7> (XLXI_49/psk_phase_acc/r_reg_hi_next__add0000<7>)
+     LUT3:I2->O            1   0.612   0.000  XLXI_49/psk_phase_acc/r_reg_hi_next_Q_mux0000<7>11 (XLXI_49/psk_phase_acc/r_reg_hi_next_Q_mux0000<7>)
+     FDCP:D                    0.268          XLXI_49/psk_phase_acc/r_reg_hi_next_7
+    ----------------------------------------
+    Total                     10.116ns (7.579ns logic, 2.538ns route)
+                                       (74.9% logic, 25.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ext_pins_in<0>'
+  Total number of paths / destination ports: 42 / 42
+-------------------------------------------------------------------------
+Offset:              1.829ns (Levels of Logic = 2)
+  Source:            ext_pins_in<1> (PAD)
+  Destination:       XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/ibufmiso/sync/Mshreg_ff2 (FF)
+  Destination Clock: ext_pins_in<0> rising 3.0X
+
+  Data Path: ext_pins_in<1> to XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/ibufmiso/sync/Mshreg_ff2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  ext_pins_in_1_IBUF (ext_pins_in_1_IBUF)
+     begin scope: 'XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox'
+     SRL16:D                   0.366          ibufmiso/sync/Mshreg_ff2
+    ----------------------------------------
+    Total                      1.829ns (1.472ns logic, 0.357ns route)
+                                       (80.5% logic, 19.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ext_pins_in<0>'
+  Total number of paths / destination ports: 98 / 51
+-------------------------------------------------------------------------
+Offset:              5.447ns (Levels of Logic = 2)
+  Source:            XLXI_49/psk_output_enable (FF)
+  Destination:       WING_AH1 (PAD)
+  Source Clock:      ext_pins_in<0> rising 3.0X
+
+  Data Path: XLXI_49/psk_output_enable to WING_AH1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.514   0.795  XLXI_49/psk_output_enable (XLXI_49/psk_output_enable)
+     LUT2:I0->O            1   0.612   0.357  XLXI_49/d2a_data<7>1 (XLXN_412<7>)
+     OBUF:I->O                 3.169          WING_AH7_OBUF (WING_AH7)
+    ----------------------------------------
+    Total                      5.447ns (4.295ns logic, 1.152ns route)
+                                       (78.8% logic, 21.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 31.23 secs
+ 
+--> 
+
+
+Total memory usage is 219944 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  328 (   0 filtered)
+Number of infos    :   32 (   0 filtered)
+

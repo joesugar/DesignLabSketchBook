@@ -1,0 +1,3 @@
+DesignLab	"../../../../libraries/ZPUino_Wishbone_Peripherals/i2c_master_bit_ctrl.vhd"
+DesignLab	"../../../../libraries/ZPUino_Wishbone_Peripherals/i2c_master_byte_ctrl.vhd"
+work	"../i2c.vhd"

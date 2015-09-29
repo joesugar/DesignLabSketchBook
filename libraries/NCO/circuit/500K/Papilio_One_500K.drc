@@ -1,0 +1,12 @@
+Release 14.2 Drc P.28xd (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Sep 26 23:01:48 2015
+
+drc -z Papilio_One_500K.ncd Papilio_One_500K.pcf
+
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/DCM_inst, consult the
+   device Interactive Data Sheet.
+DRC detected 0 errors and 0 warnings.

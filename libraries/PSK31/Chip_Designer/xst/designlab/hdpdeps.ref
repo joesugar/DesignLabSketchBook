@@ -1,0 +1,50 @@
+V3 24
+FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../../../../libraries/ZPUino_Wishbone_Peripherals/Wishbone_to_Registers.vhd 2015/09/20.22:15:25 P.28xd
+EN DesignLab/Wishbone_to_Registers 0 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../../../../libraries/ZPUino_Wishbone_Peripherals/Wishbone_to_Registers.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_UNSIGNED 1341906179 \
+      PB ieee/NUMERIC_STD 1341906182 LB DesignLab
+AR DesignLab/Wishbone_to_Registers/rtl 0 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../../../../libraries/ZPUino_Wishbone_Peripherals/Wishbone_to_Registers.vhd \
+      EN DesignLab/Wishbone_to_Registers 0
+FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../dds_acc.vhd 2015/09/27.16:13:09 P.28xd
+EN DesignLab/zpuino_dds_acc 1443385223 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../dds_acc.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/MATH_REAL 1341906183
+AR DesignLab/zpuino_dds_acc/arch 1443385224 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../dds_acc.vhd \
+      EN DesignLab/zpuino_dds_acc 1443385223
+FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../dds_rom.vhd 2015/09/27.16:14:55 P.28xd
+EN DesignLab/zpuino_dds_rom 1443385225 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../dds_rom.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/MATH_REAL 1341906183
+AR DesignLab/zpuino_dds_rom/rtl 1443385226 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../dds_rom.vhd \
+      EN DesignLab/zpuino_dds_rom 1443385225
+FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../phase_acc.vhd 2015/09/27.16:15:59 P.28xd
+EN DesignLab/zpuino_phase_acc 1443385227 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../phase_acc.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/MATH_REAL 1341906183
+AR DesignLab/zpuino_phase_acc/arch 1443385228 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../phase_acc.vhd \
+      EN DesignLab/zpuino_phase_acc 1443385227
+FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../phase_shifter.vhd 2015/09/27.16:17:05 P.28xd
+EN DesignLab/zpuino_phase_shifter 1443385229 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../phase_shifter.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/MATH_REAL 1341906183 PB ieee/std_logic_misc 1341906178
+AR DesignLab/zpuino_phase_shifter/arch 1443385230 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../phase_shifter.vhd \
+      EN DesignLab/zpuino_phase_shifter 1443385229
+FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../PSK31.vhd 2015/09/27.16:10:30 P.28xd
+EN DesignLab/PSK31 0 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../PSK31.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184 LB DesignLab
+AR DesignLab/PSK31/BEHAVIORAL 0 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/PSK31/Chip_Designer/../PSK31.vhd \
+      EN DesignLab/PSK31 0 CP zpuino_dds_acc CP zpuino_dds_rom CP zpuino_phase_acc \
+      CP zpuino_phase_shifter

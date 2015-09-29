@@ -1,0 +1,26 @@
+V3 14
+FL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../../NCO_/NCO.vhd 2015/09/20.22:47:29 P.28xd
+FL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../dds_acc.vhd 2015/09/20.21:46:24 P.28xd
+EN DesignLab/dds_acc 1443301241 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../dds_acc.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/MATH_REAL 1341906183
+AR DesignLab/dds_acc/arch 1443301242 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../dds_acc.vhd \
+      EN DesignLab/dds_acc 1443301241
+FL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../dds_rom.vhd 2015/09/20.21:48:34 P.28xd
+EN DesignLab/dds_rom 1443301243 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../dds_rom.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/MATH_REAL 1341906183
+AR DesignLab/dds_rom/rtl 1443301244 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../dds_rom.vhd \
+      EN DesignLab/dds_rom 1443301243
+FL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../NCO.vhd 2015/09/26.16:52:26 P.28xd
+EN DesignLab/NCO 1443300793 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../NCO.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184 LB DesignLab
+AR DesignLab/NCO/behavioral 1443300794 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/NCO/Chip_Designer/../NCO.vhd \
+      EN DesignLab/NCO 1443300793 CP dds_acc CP dds_rom

@@ -1,0 +1,3 @@
+MODULE Edit_Your_Chip_Design
+	SUBMODULE PSK31
+		INSTANCE XLXI_48

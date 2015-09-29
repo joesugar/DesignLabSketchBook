@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="NCO">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2015-9-26T21:0:42</timestamp>
+    <pin polarity="Input" x="32" y="-208" name="wishbone_in(100:0)" />
+    <pin polarity="Output" x="592" y="-208" name="wishbone_out(100:0)" />
+    <pin polarity="Output" x="592" y="-144" name="nco_out(7:0)" />
+    <pin polarity="Output" x="592" y="-80" name="nco_clk_out" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:32;fontname:Arial" attrname="SymbolName" x="336" y="-72" type="symbol" />
+        <attrtext style="fontsize:22;fontname:Arial" attrname="PinName" x="104" y="-208" type="pin wishbone_in(100:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:22;fontname:Arial" attrname="PinName" x="524" y="-208" type="pin wishbone_out(100:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:22;fontname:Arial" attrname="PinName" x="524" y="-144" type="pin nco_out(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-80" type="pin nco_clk_out" />
+        <line x2="592" y1="-80" y2="-80" x1="528" />
+        <rect width="64" x="528" y="-220" height="24" />
+        <line x2="592" y1="-208" y2="-208" x1="528" />
+        <line x2="592" y1="-144" y2="-144" x1="528" />
+        <rect width="64" x="528" y="-156" height="24" />
+        <rect width="64" x="32" y="-220" height="24" />
+        <line x2="32" y1="-208" y2="-208" x1="96" />
+        <rect width="432" x="96" y="-240" height="192" />
+    </graph>
+</symbol>

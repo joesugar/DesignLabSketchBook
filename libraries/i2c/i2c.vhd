@@ -86,8 +86,8 @@ entity i2c is
     ARST_LVL : std_logic := '0'       -- asynchronous reset level
   );
   port ( 
-    wishbone_in  : in    std_logic_vector (100 downto 0); 
-    wishbone_out : out   std_logic_vector (100 downto 0);
+    wishbone_in   : in  std_logic_vector (100 downto 0); 
+    wishbone_out  : out std_logic_vector (100 downto 0);
 			 
     -- Put your external connections here
     -- i2c lines
@@ -96,7 +96,8 @@ entity i2c is
     scl_padoen_o  : out std_logic;    -- i2c clock line output enable, active low
     sda_pad_i     : in  std_logic;    -- i2c data line input
     sda_pad_o     : out std_logic;    -- i2c data line output
-    sda_padoen_o  : out std_logic     -- i2c data line output enable, active low    
+    sda_padoen_o  : out std_logic;    -- i2c data line output enable, active low    
+    debug         : out std_logic     -- debug signal
   );
 end i2c;
 
@@ -122,17 +123,17 @@ architecture BEHAVIORAL of i2c is
   port (
     clk    : in std_logic;
     rst    : in std_logic; -- synchronous active high reset (WISHBONE compatible)
-    nReset : in std_logic; -- asynchornous active low reset (FPGA compatible)
+    nReset : in std_logic; -- asynchronous active low reset (FPGA compatible)
     ena    : in std_logic; -- core enable signal
 
     clk_cnt : in unsigned(15 downto 0); -- 4x SCL
 
     -- input signals
-    start,
-    stop,
-    read,
-    write,
-    ack_in : std_logic;
+    start  : in std_logic;
+    stop   : in std_logic;
+    read   : in std_logic;
+    write  : in std_logic;
+    ack_in : in std_logic;
     din    : in std_logic_vector(7 downto 0);
 
     -- output signals
@@ -143,7 +144,6 @@ architecture BEHAVIORAL of i2c is
     dout     : out std_logic_vector(7 downto 0);
 
     -- i2c lines
-    arst_i  : in  std_logic := not ARST_LVL;  -- asynchronous reset
     scl_i   : in std_logic;  -- i2c clock line input
     scl_o   : out std_logic; -- i2c clock line output
     scl_oen : out std_logic; -- i2c clock line output enable, active low
@@ -152,6 +152,11 @@ architecture BEHAVIORAL of i2c is
     sda_oen : out std_logic  -- i2c data line output enable, active low
   );
   end component i2c_master_byte_ctrl;
+
+  -- asynchronous reset.
+  -- This would normally be an input signal but it's not being
+  -- used so we'll just make it a signal for now.
+  signal arst_i : std_logic := not ARST_LVL;       -- asynchronous reset
 
   -- registers
   signal prer : unsigned(15 downto 0);             -- clock prescale register
@@ -188,6 +193,9 @@ architecture BEHAVIORAL of i2c is
 
 begin
 
+  -- wrap clock back around for debug
+  debug <= wb_clk_i;
+  
   -- generate internal reset signal
   rst_i <= arst_i xor ARST_LVL;
 
@@ -208,7 +216,7 @@ begin
   begin
     if (wb_clk_i'event and wb_clk_i = '1') then
       wb_dat_o <= (others => '0');
-      case wb_adr_i is
+      case wb_adr_i(4 downto 2) is
         when "000"  => wb_dat_o(7 downto 0) <= std_logic_vector(prer( 7 downto 0));
         when "001"  => wb_dat_o(7 downto 0) <= std_logic_vector(prer(15 downto 8));
         when "010"  => wb_dat_o(7 downto 0) <= ctr;
@@ -243,7 +251,7 @@ begin
         txr  <= (others => '0');
       elsif (wb_wacc = '1') then
         -- writing to the registers
-        case wb_adr_i is
+        case wb_adr_i(4 downto 2) is
           when "000" => prer( 7 downto 0) <= unsigned(wb_dat_i(7 downto 0));
           when "001" => prer(15 downto 8) <= unsigned(wb_dat_i(7 downto 0));
           when "010" => ctr               <= wb_dat_i(7 downto 0);
@@ -273,7 +281,7 @@ begin
         -- synchronous reset
         cr <= (others => '0');
       elsif (wb_wacc = '1') then
-        if ( (core_en = '1') and (wb_adr_i = "100") ) then
+        if ( (core_en = '1') and (wb_adr_i(4 downto 2) = "100") ) then
           -- only take new commands when i2c core enabled
           -- pending commands are finished
           cr <= wb_dat_i(7 downto 0);
@@ -381,5 +389,4 @@ begin
   end block;
   
 end BEHAVIORAL;
-
 

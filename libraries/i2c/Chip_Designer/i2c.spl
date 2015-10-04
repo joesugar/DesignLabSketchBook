@@ -7,5 +7,6 @@ scl_pad_o
 scl_padoen_o
 sda_pad_o
 sda_padoen_o
+debug
 =wishbone_out[100:0]=
 [BiDir]

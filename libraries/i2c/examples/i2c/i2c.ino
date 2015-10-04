@@ -24,14 +24,40 @@
 
 i2c i2c;
  
-void setup() {
-  // put your setup code here, to run once:
+void setup() 
+{
   Serial.begin(9600);
-  i2c.setup(5);   
+
+  unsigned int wishboneSlot = 5;
+  i2c.setup(wishboneSlot);
+
+  Serial.print("Press enter to begin...\r\n");
+  while (!Serial.available());
+  while (Serial.available())
+    Serial.read();
   
+  Serial.print("Enabling the I2C...\r\n");
+  i2c.begin(5000);
+  
+  Serial.print("Searching for address...\r\n");
+  bool address_found = false;
+  for (uint32_t i = 0; i < 128; i++)
+  {
+    if (i2c.ping(i) == I2C_SUCCESS)
+    {
+      Serial.print("Address found at ");
+      Serial.print(i);
+      Serial.print("\r\n");
+      address_found = true;
+    }
+  }
+  
+  if (!address_found)
+  {
+    Serial.println("No I2C device found.");
+  }
 }
 
-void loop() {
-	Serial.println(i2c.readButtons());
-	i2c.writeLEDs(0xf);
+void loop() 
+{
 }

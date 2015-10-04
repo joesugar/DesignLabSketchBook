@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-09-25T22:14:08</DateModified>
+  <DateModified>2015-10-04T17:43:50</DateModified>
   <ModuleName>Edit_Your_Chip_Design</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/joseph/DesignLab/sketchbook/libraries/i2c/iseconfig/Edit_Your_Chip_Design.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/</ImplementationReportsDirectory>
-  <DateInitialized>2015-09-25T21:40:30</DateInitialized>
+  <DateInitialized>2015-10-03T22:12:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

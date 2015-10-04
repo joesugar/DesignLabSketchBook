@@ -1,19 +1,17 @@
-V3 13
+V3 9
 FL /home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/../../../../libraries/ZPUino_Wishbone_Peripherals/i2c_master_bit_ctrl.vhd 2015/06/16.11:46:57 P.28xd
-EN DesignLab/i2c_master_bit_ctrl 1443232732 \
+EN DesignLab/i2c_master_bit_ctrl 1443926985 \
       FL /home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/../../../../libraries/ZPUino_Wishbone_Peripherals/i2c_master_bit_ctrl.vhd \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
-AR DesignLab/i2c_master_bit_ctrl/structural 1443232733 \
+AR DesignLab/i2c_master_bit_ctrl/structural 1443926986 \
       FL /home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/../../../../libraries/ZPUino_Wishbone_Peripherals/i2c_master_bit_ctrl.vhd \
-      EN DesignLab/i2c_master_bit_ctrl 1443232732
+      EN DesignLab/i2c_master_bit_ctrl 1443926985
 FL /home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/../../../../libraries/ZPUino_Wishbone_Peripherals/i2c_master_byte_ctrl.vhd 2015/06/16.11:46:57 P.28xd
-EN DesignLab/i2c_master_byte_ctrl 1443232734 \
+EN DesignLab/i2c_master_byte_ctrl 1443926987 \
       FL /home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/../../../../libraries/ZPUino_Wishbone_Peripherals/i2c_master_byte_ctrl.vhd \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
-AR DesignLab/i2c_master_byte_ctrl/structural 1443232735 \
+AR DesignLab/i2c_master_byte_ctrl/structural 1443926988 \
       FL /home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/../../../../libraries/ZPUino_Wishbone_Peripherals/i2c_master_byte_ctrl.vhd \
-      EN DesignLab/i2c_master_byte_ctrl 1443232734 CP i2c_master_bit_ctrl
-FL /home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/../i2c.vhd 2015/09/25.21:55:45 P.28xd
-AR DesignLab/i2c/BEHAVIORAL 0 \
-      FL /home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/../i2c.vhd \
-      EN DesignLab/i2c 0 CP i2c_master_byte_ctrl
+      EN DesignLab/i2c_master_byte_ctrl 1443926987 CP i2c_master_bit_ctrl
+FL /home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/../../i2c_/i2c_master_bit_ctrl.vhd 2014/09/15.20:50:06 P.28xd
+FL /home/joseph/DesignLab/sketchbook/libraries/i2c/Chip_Designer/../../i2c_/i2c_master_byte_ctrl.vhd 2014/09/15.20:50:06 P.28xd

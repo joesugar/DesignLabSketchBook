@@ -26,29 +26,6 @@
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="i2c.spl"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1443232251" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1443232251">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1443232795" xil_pn:in_ck="786541067041949557" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5933509699879624948" xil_pn:start_ts="1443232793">
-      <status xil_pn:value="FailedRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
-    </transform>
-    <transform xil_pn:end_ts="1443232253" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5230897101657592438" xil_pn:start_ts="1443232253">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1443232253" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1443232253">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1443232253" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1289154393827342602" xil_pn:start_ts="1443232253">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-  </transforms>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
 
 </generated_project>

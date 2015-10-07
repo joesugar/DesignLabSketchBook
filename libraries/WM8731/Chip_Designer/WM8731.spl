@@ -1,0 +1,11 @@
+[Inputs]
+wm_clk_i
+wm_rst_i
+wm_adcdat_i
+=wishbone_in[100:0]=
+[Outputs]
+wm_bclk_o
+wm_lrc_o
+wm_dacdat_o
+=wishbone_out[100:0]=
+[BiDir]

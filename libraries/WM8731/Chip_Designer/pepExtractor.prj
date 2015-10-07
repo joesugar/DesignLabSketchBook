@@ -1,0 +1,3 @@
+work	"../GrayCounter.v"
+work	"../WM8731.vhd"
+work	"../async_fifo.v"

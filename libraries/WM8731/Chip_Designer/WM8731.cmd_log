@@ -1,0 +1,24 @@
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib work ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib work ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib DesignLab ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib work ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w WM8731.spl /home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.sym 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib work ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w WM8731.spl /home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.sym 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib work ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w WM8731.spl /home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.sym 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib work ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w WM8731.spl /home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.sym 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib work ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w WM8731.spl /home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.sym 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib work ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib DesignLab ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib DesignLab ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib DesignLab ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib DesignLab ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib DesignLab ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib DesignLab ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib work ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w WM8731.spl /home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.sym 
+vhdtdtfi -lib work ../GrayCounter.v -lib work ../async_fifo.v -lib work ../WM8731.vhd -prj Chip_Designer -o WM8731.spl -module WM8731 -template /opt/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w WM8731.spl /home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.sym 

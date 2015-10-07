@@ -1,0 +1,10 @@
+V3 6
+FL /home/joseph/DesignLab/sketchbook/libraries/WM8731/Chip_Designer/../WM8731.vhd 2015/10/02.22:19:17 P.28xd
+EN DesignLab/WM8731 1443838761 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/WM8731/Chip_Designer/../WM8731.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/std_logic_misc 1341906178 LB UNISIM PH unisim/VCOMPONENTS 1341906184 \
+      LB DesignLab
+AR DesignLab/WM8731/BEHAVIORAL 1443838762 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/WM8731/Chip_Designer/../WM8731.vhd \
+      EN DesignLab/WM8731 1443838761 CP async_fifo

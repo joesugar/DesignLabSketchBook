@@ -1,0 +1,21 @@
+Release 14.2 Drc P.28xd (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Oct  6 22:39:51 2015
+
+drc -z Papilio_One_500K.ncd Papilio_One_500K.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_41/fifo_a2d/Direction_Set is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_41/fifo_d2a/Direction_Set is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/DCM_inst, consult the
+   device Interactive Data Sheet.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

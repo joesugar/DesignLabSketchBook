@@ -111,6 +111,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Papilio_One_500K.jhd"/>
@@ -134,6 +135,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Papilio_One_500K.bld"/>
       <outfile xil_pn:name="Papilio_One_500K.ngd"/>
       <outfile xil_pn:name="Papilio_One_500K_ngdbuild.xrpt"/>
@@ -144,6 +147,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Papilio_One_500K.pcf"/>
@@ -160,6 +164,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Papilio_One_500K.ncd"/>
       <outfile xil_pn:name="Papilio_One_500K.pad"/>
       <outfile xil_pn:name="Papilio_One_500K.par"/>
@@ -174,6 +179,7 @@
     <transform xil_pn:end_ts="1443322923" xil_pn:in_ck="-2393076458113222016" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1443322903">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="Papilio_One_500K.bgn"/>
@@ -187,6 +193,7 @@
     <transform xil_pn:end_ts="1443322903" xil_pn:in_ck="4704285577954727871" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1443322897">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Papilio_One_500K.twr"/>
       <outfile xil_pn:name="Papilio_One_500K.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

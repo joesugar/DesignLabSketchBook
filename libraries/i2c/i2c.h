@@ -74,6 +74,8 @@
 
 #define I2C_SUCCESS 0
 
+/* Class definition.
+ */
 class i2c
 {
   public:   

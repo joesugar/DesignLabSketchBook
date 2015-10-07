@@ -1,23 +1,9 @@
 /*
- Gadget Factory
- Template to make your own Schematic Symbol and Community Core Library for the Papilio FPGA and DesignLab
+ Example code for the WM8731 codec.
 
- To use this sketch do the following steps:
-  1) 
-  
- Tools for generating your own libraries:
+ Copyright 2015  Joseph A. Consugar
  
-
- Tutorials:
-   http://learn.gadgetfactory.net
-   http://gadgetfactory.net/learn/2013/10/29/papilio-schematic-library-getting-started/
-  
-
- created 2014
- by Jack Gassett
- http://www.gadgetfactory.net
- 
- This example code is in the public domain.
+ This code is in the public domain.
  */
 
 #include "WM8731.h"

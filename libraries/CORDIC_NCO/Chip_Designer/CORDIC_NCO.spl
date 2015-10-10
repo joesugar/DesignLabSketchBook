@@ -1,0 +1,7 @@
+[Inputs]
+=wishbone_in[100:0]=
+[Outputs]
+d2a_clk
+=wishbone_out[100:0]=
+=d2a_data[7:0]=
+[BiDir]

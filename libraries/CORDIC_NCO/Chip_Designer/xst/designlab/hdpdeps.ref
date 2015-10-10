@@ -1,0 +1,21 @@
+V3 13
+FL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../../PSK31/dds_acc.vhd 2015/09/27.16:13:09 P.28xd
+EN DesignLab/zpuino_dds_acc 1444444898 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../../PSK31/dds_acc.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/MATH_REAL 1341906183
+AR DesignLab/zpuino_dds_acc/arch 1444444899 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../../PSK31/dds_acc.vhd \
+      EN DesignLab/zpuino_dds_acc 1444444898
+FL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../../PSK31/phase_shifter.vhd 2015/09/27.16:17:05 P.28xd
+EN DesignLab/zpuino_phase_shifter 1444444900 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../../PSK31/phase_shifter.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/MATH_REAL 1341906183 PB ieee/std_logic_misc 1341906178
+AR DesignLab/zpuino_phase_shifter/arch 1444444901 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../../PSK31/phase_shifter.vhd \
+      EN DesignLab/zpuino_phase_shifter 1444444900
+FL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../CORDIC_NCO.vhd 2015/10/09.22:41:09 P.28xd
+AR DesignLab/CORDIC_NCO/BEHAVIORAL 1444444881 \
+      FL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../CORDIC_NCO.vhd \
+      EN DesignLab/CORDIC_NCO 1444444880 CP zpuino_dds_acc CP zpuino_phase_shifter

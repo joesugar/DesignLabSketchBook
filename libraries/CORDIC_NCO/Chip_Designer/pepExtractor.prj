@@ -1,0 +1,3 @@
+DesignLab	"../../PSK31/dds_acc.vhd"
+DesignLab	"../../PSK31/phase_shifter.vhd"
+work	"../CORDIC_NCO.vhd"

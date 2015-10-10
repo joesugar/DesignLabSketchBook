@@ -1,0 +1,6 @@
+AR zpuino_phase_shifter arch /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../../PSK31/phase_shifter.vhd sub00/vhpl03 1444444901
+EN zpuino_dds_acc NULL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../../PSK31/dds_acc.vhd sub00/vhpl00 1444444898
+EN zpuino_phase_shifter NULL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../../PSK31/phase_shifter.vhd sub00/vhpl02 1444444900
+AR zpuino_dds_acc arch /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../../PSK31/dds_acc.vhd sub00/vhpl01 1444444899
+AR cordic_nco behavioral /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../CORDIC_NCO.vhd sub00/vhpl05 1444444881
+EN cordic_nco NULL /home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/Chip_Designer/../CORDIC_NCO.vhd sub00/vhpl04 1444444880

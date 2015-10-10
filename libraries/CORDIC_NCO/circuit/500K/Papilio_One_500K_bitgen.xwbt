@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/circuit/500K/Papilio_One_500K.ncd
+OUTFILE=/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/circuit/500K/Papilio_One_500K.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5vq100
+WORKINGDIR=/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/circuit/500K
+LICENSE=WebPack
+USER_INFO=176382304_0_0_732

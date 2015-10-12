@@ -165,7 +165,7 @@ architecture BEHAVIORAL of CORDIC_NCO is
   end function;
   
   constant phase_shift_rom_array : rom_array := rom_init(filename =>
-      "./phase_shift_rom.txt");  
+      "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/phase_shift_rom.txt");  
         
 begin
   --
@@ -230,6 +230,8 @@ begin
       phase_in  <= (others => '0');
       phase_acc_inc_hi_i <= (others => '0');
       phase_acc_inc_lo_i <= (others => '0');
+      i_data_in <= (others => '0');
+      q_data_in <= (others => '0');
       nco_output_enable <= '1';   -- Always enabled for now.
       
     elsif (rising_edge(wb_clk_i)) then
@@ -243,22 +245,26 @@ begin
             -- Input signal data.  A constant for now.
             -- Eventually will be set from the wishbone interface.
             --
-            i_data_in <= to_signed(64, IQ_BUS_WIDTH);
-            q_data_in <= to_signed( 0, IQ_BUS_WIDTH);            
+            -- The value coming in is a 16 bit value.  Howerver, the
+            -- I/Q bus width is not.  We just take the upper bits from
+            -- the incoming data.
+            --
+            i_data_in <= signed(wb_dat_i(31 downto 32-IQ_BUS_WIDTH));
+            q_data_in <= signed(wb_dat_i(15 downto 16-IQ_BUS_WIDTH));
           when "001" =>
             --
             -- Update the phase acc increment value.
             --
             phase_acc_inc_hi_i <= 
-                std_logic_vector(wb_dat_i(31 downto 31-PHASE_ACC_HI_WIDTH+1));
+                std_logic_vector(wb_dat_i(31 downto 32-PHASE_ACC_HI_WIDTH));
             phase_acc_inc_lo_i <= 
                 std_logic_vector(wb_dat_i(31-PHASE_ACC_HI_WIDTH downto 0));
-          when "010" => null;
+          when "010" =>
             --
             -- Status register.  Set to true for now.
             -- Eventually will be set from the wishbone interface.
             --
-            nco_output_enable <= '1';
+            nco_output_enable <= wb_dat_i(0);
           when others =>
         end case;
       end if;
@@ -281,9 +287,16 @@ begin
   --
   -- Load the output data when address is read.
   --
-  process(wb_adr_i, nco_output_enable)
+  process(wb_adr_i)
   begin
     case wb_adr_i(4 downto 2) is
+      when "000" =>
+        -- 
+        -- Return the amplitude.
+        --
+        wb_dat_o <= (others => '0');
+        wb_dat_o(31 downto 32-IQ_BUS_WIDTH) <= std_logic_vector(i_data_in);
+        wb_dat_o(15 downto 16-IQ_BUS_WIDTH) <= std_logic_vector(q_data_in);
       when "001" =>
         -- 
         -- Return the phase increment.
@@ -315,9 +328,8 @@ begin
     --
     -- Temporary variable for signal conversion
     --
-    variable temp_data: std_logic_vector(D2A_DATA_WIDTH-1 downto 0);
-    variable sign_bit:  std_logic;
-    variable data_bits: std_logic_vector(D2A_DATA_WIDTH-2 downto 0);
+    variable data_bits: std_logic_vector(D2A_DATA_WIDTH-1 downto 0);
+    variable xor_mask:  std_logic_vector(D2A_DATA_WIDTH-1 downto 0);
   begin
     if (nco_output_enable = '1') then
       --  
@@ -325,11 +337,15 @@ begin
       -- and flip the highest bit to convert from signed to
       -- unsigned.
       --
-      temp_data := std_logic_vector(
+      --temp_data := std_logic_vector(
+      --    i_data_out(IQ_BUS_WIDTH-1 downto IQ_BUS_WIDTH-D2A_DATA_WIDTH));
+      --sign_bit := not temp_data(D2A_DATA_WIDTH-1);
+      --data_bits := temp_data(D2A_DATA_WIDTH-2 downto 0);
+      --d2a_data <= sign_bit & data_bits;
+      data_bits := std_logic_vector(
           i_data_out(IQ_BUS_WIDTH-1 downto IQ_BUS_WIDTH-D2A_DATA_WIDTH));
-      sign_bit := not temp_data(D2A_DATA_WIDTH-1);
-      data_bits := temp_data(D2A_DATA_WIDTH-2 downto 0);
-      d2a_data <= sign_bit & data_bits;
+      xor_mask := '1' & std_logic_vector(to_signed(0, D2A_DATA_WIDTH-1));
+      d2a_data <= data_bits xor xor_mask;
     else
       --
       -- Output disabled.  Just put out 0.

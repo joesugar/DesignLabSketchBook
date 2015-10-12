@@ -1,7 +1,7 @@
 Release 14.2 Drc P.28xd (lin)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sat Oct 10 19:20:21 2015
+Sun Oct 11 17:50:24 2015
 
 drc -z Papilio_One_500K.ncd Papilio_One_500K.pcf
 

@@ -28,6 +28,7 @@
 /* Wishbone registers.
  */
 #define NCO_BASE    IO_SLOT(wishboneSlot) 
+#define IQ_AMP      REGISTER(NCO_BASE, 0)
 #define PHASE_INC   REGISTER(NCO_BASE, 1)
 #define CONTROL_REG REGISTER(NCO_BASE, 2)
 #define STATUS_REG  REGISTER(NCO_BASE, 2)
@@ -39,7 +40,7 @@
 
 /* Status masks
  */
-#define PSK_ENABLED ((STATUS_REG & NC_ENABLE) != 0)
+#define NCO_ENABLED ((STATUS_REG & NC_ENABLE) != 0)
 
 /* Class definition.
  */
@@ -52,6 +53,8 @@ class CORDIC_NCO
     void setTransmitFrequencyHz(unsigned transmit_frequency_hz);
 	  unsigned getTransmitFrequencyHz();
 
+    void setAmplitude(int i_amplitude, int q_amplitude);
+    
     void NcoEnable();
     void NcoDisable();
     	  

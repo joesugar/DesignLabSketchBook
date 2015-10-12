@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: Papilio_One_500K.prj
@@ -226,13 +226,10 @@ Analyzing generic Entity <CORDIC_NCO> in library <DesignLab> (Architecture <beha
 	PHASE_ACC_HI_WIDTH = 8
 	PHASE_ACC_OUT_WIDTH = 8
 WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 176: Unconnected output port 'carry' of component 'zpuino_dds_acc'.
-WARNING:Xst:1610 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 271: Width mismatch. <phase_address> has a width of 8 bits but assigned expression is 14-bit wide.
-WARNING:Xst:790 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 272: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 284: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <phase_acc_inc_hi_i>, <phase_acc_inc_lo_i>
-INFO:Xst:2679 - Register <nco_output_enable> in unit <CORDIC_NCO> has a constant value of 1 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <i_data_in> in unit <CORDIC_NCO> has a constant value of 01000000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <q_data_in> in unit <CORDIC_NCO> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+WARNING:Xst:1610 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 275: Width mismatch. <phase_address> has a width of 8 bits but assigned expression is 14-bit wide.
+WARNING:Xst:790 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 276: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 288: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <i_data_in>, <q_data_in>, <phase_acc_inc_hi_i>, <phase_acc_inc_lo_i>, <nco_output_enable>
 Entity <CORDIC_NCO> analyzed. Unit <CORDIC_NCO> generated.
 
 Analyzing generic Entity <zpuino_dds_acc> in library <DesignLab> (Architecture <arch>).
@@ -358,8 +355,10 @@ WARNING:Xst:646 - Signal <shift_stream<0>.shift_mask> is assigned but never used
     Found 15-bit comparator less for signal <shift_right_q$cmp_lt0005> created at line 185.
     Found 15-bit comparator less for signal <shift_right_q$cmp_lt0006> created at line 185.
     Found 15-bit register for signal <shift_stream<0>.i_data>.
+    Found 15-bit adder for signal <shift_stream<0>.i_data$addsub0000> created at line 167.
     Found 8-bit register for signal <shift_stream<0>.phase>.
     Found 15-bit register for signal <shift_stream<0>.q_data>.
+    Found 15-bit adder for signal <shift_stream<0>.q_data$addsub0000> created at line 169.
     Found 15-bit register for signal <shift_stream<1>.i_data>.
     Found 15-bit addsub for signal <shift_stream<1>.i_data$mux0001>.
     Found 8-bit register for signal <shift_stream<1>.phase>.
@@ -397,7 +396,7 @@ WARNING:Xst:646 - Signal <shift_stream<0>.shift_mask> is assigned but never used
     Found 15-bit addsub for signal <shift_stream<7>.q_data$mux0001>.
     Summary:
 	inferred 304 D-type flip-flop(s).
-	inferred  28 Adder/Subtractor(s).
+	inferred  30 Adder/Subtractor(s).
 	inferred  14 Comparator(s).
 Unit <zpuino_phase_shifter> synthesized.
 
@@ -410,12 +409,15 @@ WARNING:Xst:647 - Input <wishbone_in<27:6>> is never used. This port will be pre
 WARNING:Xst:646 - Signal <q_data_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <phase_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 256x8-bit ROM for signal <mapped_phase$rom0000> created at line 167.
+    Found 8-bit register for signal <i_data_in>.
+    Found 1-bit register for signal <nco_output_enable>.
     Found 8-bit register for signal <phase_acc_inc_hi_i>.
     Found 24-bit register for signal <phase_acc_inc_lo_i>.
     Found 8-bit register for signal <phase_in>.
+    Found 8-bit register for signal <q_data_in>.
     Summary:
 	inferred   1 ROM(s).
-	inferred  40 D-type flip-flop(s).
+	inferred  57 D-type flip-flop(s).
 Unit <CORDIC_NCO> synthesized.
 
 
@@ -695,18 +697,18 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  256x8-bit ROM                                         : 1
-# Adders/Subtractors                                   : 33
- 15-bit adder                                          : 14
+# Adders/Subtractors                                   : 35
+ 15-bit adder                                          : 16
  15-bit addsub                                         : 14
  25-bit adder                                          : 1
  25-bit subtractor                                     : 1
  9-bit adder                                           : 2
  9-bit subtractor                                      : 1
-# Registers                                            : 71
- 1-bit register                                        : 46
+# Registers                                            : 74
+ 1-bit register                                        : 47
  15-bit register                                       : 14
  24-bit register                                       : 2
- 8-bit register                                        : 9
+ 8-bit register                                        : 11
 # Comparators                                          : 16
  15-bit comparator less                                : 14
  25-bit comparator greater                             : 1
@@ -726,11 +728,7 @@ WARNING:Xst:1290 - Hierarchical block <XLXI_22> is unconnected in block <Papilio
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_26> is unconnected in block <Papilio_One_500K>.
    It will be removed from the design.
-INFO:Xst:2261 - The FF/Latch <shift_stream<0>.i_data_14> in Unit <phase_shifter> is equivalent to the following FF/Latch, which will be removed : <shift_stream<0>.phase_0> 
-INFO:Xst:2261 - The FF/Latch <shift_stream<0>.i_data_10> in Unit <phase_shifter> is equivalent to the following 27 FFs/Latches, which will be removed : <shift_stream<0>.i_data_12> <shift_stream<0>.i_data_11> <shift_stream<0>.i_data_7> <shift_stream<0>.i_data_9> <shift_stream<0>.i_data_8> <shift_stream<0>.i_data_4> <shift_stream<0>.i_data_6> <shift_stream<0>.i_data_5> <shift_stream<0>.i_data_1> <shift_stream<0>.i_data_3> <shift_stream<0>.i_data_2> <shift_stream<0>.q_data_13> <shift_stream<0>.i_data_0> <shift_stream<0>.q_data_14> <shift_stream<0>.q_data_10> <shift_stream<0>.q_data_12> <shift_stream<0>.q_data_11> <shift_stream<0>.q_data_7> <shift_stream<0>.q_data_9> <shift_stream<0>.q_data_8> <shift_stream<0>.q_data_4> <shift_stream<0>.q_data_6> <shift_stream<0>.q_data_5> <shift_stream<0>.q_data_1> <shift_stream<0>.q_data_3> <shift_stream<0>.q_data_2> <shift_stream<0>.q_data_0> 
-WARNING:Xst:1426 - The value init of the FF/Latch shift_stream<0>.i_data_13 hinder the constant cleaning in the block phase_shifter.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1710 - FF/Latch <shift_stream<0>.i_data_10> (without init value) has a constant value of 0 in block <phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <shift_stream<0>.phase_0> of sequential type is unconnected in block <phase_shifter>.
 WARNING:Xst:2677 - Node <shift_stream<1>.phase_0> of sequential type is unconnected in block <phase_shifter>.
 WARNING:Xst:2677 - Node <shift_stream<1>.phase_1> of sequential type is unconnected in block <phase_shifter>.
 WARNING:Xst:2677 - Node <shift_stream<2>.phase_0> of sequential type is unconnected in block <phase_shifter>.
@@ -795,15 +793,15 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  256x8-bit ROM                                         : 1
-# Adders/Subtractors                                   : 33
- 15-bit adder                                          : 14
+# Adders/Subtractors                                   : 35
+ 15-bit adder                                          : 16
  15-bit addsub                                         : 14
  24-bit subtractor                                     : 1
  25-bit adder                                          : 1
  8-bit subtractor                                      : 1
  9-bit adder                                           : 2
-# Registers                                            : 458
- Flip-Flops                                            : 458
+# Registers                                            : 475
+ Flip-Flops                                            : 475
 # Comparators                                          : 16
  15-bit comparator less                                : 14
  25-bit comparator greater                             : 1
@@ -814,37 +812,20 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1426 - The value init of the FF/Latch shift_stream<0>.i_data_13 hinder the constant cleaning in the block zpuino_phase_shifter.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1710 - FF/Latch <shift_stream<0>.q_data_1> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_2> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_0> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_4> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_5> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_3> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_7> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_8> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_6> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_10> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_11> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_9> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_13> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_14> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_12> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_1> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_2> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_0> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_4> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_5> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shift_stream<0>.i_data_6> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_3> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_6> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_7> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_8> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_9> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_11> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_12> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_10> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <shift_stream<0>.i_data_14> in Unit <zpuino_phase_shifter> is equivalent to the following FF/Latch, which will be removed : <shift_stream<0>.phase_0> 
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_5> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_4> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_0> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_2> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_1> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_5> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_6> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_2> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_4> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_3> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_1> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_0> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2042 - Unit Papilio_Default_Wing_Pinout: 16 internal tristates are replaced by logic (pull-up yes): WingType_mosi_AH<0>, WingType_mosi_AH<1>, WingType_mosi_AH<2>, WingType_mosi_AH<3>, WingType_mosi_AH<4>, WingType_mosi_AH<5>, WingType_mosi_AH<6>, WingType_mosi_AH<7>, WingType_mosi_CH<0>, WingType_mosi_CH<1>, WingType_mosi_CH<2>, WingType_mosi_CH<3>, WingType_mosi_CH<4>, WingType_mosi_CH<5>, WingType_mosi_CH<6>, WingType_mosi_CH<7>.
 
 Optimizing unit <Papilio_One_500K> ...
@@ -856,6 +837,7 @@ Optimizing unit <zpuino_phase_shifter> ...
 Optimizing unit <CORDIC_NCO> ...
 
 Optimizing unit <Papilio_Default_Wing_Pinout> ...
+WARNING:Xst:2677 - Node <XLXI_41/phase_shifter/shift_stream<0>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
 WARNING:Xst:2677 - Node <XLXI_41/phase_shifter/shift_stream<1>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
 WARNING:Xst:2677 - Node <XLXI_41/phase_shifter/shift_stream<1>.phase_1> of sequential type is unconnected in block <Papilio_One_500K>.
 WARNING:Xst:2677 - Node <XLXI_41/phase_shifter/shift_stream<2>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
@@ -909,7 +891,7 @@ WARNING:Xst:2677 - Node <XLXI_41/phase_shifter/shift_stream<7>.i_data_7> of sequ
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Papilio_One_500K, actual ratio is 53.
+Found area constraint ratio of 100 (+ 5) on block Papilio_One_500K, actual ratio is 55.
 INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_27> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_27_1> 
 INFO:Xst:2260 - The FF/Latch <zpuino/core/prefr.valid> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/prefr.valid_1> 
 INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_2> in Unit <XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_2_1> 
@@ -945,8 +927,8 @@ Unit <Papilio_One_500K> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 363
- Flip-Flops                                            : 363
+# Registers                                            : 395
+ Flip-Flops                                            : 395
 # Shift Registers                                      : 3
  4-bit shift register                                  : 1
  5-bit shift register                                  : 1
@@ -979,31 +961,32 @@ Design Statistics
 # IOs                              : 343
 
 Cell Usage :
-# BELS                             : 6198
+# BELS                             : 6320
 #      GND                         : 2
-#      INV                         : 108
-#      LUT1                        : 246
-#      LUT2                        : 559
+#      INV                         : 101
+#      LUT1                        : 255
+#      LUT2                        : 588
 #      LUT2_D                      : 20
 #      LUT2_L                      : 28
-#      LUT3                        : 689
-#      LUT3_D                      : 52
-#      LUT3_L                      : 53
-#      LUT4                        : 2092
+#      LUT3                        : 714
+#      LUT3_D                      : 55
+#      LUT3_L                      : 52
+#      LUT4                        : 2135
 #      LUT4_D                      : 46
 #      LUT4_L                      : 238
 #      MUXCY                       : 898
-#      MUXF5                       : 446
+#      MUXF5                       : 450
 #      MUXF6                       : 2
 #      VCC                         : 2
-#      XORCY                       : 717
-# FlipFlops/Latches                : 2284
+#      XORCY                       : 734
+# FlipFlops/Latches                : 2316
 #      FD                          : 224
-#      FDC                         : 234
+#      FDC                         : 235
 #      FDCE                        : 32
-#      FDCP                        : 9
-#      FDE                         : 1135
+#      FDCP                        : 23
+#      FDE                         : 1151
 #      FDP                         : 2
+#      FDPE                        : 1
 #      FDR                         : 177
 #      FDRE                        : 281
 #      FDRS                        : 14
@@ -1036,10 +1019,10 @@ Device utilization summary:
 
 Selected Device : 3s500evq100-5 
 
- Number of Slices:                     2491  out of   4656    53%  
- Number of Slice Flip Flops:           2284  out of   9312    24%  
- Number of 4 input LUTs:               4168  out of   9312    44%  
-    Number used as logic:              4131
+ Number of Slices:                     2549  out of   4656    54%  
+ Number of Slice Flip Flops:           2316  out of   9312    24%  
+ Number of 4 input LUTs:               4269  out of   9312    45%  
+    Number used as logic:              4232
     Number used as Shift registers:      37
  Number of IOs:                         343
  Number of bonded IOBs:                 244  out of     66   369% (*) 
@@ -1071,7 +1054,7 @@ Clock Information:
 -----------------------------------+---------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)     | Load  |
 -----------------------------------+---------------------------+-------+
-ext_pins_in<0>                     | clkgen_inst/DCM_inst:CLKFX| 2342  |
+ext_pins_in<0>                     | clkgen_inst/DCM_inst:CLKFX| 2374  |
 -----------------------------------+---------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1079,11 +1062,24 @@ Asynchronous Control Signals Information:
 -----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                 | Buffer(FF name)                                                     | Load  |
 -----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
-XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_13_in<60>(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/rstgen/rstout_or00001:O)       | NONE(XLXI_41/dds_acc/r_reg_hi_0)                                    | 267   |
+XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_13_in<60>(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/rstgen/rstout_or00001:O)       | NONE(XLXI_41/dds_acc/r_reg_hi_0)                                    | 268   |
 XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q_or0000(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q_or00001:O)| NONE(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q)| 2     |
-N0(XST_GND:G)                                                                                                                                  | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_13)               | 1     |
-XLXI_41/phase_shifter/shift_stream<0>_i_data_14_and0000(XLXI_41/phase_shifter/shift_stream<0>_i_data_14_and00001:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_14)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_10_and0000(XLXI_41/phase_shifter/shift_stream<0>_i_data_10_and00001:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_10)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_10_and0001(XLXI_41/phase_shifter/shift_stream<0>_i_data_10_and00011:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_10)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_11_and0000(XLXI_41/phase_shifter/shift_stream<0>_i_data_11_and000011:O)                           | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_11)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_11_and0001(XLXI_41/phase_shifter/shift_stream<0>_i_data_11_and000111:O)                           | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_11)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_12_and0000(XLXI_41/phase_shifter/shift_stream<0>_i_data_12_and000011:O)                           | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_12)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_12_and0001(XLXI_41/phase_shifter/shift_stream<0>_i_data_12_and000111:O)                           | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_12)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_13_and0000(XLXI_41/phase_shifter/shift_stream<0>_i_data_13_and00001:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_13)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_13_and0001(XLXI_41/phase_shifter/shift_stream<0>_i_data_13_and00011:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_13)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_14_and0000(XLXI_41/phase_shifter/shift_stream<0>_i_data_14_and00002:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_14)               | 1     |
 XLXI_41/phase_shifter/shift_stream<0>_i_data_14_and0001(XLXI_41/phase_shifter/shift_stream<0>_i_data_14_and00011:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_14)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_7_and0000(XLXI_41/phase_shifter/shift_stream<0>_i_data_7_and00001:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_7)                | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_7_and0001(XLXI_41/phase_shifter/shift_stream<0>_i_data_7_and00011:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_7)                | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_8_and0000(XLXI_41/phase_shifter/shift_stream<0>_i_data_8_and00001:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_8)                | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_8_and0001(XLXI_41/phase_shifter/shift_stream<0>_i_data_8_and00011:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_8)                | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_9_and0000(XLXI_41/phase_shifter/shift_stream<0>_i_data_9_and00001:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_9)                | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_i_data_9_and0001(XLXI_41/phase_shifter/shift_stream<0>_i_data_9_and00011:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_9)                | 1     |
 XLXI_41/phase_shifter/shift_stream<0>_phase_1_and0000(XLXI_41/phase_shifter/shift_stream<0>_phase_1_and00001:O)                                | NONE(XLXI_41/phase_shifter/shift_stream<0>.phase_1)                 | 1     |
 XLXI_41/phase_shifter/shift_stream<0>_phase_1_and0001(XLXI_41/phase_shifter/shift_stream<0>_phase_1_and00011:O)                                | NONE(XLXI_41/phase_shifter/shift_stream<0>.phase_1)                 | 1     |
 XLXI_41/phase_shifter/shift_stream<0>_phase_2_and0000(XLXI_41/phase_shifter/shift_stream<0>_phase_2_and00001:O)                                | NONE(XLXI_41/phase_shifter/shift_stream<0>.phase_2)                 | 1     |
@@ -1098,15 +1094,31 @@ XLXI_41/phase_shifter/shift_stream<0>_phase_6_and0000(XLXI_41/phase_shifter/shif
 XLXI_41/phase_shifter/shift_stream<0>_phase_6_and0001(XLXI_41/phase_shifter/shift_stream<0>_phase_6_and00011:O)                                | NONE(XLXI_41/phase_shifter/shift_stream<0>.phase_6)                 | 1     |
 XLXI_41/phase_shifter/shift_stream<0>_phase_7_and0000(XLXI_41/phase_shifter/shift_stream<0>_phase_7_and00001:O)                                | NONE(XLXI_41/phase_shifter/shift_stream<0>.phase_7)                 | 1     |
 XLXI_41/phase_shifter/shift_stream<0>_phase_7_and0001(XLXI_41/phase_shifter/shift_stream<0>_phase_7_and00011:O)                                | NONE(XLXI_41/phase_shifter/shift_stream<0>.phase_7)                 | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_10_and0000(XLXI_41/phase_shifter/shift_stream<0>_q_data_10_and00001:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_10)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_10_and0001(XLXI_41/phase_shifter/shift_stream<0>_q_data_10_and00011:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_10)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_11_and0000(XLXI_41/phase_shifter/shift_stream<0>_q_data_11_and000011:O)                           | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_11)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_11_and0001(XLXI_41/phase_shifter/shift_stream<0>_q_data_11_and000111:O)                           | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_11)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_12_and0000(XLXI_41/phase_shifter/shift_stream<0>_q_data_12_and000011:O)                           | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_12)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_12_and0001(XLXI_41/phase_shifter/shift_stream<0>_q_data_12_and000111:O)                           | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_12)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_13_and0000(XLXI_41/phase_shifter/shift_stream<0>_q_data_13_and00001:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_13)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_13_and0001(XLXI_41/phase_shifter/shift_stream<0>_q_data_13_and00011:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_13)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_14_and0000(XLXI_41/phase_shifter/shift_stream<0>_q_data_14_and00002:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_14)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_14_and0001(XLXI_41/phase_shifter/shift_stream<0>_q_data_14_and00011:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_14)               | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_7_and0000(XLXI_41/phase_shifter/shift_stream<0>_q_data_7_and00001:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_7)                | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_7_and0001(XLXI_41/phase_shifter/shift_stream<0>_q_data_7_and00011:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_7)                | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_8_and0000(XLXI_41/phase_shifter/shift_stream<0>_q_data_8_and00001:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_8)                | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_8_and0001(XLXI_41/phase_shifter/shift_stream<0>_q_data_8_and00011:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_8)                | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_9_and0000(XLXI_41/phase_shifter/shift_stream<0>_q_data_9_and00001:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_9)                | 1     |
+XLXI_41/phase_shifter/shift_stream<0>_q_data_9_and0001(XLXI_41/phase_shifter/shift_stream<0>_q_data_9_and00011:O)                              | NONE(XLXI_41/phase_shifter/shift_stream<0>.q_data_9)                | 1     |
 -----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 24.152ns (Maximum Frequency: 41.404MHz)
+   Minimum period: 24.367ns (Maximum Frequency: 41.040MHz)
    Minimum input arrival time before clock: 1.829ns
-   Maximum output required time after clock: 5.009ns
+   Maximum output required time after clock: 5.447ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -1115,10 +1127,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ext_pins_in<0>'
-  Clock period: 24.152ns (frequency: 41.404MHz)
-  Total number of paths / destination ports: 94336 / 5177
+  Clock period: 24.367ns (frequency: 41.040MHz)
+  Total number of paths / destination ports: 95109 / 5227
 -------------------------------------------------------------------------
-Delay:               8.051ns (Levels of Logic = 7)
+Delay:               8.122ns (Levels of Logic = 7)
   Source:            XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_24 (FF)
   Destination:       XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_stb (FF)
   Source Clock:      ext_pins_in<0> rising 3.0X
@@ -1130,7 +1142,7 @@ Delay:               8.051ns (Levels of Logic = 7)
     ----------------------------------------  ------------
      FDE:C->Q             14   0.514   1.002  zpuino/io/addr_save_q_24 (wishbone_slot_13_in<25>)
      LUT4_D:I0->O         32   0.612   1.225  zpuino/io/slot_cyc_i_5_cmp_eq00001 (zpuino/io/slot_cyc_i_5_cmp_eq0000)
-     LUT2:I0->O            2   0.612   0.449  zpuino/io/slot_cyc_i_5_mux00001 (wishbone_slot_5_in<1>)
+     LUT2:I0->O            3   0.612   0.520  zpuino/io/slot_cyc_i_5_mux00001 (wishbone_slot_5_in<1>)
      end scope: 'XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox'
      LUT2:I1->O            1   0.612   0.509  XLXI_41/wishbone_out_1_and00001 (XLXN_510<1>)
      begin scope: 'XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox'
@@ -1139,8 +1151,8 @@ Delay:               8.051ns (Levels of Logic = 7)
      LUT4:I3->O            1   0.612   0.000  zpuino/io/io_stb_rstpot (zpuino/io/io_stb_rstpot)
      FD:D                      0.268          zpuino/io/io_stb
     ----------------------------------------
-    Total                      8.051ns (4.483ns logic, 3.568ns route)
-                                       (55.7% logic, 44.3% route)
+    Total                      8.122ns (4.483ns logic, 3.639ns route)
+                                       (55.2% logic, 44.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'ext_pins_in<0>'
@@ -1164,36 +1176,36 @@ Offset:              1.829ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ext_pins_in<0>'
-  Total number of paths / destination ports: 75 / 43
+  Total number of paths / destination ports: 82 / 43
 -------------------------------------------------------------------------
-Offset:              5.009ns (Levels of Logic = 2)
-  Source:            XLXI_41/phase_shifter/shift_stream<7>.i_data_14 (FF)
-  Destination:       WING_CH7 (PAD)
+Offset:              5.447ns (Levels of Logic = 2)
+  Source:            XLXI_41/nco_output_enable (FF)
+  Destination:       WING_CH1 (PAD)
   Source Clock:      ext_pins_in<0> rising 3.0X
 
-  Data Path: XLXI_41/phase_shifter/shift_stream<7>.i_data_14 to WING_CH7
+  Data Path: XLXI_41/nco_output_enable to WING_CH1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              1   0.514   0.357  XLXI_41/phase_shifter/shift_stream<7>.i_data_14 (XLXI_41/phase_shifter/shift_stream<7>.i_data_14)
-     INV:I->O              1   0.612   0.357  XLXI_41/d2a_data_not00011_INV_0 (XLXN_512<7>)
-     OBUF:I->O                 3.169          WING_CH7_OBUF (WING_CH7)
+     FDPE:C->Q             8   0.514   0.795  XLXI_41/nco_output_enable (XLXI_41/nco_output_enable)
+     LUT2:I0->O            1   0.612   0.357  XLXI_41/d2a_data<6>1 (XLXN_512<6>)
+     OBUF:I->O                 3.169          WING_CH6_OBUF (WING_CH6)
     ----------------------------------------
-    Total                      5.009ns (4.295ns logic, 0.714ns route)
-                                       (85.7% logic, 14.3% route)
+    Total                      5.447ns (4.295ns logic, 1.152ns route)
+                                       (78.8% logic, 21.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 28.00 secs
-Total CPU time to Xst completion: 28.44 secs
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 29.37 secs
  
 --> 
 
 
-Total memory usage is 216480 kilobytes
+Total memory usage is 217080 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  341 (   0 filtered)
-Number of infos    :   37 (   0 filtered)
+Number of warnings :  326 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
 

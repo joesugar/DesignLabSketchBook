@@ -33,12 +33,12 @@ void setup()
 
   /* Set the operating frequency (frequency is in Hz)
    */
-  unsigned frequency_hz = 1000000;
+  unsigned frequency_hz = 18000000;
   CORDIC_NCO.setTransmitFrequencyHz(frequency_hz);
+  CORDIC_NCO.setAmplitude(64 << 8, 0 << 8);
   CORDIC_NCO.NcoEnable();  
 }
 
-void loop() {
-	Serial.println(CORDIC_NCO.readButtons());
-	CORDIC_NCO.writeLEDs(0xf);
+void loop() 
+{
 }

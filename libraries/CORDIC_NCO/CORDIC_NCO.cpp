@@ -49,6 +49,18 @@ unsigned CORDIC_NCO::getTransmitFrequencyHz()
   return (*this).transmit_frequency_Hz;
 }
 
+/* Set/get the signal amplitude.
+ * Note:  Amplitudes are signed values in the range from 
+ * -32768 to 32767.
+ */
+void CORDIC_NCO::setAmplitude(int i_amplitude, int q_amplitude)
+{
+  i_amplitude = (i_amplitude << 16) & 0xFFFF0000;
+  q_amplitude = (q_amplitude <<  0) & 0x0000FFFF;
+  unsigned iq_amplitude = i_amplitude | q_amplitude;
+  IQ_AMP = iq_amplitude;
+}
+
 /* Enable/disable the PSK hardware.
  */
 void CORDIC_NCO::NcoEnable()

@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : vq100
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sat Oct 10 19:10:40 2015
+Mapped Date    : Sat Oct 10 21:00:34 2015
 
 Mapping design into LUTs...
 WARNING:MapLib:701 - Signal ext_pins_inout<100> connected to top level port
@@ -431,16 +431,16 @@ Design Summary:
 Number of errors:      0
 Number of warnings:  200
 Logic Utilization:
-  Number of Slice Flip Flops:         2,220 out of   9,312   23%
-  Number of 4 input LUTs:             3,473 out of   9,312   37%
+  Number of Slice Flip Flops:         2,252 out of   9,312   24%
+  Number of 4 input LUTs:             3,567 out of   9,312   38%
 Logic Distribution:
-  Number of occupied Slices:          2,572 out of   4,656   55%
-    Number of Slices containing only related logic:   2,572 out of   2,572 100%
-    Number of Slices containing unrelated logic:          0 out of   2,572   0%
+  Number of occupied Slices:          2,645 out of   4,656   56%
+    Number of Slices containing only related logic:   2,645 out of   2,645 100%
+    Number of Slices containing unrelated logic:          0 out of   2,645   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       3,787 out of   9,312   40%
-    Number used as logic:             3,436
-    Number used as a route-thru:        314
+  Total Number of 4 input LUTs:       3,891 out of   9,312   41%
+    Number used as logic:             3,530
+    Number used as a route-thru:        324
     Number used as Shift registers:      37
 
   The Slice Logic Distribution report is not meaningful if the design is

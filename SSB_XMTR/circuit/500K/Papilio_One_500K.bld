@@ -1,0 +1,1946 @@
+Release 14.2 ngdbuild P.28xd (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.2/ISE_DS/ISE/bin/lin/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd ../../../../libraries/VGA_ZXSpectrum -sd
+../../../../libraries/AVR_Wishbone_Bridge -sd ../../../../libraries/Benchy -sd
+../../../../libraries/Robot_Control_Library -sd
+../../../../libraries/Building_Blocks -sd ../../../../libraries/VGA_ZPUino -sd
+../../../../libraries/HQVGA -sd ../../../../libraries/Papilio_Hardware -sd
+../../../../libraries/BitCoin_Miner -sd ../../../../libraries/Clocks -sd
+../../../../libraries/ZPUino_2 -sd ../../../../libraries/RGB_Matrix -sd
+../../../../libraries/Gameduino -sd
+../../../../libraries/ZPUino_Wishbone_Peripherals -sd
+../../../../libraries/clocks -sd ../../../libraries/i2c -sd
+../../../libraries/Template_DesignLab_Library -sd ../../../libraries/PSK31 -sd
+../../../libraries/NCO -sd ../../../libraries/CORDIC_NCO -sd
+../../../libraries/WM8731 -aul -nt timestamp -uc
+/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
+PSL_Papilio_One_500K/papilio_one.ucf -p xc3s500e-vq100-5 Papilio_One_500K.ngc
+Papilio_One_500K.ngd
+
+Reading NGO file
+"/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.ngc"
+...
+Loading design module
+"../../../../libraries/ZPUino_2/ZPUino_Papilio_One_V2_blackbox.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1
+/PSL_Papilio_One_500K/papilio_one.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:59 - Constraint <NET "clk" LOC = "P89" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(15)]: NET "clk" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "clk" LOC = "P89" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(15)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(15)]: NET "clk" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_Period_1 = PERIOD "CLK"
+   31.00 ns HIGH 50%;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(16)]: Unable to find an active 'TNM'
+   or 'TimeGrp' constraint named 'CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_Period_2 = PERIOD
+   "ext_pins_in(0)" 31.00 ns HIGH 50%;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(18)]: Unable to find an active 'TNM'
+   or 'TimeGrp' constraint named 'ext_pins_in(0)'.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(0)" LOC = "P18" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(75)]: NET "WA(0)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(0)" LOC = "P18" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(75)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(75)]: NET "WA(0)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(75)]: NET "WA(0)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(75)]: NET "WA(0)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(1)" LOC = "P23" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(76)]: NET "WA(1)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(1)" LOC = "P23" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(76)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(76)]: NET "WA(1)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(76)]: NET "WA(1)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(76)]: NET "WA(1)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(2)" LOC = "P26" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(77)]: NET "WA(2)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(2)" LOC = "P26" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(77)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(77)]: NET "WA(2)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(77)]: NET "WA(2)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(77)]: NET "WA(2)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(3)" LOC = "P33" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(78)]: NET "WA(3)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(3)" LOC = "P33" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(78)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(78)]: NET "WA(3)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(78)]: NET "WA(3)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(78)]: NET "WA(3)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(4)" LOC = "P35" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(79)]: NET "WA(4)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(4)" LOC = "P35" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(79)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(79)]: NET "WA(4)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(79)]: NET "WA(4)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(79)]: NET "WA(4)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(5)" LOC = "P40" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(80)]: NET "WA(5)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(5)" LOC = "P40" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(80)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(80)]: NET "WA(5)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(80)]: NET "WA(5)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(80)]: NET "WA(5)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(6)" LOC = "P53" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(81)]: NET "WA(6)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(6)" LOC = "P53" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(81)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(81)]: NET "WA(6)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(81)]: NET "WA(6)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(81)]: NET "WA(6)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(7)" LOC = "P57" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(82)]: NET "WA(7)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(7)" LOC = "P57" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(82)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(82)]: NET "WA(7)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(82)]: NET "WA(7)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(82)]: NET "WA(7)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(8)" LOC = "P60" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(83)]: NET "WA(8)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(8)" LOC = "P60" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(83)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(83)]: NET "WA(8)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(83)]: NET "WA(8)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(83)]: NET "WA(8)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(9)" LOC = "P62" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(84)]: NET "WA(9)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(9)" LOC = "P62" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(84)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(84)]: NET "WA(9)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(84)]: NET "WA(9)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(84)]: NET "WA(9)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(10)" LOC = "P65" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(85)]: NET "WA(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(10)" LOC = "P65" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(85)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(85)]: NET "WA(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(85)]: NET "WA(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(85)]: NET "WA(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(11)" LOC = "P67" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(86)]: NET "WA(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(11)" LOC = "P67" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(86)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(86)]: NET "WA(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(86)]: NET "WA(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(86)]: NET "WA(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(12)" LOC = "P70" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(87)]: NET "WA(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(12)" LOC = "P70" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(87)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(87)]: NET "WA(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(87)]: NET "WA(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(87)]: NET "WA(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(13)" LOC = "P79" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(88)]: NET "WA(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(13)" LOC = "P79" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(88)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(88)]: NET "WA(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(88)]: NET "WA(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(88)]: NET "WA(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(14)" LOC = "P84" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(89)]: NET "WA(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(14)" LOC = "P84" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(89)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(89)]: NET "WA(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(89)]: NET "WA(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(89)]: NET "WA(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WA(15)" LOC = "P86" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(90)]: NET "WA(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WA(15)" LOC = "P86" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(90)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(90)]: NET "WA(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(90)]: NET "WA(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(90)]: NET "WA(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(0)" LOC = "P85" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(93)]: NET "WB(0)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(0)" LOC = "P85" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(93)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(93)]: NET "WB(0)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(93)]: NET "WB(0)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(93)]: NET "WB(0)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(1)" LOC = "P83" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(94)]: NET "WB(1)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(1)" LOC = "P83" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(94)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(94)]: NET "WB(1)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(94)]: NET "WB(1)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(94)]: NET "WB(1)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(2)" LOC = "P78" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(95)]: NET "WB(2)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(2)" LOC = "P78" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(95)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(95)]: NET "WB(2)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(95)]: NET "WB(2)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(95)]: NET "WB(2)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(3)" LOC = "P71" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(96)]: NET "WB(3)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(3)" LOC = "P71" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(96)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(96)]: NET "WB(3)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(96)]: NET "WB(3)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(96)]: NET "WB(3)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(4)" LOC = "P68" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(97)]: NET "WB(4)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(4)" LOC = "P68" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(97)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(97)]: NET "WB(4)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(97)]: NET "WB(4)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(97)]: NET "WB(4)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(5)" LOC = "P66" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(98)]: NET "WB(5)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(5)" LOC = "P66" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(98)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(98)]: NET "WB(5)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(98)]: NET "WB(5)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(98)]: NET "WB(5)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(6)" LOC = "P63" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(99)]: NET "WB(6)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(6)" LOC = "P63" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(99)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(99)]: NET "WB(6)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(99)]: NET "WB(6)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(99)]: NET "WB(6)" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(7)" LOC = "P61" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(100)]: NET "WB(7)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(7)" LOC = "P61" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(100)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(100)]: NET "WB(7)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(100)]: NET "WB(7)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(100)]: NET "WB(7)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(8)" LOC = "P58" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(101)]: NET "WB(8)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(8)" LOC = "P58" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(101)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(101)]: NET "WB(8)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(101)]: NET "WB(8)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(101)]: NET "WB(8)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(9)" LOC = "P54" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(102)]: NET "WB(9)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(9)" LOC = "P54" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(102)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(102)]: NET "WB(9)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(102)]: NET "WB(9)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(102)]: NET "WB(9)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(10)" LOC = "P41" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(103)]: NET "WB(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(10)" LOC = "P41" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(103)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(103)]: NET "WB(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(103)]: NET "WB(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(103)]: NET "WB(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(11)" LOC = "P36" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(104)]: NET "WB(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(11)" LOC = "P36" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(104)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(104)]: NET "WB(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(104)]: NET "WB(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(104)]: NET "WB(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(12)" LOC = "P34" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(105)]: NET "WB(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(12)" LOC = "P34" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(105)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(105)]: NET "WB(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(105)]: NET "WB(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(105)]: NET "WB(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(13)" LOC = "P32" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(106)]: NET "WB(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(13)" LOC = "P32" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(106)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(106)]: NET "WB(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(106)]: NET "WB(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(106)]: NET "WB(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(14)" LOC = "P25" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(107)]: NET "WB(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(14)" LOC = "P25" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(107)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(107)]: NET "WB(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(107)]: NET "WB(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(107)]: NET "WB(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WB(15)" LOC = "P22" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(108)]: NET "WB(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WB(15)" LOC = "P22" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(108)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(108)]: NET "WB(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(108)]: NET "WB(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(108)]: NET "WB(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(0)" LOC = "P91" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(111)]: NET "WC(0)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(0)" LOC = "P91" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(111)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(111)]: NET "WC(0)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(111)]: NET "WC(0)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(111)]: NET "WC(0)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(1)" LOC = "P92" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(112)]: NET "WC(1)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(1)" LOC = "P92" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(112)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(112)]: NET "WC(1)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(112)]: NET "WC(1)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(112)]: NET "WC(1)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(2)" LOC = "P94" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(113)]: NET "WC(2)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(2)" LOC = "P94" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(113)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(113)]: NET "WC(2)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(113)]: NET "WC(2)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(113)]: NET "WC(2)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(3)" LOC = "P95" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(114)]: NET "WC(3)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(3)" LOC = "P95" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(114)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(114)]: NET "WC(3)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(114)]: NET "WC(3)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(114)]: NET "WC(3)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(4)" LOC = "P98" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(115)]: NET "WC(4)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(4)" LOC = "P98" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(115)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(115)]: NET "WC(4)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(115)]: NET "WC(4)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(115)]: NET "WC(4)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(5)" LOC = "P2" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(116)]: NET "WC(5)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(5)" LOC = "P2" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(116)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(116)]: NET "WC(5)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(116)]: NET "WC(5)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(116)]: NET "WC(5)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(6)" LOC = "P3" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(117)]: NET "WC(6)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(6)" LOC = "P3" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(117)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(117)]: NET "WC(6)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(117)]: NET "WC(6)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(117)]: NET "WC(6)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(7)" LOC = "P4" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(118)]: NET "WC(7)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(7)" LOC = "P4" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(118)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(118)]: NET "WC(7)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(118)]: NET "WC(7)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(118)]: NET "WC(7)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(8)" LOC = "P5" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(119)]: NET "WC(8)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(8)" LOC = "P5" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(119)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(119)]: NET "WC(8)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(119)]: NET "WC(8)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(119)]: NET "WC(8)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(9)" LOC = "P9" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(120)]: NET "WC(9)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(9)" LOC = "P9" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(120)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(120)]: NET "WC(9)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(120)]: NET "WC(9)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(120)]: NET "WC(9)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(10)" LOC = "P10" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(121)]: NET "WC(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(10)" LOC = "P10" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(121)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(121)]: NET "WC(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(121)]: NET "WC(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(121)]: NET "WC(10)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(11)" LOC = "P11" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(122)]: NET "WC(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(11)" LOC = "P11" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(122)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(122)]: NET "WC(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(122)]: NET "WC(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(122)]: NET "WC(11)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(12)" LOC = "P12" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(123)]: NET "WC(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(12)" LOC = "P12" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(123)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(123)]: NET "WC(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(123)]: NET "WC(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(123)]: NET "WC(12)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(13)" LOC = "P15" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(124)]: NET "WC(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(13)" LOC = "P15" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(124)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(124)]: NET "WC(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(124)]: NET "WC(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(124)]: NET "WC(13)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(14)" LOC = "P16" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(125)]: NET "WC(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(14)" LOC = "P16" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(125)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(125)]: NET "WC(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(125)]: NET "WC(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(125)]: NET "WC(14)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "WC(15)" LOC = "P17" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(126)]: NET "WC(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WC(15)" LOC = "P17" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(126)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(126)]: NET "WC(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(126)]: NET "WC(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(126)]: NET "WC(15)" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "rxd"  LOC = "P88" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(129)]: NET "rxd" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "rxd"  LOC = "P88" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(129)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(129)]: NET "rxd" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "txd"  LOC = "P90" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(131)]: NET "txd" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "txd"  LOC = "P90" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(131)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(131)]: NET "txd" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(131)]: NET "txd" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(131)]: NET "txd" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "SPI_CS"   LOC = "P24" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(135)]: NET "SPI_CS" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SPI_CS"   LOC = "P24" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(135)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(135)]: NET "SPI_CS" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = SLOW |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(135)]: NET "SPI_CS" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(135)]: NET "SPI_CS" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "SPI_SCK"  LOC = "P50" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(137)]: NET "SPI_SCK" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SPI_SCK"  LOC = "P50" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(137)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(137)]: NET "SPI_SCK" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(137)]: NET "SPI_SCK" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(137)]: NET "SPI_SCK" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "SPI_MISO" LOC = "P44" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(139)]: NET "SPI_MISO" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SPI_MISO" LOC = "P44" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(139)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(139)]: NET "SPI_MISO" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW = FAST |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(139)]: NET "SPI_MISO" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE = 8;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(139)]: NET "SPI_MISO" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "SPI_MOSI" LOC = "P27" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(141)]: NET "SPI_MOSI" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SPI_MOSI" LOC = "P27" |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(141)]' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(141)]: NET "SPI_MOSI" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:NgdBuild:1012 - The constraint <IOSTANDARD = LVCMOS33;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(17)] is overridden on the design
+   object ext_pins_in<0> by the constraint <NET "*" IOSTANDARD = LVCMOS33;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(12)].
+WARNING:NgdBuild:1012 - The constraint <IOSTANDARD = LVCMOS33 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(130)] is overridden on the design
+   object ext_pins_in<2> by the constraint <NET "*" IOSTANDARD = LVCMOS33;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(12)].
+WARNING:NgdBuild:1012 - The constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(132)] is overridden on the design
+   object ext_pins_out<3> by the constraint <NET "*" IOSTANDARD = LVCMOS33;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(12)].
+WARNING:NgdBuild:1012 - The constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(136)] is overridden on the design
+   object ext_pins_out<2> by the constraint <NET "*" IOSTANDARD = LVCMOS33;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(12)].
+WARNING:NgdBuild:1012 - The constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(138)] is overridden on the design
+   object ext_pins_out<0> by the constraint <NET "*" IOSTANDARD = LVCMOS33;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(12)].
+WARNING:NgdBuild:1012 - The constraint <IOSTANDARD = LVCMOS33 |>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(140)] is overridden on the design
+   object ext_pins_in<1> by the constraint <NET "*" IOSTANDARD = LVCMOS33;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(12)].
+WARNING:NgdBuild:1012 - The constraint <IOSTANDARD = LVCMOS33 ;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(142)] is overridden on the design
+   object ext_pins_out<1> by the constraint <NET "*" IOSTANDARD = LVCMOS33;>
+   [/home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUin
+   o_1/PSL_Papilio_One_500K/papilio_one.ucf(12)].
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:478 - clock net
+   XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clk_1Mhz with clock driver
+   XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/clkfx_inst_1mhz
+   drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/vgaclkout with clock driver
+   XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/vgainst drives no
+   clock pins
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  66
+
+Total memory usage is 125572 kilobytes
+
+Writing NGD file "Papilio_One_500K.ngd" ...
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
+
+Writing NGDBUILD log file "Papilio_One_500K.bld"...

@@ -1,0 +1,3719 @@
+Release 14.2 Map P.28xd (lin)
+Xilinx Mapping Report File for Design 'Papilio_One_500K'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off
+-c 100 -o Papilio_One_500K_map.ncd Papilio_One_500K.ngd Papilio_One_500K.pcf 
+Target Device  : xc3s500e
+Target Package : vq100
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sun Oct 11 22:44:56 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  201
+Logic Utilization:
+  Total Number Slice Registers:       2,421 out of   9,312   25%
+    Number used as Flip Flops:        2,417
+    Number used as Latches:               4
+  Number of 4 input LUTs:             3,921 out of   9,312   42%
+Logic Distribution:
+  Number of occupied Slices:          2,848 out of   4,656   61%
+    Number of Slices containing only related logic:   2,848 out of   2,848 100%
+    Number of Slices containing unrelated logic:          0 out of   2,848   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       4,247 out of   9,312   45%
+    Number used as logic:             3,882
+    Number used as a route-thru:        326
+    Number used for Dual Port RAMs:       2
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:      37
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 55 out of      66   83%
+  Number of RAMB16s:                     18 out of      20   90%
+  Number of BUFGMUXs:                     3 out of      24   12%
+  Number of DCMs:                         2 out of       4   50%
+  Number of MULT18X18SIOs:                3 out of      20   15%
+
+Average Fanout of Non-Clock Nets:                3.28
+
+Peak Memory Usage:  194 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   8 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal ext_pins_inout<100> connected to top level port
+   ext_pins_inout<100> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<99> connected to top level port
+   ext_pins_inout<99> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<98> connected to top level port
+   ext_pins_inout<98> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<97> connected to top level port
+   ext_pins_inout<97> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<96> connected to top level port
+   ext_pins_inout<96> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<95> connected to top level port
+   ext_pins_inout<95> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<94> connected to top level port
+   ext_pins_inout<94> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<93> connected to top level port
+   ext_pins_inout<93> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<92> connected to top level port
+   ext_pins_inout<92> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<91> connected to top level port
+   ext_pins_inout<91> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<90> connected to top level port
+   ext_pins_inout<90> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<89> connected to top level port
+   ext_pins_inout<89> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<88> connected to top level port
+   ext_pins_inout<88> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<87> connected to top level port
+   ext_pins_inout<87> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<86> connected to top level port
+   ext_pins_inout<86> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<85> connected to top level port
+   ext_pins_inout<85> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<84> connected to top level port
+   ext_pins_inout<84> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<83> connected to top level port
+   ext_pins_inout<83> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<82> connected to top level port
+   ext_pins_inout<82> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<81> connected to top level port
+   ext_pins_inout<81> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<80> connected to top level port
+   ext_pins_inout<80> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<79> connected to top level port
+   ext_pins_inout<79> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<78> connected to top level port
+   ext_pins_inout<78> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<77> connected to top level port
+   ext_pins_inout<77> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<76> connected to top level port
+   ext_pins_inout<76> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<75> connected to top level port
+   ext_pins_inout<75> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<74> connected to top level port
+   ext_pins_inout<74> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<73> connected to top level port
+   ext_pins_inout<73> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<72> connected to top level port
+   ext_pins_inout<72> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<71> connected to top level port
+   ext_pins_inout<71> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<70> connected to top level port
+   ext_pins_inout<70> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<69> connected to top level port
+   ext_pins_inout<69> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<68> connected to top level port
+   ext_pins_inout<68> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<67> connected to top level port
+   ext_pins_inout<67> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<66> connected to top level port
+   ext_pins_inout<66> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<65> connected to top level port
+   ext_pins_inout<65> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<64> connected to top level port
+   ext_pins_inout<64> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<63> connected to top level port
+   ext_pins_inout<63> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<62> connected to top level port
+   ext_pins_inout<62> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<61> connected to top level port
+   ext_pins_inout<61> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<60> connected to top level port
+   ext_pins_inout<60> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<59> connected to top level port
+   ext_pins_inout<59> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<58> connected to top level port
+   ext_pins_inout<58> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<57> connected to top level port
+   ext_pins_inout<57> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<56> connected to top level port
+   ext_pins_inout<56> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<55> connected to top level port
+   ext_pins_inout<55> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<54> connected to top level port
+   ext_pins_inout<54> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<53> connected to top level port
+   ext_pins_inout<53> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<52> connected to top level port
+   ext_pins_inout<52> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<51> connected to top level port
+   ext_pins_inout<51> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<50> connected to top level port
+   ext_pins_inout<50> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<49> connected to top level port
+   ext_pins_inout<49> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<48> connected to top level port
+   ext_pins_inout<48> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<47> connected to top level port
+   ext_pins_inout<47> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<46> connected to top level port
+   ext_pins_inout<46> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<45> connected to top level port
+   ext_pins_inout<45> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<44> connected to top level port
+   ext_pins_inout<44> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<43> connected to top level port
+   ext_pins_inout<43> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<42> connected to top level port
+   ext_pins_inout<42> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<41> connected to top level port
+   ext_pins_inout<41> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<40> connected to top level port
+   ext_pins_inout<40> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<39> connected to top level port
+   ext_pins_inout<39> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<38> connected to top level port
+   ext_pins_inout<38> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<37> connected to top level port
+   ext_pins_inout<37> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<36> connected to top level port
+   ext_pins_inout<36> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<35> connected to top level port
+   ext_pins_inout<35> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<34> connected to top level port
+   ext_pins_inout<34> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<33> connected to top level port
+   ext_pins_inout<33> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<32> connected to top level port
+   ext_pins_inout<32> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<31> connected to top level port
+   ext_pins_inout<31> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<30> connected to top level port
+   ext_pins_inout<30> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<29> connected to top level port
+   ext_pins_inout<29> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<28> connected to top level port
+   ext_pins_inout<28> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<27> connected to top level port
+   ext_pins_inout<27> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<26> connected to top level port
+   ext_pins_inout<26> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<25> connected to top level port
+   ext_pins_inout<25> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<24> connected to top level port
+   ext_pins_inout<24> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<23> connected to top level port
+   ext_pins_inout<23> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<22> connected to top level port
+   ext_pins_inout<22> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<21> connected to top level port
+   ext_pins_inout<21> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<20> connected to top level port
+   ext_pins_inout<20> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<19> connected to top level port
+   ext_pins_inout<19> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<18> connected to top level port
+   ext_pins_inout<18> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<17> connected to top level port
+   ext_pins_inout<17> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<16> connected to top level port
+   ext_pins_inout<16> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<15> connected to top level port
+   ext_pins_inout<15> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<14> connected to top level port
+   ext_pins_inout<14> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<13> connected to top level port
+   ext_pins_inout<13> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<12> connected to top level port
+   ext_pins_inout<12> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<11> connected to top level port
+   ext_pins_inout<11> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<10> connected to top level port
+   ext_pins_inout<10> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<9> connected to top level port
+   ext_pins_inout<9> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<8> connected to top level port
+   ext_pins_inout<8> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<7> connected to top level port
+   ext_pins_inout<7> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<6> connected to top level port
+   ext_pins_inout<6> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<5> connected to top level port
+   ext_pins_inout<5> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<4> connected to top level port
+   ext_pins_inout<4> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<3> connected to top level port
+   ext_pins_inout<3> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<2> connected to top level port
+   ext_pins_inout<2> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<1> connected to top level port
+   ext_pins_inout<1> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<0> connected to top level port
+   ext_pins_inout<0> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<100> connected to top level port
+   ext_pins_out<100> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<99> connected to top level port
+   ext_pins_out<99> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<98> connected to top level port
+   ext_pins_out<98> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<97> connected to top level port
+   ext_pins_out<97> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<96> connected to top level port
+   ext_pins_out<96> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<95> connected to top level port
+   ext_pins_out<95> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<94> connected to top level port
+   ext_pins_out<94> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<93> connected to top level port
+   ext_pins_out<93> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<92> connected to top level port
+   ext_pins_out<92> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<91> connected to top level port
+   ext_pins_out<91> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<90> connected to top level port
+   ext_pins_out<90> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<89> connected to top level port
+   ext_pins_out<89> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<88> connected to top level port
+   ext_pins_out<88> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<87> connected to top level port
+   ext_pins_out<87> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<86> connected to top level port
+   ext_pins_out<86> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<85> connected to top level port
+   ext_pins_out<85> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<84> connected to top level port
+   ext_pins_out<84> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<83> connected to top level port
+   ext_pins_out<83> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<82> connected to top level port
+   ext_pins_out<82> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<81> connected to top level port
+   ext_pins_out<81> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<80> connected to top level port
+   ext_pins_out<80> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<79> connected to top level port
+   ext_pins_out<79> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<78> connected to top level port
+   ext_pins_out<78> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<77> connected to top level port
+   ext_pins_out<77> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<76> connected to top level port
+   ext_pins_out<76> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<75> connected to top level port
+   ext_pins_out<75> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<74> connected to top level port
+   ext_pins_out<74> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<73> connected to top level port
+   ext_pins_out<73> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<72> connected to top level port
+   ext_pins_out<72> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<71> connected to top level port
+   ext_pins_out<71> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<70> connected to top level port
+   ext_pins_out<70> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<69> connected to top level port
+   ext_pins_out<69> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<68> connected to top level port
+   ext_pins_out<68> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<67> connected to top level port
+   ext_pins_out<67> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<66> connected to top level port
+   ext_pins_out<66> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<65> connected to top level port
+   ext_pins_out<65> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<64> connected to top level port
+   ext_pins_out<64> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<63> connected to top level port
+   ext_pins_out<63> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<62> connected to top level port
+   ext_pins_out<62> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<61> connected to top level port
+   ext_pins_out<61> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<60> connected to top level port
+   ext_pins_out<60> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<59> connected to top level port
+   ext_pins_out<59> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<58> connected to top level port
+   ext_pins_out<58> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<57> connected to top level port
+   ext_pins_out<57> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<56> connected to top level port
+   ext_pins_out<56> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<55> connected to top level port
+   ext_pins_out<55> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<54> connected to top level port
+   ext_pins_out<54> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<53> connected to top level port
+   ext_pins_out<53> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<52> connected to top level port
+   ext_pins_out<52> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<51> connected to top level port
+   ext_pins_out<51> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<50> connected to top level port
+   ext_pins_out<50> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<49> connected to top level port
+   ext_pins_out<49> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<48> connected to top level port
+   ext_pins_out<48> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<47> connected to top level port
+   ext_pins_out<47> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<46> connected to top level port
+   ext_pins_out<46> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<45> connected to top level port
+   ext_pins_out<45> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<44> connected to top level port
+   ext_pins_out<44> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<43> connected to top level port
+   ext_pins_out<43> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<42> connected to top level port
+   ext_pins_out<42> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<41> connected to top level port
+   ext_pins_out<41> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<40> connected to top level port
+   ext_pins_out<40> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<39> connected to top level port
+   ext_pins_out<39> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<38> connected to top level port
+   ext_pins_out<38> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<37> connected to top level port
+   ext_pins_out<37> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<36> connected to top level port
+   ext_pins_out<36> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<35> connected to top level port
+   ext_pins_out<35> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<34> connected to top level port
+   ext_pins_out<34> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<33> connected to top level port
+   ext_pins_out<33> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<32> connected to top level port
+   ext_pins_out<32> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<31> connected to top level port
+   ext_pins_out<31> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<30> connected to top level port
+   ext_pins_out<30> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<29> connected to top level port
+   ext_pins_out<29> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<28> connected to top level port
+   ext_pins_out<28> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<27> connected to top level port
+   ext_pins_out<27> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<26> connected to top level port
+   ext_pins_out<26> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<25> connected to top level port
+   ext_pins_out<25> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<24> connected to top level port
+   ext_pins_out<24> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<23> connected to top level port
+   ext_pins_out<23> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<22> connected to top level port
+   ext_pins_out<22> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<21> connected to top level port
+   ext_pins_out<21> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<20> connected to top level port
+   ext_pins_out<20> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<19> connected to top level port
+   ext_pins_out<19> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<18> connected to top level port
+   ext_pins_out<18> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<17> connected to top level port
+   ext_pins_out<17> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<16> connected to top level port
+   ext_pins_out<16> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<15> connected to top level port
+   ext_pins_out<15> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<14> connected to top level port
+   ext_pins_out<14> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<13> connected to top level port
+   ext_pins_out<13> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<12> connected to top level port
+   ext_pins_out<12> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<11> connected to top level port
+   ext_pins_out<11> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<10> connected to top level port
+   ext_pins_out<10> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<9> connected to top level port
+   ext_pins_out<9> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<8> connected to top level port
+   ext_pins_out<8> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<7> connected to top level port
+   ext_pins_out<7> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<6> connected to top level port
+   ext_pins_out<6> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<5> connected to top level port
+   ext_pins_out<5> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<4> connected to top level port
+   ext_pins_out<4> has been removed.
+WARNING:Pack:1186 - One or more I/O components have conflicting property values.
+    For each occurrence, the system will use the property value attached to the
+   pad.  Otherwise, the system will use the first property value read.  To view
+   each occurrence, create a detailed map report (run map using the -detail
+   option).
+WARNING:Pack:266 - The function generator
+   XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/core/w1_tos_4_mux0002180
+   failed to merge with F5 multiplexer
+   XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/core/prefr_spnext_mux0000<
+   4>89.  There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_55/a2d_fifo_read_flag
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network ext_pins_in<100> has no load.
+INFO:LIT:395 - The above info message is repeated 124 more times for the
+   following (max. 5 shown):
+   ext_pins_in<99>,
+   ext_pins_in<98>,
+   ext_pins_in<97>,
+   ext_pins_in<96>,
+   ext_pins_in<95>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/DCM_inst, consult the
+   device Interactive Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 725 block(s) removed
+ 240 block(s) optimized away
+ 530 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clk_1Mhz" is sourceless
+and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/vgaclkout" is sourceless
+and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<22>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<21>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<20>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<19>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<18>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<17>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<16>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<15>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<14>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<13>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<12>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q<11>" is
+sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_10_in<1>"
+is sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_12_in<1>"
+is sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_14_in<1>"
+is sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_9_in<1>"
+is sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_11_in<1>"
+is sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_bus_out<5>" is
+sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_bus_out<4>" is
+sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_bus_out<3>" is
+sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_bus_out<2>" is
+sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_bus_out<1>" is
+sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_bus_out<0>" is
+sourceless and has been removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_13_in<1>"
+is sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_and0000
+" is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_6" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_6" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>993" (ROM)
+removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_5" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_5" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>949" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>949" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>277" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>277" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>993_SW0" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N1744" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>593" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>593" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_4" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_4" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_3" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_3" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>12" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>12"
+is sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>277_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2119" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>27" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>27"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>148" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>148" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>277_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2118" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>163" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>163" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>328" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>328" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>593_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2125" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>343" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>343" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>464" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>464" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>593_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2124" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>479" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>479" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>646" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>646" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>746" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>746" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>661" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>661" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>799" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>799" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>899" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>899" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>814" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>814" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>84_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2114" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>84" (MUX)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>84"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>84_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2115" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>220_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2116" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>220" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>220" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>220_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2117" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>400_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2120" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>400" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>400" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>400_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2121" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>536_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2122" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>536" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>536" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>536_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2123" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>718_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2126" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>718" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>718" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>718_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2127" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>871_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2128" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>871" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>871" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<5>871_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2129" is sourceless and
+has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_2" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_2" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_1" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_1" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_0" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_0" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_and0000
+" is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_6" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_6" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>993" (ROM)
+removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_5" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_5" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>949" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>949" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>277" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>277" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>993_SW0" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N1746" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>593" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>593" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_4" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_4" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_3" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_3" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>12" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>12"
+is sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>277_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2135" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>27" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>27"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>148" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>148" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>277_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2134" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>163" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>163" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>328" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>328" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>593_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2141" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>343" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>343" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>464" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>464" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>593_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2140" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>479" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>479" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>646" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>646" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>746" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>746" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>661" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>661" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>799" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>799" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>899" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>899" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>814" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>814" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>84_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2130" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>84" (MUX)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>84"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>84_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2131" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>220_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2132" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>220" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>220" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>220_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2133" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>400_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2136" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>400" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>400" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>400_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2137" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>536_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2138" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>536" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>536" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>536_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2139" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>718_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2142" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>718" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>718" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>718_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2143" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>871_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2144" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>871" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>871" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<4>871_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2145" is sourceless and
+has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_2" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_2" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_1" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_1" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_0" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_0" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_and0000
+" is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_6" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_6" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>993" (ROM)
+removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_5" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_5" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>949" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>949" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>277" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>277" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>993_SW0" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N1750" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>593" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>593" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_4" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_4" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_3" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_3" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>12" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>12"
+is sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>277_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2167" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>27" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>27"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>148" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>148" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>277_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2166" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>163" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>163" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>328" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>328" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>593_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2173" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>343" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>343" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>464" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>464" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>593_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2172" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>479" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>479" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>646" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>646" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>746" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>746" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>661" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>661" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>799" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>799" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>899" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>899" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>814" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>814" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>84_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2162" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>84" (MUX)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>84"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>84_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2163" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>220_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2164" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>220" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>220" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>220_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2165" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>400_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2168" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>400" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>400" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>400_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2169" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>536_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2170" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>536" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>536" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>536_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2171" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>718_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2174" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>718" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>718" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>718_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2175" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>871_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2176" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>871" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>871" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<2>871_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2177" is sourceless and
+has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_2" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_2" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_1" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_1" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_0" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_0" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_and0000
+" is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_6" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_6" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>993" (ROM)
+removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_5" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_5" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>949" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>949" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>277" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>277" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>993_SW0" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N1752" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>593" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>593" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_4" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_4" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_3" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_3" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>12" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>12"
+is sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>277_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2183" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>27" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>27"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>148" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>148" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>277_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2182" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>163" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>163" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>328" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>328" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>593_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2189" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>343" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>343" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>464" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>464" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>593_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2188" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>479" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>479" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>646" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>646" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>746" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>746" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>661" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>661" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>799" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>799" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>899" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>899" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>814" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>814" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>84_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2178" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>84" (MUX)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>84"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>84_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2179" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>220_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2180" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>220" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>220" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>220_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2181" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>400_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2184" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>400" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>400" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>400_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2185" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>536_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2186" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>536" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>536" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>536_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2187" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>718_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2190" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>718" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>718" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>718_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2191" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>871_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2192" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>871" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>871" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<1>871_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2193" is sourceless and
+has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_2" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_2" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_1" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_1" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_0" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_0" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_and0000
+" is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_6" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_6" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>993" (ROM)
+removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_5" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_5" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>949" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>949" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>277" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>277" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>993_SW0" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N1748" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>593" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>593" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_4" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_4" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_3" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_3" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>12" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>12"
+is sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>277_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2151" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>27" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>27"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>148" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>148" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>277_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2150" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>163" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>163" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>328" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>328" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>593_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2157" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>343" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>343" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>464" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>464" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>593_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2156" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>479" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>479" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>646" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>646" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>746" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>746" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>661" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>661" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>799" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>799" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>899" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>899" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>814" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>814" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>84_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2146" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>84" (MUX)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>84"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>84_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2147" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>220_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2148" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>220" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>220" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>220_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2149" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>400_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2152" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>400" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>400" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>400_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2153" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>536_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2154" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>536" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>536" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>536_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2155" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>718_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2158" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>718" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>718" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>718_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2159" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>871_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2160" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>871" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>871" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<3>871_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2161" is sourceless and
+has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_2" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_2" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_1" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_1" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_0" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_0" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_and0000
+" is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_6" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_6" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>993" (ROM)
+removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_5" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_5" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>949" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>949" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>277" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>277" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>993_SW0" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N1754" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>593" (MUX)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>593" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_4" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_4" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_3" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_3" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>12" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>12"
+is sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>277_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2199" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>27" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>27"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>148" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>148" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>277_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2198" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>163" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>163" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>328" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>328" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>593_G" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2205" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>343" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>343" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>464" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>464" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>593_F" (ROM)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2204" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>479" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>479" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>646" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>646" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>746" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>746" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>661" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>661" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>799" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>799" is
+sourceless and has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>899" (ROM)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>899" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>814" (ROM)
+removed.
+    The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>814" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>84_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2194" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>84" (MUX)
+removed.
+      The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>84"
+is sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>84_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2195" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>220_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2196" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>220" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>220" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>220_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2197" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>400_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2200" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>400" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>400" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>400_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2201" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>536_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2202" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>536" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>536" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>536_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2203" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>718_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2206" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>718" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>718" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>718_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2207" is sourceless and
+has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>871_F" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2208" is sourceless and
+has been removed.
+     Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>871" (MUX)
+removed.
+      The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>871" is
+sourceless and has been removed.
+   Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/spp_read<0>871_G" (ROM)
+removed.
+    The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N2209" is sourceless and
+has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_2" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_2" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_1" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_1" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_0" (FF)
+removed.
+  The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_0" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/dcmclock_1mhz" is
+sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/clkfx_inst_1mhz"
+(CKBUF) removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<3>" is
+sourceless and has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_9_cmp_eq0000"
+is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_9_mux00001"
+(ROM) removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_14_cmp_eq0000"
+is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_14_mux00001"
+(ROM) removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_13_cmp_eq0000"
+is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_13_mux00001"
+(ROM) removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_12_cmp_eq0000"
+is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_12_mux00001"
+(ROM) removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_11_cmp_eq0000"
+is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_11_mux00001"
+(ROM) removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_10_cmp_eq0000"
+is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_10_mux00001"
+(ROM) removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N12" is sourceless and
+has been removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_and0000
+_bdd4" is sourceless and has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_4_and0000
+11" (ROM) removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_3_and0000
+11" (ROM) removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_2_and0000
+11" (ROM) removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_1_and0000
+11" (ROM) removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_and0000
+11" (ROM) removed.
+The signal "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/N237" is sourceless and
+has been removed.
+ Sourceless block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_and0000
+4" (ROM) removed.
+The signal
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<0>31"
+is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "XLXI_55/fifo_a2d/Direction_Set" is unused and has been removed.
+ Unused block "XLXI_55/fifo_a2d/Direction_Set1" (ROM) removed.
+The signal "XLXI_55/fifo_d2a/Direction_Set" is unused and has been removed.
+ Unused block "XLXI_55/fifo_d2a/Direction_Set1" (ROM) removed.
+  The signal "XLXI_55/fifo_d2a/GrayCounter_pWr/GrayCount_out<2>" is unused and has
+been removed.
+   Unused block "XLXI_55/fifo_d2a/GrayCounter_pWr/GrayCount_out_2" (SFF) removed.
+  The signal "XLXI_55/fifo_d2a/GrayCounter_pWr/GrayCount_out<1>" is unused and has
+been removed.
+   Unused block "XLXI_55/fifo_d2a/GrayCounter_pWr/GrayCount_out_1" (SFF) removed.
+    The signal "XLXI_55/fifo_d2a/GrayCounter_pWr/GrayCount_out_xor0000<1>" is unused
+and has been removed.
+     Unused block
+"XLXI_55/fifo_d2a/GrayCounter_pWr/Mxor_GrayCount_out_xor0000_Result<1>1" (ROM)
+removed.
+The signal "XLXI_55/fifo_d2a/PresetFull" is unused and has been removed.
+The signal "ext_pins_inout<0>" is unused and has been removed.
+ Unused block "ext_pins_inout_0_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<100>" is unused and has been removed.
+ Unused block "ext_pins_inout_100_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<10>" is unused and has been removed.
+ Unused block "ext_pins_inout_10_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<11>" is unused and has been removed.
+ Unused block "ext_pins_inout_11_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<12>" is unused and has been removed.
+ Unused block "ext_pins_inout_12_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<13>" is unused and has been removed.
+ Unused block "ext_pins_inout_13_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<14>" is unused and has been removed.
+ Unused block "ext_pins_inout_14_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<15>" is unused and has been removed.
+ Unused block "ext_pins_inout_15_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<16>" is unused and has been removed.
+ Unused block "ext_pins_inout_16_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<17>" is unused and has been removed.
+ Unused block "ext_pins_inout_17_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<18>" is unused and has been removed.
+ Unused block "ext_pins_inout_18_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<19>" is unused and has been removed.
+ Unused block "ext_pins_inout_19_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<1>" is unused and has been removed.
+ Unused block "ext_pins_inout_1_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<20>" is unused and has been removed.
+ Unused block "ext_pins_inout_20_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<21>" is unused and has been removed.
+ Unused block "ext_pins_inout_21_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<22>" is unused and has been removed.
+ Unused block "ext_pins_inout_22_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<23>" is unused and has been removed.
+ Unused block "ext_pins_inout_23_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<24>" is unused and has been removed.
+ Unused block "ext_pins_inout_24_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<25>" is unused and has been removed.
+ Unused block "ext_pins_inout_25_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<26>" is unused and has been removed.
+ Unused block "ext_pins_inout_26_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<27>" is unused and has been removed.
+ Unused block "ext_pins_inout_27_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<28>" is unused and has been removed.
+ Unused block "ext_pins_inout_28_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<29>" is unused and has been removed.
+ Unused block "ext_pins_inout_29_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<2>" is unused and has been removed.
+ Unused block "ext_pins_inout_2_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<30>" is unused and has been removed.
+ Unused block "ext_pins_inout_30_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<31>" is unused and has been removed.
+ Unused block "ext_pins_inout_31_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<32>" is unused and has been removed.
+ Unused block "ext_pins_inout_32_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<33>" is unused and has been removed.
+ Unused block "ext_pins_inout_33_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<34>" is unused and has been removed.
+ Unused block "ext_pins_inout_34_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<35>" is unused and has been removed.
+ Unused block "ext_pins_inout_35_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<36>" is unused and has been removed.
+ Unused block "ext_pins_inout_36_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<37>" is unused and has been removed.
+ Unused block "ext_pins_inout_37_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<38>" is unused and has been removed.
+ Unused block "ext_pins_inout_38_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<39>" is unused and has been removed.
+ Unused block "ext_pins_inout_39_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<3>" is unused and has been removed.
+ Unused block "ext_pins_inout_3_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<40>" is unused and has been removed.
+ Unused block "ext_pins_inout_40_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<41>" is unused and has been removed.
+ Unused block "ext_pins_inout_41_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<42>" is unused and has been removed.
+ Unused block "ext_pins_inout_42_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<43>" is unused and has been removed.
+ Unused block "ext_pins_inout_43_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<44>" is unused and has been removed.
+ Unused block "ext_pins_inout_44_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<45>" is unused and has been removed.
+ Unused block "ext_pins_inout_45_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<46>" is unused and has been removed.
+ Unused block "ext_pins_inout_46_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<47>" is unused and has been removed.
+ Unused block "ext_pins_inout_47_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<48>" is unused and has been removed.
+ Unused block "ext_pins_inout_48_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<49>" is unused and has been removed.
+ Unused block "ext_pins_inout_49_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<4>" is unused and has been removed.
+ Unused block "ext_pins_inout_4_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<50>" is unused and has been removed.
+ Unused block "ext_pins_inout_50_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<51>" is unused and has been removed.
+ Unused block "ext_pins_inout_51_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<52>" is unused and has been removed.
+ Unused block "ext_pins_inout_52_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<53>" is unused and has been removed.
+ Unused block "ext_pins_inout_53_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<54>" is unused and has been removed.
+ Unused block "ext_pins_inout_54_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<55>" is unused and has been removed.
+ Unused block "ext_pins_inout_55_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<56>" is unused and has been removed.
+ Unused block "ext_pins_inout_56_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<57>" is unused and has been removed.
+ Unused block "ext_pins_inout_57_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<58>" is unused and has been removed.
+ Unused block "ext_pins_inout_58_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<59>" is unused and has been removed.
+ Unused block "ext_pins_inout_59_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<5>" is unused and has been removed.
+ Unused block "ext_pins_inout_5_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<60>" is unused and has been removed.
+ Unused block "ext_pins_inout_60_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<61>" is unused and has been removed.
+ Unused block "ext_pins_inout_61_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<62>" is unused and has been removed.
+ Unused block "ext_pins_inout_62_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<63>" is unused and has been removed.
+ Unused block "ext_pins_inout_63_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<64>" is unused and has been removed.
+ Unused block "ext_pins_inout_64_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<65>" is unused and has been removed.
+ Unused block "ext_pins_inout_65_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<66>" is unused and has been removed.
+ Unused block "ext_pins_inout_66_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<67>" is unused and has been removed.
+ Unused block "ext_pins_inout_67_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<68>" is unused and has been removed.
+ Unused block "ext_pins_inout_68_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<69>" is unused and has been removed.
+ Unused block "ext_pins_inout_69_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<6>" is unused and has been removed.
+ Unused block "ext_pins_inout_6_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<70>" is unused and has been removed.
+ Unused block "ext_pins_inout_70_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<71>" is unused and has been removed.
+ Unused block "ext_pins_inout_71_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<72>" is unused and has been removed.
+ Unused block "ext_pins_inout_72_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<73>" is unused and has been removed.
+ Unused block "ext_pins_inout_73_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<74>" is unused and has been removed.
+ Unused block "ext_pins_inout_74_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<75>" is unused and has been removed.
+ Unused block "ext_pins_inout_75_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<76>" is unused and has been removed.
+ Unused block "ext_pins_inout_76_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<77>" is unused and has been removed.
+ Unused block "ext_pins_inout_77_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<78>" is unused and has been removed.
+ Unused block "ext_pins_inout_78_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<79>" is unused and has been removed.
+ Unused block "ext_pins_inout_79_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<7>" is unused and has been removed.
+ Unused block "ext_pins_inout_7_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<80>" is unused and has been removed.
+ Unused block "ext_pins_inout_80_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<81>" is unused and has been removed.
+ Unused block "ext_pins_inout_81_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<82>" is unused and has been removed.
+ Unused block "ext_pins_inout_82_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<83>" is unused and has been removed.
+ Unused block "ext_pins_inout_83_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<84>" is unused and has been removed.
+ Unused block "ext_pins_inout_84_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<85>" is unused and has been removed.
+ Unused block "ext_pins_inout_85_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<86>" is unused and has been removed.
+ Unused block "ext_pins_inout_86_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<87>" is unused and has been removed.
+ Unused block "ext_pins_inout_87_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<88>" is unused and has been removed.
+ Unused block "ext_pins_inout_88_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<89>" is unused and has been removed.
+ Unused block "ext_pins_inout_89_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<8>" is unused and has been removed.
+ Unused block "ext_pins_inout_8_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<90>" is unused and has been removed.
+ Unused block "ext_pins_inout_90_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<91>" is unused and has been removed.
+ Unused block "ext_pins_inout_91_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<92>" is unused and has been removed.
+ Unused block "ext_pins_inout_92_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<93>" is unused and has been removed.
+ Unused block "ext_pins_inout_93_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<94>" is unused and has been removed.
+ Unused block "ext_pins_inout_94_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<95>" is unused and has been removed.
+ Unused block "ext_pins_inout_95_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<96>" is unused and has been removed.
+ Unused block "ext_pins_inout_96_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<97>" is unused and has been removed.
+ Unused block "ext_pins_inout_97_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<98>" is unused and has been removed.
+ Unused block "ext_pins_inout_98_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<99>" is unused and has been removed.
+ Unused block "ext_pins_inout_99_OBUFT" (TRI) removed.
+The signal "ext_pins_inout<9>" is unused and has been removed.
+ Unused block "ext_pins_inout_9_OBUFT" (TRI) removed.
+The signal "ext_pins_out<100>" is unused and has been removed.
+ Unused block "ext_pins_out_100_OBUFT" (TRI) removed.
+The signal "ext_pins_out<10>" is unused and has been removed.
+ Unused block "ext_pins_out_10_OBUFT" (TRI) removed.
+The signal "ext_pins_out<11>" is unused and has been removed.
+ Unused block "ext_pins_out_11_OBUFT" (TRI) removed.
+The signal "ext_pins_out<12>" is unused and has been removed.
+ Unused block "ext_pins_out_12_OBUFT" (TRI) removed.
+The signal "ext_pins_out<13>" is unused and has been removed.
+ Unused block "ext_pins_out_13_OBUFT" (TRI) removed.
+The signal "ext_pins_out<14>" is unused and has been removed.
+ Unused block "ext_pins_out_14_OBUFT" (TRI) removed.
+The signal "ext_pins_out<15>" is unused and has been removed.
+ Unused block "ext_pins_out_15_OBUFT" (TRI) removed.
+The signal "ext_pins_out<16>" is unused and has been removed.
+ Unused block "ext_pins_out_16_OBUFT" (TRI) removed.
+The signal "ext_pins_out<17>" is unused and has been removed.
+ Unused block "ext_pins_out_17_OBUFT" (TRI) removed.
+The signal "ext_pins_out<18>" is unused and has been removed.
+ Unused block "ext_pins_out_18_OBUFT" (TRI) removed.
+The signal "ext_pins_out<19>" is unused and has been removed.
+ Unused block "ext_pins_out_19_OBUFT" (TRI) removed.
+The signal "ext_pins_out<20>" is unused and has been removed.
+ Unused block "ext_pins_out_20_OBUFT" (TRI) removed.
+The signal "ext_pins_out<21>" is unused and has been removed.
+ Unused block "ext_pins_out_21_OBUFT" (TRI) removed.
+The signal "ext_pins_out<22>" is unused and has been removed.
+ Unused block "ext_pins_out_22_OBUFT" (TRI) removed.
+The signal "ext_pins_out<23>" is unused and has been removed.
+ Unused block "ext_pins_out_23_OBUFT" (TRI) removed.
+The signal "ext_pins_out<24>" is unused and has been removed.
+ Unused block "ext_pins_out_24_OBUFT" (TRI) removed.
+The signal "ext_pins_out<25>" is unused and has been removed.
+ Unused block "ext_pins_out_25_OBUFT" (TRI) removed.
+The signal "ext_pins_out<26>" is unused and has been removed.
+ Unused block "ext_pins_out_26_OBUFT" (TRI) removed.
+The signal "ext_pins_out<27>" is unused and has been removed.
+ Unused block "ext_pins_out_27_OBUFT" (TRI) removed.
+The signal "ext_pins_out<28>" is unused and has been removed.
+ Unused block "ext_pins_out_28_OBUFT" (TRI) removed.
+The signal "ext_pins_out<29>" is unused and has been removed.
+ Unused block "ext_pins_out_29_OBUFT" (TRI) removed.
+The signal "ext_pins_out<30>" is unused and has been removed.
+ Unused block "ext_pins_out_30_OBUFT" (TRI) removed.
+The signal "ext_pins_out<31>" is unused and has been removed.
+ Unused block "ext_pins_out_31_OBUFT" (TRI) removed.
+The signal "ext_pins_out<32>" is unused and has been removed.
+ Unused block "ext_pins_out_32_OBUFT" (TRI) removed.
+The signal "ext_pins_out<33>" is unused and has been removed.
+ Unused block "ext_pins_out_33_OBUFT" (TRI) removed.
+The signal "ext_pins_out<34>" is unused and has been removed.
+ Unused block "ext_pins_out_34_OBUFT" (TRI) removed.
+The signal "ext_pins_out<35>" is unused and has been removed.
+ Unused block "ext_pins_out_35_OBUFT" (TRI) removed.
+The signal "ext_pins_out<36>" is unused and has been removed.
+ Unused block "ext_pins_out_36_OBUFT" (TRI) removed.
+The signal "ext_pins_out<37>" is unused and has been removed.
+ Unused block "ext_pins_out_37_OBUFT" (TRI) removed.
+The signal "ext_pins_out<38>" is unused and has been removed.
+ Unused block "ext_pins_out_38_OBUFT" (TRI) removed.
+The signal "ext_pins_out<39>" is unused and has been removed.
+ Unused block "ext_pins_out_39_OBUFT" (TRI) removed.
+The signal "ext_pins_out<40>" is unused and has been removed.
+ Unused block "ext_pins_out_40_OBUFT" (TRI) removed.
+The signal "ext_pins_out<41>" is unused and has been removed.
+ Unused block "ext_pins_out_41_OBUFT" (TRI) removed.
+The signal "ext_pins_out<42>" is unused and has been removed.
+ Unused block "ext_pins_out_42_OBUFT" (TRI) removed.
+The signal "ext_pins_out<43>" is unused and has been removed.
+ Unused block "ext_pins_out_43_OBUFT" (TRI) removed.
+The signal "ext_pins_out<44>" is unused and has been removed.
+ Unused block "ext_pins_out_44_OBUFT" (TRI) removed.
+The signal "ext_pins_out<45>" is unused and has been removed.
+ Unused block "ext_pins_out_45_OBUFT" (TRI) removed.
+The signal "ext_pins_out<46>" is unused and has been removed.
+ Unused block "ext_pins_out_46_OBUFT" (TRI) removed.
+The signal "ext_pins_out<47>" is unused and has been removed.
+ Unused block "ext_pins_out_47_OBUFT" (TRI) removed.
+The signal "ext_pins_out<48>" is unused and has been removed.
+ Unused block "ext_pins_out_48_OBUFT" (TRI) removed.
+The signal "ext_pins_out<49>" is unused and has been removed.
+ Unused block "ext_pins_out_49_OBUFT" (TRI) removed.
+The signal "ext_pins_out<4>" is unused and has been removed.
+ Unused block "ext_pins_out_4_OBUFT" (TRI) removed.
+The signal "ext_pins_out<50>" is unused and has been removed.
+ Unused block "ext_pins_out_50_OBUFT" (TRI) removed.
+The signal "ext_pins_out<51>" is unused and has been removed.
+ Unused block "ext_pins_out_51_OBUFT" (TRI) removed.
+The signal "ext_pins_out<52>" is unused and has been removed.
+ Unused block "ext_pins_out_52_OBUFT" (TRI) removed.
+The signal "ext_pins_out<53>" is unused and has been removed.
+ Unused block "ext_pins_out_53_OBUFT" (TRI) removed.
+The signal "ext_pins_out<54>" is unused and has been removed.
+ Unused block "ext_pins_out_54_OBUFT" (TRI) removed.
+The signal "ext_pins_out<55>" is unused and has been removed.
+ Unused block "ext_pins_out_55_OBUFT" (TRI) removed.
+The signal "ext_pins_out<56>" is unused and has been removed.
+ Unused block "ext_pins_out_56_OBUFT" (TRI) removed.
+The signal "ext_pins_out<57>" is unused and has been removed.
+ Unused block "ext_pins_out_57_OBUFT" (TRI) removed.
+The signal "ext_pins_out<58>" is unused and has been removed.
+ Unused block "ext_pins_out_58_OBUFT" (TRI) removed.
+The signal "ext_pins_out<59>" is unused and has been removed.
+ Unused block "ext_pins_out_59_OBUFT" (TRI) removed.
+The signal "ext_pins_out<5>" is unused and has been removed.
+ Unused block "ext_pins_out_5_OBUFT" (TRI) removed.
+The signal "ext_pins_out<60>" is unused and has been removed.
+ Unused block "ext_pins_out_60_OBUFT" (TRI) removed.
+The signal "ext_pins_out<61>" is unused and has been removed.
+ Unused block "ext_pins_out_61_OBUFT" (TRI) removed.
+The signal "ext_pins_out<62>" is unused and has been removed.
+ Unused block "ext_pins_out_62_OBUFT" (TRI) removed.
+The signal "ext_pins_out<63>" is unused and has been removed.
+ Unused block "ext_pins_out_63_OBUFT" (TRI) removed.
+The signal "ext_pins_out<64>" is unused and has been removed.
+ Unused block "ext_pins_out_64_OBUFT" (TRI) removed.
+The signal "ext_pins_out<65>" is unused and has been removed.
+ Unused block "ext_pins_out_65_OBUFT" (TRI) removed.
+The signal "ext_pins_out<66>" is unused and has been removed.
+ Unused block "ext_pins_out_66_OBUFT" (TRI) removed.
+The signal "ext_pins_out<67>" is unused and has been removed.
+ Unused block "ext_pins_out_67_OBUFT" (TRI) removed.
+The signal "ext_pins_out<68>" is unused and has been removed.
+ Unused block "ext_pins_out_68_OBUFT" (TRI) removed.
+The signal "ext_pins_out<69>" is unused and has been removed.
+ Unused block "ext_pins_out_69_OBUFT" (TRI) removed.
+The signal "ext_pins_out<6>" is unused and has been removed.
+ Unused block "ext_pins_out_6_OBUFT" (TRI) removed.
+The signal "ext_pins_out<70>" is unused and has been removed.
+ Unused block "ext_pins_out_70_OBUFT" (TRI) removed.
+The signal "ext_pins_out<71>" is unused and has been removed.
+ Unused block "ext_pins_out_71_OBUFT" (TRI) removed.
+The signal "ext_pins_out<72>" is unused and has been removed.
+ Unused block "ext_pins_out_72_OBUFT" (TRI) removed.
+The signal "ext_pins_out<73>" is unused and has been removed.
+ Unused block "ext_pins_out_73_OBUFT" (TRI) removed.
+The signal "ext_pins_out<74>" is unused and has been removed.
+ Unused block "ext_pins_out_74_OBUFT" (TRI) removed.
+The signal "ext_pins_out<75>" is unused and has been removed.
+ Unused block "ext_pins_out_75_OBUFT" (TRI) removed.
+The signal "ext_pins_out<76>" is unused and has been removed.
+ Unused block "ext_pins_out_76_OBUFT" (TRI) removed.
+The signal "ext_pins_out<77>" is unused and has been removed.
+ Unused block "ext_pins_out_77_OBUFT" (TRI) removed.
+The signal "ext_pins_out<78>" is unused and has been removed.
+ Unused block "ext_pins_out_78_OBUFT" (TRI) removed.
+The signal "ext_pins_out<79>" is unused and has been removed.
+ Unused block "ext_pins_out_79_OBUFT" (TRI) removed.
+The signal "ext_pins_out<7>" is unused and has been removed.
+ Unused block "ext_pins_out_7_OBUFT" (TRI) removed.
+The signal "ext_pins_out<80>" is unused and has been removed.
+ Unused block "ext_pins_out_80_OBUFT" (TRI) removed.
+The signal "ext_pins_out<81>" is unused and has been removed.
+ Unused block "ext_pins_out_81_OBUFT" (TRI) removed.
+The signal "ext_pins_out<82>" is unused and has been removed.
+ Unused block "ext_pins_out_82_OBUFT" (TRI) removed.
+The signal "ext_pins_out<83>" is unused and has been removed.
+ Unused block "ext_pins_out_83_OBUFT" (TRI) removed.
+The signal "ext_pins_out<84>" is unused and has been removed.
+ Unused block "ext_pins_out_84_OBUFT" (TRI) removed.
+The signal "ext_pins_out<85>" is unused and has been removed.
+ Unused block "ext_pins_out_85_OBUFT" (TRI) removed.
+The signal "ext_pins_out<86>" is unused and has been removed.
+ Unused block "ext_pins_out_86_OBUFT" (TRI) removed.
+The signal "ext_pins_out<87>" is unused and has been removed.
+ Unused block "ext_pins_out_87_OBUFT" (TRI) removed.
+The signal "ext_pins_out<88>" is unused and has been removed.
+ Unused block "ext_pins_out_88_OBUFT" (TRI) removed.
+The signal "ext_pins_out<89>" is unused and has been removed.
+ Unused block "ext_pins_out_89_OBUFT" (TRI) removed.
+The signal "ext_pins_out<8>" is unused and has been removed.
+ Unused block "ext_pins_out_8_OBUFT" (TRI) removed.
+The signal "ext_pins_out<90>" is unused and has been removed.
+ Unused block "ext_pins_out_90_OBUFT" (TRI) removed.
+The signal "ext_pins_out<91>" is unused and has been removed.
+ Unused block "ext_pins_out_91_OBUFT" (TRI) removed.
+The signal "ext_pins_out<92>" is unused and has been removed.
+ Unused block "ext_pins_out_92_OBUFT" (TRI) removed.
+The signal "ext_pins_out<93>" is unused and has been removed.
+ Unused block "ext_pins_out_93_OBUFT" (TRI) removed.
+The signal "ext_pins_out<94>" is unused and has been removed.
+ Unused block "ext_pins_out_94_OBUFT" (TRI) removed.
+The signal "ext_pins_out<95>" is unused and has been removed.
+ Unused block "ext_pins_out_95_OBUFT" (TRI) removed.
+The signal "ext_pins_out<96>" is unused and has been removed.
+ Unused block "ext_pins_out_96_OBUFT" (TRI) removed.
+The signal "ext_pins_out<97>" is unused and has been removed.
+ Unused block "ext_pins_out_97_OBUFT" (TRI) removed.
+The signal "ext_pins_out<98>" is unused and has been removed.
+ Unused block "ext_pins_out_98_OBUFT" (TRI) removed.
+The signal "ext_pins_out<99>" is unused and has been removed.
+ Unused block "ext_pins_out_99_OBUFT" (TRI) removed.
+The signal "ext_pins_out<9>" is unused and has been removed.
+ Unused block "ext_pins_out_9_OBUFT" (TRI) removed.
+Unused block "XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/vgainst"
+(CKBUF) removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_0_and0000
+4_SW0" (ROM) removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/output_mapper_q_5_and0000
+11" (ROM) removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_11" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_12" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_13" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_14" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_15" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_16" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_17" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_18" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_19" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_20" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_21" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_22" (FF)
+removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<0>31"
+(ROM) removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<3>_SW0"
+(ROM) removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_10_cmp_eq00001
+" (ROM) removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_11_cmp_eq00001
+" (ROM) removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_12_cmp_eq00001
+" (ROM) removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_13_cmp_eq00001
+" (ROM) removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_14_cmp_eq00001
+" (ROM) removed.
+Unused block
+"XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/slot_cyc_i_9_cmp_eq00001"
+(ROM) removed.
+Unused block "ext_pins_inout<0>" (PAD) removed.
+Unused block "ext_pins_inout<100>" (PAD) removed.
+Unused block "ext_pins_inout<10>" (PAD) removed.
+Unused block "ext_pins_inout<11>" (PAD) removed.
+Unused block "ext_pins_inout<12>" (PAD) removed.
+Unused block "ext_pins_inout<13>" (PAD) removed.
+Unused block "ext_pins_inout<14>" (PAD) removed.
+Unused block "ext_pins_inout<15>" (PAD) removed.
+Unused block "ext_pins_inout<16>" (PAD) removed.
+Unused block "ext_pins_inout<17>" (PAD) removed.
+Unused block "ext_pins_inout<18>" (PAD) removed.
+Unused block "ext_pins_inout<19>" (PAD) removed.
+Unused block "ext_pins_inout<1>" (PAD) removed.
+Unused block "ext_pins_inout<20>" (PAD) removed.
+Unused block "ext_pins_inout<21>" (PAD) removed.
+Unused block "ext_pins_inout<22>" (PAD) removed.
+Unused block "ext_pins_inout<23>" (PAD) removed.
+Unused block "ext_pins_inout<24>" (PAD) removed.
+Unused block "ext_pins_inout<25>" (PAD) removed.
+Unused block "ext_pins_inout<26>" (PAD) removed.
+Unused block "ext_pins_inout<27>" (PAD) removed.
+Unused block "ext_pins_inout<28>" (PAD) removed.
+Unused block "ext_pins_inout<29>" (PAD) removed.
+Unused block "ext_pins_inout<2>" (PAD) removed.
+Unused block "ext_pins_inout<30>" (PAD) removed.
+Unused block "ext_pins_inout<31>" (PAD) removed.
+Unused block "ext_pins_inout<32>" (PAD) removed.
+Unused block "ext_pins_inout<33>" (PAD) removed.
+Unused block "ext_pins_inout<34>" (PAD) removed.
+Unused block "ext_pins_inout<35>" (PAD) removed.
+Unused block "ext_pins_inout<36>" (PAD) removed.
+Unused block "ext_pins_inout<37>" (PAD) removed.
+Unused block "ext_pins_inout<38>" (PAD) removed.
+Unused block "ext_pins_inout<39>" (PAD) removed.
+Unused block "ext_pins_inout<3>" (PAD) removed.
+Unused block "ext_pins_inout<40>" (PAD) removed.
+Unused block "ext_pins_inout<41>" (PAD) removed.
+Unused block "ext_pins_inout<42>" (PAD) removed.
+Unused block "ext_pins_inout<43>" (PAD) removed.
+Unused block "ext_pins_inout<44>" (PAD) removed.
+Unused block "ext_pins_inout<45>" (PAD) removed.
+Unused block "ext_pins_inout<46>" (PAD) removed.
+Unused block "ext_pins_inout<47>" (PAD) removed.
+Unused block "ext_pins_inout<48>" (PAD) removed.
+Unused block "ext_pins_inout<49>" (PAD) removed.
+Unused block "ext_pins_inout<4>" (PAD) removed.
+Unused block "ext_pins_inout<50>" (PAD) removed.
+Unused block "ext_pins_inout<51>" (PAD) removed.
+Unused block "ext_pins_inout<52>" (PAD) removed.
+Unused block "ext_pins_inout<53>" (PAD) removed.
+Unused block "ext_pins_inout<54>" (PAD) removed.
+Unused block "ext_pins_inout<55>" (PAD) removed.
+Unused block "ext_pins_inout<56>" (PAD) removed.
+Unused block "ext_pins_inout<57>" (PAD) removed.
+Unused block "ext_pins_inout<58>" (PAD) removed.
+Unused block "ext_pins_inout<59>" (PAD) removed.
+Unused block "ext_pins_inout<5>" (PAD) removed.
+Unused block "ext_pins_inout<60>" (PAD) removed.
+Unused block "ext_pins_inout<61>" (PAD) removed.
+Unused block "ext_pins_inout<62>" (PAD) removed.
+Unused block "ext_pins_inout<63>" (PAD) removed.
+Unused block "ext_pins_inout<64>" (PAD) removed.
+Unused block "ext_pins_inout<65>" (PAD) removed.
+Unused block "ext_pins_inout<66>" (PAD) removed.
+Unused block "ext_pins_inout<67>" (PAD) removed.
+Unused block "ext_pins_inout<68>" (PAD) removed.
+Unused block "ext_pins_inout<69>" (PAD) removed.
+Unused block "ext_pins_inout<6>" (PAD) removed.
+Unused block "ext_pins_inout<70>" (PAD) removed.
+Unused block "ext_pins_inout<71>" (PAD) removed.
+Unused block "ext_pins_inout<72>" (PAD) removed.
+Unused block "ext_pins_inout<73>" (PAD) removed.
+Unused block "ext_pins_inout<74>" (PAD) removed.
+Unused block "ext_pins_inout<75>" (PAD) removed.
+Unused block "ext_pins_inout<76>" (PAD) removed.
+Unused block "ext_pins_inout<77>" (PAD) removed.
+Unused block "ext_pins_inout<78>" (PAD) removed.
+Unused block "ext_pins_inout<79>" (PAD) removed.
+Unused block "ext_pins_inout<7>" (PAD) removed.
+Unused block "ext_pins_inout<80>" (PAD) removed.
+Unused block "ext_pins_inout<81>" (PAD) removed.
+Unused block "ext_pins_inout<82>" (PAD) removed.
+Unused block "ext_pins_inout<83>" (PAD) removed.
+Unused block "ext_pins_inout<84>" (PAD) removed.
+Unused block "ext_pins_inout<85>" (PAD) removed.
+Unused block "ext_pins_inout<86>" (PAD) removed.
+Unused block "ext_pins_inout<87>" (PAD) removed.
+Unused block "ext_pins_inout<88>" (PAD) removed.
+Unused block "ext_pins_inout<89>" (PAD) removed.
+Unused block "ext_pins_inout<8>" (PAD) removed.
+Unused block "ext_pins_inout<90>" (PAD) removed.
+Unused block "ext_pins_inout<91>" (PAD) removed.
+Unused block "ext_pins_inout<92>" (PAD) removed.
+Unused block "ext_pins_inout<93>" (PAD) removed.
+Unused block "ext_pins_inout<94>" (PAD) removed.
+Unused block "ext_pins_inout<95>" (PAD) removed.
+Unused block "ext_pins_inout<96>" (PAD) removed.
+Unused block "ext_pins_inout<97>" (PAD) removed.
+Unused block "ext_pins_inout<98>" (PAD) removed.
+Unused block "ext_pins_inout<99>" (PAD) removed.
+Unused block "ext_pins_inout<9>" (PAD) removed.
+Unused block "ext_pins_out<100>" (PAD) removed.
+Unused block "ext_pins_out<10>" (PAD) removed.
+Unused block "ext_pins_out<11>" (PAD) removed.
+Unused block "ext_pins_out<12>" (PAD) removed.
+Unused block "ext_pins_out<13>" (PAD) removed.
+Unused block "ext_pins_out<14>" (PAD) removed.
+Unused block "ext_pins_out<15>" (PAD) removed.
+Unused block "ext_pins_out<16>" (PAD) removed.
+Unused block "ext_pins_out<17>" (PAD) removed.
+Unused block "ext_pins_out<18>" (PAD) removed.
+Unused block "ext_pins_out<19>" (PAD) removed.
+Unused block "ext_pins_out<20>" (PAD) removed.
+Unused block "ext_pins_out<21>" (PAD) removed.
+Unused block "ext_pins_out<22>" (PAD) removed.
+Unused block "ext_pins_out<23>" (PAD) removed.
+Unused block "ext_pins_out<24>" (PAD) removed.
+Unused block "ext_pins_out<25>" (PAD) removed.
+Unused block "ext_pins_out<26>" (PAD) removed.
+Unused block "ext_pins_out<27>" (PAD) removed.
+Unused block "ext_pins_out<28>" (PAD) removed.
+Unused block "ext_pins_out<29>" (PAD) removed.
+Unused block "ext_pins_out<30>" (PAD) removed.
+Unused block "ext_pins_out<31>" (PAD) removed.
+Unused block "ext_pins_out<32>" (PAD) removed.
+Unused block "ext_pins_out<33>" (PAD) removed.
+Unused block "ext_pins_out<34>" (PAD) removed.
+Unused block "ext_pins_out<35>" (PAD) removed.
+Unused block "ext_pins_out<36>" (PAD) removed.
+Unused block "ext_pins_out<37>" (PAD) removed.
+Unused block "ext_pins_out<38>" (PAD) removed.
+Unused block "ext_pins_out<39>" (PAD) removed.
+Unused block "ext_pins_out<40>" (PAD) removed.
+Unused block "ext_pins_out<41>" (PAD) removed.
+Unused block "ext_pins_out<42>" (PAD) removed.
+Unused block "ext_pins_out<43>" (PAD) removed.
+Unused block "ext_pins_out<44>" (PAD) removed.
+Unused block "ext_pins_out<45>" (PAD) removed.
+Unused block "ext_pins_out<46>" (PAD) removed.
+Unused block "ext_pins_out<47>" (PAD) removed.
+Unused block "ext_pins_out<48>" (PAD) removed.
+Unused block "ext_pins_out<49>" (PAD) removed.
+Unused block "ext_pins_out<4>" (PAD) removed.
+Unused block "ext_pins_out<50>" (PAD) removed.
+Unused block "ext_pins_out<51>" (PAD) removed.
+Unused block "ext_pins_out<52>" (PAD) removed.
+Unused block "ext_pins_out<53>" (PAD) removed.
+Unused block "ext_pins_out<54>" (PAD) removed.
+Unused block "ext_pins_out<55>" (PAD) removed.
+Unused block "ext_pins_out<56>" (PAD) removed.
+Unused block "ext_pins_out<57>" (PAD) removed.
+Unused block "ext_pins_out<58>" (PAD) removed.
+Unused block "ext_pins_out<59>" (PAD) removed.
+Unused block "ext_pins_out<5>" (PAD) removed.
+Unused block "ext_pins_out<60>" (PAD) removed.
+Unused block "ext_pins_out<61>" (PAD) removed.
+Unused block "ext_pins_out<62>" (PAD) removed.
+Unused block "ext_pins_out<63>" (PAD) removed.
+Unused block "ext_pins_out<64>" (PAD) removed.
+Unused block "ext_pins_out<65>" (PAD) removed.
+Unused block "ext_pins_out<66>" (PAD) removed.
+Unused block "ext_pins_out<67>" (PAD) removed.
+Unused block "ext_pins_out<68>" (PAD) removed.
+Unused block "ext_pins_out<69>" (PAD) removed.
+Unused block "ext_pins_out<6>" (PAD) removed.
+Unused block "ext_pins_out<70>" (PAD) removed.
+Unused block "ext_pins_out<71>" (PAD) removed.
+Unused block "ext_pins_out<72>" (PAD) removed.
+Unused block "ext_pins_out<73>" (PAD) removed.
+Unused block "ext_pins_out<74>" (PAD) removed.
+Unused block "ext_pins_out<75>" (PAD) removed.
+Unused block "ext_pins_out<76>" (PAD) removed.
+Unused block "ext_pins_out<77>" (PAD) removed.
+Unused block "ext_pins_out<78>" (PAD) removed.
+Unused block "ext_pins_out<79>" (PAD) removed.
+Unused block "ext_pins_out<7>" (PAD) removed.
+Unused block "ext_pins_out<80>" (PAD) removed.
+Unused block "ext_pins_out<81>" (PAD) removed.
+Unused block "ext_pins_out<82>" (PAD) removed.
+Unused block "ext_pins_out<83>" (PAD) removed.
+Unused block "ext_pins_out<84>" (PAD) removed.
+Unused block "ext_pins_out<85>" (PAD) removed.
+Unused block "ext_pins_out<86>" (PAD) removed.
+Unused block "ext_pins_out<87>" (PAD) removed.
+Unused block "ext_pins_out<88>" (PAD) removed.
+Unused block "ext_pins_out<89>" (PAD) removed.
+Unused block "ext_pins_out<8>" (PAD) removed.
+Unused block "ext_pins_out<90>" (PAD) removed.
+Unused block "ext_pins_out<91>" (PAD) removed.
+Unused block "ext_pins_out<92>" (PAD) removed.
+Unused block "ext_pins_out<93>" (PAD) removed.
+Unused block "ext_pins_out<94>" (PAD) removed.
+Unused block "ext_pins_out<95>" (PAD) removed.
+Unused block "ext_pins_out<96>" (PAD) removed.
+Unused block "ext_pins_out<97>" (PAD) removed.
+Unused block "ext_pins_out<98>" (PAD) removed.
+Unused block "ext_pins_out<99>" (PAD) removed.
+Unused block "ext_pins_out<9>" (PAD) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/XST_GND
+VCC 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/XST_VCC
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_0_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_0_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_10_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_10_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_11_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_11_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_12_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_12_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_13_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_13_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_14_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_14_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_15_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_15_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_16_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_16_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_17_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_17_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_18_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_18_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_19_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_19_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_1_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_1_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_20_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_20_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_21_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_21_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_22_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_22_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_23_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_23_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_24_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_24_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_25_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_25_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_26_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_26_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_27_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_27_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_28_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_28_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_29_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_29_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_2_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_2_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_30_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_30_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_31_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_31_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_32_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_32_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_33_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_33_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_34_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_34_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_35_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_35_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_36_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_36_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_37_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_37_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_38_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_38_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_39_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_39_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_3_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_3_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_40_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_40_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_41_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_41_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_42_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_42_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_43_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_43_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_44_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_44_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_45_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_45_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_46_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_46_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_47_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_47_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_4_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_4_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_5_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_5_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_6_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_6_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_7_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_7_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_8_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_8_mux000284_F
+   optimized to 0
+LUT4 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_9_mux000227
+   optimized to 0
+LUT3
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/gpio_inst/gpio_o_9_mux000284_F
+   optimized to 0
+FDE 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_in_q_10
+   optimized to 0
+FDE 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_in_q_11
+   optimized to 0
+FDE 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_in_q_12
+   optimized to 0
+FDE 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_in_q_13
+   optimized to 0
+FDE 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_in_q_14
+   optimized to 0
+FDE 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_in_q_5
+   optimized to 0
+FDE 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_in_q_8
+   optimized to 0
+FDE 		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_in_q_9
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<0>13
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<0>13/L
+UT4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<0>13_S
+W0
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<0>46
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<1>2
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<1>24
+   optimized to 1
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<1>9
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<1>9/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<2>18
+   optimized to 1
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<2>25
+   optimized to 1
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<2>5
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<3>
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<3>113
+   optimized to 0
+LUT4_D
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<3>114
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<3>114/
+LUT4_D_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_line<3>14
+   optimized to 0
+FDE
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/intr_served_q_3
+   optimized to 0
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/masked_ivecs_11_
+and00001
+   optimized to 0
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/masked_ivecs_12_
+and00001
+   optimized to 0
+LUT2_D
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/masked_ivecs_13_
+and00001
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/masked_ivecs_13_
+and00001/LUT2_D_BUF
+LUT2_D
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/masked_ivecs_14_
+and00001
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/masked_ivecs_14_
+and00001/LUT2_D_BUF
+LUT2_D
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/masked_ivecs_5_a
+nd00001
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/masked_ivecs_5_a
+nd00001/LUT2_D_BUF
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/ctlinst/masked_ivecs_9_a
+nd00001
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<0>123
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<0>123/L
+UT4_L_BUF
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<0>84
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<0>84/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<10>28
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<10>7
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<11>123
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<11>144
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<12>28
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<12>7
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<12>7/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<13>28
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<13>7
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<13>7/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<14>28
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<14>7
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<14>7/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<15>28
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<15>7
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<15>7/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<16>38
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<16>43
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<17>38
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<17>38/L
+UT4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<17>43
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<18>10
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<18>5
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<18>5/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<19>10
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<19>5
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<19>5/LU
+T4_L_BUF
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<1>101
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<1>101/L
+UT4_L_BUF
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<1>62
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<1>62/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<20>10
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<20>5
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<20>5/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<21>10
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<21>5
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<21>5/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<22>10
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<22>5
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<22>5/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<23>10
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<23>5
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<23>5/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<24>10
+   optimized to 0
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<24>282
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<24>5
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<24>5/LU
+T4_L_BUF
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<25>272
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<25>4
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<25>9
+   optimized to 0
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<26>272
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<26>4
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<26>9
+   optimized to 0
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<27>272
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<27>4
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<27>9
+   optimized to 0
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<28>272
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<28>4
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<28>9
+   optimized to 0
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<29>272
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<29>4
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<29>9
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<2>51
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<2>51/LU
+T4_L_BUF
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<2>90
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<2>90/LU
+T4_L_BUF
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<30>272
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<30>4
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<30>9
+   optimized to 0
+LUT2
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<31>272
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<31>4
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<31>9
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<3>38
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<3>38/LU
+T4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<3>75
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<4>104
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<4>104/L
+UT4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<4>67
+   optimized to 0
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<5>63
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<5>63/LU
+T4_L_BUF
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<5>7
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<5>7/LUT
+4_L_BUF
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<6>63
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<6>63/LU
+T4_L_BUF
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<6>7
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<6>7/LUT
+4_L_BUF
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<7>63
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<7>63/LU
+T4_L_BUF
+LUT4_L
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<7>7
+   optimized to 0
+LOCALBUF
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<7>7/LUT
+4_L_BUF
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<8>21
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<8>58
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<9>44
+   optimized to 0
+LUT4
+		XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_read_selected<9>7
+   optimized to 0
+LDC 		XLXI_55/fifo_a2d/Fifo_Direction
+   optimized to 0
+LDC 		XLXI_55/fifo_d2a/Fifo_Direction
+   optimized to 0
+LUT4 		XLXI_55/fifo_d2a/PresetFull1
+   optimized to 0
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| WING_AH0                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AH1                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AH2                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AH3                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AH4                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| WING_AH5                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AH6                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| WING_AH7                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AL0                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AL1                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AL2                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AL3                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AL4                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AL5                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AL6                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_AL7                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BH0                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BH1                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BH2                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BH3                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BH4                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BH5                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BH6                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BH7                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BL0                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BL1                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BL2                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BL3                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BL4                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BL5                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BL6                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_BL7                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CH0                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CH1                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CH2                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CH3                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CH4                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CH5                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CH6                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CH7                           | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CL0                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CL1                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CL2                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CL3                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CL4                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CL5                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CL6                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| WING_CL7                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| ext_pins_in<0>                     | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| ext_pins_in<1>                     | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| ext_pins_in<2>                     | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| ext_pins_out<0>                    | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
+| ext_pins_out<1>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| ext_pins_out<2>                    | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| ext_pins_out<3>                    | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

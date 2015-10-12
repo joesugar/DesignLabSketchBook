@@ -88,7 +88,7 @@ architecture BEHAVIORAL of PSK31 is
   end component zpuino_dds_acc;
 
   -- 
-  -- Define the ROM used to hold the NCO values.
+  -- Define the ROM used to hold the NCO cosine values.
   --
   component zpuino_dds_rom is
   port (
@@ -204,7 +204,7 @@ architecture BEHAVIORAL of PSK31 is
   end function;
   
   constant phase_shift_rom_array : rom_array := rom_init(filename =>
-      "/home/joseph/Papilio/ZPUino_PSK/zpu/hdl/zpuino/contrib/PSK/phase_shift_rom.txt");    
+      "./phase_shift_rom.txt");    
   
 begin
   --

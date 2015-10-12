@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
@@ -8,20 +8,21 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Automatic `includes</ClosedNode>
-         <ClosedNode>/Papilio_One_500K |home|joseph|DesignLab|sketchbook|libraries|WM8731|circuit|Papilio_One_500K.sch/XLXI_41 - WM8731 - BEHAVIORAL</ClosedNode>
+         <ClosedNode>/Papilio_One_500K |home|joseph|DesignLab|sketchbook|libraries|WM8731|circuit|Papilio_One_500K.sch/XLXI_41 - WM8731 - BEHAVIORAL/fifo_a2d - async_fifo</ClosedNode>
+         <ClosedNode>/Papilio_One_500K |home|joseph|DesignLab|sketchbook|libraries|WM8731|circuit|Papilio_One_500K.sch/XLXI_41 - WM8731 - BEHAVIORAL/fifo_d2a - async_fifo</ClosedNode>
          <ClosedNode>/Papilio_One_500K |home|joseph|DesignLab|sketchbook|libraries|WM8731|circuit|Papilio_One_500K.sch/XLXI_47 - Papilio_Default_Wing_Pinout - BEHAVIORAL</ClosedNode>
          <ClosedNode>/Papilio_One_500K |home|joseph|DesignLab|sketchbook|libraries|WM8731|circuit|Papilio_One_500K.sch/XLXI_52 - ZPUino_Papilio_One_500K_V2 - behave</ClosedNode>
          <ClosedNode>/Papilio_One_500K |home|joseph|DesignLab|sketchbook|libraries|WM8731|circuit|Papilio_One_500K.sch/zpupkg_hyperion</ClosedNode>
          <ClosedNode>/Unassigned User Library Modules</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>XLXI_52 - ZPUino_Papilio_One_500K_V2 - behave (/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd)</SelectedItem>
+         <SelectedItem>Papilio_One_500K (/home/joseph/DesignLab/sketchbook/libraries/WM8731/circuit/Papilio_One_500K.sch)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >8</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000041e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000041e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>XLXI_52 - ZPUino_Papilio_One_500K_V2 - behave (/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd)</CurrentItem>
+      <CurrentItem>Papilio_One_500K (/home/joseph/DesignLab/sketchbook/libraries/WM8731/circuit/Papilio_One_500K.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -81,4 +82,18 @@
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000014c0000011d01000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000138000000010000000100000000000000000000000064ffffffff000000810000000000000001000001380000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
 </Project>

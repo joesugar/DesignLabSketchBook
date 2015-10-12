@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">ext_pins_in&lt;100&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">124</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">ext_pins_in&lt;99&gt;,
+ext_pins_in&lt;98&gt;,
+ext_pins_in&lt;97&gt;,
+ext_pins_in&lt;96&gt;,
+ext_pins_in&lt;95&gt;</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;100&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;100&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;99&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;99&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;98&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;98&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;97&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;97&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;96&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;96&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;95&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;95&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;94&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;94&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;93&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;93&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;92&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;92&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;91&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;91&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;90&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;90&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;89&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;89&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;88&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;88&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;87&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;87&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;86&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;86&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;85&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;85&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;84&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;84&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;83&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;83&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;82&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;82&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;81&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;81&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;80&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;80&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;79&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;79&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;78&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;78&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;77&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;77&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;76&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;76&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;75&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;75&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;74&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;74&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;73&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;73&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;72&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;72&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;71&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;71&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;70&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;70&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;69&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;69&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;68&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;68&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;67&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;67&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;66&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;66&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;65&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;65&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;64&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;64&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;63&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;63&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;62&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;62&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;61&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;61&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;60&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;60&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;59&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;59&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;58&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;58&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;57&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;57&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;56&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;56&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;55&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;55&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;54&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;54&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;53&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;53&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;52&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;52&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;51&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;51&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;50&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;50&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;49&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;49&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;48&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;48&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;47&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;47&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;46&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;46&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;45&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;45&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;44&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;44&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;43&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;43&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;42&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;42&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;41&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;41&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;40&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;40&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;39&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;39&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;38&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;38&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;37&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;37&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;36&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;36&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;35&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;35&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;34&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;34&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;33&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;33&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;32&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;32&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;31&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;31&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;30&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;30&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;29&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;29&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;28&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;28&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;27&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;27&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;26&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;26&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;25&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;25&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;24&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;24&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;23&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;23&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;22&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;22&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;21&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;21&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;20&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;20&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;19&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;19&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;18&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;18&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;17&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;17&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;16&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;16&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;15&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;15&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;14&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;14&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;13&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;13&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;12&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;12&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;11&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;11&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;10&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;10&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;9&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;9&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;8&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;8&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;7&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;7&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;6&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;6&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;5&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;5&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;4&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;4&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;3&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;3&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;2&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;2&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;1&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;1&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_inout&lt;0&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_inout&lt;0&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;100&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;100&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;99&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;99&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;98&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;98&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;97&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;97&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;96&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;96&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;95&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;95&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;94&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;94&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;93&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;93&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;92&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;92&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;91&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;91&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;90&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;90&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;89&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;89&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;88&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;88&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;87&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;87&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;86&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;86&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;85&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;85&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;84&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;84&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;83&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;83&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;82&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;82&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;81&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;81&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;80&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;80&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;79&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;79&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;78&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;78&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;77&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;77&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;76&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;76&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;75&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;75&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;74&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;74&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;73&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;73&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;72&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;72&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;71&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;71&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;70&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;70&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;69&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;69&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;68&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;68&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;67&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;67&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;66&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;66&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;65&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;65&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;64&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;64&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;63&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;63&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;62&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;62&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;61&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;61&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;60&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;60&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;59&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;59&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;58&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;58&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;57&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;57&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;56&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;56&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;55&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;55&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;54&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;54&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;53&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;53&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;52&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;52&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;51&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;51&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;50&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;50&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;49&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;49&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;48&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;48&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;47&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;47&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;46&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;46&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;45&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;45&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;44&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;44&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;43&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;43&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;42&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;42&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;41&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;41&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;40&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;40&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;39&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;39&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;38&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;38&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;37&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;37&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;36&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;36&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;35&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;35&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;34&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;34&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;33&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;33&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;32&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;32&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;31&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;31&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;30&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;30&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;29&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;29&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;28&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;28&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;27&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;27&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;26&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;26&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;25&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;25&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;24&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;24&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;23&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;23&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;22&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;22&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;21&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;21&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;20&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;20&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;19&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;19&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;18&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;18&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;17&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;17&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;16&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;16&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;15&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;15&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;14&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;14&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;13&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;13&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;12&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;12&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;11&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;11&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;10&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;10&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;9&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;9&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;8&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;8&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;7&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;7&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;6&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;6&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;5&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;5&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">ext_pins_out&lt;4&gt;</arg> connected to top level port <arg fmt="%s" index="2">ext_pins_out&lt;4&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="Pack" num="1186" delta="old" >One or more I/O components have conflicting property values.  For each occurrence, the system will use the property value attached to the pad.  Otherwise, the system will use the first property value read.  To view each occurrence, create a detailed map report (run map using the -detail option).
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/core/w1_tos_4_mux0002180</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/core/prefr_spnext_mux0000&lt;4&gt;89</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_55/a2d_fifo_read_flag</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="772" delta="old" >To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of the DCM comp <arg fmt="%s" index="1">XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/DCM_inst</arg>, consult the device Interactive Data Sheet.
+</msg>
+
+</messages>
+

@@ -1,0 +1,487 @@
+Release 14.2 Map P.28xd (lin)
+Xilinx Map Application Log File for Design 'Papilio_One_500K'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off
+-c 100 -o Papilio_One_500K_map.ncd Papilio_One_500K.ngd Papilio_One_500K.pcf 
+Target Device  : xc3s500e
+Target Package : vq100
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sun Oct 11 22:44:56 2015
+
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal ext_pins_inout<100> connected to top level port
+   ext_pins_inout<100> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<99> connected to top level port
+   ext_pins_inout<99> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<98> connected to top level port
+   ext_pins_inout<98> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<97> connected to top level port
+   ext_pins_inout<97> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<96> connected to top level port
+   ext_pins_inout<96> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<95> connected to top level port
+   ext_pins_inout<95> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<94> connected to top level port
+   ext_pins_inout<94> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<93> connected to top level port
+   ext_pins_inout<93> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<92> connected to top level port
+   ext_pins_inout<92> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<91> connected to top level port
+   ext_pins_inout<91> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<90> connected to top level port
+   ext_pins_inout<90> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<89> connected to top level port
+   ext_pins_inout<89> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<88> connected to top level port
+   ext_pins_inout<88> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<87> connected to top level port
+   ext_pins_inout<87> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<86> connected to top level port
+   ext_pins_inout<86> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<85> connected to top level port
+   ext_pins_inout<85> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<84> connected to top level port
+   ext_pins_inout<84> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<83> connected to top level port
+   ext_pins_inout<83> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<82> connected to top level port
+   ext_pins_inout<82> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<81> connected to top level port
+   ext_pins_inout<81> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<80> connected to top level port
+   ext_pins_inout<80> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<79> connected to top level port
+   ext_pins_inout<79> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<78> connected to top level port
+   ext_pins_inout<78> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<77> connected to top level port
+   ext_pins_inout<77> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<76> connected to top level port
+   ext_pins_inout<76> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<75> connected to top level port
+   ext_pins_inout<75> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<74> connected to top level port
+   ext_pins_inout<74> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<73> connected to top level port
+   ext_pins_inout<73> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<72> connected to top level port
+   ext_pins_inout<72> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<71> connected to top level port
+   ext_pins_inout<71> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<70> connected to top level port
+   ext_pins_inout<70> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<69> connected to top level port
+   ext_pins_inout<69> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<68> connected to top level port
+   ext_pins_inout<68> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<67> connected to top level port
+   ext_pins_inout<67> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<66> connected to top level port
+   ext_pins_inout<66> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<65> connected to top level port
+   ext_pins_inout<65> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<64> connected to top level port
+   ext_pins_inout<64> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<63> connected to top level port
+   ext_pins_inout<63> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<62> connected to top level port
+   ext_pins_inout<62> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<61> connected to top level port
+   ext_pins_inout<61> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<60> connected to top level port
+   ext_pins_inout<60> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<59> connected to top level port
+   ext_pins_inout<59> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<58> connected to top level port
+   ext_pins_inout<58> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<57> connected to top level port
+   ext_pins_inout<57> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<56> connected to top level port
+   ext_pins_inout<56> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<55> connected to top level port
+   ext_pins_inout<55> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<54> connected to top level port
+   ext_pins_inout<54> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<53> connected to top level port
+   ext_pins_inout<53> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<52> connected to top level port
+   ext_pins_inout<52> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<51> connected to top level port
+   ext_pins_inout<51> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<50> connected to top level port
+   ext_pins_inout<50> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<49> connected to top level port
+   ext_pins_inout<49> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<48> connected to top level port
+   ext_pins_inout<48> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<47> connected to top level port
+   ext_pins_inout<47> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<46> connected to top level port
+   ext_pins_inout<46> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<45> connected to top level port
+   ext_pins_inout<45> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<44> connected to top level port
+   ext_pins_inout<44> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<43> connected to top level port
+   ext_pins_inout<43> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<42> connected to top level port
+   ext_pins_inout<42> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<41> connected to top level port
+   ext_pins_inout<41> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<40> connected to top level port
+   ext_pins_inout<40> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<39> connected to top level port
+   ext_pins_inout<39> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<38> connected to top level port
+   ext_pins_inout<38> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<37> connected to top level port
+   ext_pins_inout<37> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<36> connected to top level port
+   ext_pins_inout<36> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<35> connected to top level port
+   ext_pins_inout<35> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<34> connected to top level port
+   ext_pins_inout<34> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<33> connected to top level port
+   ext_pins_inout<33> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<32> connected to top level port
+   ext_pins_inout<32> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<31> connected to top level port
+   ext_pins_inout<31> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<30> connected to top level port
+   ext_pins_inout<30> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<29> connected to top level port
+   ext_pins_inout<29> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<28> connected to top level port
+   ext_pins_inout<28> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<27> connected to top level port
+   ext_pins_inout<27> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<26> connected to top level port
+   ext_pins_inout<26> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<25> connected to top level port
+   ext_pins_inout<25> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<24> connected to top level port
+   ext_pins_inout<24> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<23> connected to top level port
+   ext_pins_inout<23> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<22> connected to top level port
+   ext_pins_inout<22> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<21> connected to top level port
+   ext_pins_inout<21> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<20> connected to top level port
+   ext_pins_inout<20> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<19> connected to top level port
+   ext_pins_inout<19> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<18> connected to top level port
+   ext_pins_inout<18> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<17> connected to top level port
+   ext_pins_inout<17> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<16> connected to top level port
+   ext_pins_inout<16> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<15> connected to top level port
+   ext_pins_inout<15> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<14> connected to top level port
+   ext_pins_inout<14> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<13> connected to top level port
+   ext_pins_inout<13> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<12> connected to top level port
+   ext_pins_inout<12> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<11> connected to top level port
+   ext_pins_inout<11> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<10> connected to top level port
+   ext_pins_inout<10> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<9> connected to top level port
+   ext_pins_inout<9> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<8> connected to top level port
+   ext_pins_inout<8> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<7> connected to top level port
+   ext_pins_inout<7> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<6> connected to top level port
+   ext_pins_inout<6> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<5> connected to top level port
+   ext_pins_inout<5> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<4> connected to top level port
+   ext_pins_inout<4> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<3> connected to top level port
+   ext_pins_inout<3> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<2> connected to top level port
+   ext_pins_inout<2> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<1> connected to top level port
+   ext_pins_inout<1> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_inout<0> connected to top level port
+   ext_pins_inout<0> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<100> connected to top level port
+   ext_pins_out<100> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<99> connected to top level port
+   ext_pins_out<99> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<98> connected to top level port
+   ext_pins_out<98> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<97> connected to top level port
+   ext_pins_out<97> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<96> connected to top level port
+   ext_pins_out<96> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<95> connected to top level port
+   ext_pins_out<95> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<94> connected to top level port
+   ext_pins_out<94> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<93> connected to top level port
+   ext_pins_out<93> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<92> connected to top level port
+   ext_pins_out<92> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<91> connected to top level port
+   ext_pins_out<91> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<90> connected to top level port
+   ext_pins_out<90> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<89> connected to top level port
+   ext_pins_out<89> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<88> connected to top level port
+   ext_pins_out<88> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<87> connected to top level port
+   ext_pins_out<87> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<86> connected to top level port
+   ext_pins_out<86> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<85> connected to top level port
+   ext_pins_out<85> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<84> connected to top level port
+   ext_pins_out<84> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<83> connected to top level port
+   ext_pins_out<83> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<82> connected to top level port
+   ext_pins_out<82> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<81> connected to top level port
+   ext_pins_out<81> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<80> connected to top level port
+   ext_pins_out<80> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<79> connected to top level port
+   ext_pins_out<79> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<78> connected to top level port
+   ext_pins_out<78> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<77> connected to top level port
+   ext_pins_out<77> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<76> connected to top level port
+   ext_pins_out<76> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<75> connected to top level port
+   ext_pins_out<75> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<74> connected to top level port
+   ext_pins_out<74> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<73> connected to top level port
+   ext_pins_out<73> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<72> connected to top level port
+   ext_pins_out<72> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<71> connected to top level port
+   ext_pins_out<71> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<70> connected to top level port
+   ext_pins_out<70> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<69> connected to top level port
+   ext_pins_out<69> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<68> connected to top level port
+   ext_pins_out<68> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<67> connected to top level port
+   ext_pins_out<67> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<66> connected to top level port
+   ext_pins_out<66> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<65> connected to top level port
+   ext_pins_out<65> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<64> connected to top level port
+   ext_pins_out<64> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<63> connected to top level port
+   ext_pins_out<63> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<62> connected to top level port
+   ext_pins_out<62> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<61> connected to top level port
+   ext_pins_out<61> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<60> connected to top level port
+   ext_pins_out<60> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<59> connected to top level port
+   ext_pins_out<59> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<58> connected to top level port
+   ext_pins_out<58> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<57> connected to top level port
+   ext_pins_out<57> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<56> connected to top level port
+   ext_pins_out<56> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<55> connected to top level port
+   ext_pins_out<55> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<54> connected to top level port
+   ext_pins_out<54> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<53> connected to top level port
+   ext_pins_out<53> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<52> connected to top level port
+   ext_pins_out<52> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<51> connected to top level port
+   ext_pins_out<51> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<50> connected to top level port
+   ext_pins_out<50> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<49> connected to top level port
+   ext_pins_out<49> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<48> connected to top level port
+   ext_pins_out<48> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<47> connected to top level port
+   ext_pins_out<47> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<46> connected to top level port
+   ext_pins_out<46> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<45> connected to top level port
+   ext_pins_out<45> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<44> connected to top level port
+   ext_pins_out<44> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<43> connected to top level port
+   ext_pins_out<43> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<42> connected to top level port
+   ext_pins_out<42> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<41> connected to top level port
+   ext_pins_out<41> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<40> connected to top level port
+   ext_pins_out<40> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<39> connected to top level port
+   ext_pins_out<39> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<38> connected to top level port
+   ext_pins_out<38> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<37> connected to top level port
+   ext_pins_out<37> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<36> connected to top level port
+   ext_pins_out<36> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<35> connected to top level port
+   ext_pins_out<35> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<34> connected to top level port
+   ext_pins_out<34> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<33> connected to top level port
+   ext_pins_out<33> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<32> connected to top level port
+   ext_pins_out<32> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<31> connected to top level port
+   ext_pins_out<31> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<30> connected to top level port
+   ext_pins_out<30> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<29> connected to top level port
+   ext_pins_out<29> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<28> connected to top level port
+   ext_pins_out<28> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<27> connected to top level port
+   ext_pins_out<27> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<26> connected to top level port
+   ext_pins_out<26> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<25> connected to top level port
+   ext_pins_out<25> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<24> connected to top level port
+   ext_pins_out<24> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<23> connected to top level port
+   ext_pins_out<23> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<22> connected to top level port
+   ext_pins_out<22> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<21> connected to top level port
+   ext_pins_out<21> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<20> connected to top level port
+   ext_pins_out<20> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<19> connected to top level port
+   ext_pins_out<19> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<18> connected to top level port
+   ext_pins_out<18> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<17> connected to top level port
+   ext_pins_out<17> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<16> connected to top level port
+   ext_pins_out<16> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<15> connected to top level port
+   ext_pins_out<15> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<14> connected to top level port
+   ext_pins_out<14> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<13> connected to top level port
+   ext_pins_out<13> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<12> connected to top level port
+   ext_pins_out<12> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<11> connected to top level port
+   ext_pins_out<11> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<10> connected to top level port
+   ext_pins_out<10> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<9> connected to top level port
+   ext_pins_out<9> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<8> connected to top level port
+   ext_pins_out<8> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<7> connected to top level port
+   ext_pins_out<7> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<6> connected to top level port
+   ext_pins_out<6> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<5> connected to top level port
+   ext_pins_out<5> has been removed.
+WARNING:MapLib:701 - Signal ext_pins_out<4> connected to top level port
+   ext_pins_out<4> has been removed.
+Running directed packing...
+WARNING:Pack:1186 - One or more I/O components have conflicting property values.
+    For each occurrence, the system will use the property value attached to the
+   pad.  Otherwise, the system will use the first property value read.  To view
+   each occurrence, create a detailed map report (run map using the -detail
+   option).
+WARNING:Pack:266 - The function generator
+   XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/core/w1_tos_4_mux0002180
+   failed to merge with F5 multiplexer
+   XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/core/prefr_spnext_mux0000<
+   4>89.  There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_55/a2d_fifo_read_flag
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  201
+Logic Utilization:
+  Total Number Slice Registers:       2,421 out of   9,312   25%
+    Number used as Flip Flops:        2,417
+    Number used as Latches:               4
+  Number of 4 input LUTs:             3,921 out of   9,312   42%
+Logic Distribution:
+  Number of occupied Slices:          2,848 out of   4,656   61%
+    Number of Slices containing only related logic:   2,848 out of   2,848 100%
+    Number of Slices containing unrelated logic:          0 out of   2,848   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       4,247 out of   9,312   45%
+    Number used as logic:             3,882
+    Number used as a route-thru:        326
+    Number used for Dual Port RAMs:       2
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:      37
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 55 out of      66   83%
+  Number of RAMB16s:                     18 out of      20   90%
+  Number of BUFGMUXs:                     3 out of      24   12%
+  Number of DCMs:                         2 out of       4   50%
+  Number of MULT18X18SIOs:                3 out of      20   15%
+
+Average Fanout of Non-Clock Nets:                3.28
+
+Peak Memory Usage:  194 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   8 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "Papilio_One_500K_map.mrp" for details.

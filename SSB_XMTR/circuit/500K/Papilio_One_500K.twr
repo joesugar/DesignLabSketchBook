@@ -1,0 +1,172 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.2/ISE_DS/ISE/bin/lin/unwrapped/trce -intstyle ise -v 3 -s 5 -n 3
+-fastpaths -xml Papilio_One_500K.twx Papilio_One_500K.ncd -o
+Papilio_One_500K.twr Papilio_One_500K.pcf
+
+Design file:              Papilio_One_500K.ncd
+Physical constraint file: Papilio_One_500K.pcf
+Device,package,speed:     xc3s500e,vq100,-5 (PRODUCTION 1.27 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ext_pins_in<0>
+--------------+------------+------------+------------------+--------+
+              |Max Setup to|Max Hold to |                  | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------------+--------+
+WING_AH0      |    2.879(R)|   -1.402(R)|XLXN_408<147>     |   0.000|
+WING_AH1      |    3.066(R)|   -1.554(R)|XLXN_408<147>     |   0.000|
+WING_AH2      |    3.119(R)|   -1.590(R)|XLXN_408<147>     |   0.000|
+WING_AH3      |    3.471(R)|   -1.885(R)|XLXN_408<147>     |   0.000|
+WING_AH4      |    3.182(R)|   -1.642(R)|XLXN_408<147>     |   0.000|
+WING_AH6      |    3.090(R)|   -1.577(R)|XLXN_408<147>     |   0.000|
+WING_AL0      |    2.763(R)|   -1.308(R)|XLXN_408<147>     |   0.000|
+WING_AL1      |    3.063(R)|   -1.556(R)|XLXN_408<147>     |   0.000|
+WING_AL2      |    3.113(R)|   -1.596(R)|XLXN_408<147>     |   0.000|
+WING_AL3      |    2.907(R)|   -1.435(R)|XLXN_408<147>     |   0.000|
+WING_AL4      |    2.829(R)|   -1.365(R)|XLXN_408<147>     |   0.000|
+WING_AL5      |    3.378(R)|   -1.805(R)|XLXN_408<147>     |   0.000|
+WING_AL6      |    2.806(R)|   -1.342(R)|XLXN_408<147>     |   0.000|
+WING_AL7      |    2.729(R)|   -1.283(R)|XLXN_408<147>     |   0.000|
+WING_BH0      |    3.250(R)|   -1.708(R)|XLXN_408<147>     |   0.000|
+WING_BH1      |    3.239(R)|   -1.697(R)|XLXN_408<147>     |   0.000|
+WING_BH2      |    3.285(R)|   -1.729(R)|XLXN_408<147>     |   0.000|
+WING_BH3      |    3.070(R)|   -1.560(R)|XLXN_408<147>     |   0.000|
+WING_BH4      |    3.157(R)|   -1.627(R)|XLXN_408<147>     |   0.000|
+WING_BH5      |    3.064(R)|   -1.551(R)|XLXN_408<147>     |   0.000|
+WING_BH6      |    3.148(R)|   -1.621(R)|XLXN_408<147>     |   0.000|
+WING_BH7      |    3.789(R)|   -2.137(R)|XLXN_408<147>     |   0.000|
+WING_BL0      |    2.551(R)|   -1.140(R)|XLXN_408<147>     |   0.000|
+WING_BL1      |    2.508(R)|   -1.107(R)|XLXN_408<147>     |   0.000|
+WING_BL2      |    2.911(R)|   -1.433(R)|XLXN_408<147>     |   0.000|
+WING_BL3      |    3.249(R)|   -1.710(R)|XLXN_408<147>     |   0.000|
+WING_BL4      |    3.291(R)|   -1.728(R)|XLXN_408<147>     |   0.000|
+WING_BL5      |    3.127(R)|   -1.597(R)|XLXN_408<147>     |   0.000|
+WING_BL6      |    3.047(R)|   -1.539(R)|XLXN_408<147>     |   0.000|
+WING_BL7      |    3.146(R)|   -1.619(R)|XLXN_408<147>     |   0.000|
+WING_CL0      |    2.859(R)|   -1.387(R)|XLXN_408<147>     |   0.000|
+WING_CL1      |    2.986(R)|   -1.492(R)|XLXN_408<147>     |   0.000|
+WING_CL2      |    2.799(R)|   -1.344(R)|XLXN_408<147>     |   0.000|
+WING_CL3      |    2.785(R)|   -1.334(R)|XLXN_408<147>     |   0.000|
+WING_CL4      |    2.786(R)|   -1.326(R)|XLXN_408<147>     |   0.000|
+WING_CL5      |    2.734(R)|   -1.280(R)|XLXN_408<147>     |   0.000|
+WING_CL6      |    2.582(R)|   -1.167(R)|XLXN_408<147>     |   0.000|
+WING_CL7      |    2.834(R)|   -1.367(R)|XLXN_408<147>     |   0.000|
+ext_pins_in<1>|    2.884(R)|   -1.125(R)|XLXN_408<147>     |   0.000|
+ext_pins_in<2>|    2.603(R)|   -0.898(R)|XLXN_408<147>     |   0.000|
+--------------+------------+------------+------------------+--------+
+
+Clock ext_pins_in<0> to Pad
+---------------+------------+------------------+--------+
+               | clk (edge) |                  | Clock  |
+Destination    |   to PAD   |Internal Clock(s) | Phase  |
+---------------+------------+------------------+--------+
+WING_AH0       |    5.679(R)|XLXN_408<147>     |   0.000|
+WING_AH1       |    6.026(R)|XLXN_408<147>     |   0.000|
+WING_AH2       |    5.841(R)|XLXN_408<147>     |   0.000|
+WING_AH3       |    6.027(R)|XLXN_408<147>     |   0.000|
+WING_AH5       |    5.180(R)|XLXN_408<147>     |   0.000|
+WING_AH7       |    5.525(R)|XLXN_408<147>     |   0.000|
+WING_AL0       |    5.599(R)|XLXN_408<147>     |   0.000|
+WING_AL1       |    6.237(R)|XLXN_408<147>     |   0.000|
+WING_AL2       |    5.692(R)|XLXN_408<147>     |   0.000|
+WING_AL3       |    6.043(R)|XLXN_408<147>     |   0.000|
+WING_AL4       |    5.931(R)|XLXN_408<147>     |   0.000|
+WING_AL5       |    6.152(R)|XLXN_408<147>     |   0.000|
+WING_AL6       |    6.823(R)|XLXN_408<147>     |   0.000|
+WING_AL7       |    5.934(R)|XLXN_408<147>     |   0.000|
+WING_BH0       |    6.012(R)|XLXN_408<147>     |   0.000|
+WING_BH1       |    6.881(R)|XLXN_408<147>     |   0.000|
+WING_BH2       |    6.353(R)|XLXN_408<147>     |   0.000|
+WING_BH3       |    5.782(R)|XLXN_408<147>     |   0.000|
+WING_BH4       |    5.845(R)|XLXN_408<147>     |   0.000|
+WING_BH5       |    5.331(R)|XLXN_408<147>     |   0.000|
+WING_BH6       |    6.275(R)|XLXN_408<147>     |   0.000|
+WING_BH7       |    6.850(R)|XLXN_408<147>     |   0.000|
+WING_BL0       |    5.298(R)|XLXN_408<147>     |   0.000|
+WING_BL1       |    5.559(R)|XLXN_408<147>     |   0.000|
+WING_BL2       |    6.364(R)|XLXN_408<147>     |   0.000|
+WING_BL3       |    5.801(R)|XLXN_408<147>     |   0.000|
+WING_BL4       |    5.855(R)|XLXN_408<147>     |   0.000|
+WING_BL5       |    5.608(R)|XLXN_408<147>     |   0.000|
+WING_BL6       |    5.785(R)|XLXN_408<147>     |   0.000|
+WING_BL7       |    5.870(R)|XLXN_408<147>     |   0.000|
+WING_CH1       |    6.308(R)|XLXN_408<147>     |   0.000|
+WING_CH2       |    6.273(R)|XLXN_408<147>     |   0.000|
+WING_CH3       |    6.316(R)|XLXN_408<147>     |   0.000|
+WING_CH4       |    6.012(R)|XLXN_408<147>     |   0.000|
+WING_CH5       |    5.816(R)|XLXN_408<147>     |   0.000|
+WING_CH6       |    6.058(R)|XLXN_408<147>     |   0.000|
+WING_CH7       |    6.293(R)|XLXN_408<147>     |   0.000|
+WING_CL0       |    5.042(R)|XLXN_408<147>     |   0.000|
+WING_CL1       |    5.234(R)|XLXN_408<147>     |   0.000|
+WING_CL2       |    5.416(R)|XLXN_408<147>     |   0.000|
+WING_CL3       |    5.371(R)|XLXN_408<147>     |   0.000|
+WING_CL4       |    5.475(R)|XLXN_408<147>     |   0.000|
+WING_CL5       |    7.127(R)|XLXN_408<147>     |   0.000|
+WING_CL6       |    5.727(R)|XLXN_408<147>     |   0.000|
+WING_CL7       |    6.210(R)|XLXN_408<147>     |   0.000|
+ext_pins_out<0>|    6.270(R)|XLXN_408<147>     |   0.000|
+ext_pins_out<1>|    5.909(R)|XLXN_408<147>     |   0.000|
+ext_pins_out<2>|    5.977(R)|XLXN_408<147>     |   0.000|
+ext_pins_out<3>|    5.005(R)|XLXN_408<147>     |   0.000|
+---------------+------------+------------------+--------+
+
+Clock to Setup on destination clock ext_pins_in<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ext_pins_in<0> |    8.811|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ext_pins_in<0> |WING_CH0       |    5.026|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Oct 11 22:53:51 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 143 MB
+
+
+

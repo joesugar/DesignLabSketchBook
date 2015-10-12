@@ -36,22 +36,21 @@
 --               October 2015 - J. Consugar
 --               Modified for use with the Papilio DesignLab IDE
 --
--- This core interfaces with a WM8731 that has its own crystal.
--- As a result it operates in two clock domains; the FPGA domain
--- and the code domain.
+-- This core interfaces with a WM8731 that has its own 11.2896 MHz
+-- crystal.  As a result it operates in two clock domains; the FPGA
+-- domain and the code domain.
 --
--- The clock from the codec board comes in via wm_clk_i.  This
--- clock is used to drive all codec processing.  Communication
--- between the domains is done via an asynchronous fifo.  See
--- that module code for reference on how it works.
+-- The clock from the codec board comes in via wm_clk_i.  This clock 
+-- is used to drive all codec processing.  Communication between 
+-- the domains is done via an asynchronous fifo.  See that module 
+-- code for reference on how it works.
 --
--- For this driver, the WM8731 is to be configured in slave mode.  
--- The chip should be configured in DSP mode and the data is to 
--- be sent to the chip immediately following that hi bit
--- (see figure 29 in the WM8731 data sheet).
+-- For this driver, the WM8731 is to be configured as a slave in DSP 
+-- mode at 44100Hz sample rate.  (see figure 29 in the WM8731 data 
+-- sheet for timing diagram).
 --
--- The chip has to be configured via I2C outside this driver.
--- See the driver code for the specific configuration.
+-- The chip has to be configured via I2C outside this driver.  See 
+-- the driver code for the specific configuration.
 --
 
 library ieee;

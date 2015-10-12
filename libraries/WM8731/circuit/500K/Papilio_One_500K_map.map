@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : vq100
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Oct  6 22:30:31 2015
+Mapped Date    : Wed Oct  7 21:37:50 2015
 
 Mapping design into LUTs...
 WARNING:MapLib:701 - Signal ext_pins_inout<100> connected to top level port
@@ -467,7 +467,7 @@ Logic Distribution:
 Average Fanout of Non-Clock Nets:                3.42
 
 Peak Memory Usage:  192 MB
-Total REAL time to MAP completion:  9 secs 
+Total REAL time to MAP completion:  7 secs 
 Total CPU time to MAP completion:   7 secs 
 
 NOTES:

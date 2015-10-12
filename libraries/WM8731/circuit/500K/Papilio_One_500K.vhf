@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Papilio_One_500K.vhf
--- /___/   /\     Timestamp : 10/06/2015 21:08:45
+-- /___/   /\     Timestamp : 10/07/2015 21:37:03
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

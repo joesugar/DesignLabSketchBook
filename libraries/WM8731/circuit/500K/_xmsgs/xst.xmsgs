@@ -730,7 +730,7 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_41_wm_rst_i_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Papilio_One_500K</arg>&gt;.
 It will be removed from the design.
 </msg>
 
@@ -746,7 +746,7 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">GrayCounter_pWr/GrayCount_out_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">async_fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;GrayCounter_pWr/BinaryCount_1&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">Papilio_Default_Wing_Pinout</arg>: <arg fmt="%d" index="2">9</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+<msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">Papilio_Default_Wing_Pinout</arg>: <arg fmt="%d" index="2">9</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">zpuino/core/exr.tos_save_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;zpuino/core/exr.tos_save_27_1&gt; </arg>
 </msg>
@@ -817,7 +817,7 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1336" delta="old" > (*) More than 100% of Device resources are used
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

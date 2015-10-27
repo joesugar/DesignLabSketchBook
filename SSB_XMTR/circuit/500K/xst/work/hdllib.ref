@@ -1,4 +1,9 @@
-MO async_fifo NULL ../../../libraries/WM8731/async_fifo.v vlg65/async__fifo.bin 1444617849
-MO GrayCounter NULL ../../../libraries/WM8731/GrayCounter.v vlg7F/_gray_counter.bin 1444617849
-AR papilio_one_500k behavioral /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf sub00/vhpl01 1444617867
-EN papilio_one_500k NULL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf sub00/vhpl00 1444617866
+MO async_fifo NULL ../../../libraries/WM8731/async_fifo.v vlg65/async__fifo.bin 1445825374
+MO GrayCounter NULL ../../../libraries/WM8731/GrayCounter.v vlg7F/_gray_counter.bin 1445825374
+EN um232h NULL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/um232h.vhd sub00/vhpl02 1445904958
+AR papilio_one_500k behavioral /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf sub00/vhpl01 1445904963
+AR um232h behavioral /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/um232h.vhd sub00/vhpl03 1445904959
+EN papilio_one_500k NULL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf sub00/vhpl00 1445904962
+AR cordic_nco behavioral /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd sub00/vhpl05 1445904961
+EN cordic_nco NULL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd sub00/vhpl04 1445904960
+MO async_flagack NULL ../async_flagack.v vlg26/async__flagack.bin 1445904937

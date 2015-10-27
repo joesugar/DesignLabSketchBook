@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: Papilio_One_500K.prj
@@ -110,47 +110,34 @@ Cores Search Directories           : {"../../../../libraries/VGA_ZXSpectrum" "..
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "../../../libraries/WM8731/GrayCounter.v" in library work
-Compiling verilog file "../../../libraries/WM8731/async_fifo.v" in library work
-Module <GrayCounter> compiled
-Module <async_fifo> compiled
+Compiling verilog file "../async_flagack.v" in library work
+Module <async_flagack> compiled
 No errors in compilation
 Analysis of file <"Papilio_One_500K.prj"> succeeded.
  
-Compiling vhdl file "/home/joseph/DesignLab/libraries/ZPUino_Wishbone_Peripherals/i2c_master_bit_ctrl.vhd" in Library DesignLab.
-Entity <i2c_master_bit_ctrl> compiled.
-Entity <i2c_master_bit_ctrl> (Architecture <structural>) compiled.
-Compiling vhdl file "/home/joseph/DesignLab/libraries/ZPUino_Wishbone_Peripherals/i2c_master_byte_ctrl.vhd" in Library DesignLab.
-Entity <i2c_master_byte_ctrl> compiled.
-Entity <i2c_master_byte_ctrl> (Architecture <structural>) compiled.
-Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/PSK31/dds_acc.vhd" in Library DesignLab.
-Architecture arch of Entity zpuino_dds_acc is up to date.
-Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/PSK31/phase_shifter.vhd" in Library DesignLab.
-Architecture arch of Entity zpuino_phase_shifter is up to date.
 Compiling vhdl file "/home/joseph/DesignLab/libraries/ZPUino_2/pad.vhd" in Library DesignLab.
 Architecture behave of Entity isync is up to date.
 Architecture behave of Entity iopad is up to date.
 Architecture behave of Entity ipad is up to date.
 Architecture behave of Entity opad is up to date.
-Compiling vhdl file "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" in Library work.
-Entity <papilio_one_500k> compiled.
-Entity <papilio_one_500k> (Architecture <behavioral>) compiled.
-Compiling vhdl file "/home/joseph/DesignLab/libraries/Building_Blocks/bus8.vhd" in Library DesignLab.
-Architecture behavioral of Entity bus8 is up to date.
-Compiling vhdl file "/home/joseph/DesignLab/libraries/Papilio_Hardware/Papilio_Default_Wing_Pinout.vhd" in Library DesignLab.
-Architecture behavioral of Entity papilio_default_wing_pinout is up to date.
-Compiling vhdl file "/home/joseph/DesignLab/libraries/Papilio_Hardware/Wing_GPIO.vhd" in Library DesignLab.
-Architecture behavioral of Entity wing_gpio is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/PSK31/phase_shifter.vhd" in Library DesignLab.
+Architecture arch of Entity zpuino_phase_shifter is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/PSK31/dds_acc.vhd" in Library DesignLab.
+Architecture arch of Entity zpuino_dds_acc is up to date.
 Compiling vhdl file "/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd" in Library DesignLab.
 Architecture behave of Entity zpuino_papilio_one_500k_v2 is up to date.
-Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" in Library DesignLab.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/Papilio_Hardware/Wing_GPIO.vhd" in Library DesignLab.
+Architecture behavioral of Entity wing_gpio is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/Papilio_Hardware/Papilio_Default_Wing_Pinout.vhd" in Library DesignLab.
+Architecture behavioral of Entity papilio_default_wing_pinout is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/libraries/Building_Blocks/bus8.vhd" in Library DesignLab.
+Architecture behavioral of Entity bus8 is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/um232h.vhd" in Library work.
+Architecture behavioral of Entity um232h is up to date.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" in Library work.
 Architecture behavioral of Entity cordic_nco is up to date.
-Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/i2c/i2c.vhd" in Library DesignLab.
-Entity <i2c> compiled.
-Entity <i2c> (Architecture <BEHAVIORAL>) compiled.
-Compiling vhdl file "/home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.vhd" in Library DesignLab.
-Entity <WM8731> compiled.
-Entity <WM8731> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" in Library work.
+Architecture behavioral of Entity papilio_one_500k is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -163,7 +150,7 @@ Analyzing hierarchy for entity <Papilio_Default_Wing_Pinout> in library <DesignL
 
 Analyzing hierarchy for entity <ZPUino_Papilio_One_500K_V2> in library <DesignLab> (architecture <behave>).
 
-Analyzing hierarchy for entity <CORDIC_NCO> in library <DesignLab> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <CORDIC_NCO> in library <work> (architecture <behavioral>) with generics.
 	AUDIO_SAMPLE_WIDTH = 16
 	CORDIC_ROM_ADDRESS_WIDTH = 8
 	CORDIC_ROM_DATA_WIDTH = 8
@@ -174,11 +161,6 @@ Analyzing hierarchy for entity <CORDIC_NCO> in library <DesignLab> (architecture
 	PHASE_ACC_OUT_WIDTH = 8
 
 Analyzing hierarchy for entity <bus8> in library <DesignLab> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <WM8731> in library <DesignLab> (architecture <BEHAVIORAL>).
-
-Analyzing hierarchy for entity <i2c> in library <DesignLab> (architecture <BEHAVIORAL>) with generics.
-	ARST_LVL = '0'
 
 Analyzing hierarchy for entity <iopad> in library <DesignLab> (architecture <behave>).
 
@@ -192,62 +174,55 @@ Analyzing hierarchy for entity <zpuino_phase_shifter> in library <DesignLab> (ar
 	BUS_WIDTH = 8
 	NUMBER_OF_SHIFTS = 7
 
-Analyzing hierarchy for module <async_fifo> in library <work> with parameters.
-	ADDRESS_WIDTH = "00000000000000000000000000000011"
-	ADDR_WIDTH = 3
-	DATA_WIDTH = "00000000000000000000000000100000"
-	FIFO_DEPTH = "00000000000000000000000000001000"
-
-Analyzing hierarchy for entity <i2c_master_byte_ctrl> in library <DesignLab> (architecture <structural>).
+Analyzing hierarchy for entity <um232h> in library <work> (architecture <behavioral>) with generics.
+	recv_data_len = 8
+	xmit_data_len = 8
 
 Analyzing hierarchy for entity <isync> in library <DesignLab> (architecture <behave>).
 
-Analyzing hierarchy for module <GrayCounter> in library <work> with parameters.
-	COUNTER_WIDTH = "00000000000000000000000000000011"
-
-Analyzing hierarchy for entity <i2c_master_bit_ctrl> in library <DesignLab> (architecture <structural>).
+Analyzing hierarchy for module <async_flagack> in library <work>.
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <Papilio_One_500K> in library <work> (Architecture <behavioral>).
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_AH4' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_AH5' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_AH6' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_AH7' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_CH0' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_CH1' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_CH2' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_CH3' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_CH4' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_CH5' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_CH6' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected inout port 'WING_CH7' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected output port 'Flex_Pin_in_0' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected output port 'Flex_Pin_in_1' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected output port 'Flex_Pin_in_2' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected output port 'Flex_Pin_in_3' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected output port 'Flex_Pin_in_4' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 329: Unconnected output port 'Flex_Pin_in_5' of component 'Papilio_Default_Wing_Pinout'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'clk_96Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'clk_1Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'clk_osc_32Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'wishbone_slot_9_in' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'wishbone_slot_10_in' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'wishbone_slot_11_in' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'wishbone_slot_12_in' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'wishbone_slot_13_in' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'wishbone_slot_14_in' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'wishbone_slot_video_out' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 405: Unconnected output port 'vgaclkout' of component 'ZPUino_Papilio_One_500K_V2'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 449: Unconnected output port 'bus0' of component 'bus8'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 460: Unconnected output port 'wm_bclk_o' of component 'WM8731'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 460: Unconnected output port 'wm_lrc_o' of component 'WM8731'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 460: Unconnected output port 'wm_dacdat_o' of component 'WM8731'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 470: Unconnected output port 'scl_pad_o' of component 'i2c'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 470: Unconnected output port 'sda_pad_o' of component 'i2c'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 470: Unconnected output port 'debug' of component 'i2c'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_AH4' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_AH5' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_AH6' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_AH7' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_CH0' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_CH1' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_CH2' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_CH3' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_CH4' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_CH5' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_CH6' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected inout port 'WING_CH7' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected output port 'Flex_Pin_in_0' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected output port 'Flex_Pin_in_1' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected output port 'Flex_Pin_in_2' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected output port 'Flex_Pin_in_3' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected output port 'Flex_Pin_in_4' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 305: Unconnected output port 'Flex_Pin_in_5' of component 'Papilio_Default_Wing_Pinout'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'clk_96Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'clk_1Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'clk_osc_32Mhz' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'wishbone_slot_6_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'wishbone_slot_8_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'wishbone_slot_9_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'wishbone_slot_10_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'wishbone_slot_11_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'wishbone_slot_12_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'wishbone_slot_13_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'wishbone_slot_14_in' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'wishbone_slot_video_out' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 381: Unconnected output port 'vgaclkout' of component 'ZPUino_Papilio_One_500K_V2'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 421: Unconnected output port 'rd' of component 'CORDIC_NCO'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 421: Unconnected output port 'wr' of component 'CORDIC_NCO'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 421: Unconnected output port 'oe' of component 'CORDIC_NCO'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 421: Unconnected inout port 'data' of component 'CORDIC_NCO'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" line 434: Unconnected output port 'bus0' of component 'bus8'.
 Entity <Papilio_One_500K> analyzed. Unit <Papilio_One_500K> generated.
 
 Analyzing Entity <Wing_GPIO> in library <DesignLab> (Architecture <behavioral>).
@@ -270,7 +245,7 @@ Analyzing Entity <ZPUino_Papilio_One_500K_V2> in library <DesignLab> (Architectu
 WARNING:Xst:2211 - "/home/joseph/DesignLab/libraries/ZPUino_2/ZPUino_Papilio_One_500K_V2.vhd" line 212: Instantiating black box module <ZPUino_Papilio_One_V2_blackbox>.
 Entity <ZPUino_Papilio_One_500K_V2> analyzed. Unit <ZPUino_Papilio_One_500K_V2> generated.
 
-Analyzing generic Entity <CORDIC_NCO> in library <DesignLab> (Architecture <behavioral>).
+Analyzing generic Entity <CORDIC_NCO> in library <work> (Architecture <behavioral>).
 	AUDIO_SAMPLE_WIDTH = 16
 	CORDIC_ROM_ADDRESS_WIDTH = 8
 	CORDIC_ROM_DATA_WIDTH = 8
@@ -279,10 +254,16 @@ Analyzing generic Entity <CORDIC_NCO> in library <DesignLab> (Architecture <beha
 	NUMBER_OF_SHIFTS = 7
 	PHASE_ACC_HI_WIDTH = 8
 	PHASE_ACC_OUT_WIDTH = 8
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 176: Unconnected output port 'carry' of component 'zpuino_dds_acc'.
-WARNING:Xst:1610 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 277: Width mismatch. <phase_address> has a width of 8 bits but assigned expression is 14-bit wide.
-WARNING:Xst:790 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 278: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 290: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 208: Unconnected output port 'carry' of component 'zpuino_dds_acc'.
+WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected inout port 'data' of component 'um232h'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected output port 'rd' of component 'um232h'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected output port 'wr' of component 'um232h'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected output port 'oe' of component 'um232h'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected output port 'rx_data' of component 'um232h'.
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected output port 'rx_data_ready' of component 'um232h'.
+WARNING:Xst:1610 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 331: Width mismatch. <phase_address> has a width of 8 bits but assigned expression is 14-bit wide.
+WARNING:Xst:790 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 332: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 344: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <i_data_in>, <q_data_in>, <phase_acc_inc_hi_i>, <phase_acc_inc_lo_i>, <nco_output_enable>
 Entity <CORDIC_NCO> analyzed. Unit <CORDIC_NCO> generated.
 
@@ -311,62 +292,16 @@ INFO:Xst:2679 - Register <shift_stream<6>.shift_mask> in unit <zpuino_phase_shif
 INFO:Xst:2679 - Register <shift_stream<7>.shift_mask> in unit <zpuino_phase_shifter> has a constant value of 10000000 during circuit operation. The register is replaced by logic.
 Entity <zpuino_phase_shifter> analyzed. Unit <zpuino_phase_shifter> generated.
 
+Analyzing generic Entity <um232h> in library <work> (Architecture <behavioral>).
+	recv_data_len = 8
+	xmit_data_len = 8
+Entity <um232h> analyzed. Unit <um232h> generated.
+
+Analyzing module <async_flagack> in library <work>.
+Module <async_flagack> is correct for synthesis.
+ 
 Analyzing Entity <bus8> in library <DesignLab> (Architecture <behavioral>).
 Entity <bus8> analyzed. Unit <bus8> generated.
-
-Analyzing Entity <WM8731> in library <DesignLab> (Architecture <BEHAVIORAL>).
-INFO:Xst:1749 - "/home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.vhd" line 307: report: Illegal write address, setting all registers to unknown.
-INFO:Xst:1749 - "/home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.vhd" line 359: report: Illegal read address, setting all values to unknown.
-WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.vhd" line 321: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <wb_adr_i>, <a2d_fifo_data_out>, <d2a_fifo_empty>, <d2a_fifo_full>, <a2d_fifo_empty>, <a2d_fifo_full>
-Entity <WM8731> analyzed. Unit <WM8731> generated.
-
-Analyzing module <async_fifo> in library <work>.
-	ADDRESS_WIDTH = 32'sb00000000000000000000000000000011
-	DATA_WIDTH = 32'sb00000000000000000000000000100000
-	FIFO_DEPTH = 32'sb00000000000000000000000000001000
-Module <async_fifo> is correct for synthesis.
- 
-Analyzing module <GrayCounter> in library <work>.
-	COUNTER_WIDTH = 32'sb00000000000000000000000000000011
-Module <GrayCounter> is correct for synthesis.
- 
-Analyzing generic Entity <i2c> in library <DesignLab> (Architecture <BEHAVIORAL>).
-	ARST_LVL = '0'
-INFO:Xst:1561 - "/home/joseph/DesignLab/sketchbook/libraries/i2c/i2c.vhd" line 231: Mux is complete : default of case is discarded
-INFO:Xst:1749 - "/home/joseph/DesignLab/sketchbook/libraries/i2c/i2c.vhd" line 263: report: Illegal write address, setting all registers to unknown.
-INFO:Xst:2679 - Register <wishbone_out<33>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<32>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<31>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<30>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<29>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<28>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<27>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<26>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<25>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<24>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<23>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<22>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<21>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<20>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<19>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<18>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<17>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<16>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<15>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<14>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<13>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<12>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<11>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <wishbone_out<10>> in unit <i2c> has a constant value of 0 during circuit operation. The register is replaced by logic.
-Entity <i2c> analyzed. Unit <i2c> generated.
-
-Analyzing Entity <i2c_master_byte_ctrl> in library <DesignLab> (Architecture <structural>).
-INFO:Xst:1749 - "/home/joseph/DesignLab/libraries/ZPUino_Wishbone_Peripherals/i2c_master_byte_ctrl.vhd" line 356: report: Byte controller entered illegal state.
-Entity <i2c_master_byte_ctrl> analyzed. Unit <i2c_master_byte_ctrl> generated.
-
-Analyzing Entity <i2c_master_bit_ctrl> in library <DesignLab> (Architecture <structural>).
-Entity <i2c_master_bit_ctrl> analyzed. Unit <i2c_master_bit_ctrl> generated.
 
 
 =========================================================================
@@ -492,64 +427,15 @@ WARNING:Xst:646 - Signal <shift_stream<0>.shift_mask> is assigned but never used
 Unit <zpuino_phase_shifter> synthesized.
 
 
-Synthesizing Unit <GrayCounter>.
-    Related source file is "../../../libraries/WM8731/GrayCounter.v".
-    Found 3-bit register for signal <GrayCount_out>.
-    Found 3-bit up counter for signal <BinaryCount>.
-    Found 2-bit xor2 for signal <GrayCount_out$xor0000> created at line 34.
+Synthesizing Unit <async_flagack>.
+    Related source file is "../async_flagack.v".
+    Found 1-bit xor2 for signal <FlagOut_clkB>.
+    Found 1-bit xor2 for signal <Busy_clkA>.
+    Found 1-bit xor2 for signal <FlagToggle_clkA>.
+    Found 3-bit register for signal <SyncA_clkB>.
     Summary:
-	inferred   1 Counter(s).
 	inferred   3 D-type flip-flop(s).
-Unit <GrayCounter> synthesized.
-
-
-Synthesizing Unit <i2c_master_bit_ctrl>.
-    Related source file is "/home/joseph/DesignLab/libraries/ZPUino_Wishbone_Peripherals/i2c_master_bit_ctrl.vhd".
-    Found finite state machine <FSM_0> for signal <c_state>.
-    -----------------------------------------------------------------------
-    | States             | 18                                             |
-    | Transitions        | 50                                             |
-    | Inputs             | 6                                              |
-    | Outputs            | 19                                             |
-    | Clock              | clk                       (rising_edge)        |
-    | Clock enable       | c_state$not0000           (positive)           |
-    | Reset              | nReset                    (negative)           |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | idle                                           |
-    | Power Up State     | idle                                           |
-    | Encoding           | automatic                                      |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 1-bit register for signal <cmd_ack>.
-    Found 1-bit register for signal <dout>.
-    Found 1-bit register for signal <clk_en>.
-    Found 1-bit register for signal <cmd_stop>.
-    Found 16-bit down counter for signal <cnt>.
-    Found 2-bit register for signal <cSCL>.
-    Found 2-bit register for signal <cSDA>.
-    Found 1-bit register for signal <dSCL>.
-    Found 1-bit register for signal <dscl_oen>.
-    Found 1-bit register for signal <dSDA>.
-    Found 14-bit register for signal <filter_cnt>.
-    Found 14-bit subtractor for signal <filter_cnt$addsub0000> created at line 281.
-    Found 3-bit register for signal <fSCL>.
-    Found 3-bit register for signal <fSDA>.
-    Found 1-bit register for signal <ial>.
-    Found 1-bit register for signal <ibusy>.
-    Found 1-bit register for signal <iscl_oen>.
-    Found 1-bit register for signal <isda_oen>.
-    Found 1-bit register for signal <sda_chk>.
-    Found 1-bit register for signal <slave_wait>.
-    Found 1-bit register for signal <sSCL>.
-    Found 1-bit register for signal <sSDA>.
-    Found 1-bit register for signal <sta_condition>.
-    Found 1-bit register for signal <sto_condition>.
-    Summary:
-	inferred   1 Finite State Machine(s).
-	inferred   1 Counter(s).
-	inferred  41 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-Unit <i2c_master_bit_ctrl> synthesized.
+Unit <async_flagack> synthesized.
 
 
 Synthesizing Unit <ZPUino_Papilio_One_500K_V2>.
@@ -775,14 +661,54 @@ WARNING:Xst:1780 - Signal <clk_off_3ns> is never used or assigned. This unconnec
 Unit <ZPUino_Papilio_One_500K_V2> synthesized.
 
 
+Synthesizing Unit <isync>.
+    Related source file is "/home/joseph/DesignLab/libraries/ZPUino_2/pad.vhd".
+Unit <isync> synthesized.
+
+
+Synthesizing Unit <um232h>.
+    Related source file is "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/um232h.vhd".
+WARNING:Xst:647 - Input <txe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <t_buffer> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <next_xmit_state> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <curr_xmit_state> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:2109 - Contents of latch <rx_data> never changes during circuit operation. The latch is removed and the signal is tied to value 00000000.
+WARNING:Xst:737 - Found 1-bit latch for signal <rx_data_flag>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rd>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <wr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <um232h> synthesized.
+
+
 Synthesizing Unit <CORDIC_NCO>.
-    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd".
+    Related source file is "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd".
 WARNING:Xst:1305 - Output <wishbone_out<100:34>> is never assigned. Tied to value 0000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:2563 - Inout <data<0>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data<1>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data<2>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data<3>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data<4>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data<5>> is never assigned. Tied to value Z.
 WARNING:Xst:647 - Input <wishbone_in<100:62>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <wishbone_in<27:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <data<6>> is never assigned. Tied to value Z.
+WARNING:Xst:647 - Input <rxf> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <data<7>> is never assigned. Tied to value Z.
+WARNING:Xst:1305 - Output <oe> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <rd> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <txe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <wr> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <usb_clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <q_data_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <phase_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 256x8-bit ROM for signal <mapped_phase$rom0000> created at line 167.
+    Found 256x8-bit ROM for signal <mapped_phase$rom0000> created at line 199.
+    Found 1-bit tristate buffer for signal <data<7>>.
+    Found 1-bit tristate buffer for signal <data<6>>.
+    Found 1-bit tristate buffer for signal <data<5>>.
+    Found 1-bit tristate buffer for signal <data<4>>.
+    Found 1-bit tristate buffer for signal <data<3>>.
+    Found 1-bit tristate buffer for signal <data<2>>.
+    Found 1-bit tristate buffer for signal <data<1>>.
+    Found 1-bit tristate buffer for signal <data<0>>.
     Found 8-bit register for signal <i_data_in>.
     Found 1-bit register for signal <nco_output_enable>.
     Found 8-bit register for signal <phase_acc_inc_hi_i>.
@@ -792,151 +718,8 @@ WARNING:Xst:646 - Signal <phase_out> is assigned but never used. This unconnecte
     Summary:
 	inferred   1 ROM(s).
 	inferred  57 D-type flip-flop(s).
+	inferred   8 Tristate(s).
 Unit <CORDIC_NCO> synthesized.
-
-
-Synthesizing Unit <isync>.
-    Related source file is "/home/joseph/DesignLab/libraries/ZPUino_2/pad.vhd".
-Unit <isync> synthesized.
-
-
-Synthesizing Unit <async_fifo>.
-    Related source file is "../../../libraries/WM8731/async_fifo.v".
-    Found 8x32-bit dual-port RAM <Mram_Mem> for signal <Mem>.
-WARNING:Xst:737 - Found 1-bit latch for signal <Fifo_Direction>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit register for signal <Full_out>.
-    Found 1-bit register for signal <Empty_out>.
-    Found 1-bit xor2 for signal <Direction_Set$xor0000>.
-    Found 1-bit xor2 for signal <Direction_Set$xor0001> created at line 94.
-    Found 3-bit comparator equal for signal <EqualAddresses>.
-    Summary:
-	inferred   1 RAM(s).
-	inferred   2 D-type flip-flop(s).
-	inferred   1 Comparator(s).
-Unit <async_fifo> synthesized.
-
-
-Synthesizing Unit <i2c_master_byte_ctrl>.
-    Related source file is "/home/joseph/DesignLab/libraries/ZPUino_Wishbone_Peripherals/i2c_master_byte_ctrl.vhd".
-    Found finite state machine <FSM_1> for signal <c_state>.
-    -----------------------------------------------------------------------
-    | States             | 6                                              |
-    | Transitions        | 31                                             |
-    | Inputs             | 9                                              |
-    | Outputs            | 7                                              |
-    | Clock              | clk                       (rising_edge)        |
-    | Reset              | nReset                    (negative)           |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | st_idle                                        |
-    | Power Up State     | st_idle                                        |
-    | Encoding           | automatic                                      |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 1-bit register for signal <ack_out>.
-    Found 4-bit register for signal <core_cmd>.
-    Found 1-bit register for signal <core_txd>.
-    Found 3-bit register for signal <dcnt>.
-    Found 3-bit subtractor for signal <dcnt$addsub0000> created at line 220.
-    Found 1-bit register for signal <host_ack>.
-    Found 1-bit register for signal <ld>.
-    Found 1-bit register for signal <shift>.
-    Found 8-bit register for signal <sr>.
-    Summary:
-	inferred   1 Finite State Machine(s).
-	inferred  20 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-Unit <i2c_master_byte_ctrl> synthesized.
-
-
-Synthesizing Unit <WM8731>.
-    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/WM8731/WM8731.vhd".
-WARNING:Xst:1305 - Output <wishbone_out<100:34>> is never assigned. Tied to value 0000000000000000000000000000000000000000000000000000000000000000000.
-WARNING:Xst:647 - Input <wishbone_in<100:62>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <wishbone_in<27:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1780 - Signal <d2a_fifo_read_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Register <d2a_fifo_write_clear> equivalent to <a2d_fifo_read_clear> has been removed
-    Register <d2a_fifo_read_clear> equivalent to <a2d_fifo_write_clear> has been removed
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_29>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_21>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_16>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_22>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_17>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_23>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_24>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_19>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_30>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_25>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_31>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_26>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_32>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_27>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_33>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_out_28>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit register for signal <a2d_fifo_data_in>.
-    Found 1-bit register for signal <a2d_fifo_read_clear>.
-    Found 1-bit register for signal <a2d_fifo_read_enable>.
-    Found 1-bit register for signal <a2d_fifo_write_clear>.
-    Found 1-bit register for signal <a2d_fifo_write_enable>.
-    Found 8-bit up counter for signal <codec_sample_clock_counter>.
-    Found 32-bit register for signal <d2a_fifo_data_in>.
-    Found 1-bit register for signal <d2a_fifo_read_enable>.
-    Found 1-bit register for signal <d2a_fifo_write_enable>.
-    Found 32-bit register for signal <data_from_codec>.
-    Found 32-bit register for signal <data_from_codec_mask>.
-    Found 32-bit register for signal <data_to_codec>.
-    Found 32-bit register for signal <data_to_codec_buffer>.
-    Summary:
-	inferred   1 Counter(s).
-	inferred 198 D-type flip-flop(s).
-Unit <WM8731> synthesized.
-
-
-Synthesizing Unit <i2c>.
-    Related source file is "/home/joseph/DesignLab/sketchbook/libraries/i2c/i2c.vhd".
-WARNING:Xst:1305 - Output <wishbone_out<100:34>> is never assigned. Tied to value 0000000000000000000000000000000000000000000000000000000000000000000.
-WARNING:Xst:647 - Input <wishbone_in<100:62>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <wishbone_in<59:36>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <wishbone_in<27:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:653 - Signal <arst_i> is used but never assigned. This sourceless signal will be automatically connected to value 1.
-    Found 8-bit register for signal <wishbone_out<9:2>>.
-    Found 1-bit register for signal <wishbone_out<0>>.
-    Found 1-bit register for signal <al>.
-    Found 8-bit register for signal <cr>.
-    Found 8-bit register for signal <ctr>.
-    Found 1-bit register for signal <iack_o>.
-    Found 1-bit register for signal <irq_flag>.
-    Found 16-bit register for signal <prer>.
-    Found 1-bit register for signal <rxack>.
-    Found 1-bit register for signal <tip>.
-    Found 8-bit register for signal <txr>.
-    Found 1-bit 8-to-1 multiplexer for signal <wishbone_out_2$mux0001> created at line 219.
-    Found 1-bit 8-to-1 multiplexer for signal <wishbone_out_3$mux0001> created at line 219.
-    Found 1-bit 8-to-1 multiplexer for signal <wishbone_out_4$mux0001> created at line 219.
-    Found 1-bit 8-to-1 multiplexer for signal <wishbone_out_5$mux0001> created at line 219.
-    Found 1-bit 8-to-1 multiplexer for signal <wishbone_out_6$mux0001> created at line 219.
-    Found 1-bit 8-to-1 multiplexer for signal <wishbone_out_7$mux0001> created at line 219.
-    Found 1-bit 8-to-1 multiplexer for signal <wishbone_out_8$mux0001> created at line 219.
-    Found 1-bit 8-to-1 multiplexer for signal <wishbone_out_9$mux0001> created at line 219.
-    Summary:
-	inferred  54 D-type flip-flop(s).
-	inferred   8 Multiplexer(s).
-Unit <i2c> synthesized.
 
 
 Synthesizing Unit <iopad>.
@@ -962,11 +745,13 @@ Unit <Papilio_Default_Wing_Pinout> synthesized.
 
 Synthesizing Unit <Papilio_One_500K>.
     Related source file is "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf".
-WARNING:Xst:653 - Signal <XLXI_55_wm_rst_i_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_55_wm_clk_i_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_55_wm_adcdat_i_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_49_usb_clock_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_49_txe_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_49_rxf_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_video_in_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_9_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_8_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_6_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_14_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_13_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_48_wishbone_slot_12_out_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.
@@ -986,47 +771,31 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
- 8x32-bit dual-port RAM                                : 2
 # ROMs                                                 : 1
  256x8-bit ROM                                         : 1
-# Adders/Subtractors                                   : 37
- 14-bit subtractor                                     : 1
+# Adders/Subtractors                                   : 35
  15-bit adder                                          : 16
  15-bit addsub                                         : 14
  25-bit adder                                          : 1
  25-bit subtractor                                     : 1
- 3-bit subtractor                                      : 1
  9-bit adder                                           : 2
  9-bit subtractor                                      : 1
-# Counters                                             : 6
- 16-bit down counter                                   : 1
- 3-bit up counter                                      : 4
- 8-bit up counter                                      : 1
-# Registers                                            : 164
- 1-bit register                                        : 117
- 14-bit register                                       : 1
+# Registers                                            : 75
+ 1-bit register                                        : 47
  15-bit register                                       : 14
- 2-bit register                                        : 2
  24-bit register                                       : 2
- 3-bit register                                        : 7
- 32-bit register                                       : 6
- 4-bit register                                        : 1
- 8-bit register                                        : 14
-# Latches                                              : 34
- 1-bit latch                                           : 34
-# Comparators                                          : 18
+ 3-bit register                                        : 1
+ 8-bit register                                        : 11
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+# Comparators                                          : 16
  15-bit comparator less                                : 14
  25-bit comparator greater                             : 1
- 3-bit comparator equal                                : 2
  9-bit comparator greater                              : 1
-# Multiplexers                                         : 8
- 1-bit 8-to-1 multiplexer                              : 8
-# Tristates                                            : 250
- 1-bit tristate buffer                                 : 250
-# Xors                                                 : 8
- 1-bit xor2                                            : 4
- 2-bit xor2                                            : 4
+# Tristates                                            : 258
+ 1-bit tristate buffer                                 : 258
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
 
 =========================================================================
 
@@ -1034,153 +803,12 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Analyzing FSM <FSM_1> for best encoding.
-Optimizing FSM <XLXI_56/byte_ctrl/c_state/FSM> on signal <c_state[1:3]> with gray encoding.
-----------------------
- State    | Encoding
-----------------------
- st_idle  | 000
- st_start | 001
- st_read  | 011
- st_write | 010
- st_ack   | 111
- st_stop  | 110
-----------------------
-Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <XLXI_56/byte_ctrl/bit_ctrl/c_state/FSM> on signal <c_state[1:18]> with one-hot encoding.
--------------------------------
- State   | Encoding
--------------------------------
- idle    | 000000000000000001
- start_a | 000000000000000010
- start_b | 000000000000100000
- start_c | 000000000001000000
- start_d | 000000000010000000
- start_e | 000000000100000000
- stop_a  | 000000000000000100
- stop_b  | 000000001000000000
- stop_c  | 000000010000000000
- stop_d  | 000000100000000000
- rd_a    | 000000000000010000
- rd_b    | 000001000000000000
- rd_c    | 000010000000000000
- rd_d    | 000100000000000000
- wr_a    | 000000000000001000
- wr_b    | 001000000000000000
- wr_c    | 010000000000000000
- wr_d    | 100000000000000000
--------------------------------
 Reading core <../../../../libraries/ZPUino_2/ZPUino_Papilio_One_V2_blackbox.ngc>.
 Loading core <ZPUino_Papilio_One_V2_blackbox> for timing and area information for instance <Inst_ZPUino_Papilio_One_V2_blackbox>.
 WARNING:Xst:1290 - Hierarchical block <XLXI_22> is unconnected in block <Papilio_One_500K>.
    It will be removed from the design.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_12> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_11> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_10> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_9> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_8> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_7> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_6> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_5> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_4> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_3> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_2> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_1> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_0> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_31> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_30> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_29> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_28> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_27> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_31> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_30> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_29> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_28> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_27> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_26> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_25> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_24> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_23> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_22> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_21> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_20> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_19> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_18> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_17> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_16> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_15> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_14> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_13> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_20> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_19> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_18> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_17> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_16> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_15> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_14> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_13> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_12> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_11> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_10> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_9> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_8> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_7> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_6> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_5> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_4> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_3> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_2> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_1> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_0> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d2a_fifo_read_enable> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <a2d_fifo_write_clear> (without init value) has a constant value of 1 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <a2d_fifo_write_enable> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Full_out> (without init value) has a constant value of 1 in block <fifo_a2d>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <GrayCount_out_2> (without init value) has a constant value of 0 in block <GrayCounter_pWr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <GrayCount_out_1> (without init value) has a constant value of 0 in block <GrayCounter_pWr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <GrayCount_out_0> (without init value) has a constant value of 0 in block <GrayCounter_pWr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Empty_out> (without init value) has a constant value of 1 in block <fifo_d2a>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <GrayCount_out_2> (without init value) has a constant value of 0 in block <GrayCounter_pRd>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <GrayCount_out_1> (without init value) has a constant value of 0 in block <GrayCounter_pRd>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <GrayCount_out_0> (without init value) has a constant value of 0 in block <GrayCounter_pRd>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_26> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_25> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_24> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_23> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_22> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_21> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_12> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_11> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_10> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_9> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_8> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_7> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_6> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_5> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_4> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_3> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_2> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_1> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_0> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_26> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_27> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_28> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_29> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_30> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_31> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_25> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_24> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_23> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_22> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_21> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_20> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_19> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_18> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_17> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_16> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_15> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_14> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_13> (without init value) has a constant value of 0 in block <XLXI_55>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <um232h_int> is unconnected in block <XLXI_49>.
+   It will be removed from the design.
 WARNING:Xst:2677 - Node <shift_stream<0>.phase_0> of sequential type is unconnected in block <phase_shifter>.
 WARNING:Xst:2677 - Node <shift_stream<1>.phase_0> of sequential type is unconnected in block <phase_shifter>.
 WARNING:Xst:2677 - Node <shift_stream<1>.phase_1> of sequential type is unconnected in block <phase_shifter>.
@@ -1224,27 +852,6 @@ WARNING:Xst:2677 - Node <shift_stream<7>.i_data_5> of sequential type is unconne
 WARNING:Xst:2677 - Node <shift_stream<7>.i_data_6> of sequential type is unconnected in block <phase_shifter>.
 WARNING:Xst:2677 - Node <shift_stream<7>.i_data_7> of sequential type is unconnected in block <phase_shifter>.
 WARNING:Xst:2677 - Node <mapped_phase_rom0000_0> of sequential type is unconnected in block <XLXI_49>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <a2d_fifo_read_clear> is unconnected in block <XLXI_55>.
-
-Synthesizing (advanced) Unit <async_fifo>.
-INFO:Xst:3231 - The small RAM <Mram_Mem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 8-word x 32-bit                     |          |
-    |     clkA           | connected to signal <WClk>          | rise     |
-    |     weA            | connected to signal <NextWriteAddressEn> | high     |
-    |     addrA          | connected to signal <pNextWordToWrite> |          |
-    |     diA            | connected to signal <Data_in>       |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 8-word x 32-bit                     |          |
-    |     addrB          | connected to signal <pNextWordToRead> |          |
-    |     doB            | connected to signal <Data_out>      |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3217 - HDL ADVISOR - Register <data_to_codec_buffer> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_Mem> for implementation on block RAM resources if you made this reset synchronous instead.
-Unit <async_fifo> synthesized (advanced).
 WARNING:Xst:2677 - Node <shift_stream<7>.q_data_0> of sequential type is unconnected in block <zpuino_phase_shifter>.
 WARNING:Xst:2677 - Node <shift_stream<7>.q_data_1> of sequential type is unconnected in block <zpuino_phase_shifter>.
 WARNING:Xst:2677 - Node <shift_stream<7>.q_data_2> of sequential type is unconnected in block <zpuino_phase_shifter>.
@@ -1265,208 +872,37 @@ WARNING:Xst:2677 - Node <mapped_phase_rom0000_0> of sequential type is unconnect
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# FSMs                                                 : 2
-# RAMs                                                 : 2
- 8x32-bit dual-port distributed RAM                    : 2
 # ROMs                                                 : 1
  256x8-bit ROM                                         : 1
-# Adders/Subtractors                                   : 37
- 14-bit subtractor                                     : 1
+# Adders/Subtractors                                   : 35
  15-bit adder                                          : 16
  15-bit addsub                                         : 14
  24-bit subtractor                                     : 1
  25-bit adder                                          : 1
- 3-bit subtractor                                      : 1
  8-bit subtractor                                      : 1
  9-bit adder                                           : 2
-# Counters                                             : 6
- 16-bit down counter                                   : 1
- 3-bit up counter                                      : 4
- 8-bit up counter                                      : 1
-# Registers                                            : 804
- Flip-Flops                                            : 804
-# Latches                                              : 34
- 1-bit latch                                           : 34
-# Comparators                                          : 18
+# Registers                                            : 478
+ Flip-Flops                                            : 478
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+# Comparators                                          : 16
  15-bit comparator less                                : 14
  25-bit comparator greater                             : 1
- 3-bit comparator equal                                : 2
  9-bit comparator greater                              : 1
-# Multiplexers                                         : 8
- 1-bit 8-to-1 multiplexer                              : 8
-# Xors                                                 : 8
- 1-bit xor2                                            : 4
- 2-bit xor2                                            : 4
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <data_from_codec_31> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_0> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_1> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_2> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_3> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_4> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_5> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_6> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_7> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_8> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_9> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_10> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_11> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_12> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_13> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_14> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_31> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_30> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_29> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_28> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_27> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_26> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_25> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_24> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_23> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_22> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_21> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_20> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_19> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_18> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_17> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_16> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_mask_15> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_28> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_27> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_26> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_25> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_24> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_23> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_22> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_21> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_20> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_19> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_18> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_17> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_16> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_15> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_14> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_13> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_12> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_11> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_10> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_9> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_8> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_7> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_6> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_5> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_4> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_3> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_2> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_1> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_0> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <a2d_fifo_write_enable> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_29> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_from_codec_30> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_5> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_4> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_3> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_2> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_1> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_0> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_31> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_30> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_29> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_28> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_27> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_26> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_25> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_24> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_23> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_22> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_21> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_20> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_19> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_18> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_17> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_16> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_15> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_31> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_30> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_29> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_28> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_27> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_26> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_25> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_24> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_23> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_22> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_21> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_20> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_19> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_18> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_17> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_16> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_15> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_14> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_13> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_12> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_11> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_10> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_9> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_8> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_7> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_buffer_6> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_8> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_9> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_10> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_11> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_12> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_13> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_14> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_15> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_16> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_17> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_18> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_19> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_20> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_21> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_22> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_23> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_24> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_25> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_26> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_27> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_31> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_30> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_29> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_28> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_14> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_13> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_12> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_11> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_10> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_9> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_8> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_7> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_6> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_5> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_4> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_3> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_2> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_1> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_codec_0> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_write_clear> (without init value) has a constant value of 1 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d2a_fifo_read_enable> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_0> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_1> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_2> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_3> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_4> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_5> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_6> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a2d_fifo_data_in_7> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <a2d_fifo_read_clear> is unconnected in block <WM8731>.
+WARNING:Xst:2677 - Node <um232h_int/sample_flag/SyncA_clkB_0> of sequential type is unconnected in block <CORDIC_NCO>.
+WARNING:Xst:2677 - Node <um232h_int/sample_flag/SyncA_clkB_1> of sequential type is unconnected in block <CORDIC_NCO>.
+WARNING:Xst:2677 - Node <um232h_int/sample_flag/SyncA_clkB_2> of sequential type is unconnected in block <CORDIC_NCO>.
+WARNING:Xst:2677 - Node <um232h_int/rx_data_flag> of sequential type is unconnected in block <CORDIC_NCO>.
+WARNING:Xst:2677 - Node <um232h_int/wr> of sequential type is unconnected in block <CORDIC_NCO>.
+WARNING:Xst:2677 - Node <um232h_int/rd> of sequential type is unconnected in block <CORDIC_NCO>.
 WARNING:Xst:1710 - FF/Latch <shift_stream<0>.i_data_6> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_3> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_5> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
@@ -1481,17 +917,8 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_d
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_3> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_1> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_0> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <codec_sample_clock_counter_0> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <codec_sample_clock_counter_1> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <codec_sample_clock_counter_2> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <codec_sample_clock_counter_3> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <codec_sample_clock_counter_4> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <codec_sample_clock_counter_5> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <codec_sample_clock_counter_6> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <codec_sample_clock_counter_7> (without init value) has a constant value of 0 in block <WM8731>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <GrayCounter_pRd/GrayCount_out_0> in Unit <async_fifo> is equivalent to the following FF/Latch, which will be removed : <GrayCounter_pRd/BinaryCount_1> 
-INFO:Xst:2261 - The FF/Latch <GrayCounter_pWr/GrayCount_out_0> in Unit <async_fifo> is equivalent to the following FF/Latch, which will be removed : <GrayCounter_pWr/BinaryCount_1> 
 WARNING:Xst:2042 - Unit Papilio_Default_Wing_Pinout: 12 internal tristates are replaced by logic (pull-up yes): WingType_mosi_AH<4>, WingType_mosi_AH<5>, WingType_mosi_AH<6>, WingType_mosi_AH<7>, WingType_mosi_CH<0>, WingType_mosi_CH<1>, WingType_mosi_CH<2>, WingType_mosi_CH<3>, WingType_mosi_CH<4>, WingType_mosi_CH<5>, WingType_mosi_CH<6>, WingType_mosi_CH<7>.
+WARNING:Xst:2042 - Unit CORDIC_NCO: 8 internal tristates are replaced by logic (pull-up yes): data<0>, data<1>, data<2>, data<3>, data<4>, data<5>, data<6>, data<7>.
 
 Optimizing unit <Papilio_One_500K> ...
 
@@ -1499,31 +926,9 @@ Optimizing unit <zpuino_dds_acc> ...
 
 Optimizing unit <zpuino_phase_shifter> ...
 
-Optimizing unit <i2c_master_bit_ctrl> ...
-
 Optimizing unit <CORDIC_NCO> ...
 
-Optimizing unit <async_fifo> ...
-
-Optimizing unit <i2c_master_byte_ctrl> ...
-
-Optimizing unit <WM8731> ...
-
-Optimizing unit <i2c> ...
-
 Optimizing unit <Papilio_Default_Wing_Pinout> ...
-WARNING:Xst:1710 - FF/Latch <XLXI_55/fifo_d2a/Empty_out> (without init value) has a constant value of 1 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_55/fifo_d2a/GrayCounter_pRd/GrayCount_out_1> (without init value) has a constant value of 0 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_55/fifo_d2a/GrayCounter_pRd/GrayCount_out_0> (without init value) has a constant value of 0 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_55/fifo_d2a/GrayCounter_pRd/BinaryCount_0> (without init value) has a constant value of 1 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_55/fifo_d2a/GrayCounter_pRd/BinaryCount_2> (without init value) has a constant value of 0 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_55/fifo_a2d/Full_out> (without init value) has a constant value of 1 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_55/fifo_a2d/GrayCounter_pWr/GrayCount_out_1> (without init value) has a constant value of 0 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_55/fifo_a2d/GrayCounter_pWr/GrayCount_out_0> (without init value) has a constant value of 0 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_55/fifo_a2d/GrayCounter_pWr/BinaryCount_0> (without init value) has a constant value of 1 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_55/fifo_a2d/GrayCounter_pWr/BinaryCount_2> (without init value) has a constant value of 0 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_55/fifo_d2a/GrayCounter_pRd/GrayCount_out_2> (without init value) has a constant value of 0 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_55/fifo_a2d/GrayCounter_pWr/GrayCount_out_2> (without init value) has a constant value of 0 in block <Papilio_One_500K>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<0>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
 WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<1>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
 WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<1>.phase_1> of sequential type is unconnected in block <Papilio_One_500K>.
@@ -1575,107 +980,10 @@ WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_12> of seq
 WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_13> of sequential type is unconnected in block <Papilio_One_500K>.
 WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.q_data_14> of sequential type is unconnected in block <Papilio_One_500K>.
 WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<7>.i_data_7> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem2> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem1> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem5> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem3> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem4> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem8> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem6> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem7> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem9> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem10> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem13> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem11> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem12> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem14> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem15> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem18> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem16> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem17> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem19> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem20> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem23> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem21> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem22> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem24> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem25> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem28> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem26> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem27> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem29> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem30> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem31> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/fifo_d2a/Mram_Mem32> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_31> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_30> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_29> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_28> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_27> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_26> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_25> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_24> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_23> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_22> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_21> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_20> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_19> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_18> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_17> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_16> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_15> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_14> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_13> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_12> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_11> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_10> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_9> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_8> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_7> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_6> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_5> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_4> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_3> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_2> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_1> of sequential type is unconnected in block <Papilio_One_500K>.
-WARNING:Xst:2677 - Node <XLXI_55/d2a_fifo_data_in_0> of sequential type is unconnected in block <Papilio_One_500K>.
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem1> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem5> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem3> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem4> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem8> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem6> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem7> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem9> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem10> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem13> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem11> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem12> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem14> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem15> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem18> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem16> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem17> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem19> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem20> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem23> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem21> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem22> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem24> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem25> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem28> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem26> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem27> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem29> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem30> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem31> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <XLXI_55/fifo_a2d/Mram_Mem2>, <XLXI_55/fifo_a2d/Mram_Mem32> are equivalent, second RAM is removed
 
 Mapping all equations...
 Building and optimizing final netlist ...
-INFO:Xst:2261 - The FF/Latch <XLXI_55/wishbone_out_2> in Unit <Papilio_One_500K> is equivalent to the following FF/Latch, which will be removed : <XLXI_55/wishbone_out_5> 
-INFO:Xst:2261 - The FF/Latch <XLXI_55/wishbone_out_29> in Unit <Papilio_One_500K> is equivalent to the following 27 FFs/Latches, which will be removed : <XLXI_55/wishbone_out_10> <XLXI_55/wishbone_out_11> <XLXI_55/wishbone_out_12> <XLXI_55/wishbone_out_13> <XLXI_55/wishbone_out_14> <XLXI_55/wishbone_out_15> <XLXI_55/wishbone_out_20> <XLXI_55/wishbone_out_21> <XLXI_55/wishbone_out_16> <XLXI_55/wishbone_out_22> <XLXI_55/wishbone_out_17> <XLXI_55/wishbone_out_23> <XLXI_55/wishbone_out_18> <XLXI_55/wishbone_out_24> <XLXI_55/wishbone_out_19> <XLXI_55/wishbone_out_30> <XLXI_55/wishbone_out_6> <XLXI_55/wishbone_out_25> <XLXI_55/wishbone_out_31> <XLXI_55/wishbone_out_7> <XLXI_55/wishbone_out_26> <XLXI_55/wishbone_out_32> <XLXI_55/wishbone_out_8> <XLXI_55/wishbone_out_27> <XLXI_55/wishbone_out_33> <XLXI_55/wishbone_out_9> <XLXI_55/wishbone_out_28> 
-Found area constraint ratio of 100 (+ 5) on block Papilio_One_500K, actual ratio is 58.
+Found area constraint ratio of 100 (+ 5) on block Papilio_One_500K, actual ratio is 55.
 INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_27> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_27_1> 
 INFO:Xst:2260 - The FF/Latch <zpuino/core/prefr.valid> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/prefr.valid_1> 
 INFO:Xst:2260 - The FF/Latch <zpuino/core/exr.tos_save_2> in Unit <XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox> is equivalent to the following FF/Latch : <zpuino/core/exr.tos_save_2_1> 
@@ -1711,8 +1019,8 @@ Unit <Papilio_One_500K> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 561
- Flip-Flops                                            : 561
+# Registers                                            : 395
+ Flip-Flops                                            : 395
 # Shift Registers                                      : 3
  4-bit shift register                                  : 1
  5-bit shift register                                  : 1
@@ -1742,45 +1050,42 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 351
+# IOs                              : 347
 
 Cell Usage :
-# BELS                             : 6704
+# BELS                             : 6314
 #      GND                         : 2
-#      INV                         : 134
-#      LUT1                        : 257
-#      LUT2                        : 641
-#      LUT2_D                      : 22
-#      LUT2_L                      : 29
-#      LUT3                        : 798
-#      LUT3_D                      : 58
+#      INV                         : 101
+#      LUT1                        : 255
+#      LUT2                        : 583
+#      LUT2_D                      : 20
+#      LUT2_L                      : 28
+#      LUT3                        : 713
+#      LUT3_D                      : 54
 #      LUT3_L                      : 52
-#      LUT4                        : 2239
-#      LUT4_D                      : 50
-#      LUT4_L                      : 248
-#      MUXCY                       : 926
-#      MUXF5                       : 475
-#      MUXF6                       : 7
+#      LUT4                        : 2137
+#      LUT4_D                      : 46
+#      LUT4_L                      : 238
+#      MUXCY                       : 898
+#      MUXF5                       : 449
+#      MUXF6                       : 2
 #      VCC                         : 2
-#      XORCY                       : 764
-# FlipFlops/Latches                : 2488
-#      FD                          : 227
-#      FDC                         : 278
-#      FDCE                        : 120
+#      XORCY                       : 734
+# FlipFlops/Latches                : 2316
+#      FD                          : 224
+#      FDC                         : 235
+#      FDCE                        : 48
 #      FDCP                        : 23
 #      FDE                         : 1135
-#      FDP                         : 9
-#      FDPE                        : 26
-#      FDR                         : 183
-#      FDRE                        : 289
+#      FDP                         : 2
+#      FDPE                        : 1
+#      FDR                         : 177
+#      FDRE                        : 281
 #      FDRS                        : 14
 #      FDRSE                       : 1
 #      FDS                         : 74
-#      FDSE                        : 103
-#      LD                          : 4
-#      LDC                         : 2
-# RAMS                             : 19
-#      RAM16X1D                    : 1
+#      FDSE                        : 101
+# RAMS                             : 18
 #      RAMB16_S2_S2                : 16
 #      RAMB16_S36_S36              : 1
 #      RAMB16_S9_S9                : 1
@@ -1789,11 +1094,11 @@ Cell Usage :
 #      SRL16E                      : 32
 # Clock Buffers                    : 5
 #      BUFG                        : 5
-# IO Buffers                       : 253
-#      IBUF                        : 4
+# IO Buffers                       : 249
+#      IBUF                        : 2
 #      IBUFG                       : 1
 #      IOBUF                       : 36
-#      OBUF                        : 14
+#      OBUF                        : 12
 #      OBUFT                       : 198
 # DCMs                             : 2
 #      DCM_SP                      : 2
@@ -1806,14 +1111,13 @@ Device utilization summary:
 
 Selected Device : 3s500evq100-5 
 
- Number of Slices:                     2711  out of   4656    58%  
- Number of Slice Flip Flops:           2488  out of   9312    26%  
- Number of 4 input LUTs:               4567  out of   9312    49%  
-    Number used as logic:              4528
+ Number of Slices:                     2546  out of   4656    54%  
+ Number of Slice Flip Flops:           2316  out of   9312    24%  
+ Number of 4 input LUTs:               4264  out of   9312    45%  
+    Number used as logic:              4227
     Number used as Shift registers:      37
-    Number used as RAMs:                  2
- Number of IOs:                         351
- Number of bonded IOBs:                 252  out of     66   381% (*) 
+ Number of IOs:                         347
+ Number of bonded IOBs:                 248  out of     66   375% (*) 
  Number of BRAMs:                        18  out of     20    90%  
  Number of MULT18X18SIOs:                 3  out of     20    15%  
  Number of GCLKs:                         5  out of     24    20%  
@@ -1839,28 +1143,18 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------------------------------------+-----------------------------------------+-------+
-Clock Signal                                                     | Clock buffer(FF name)                   | Load  |
------------------------------------------------------------------+-----------------------------------------+-------+
-ext_pins_in<0>                                                   | clkgen_inst/DCM_inst:CLKFX              | 2540  |
-XLXI_55/fifo_d2a/Direction_Set(XLXI_55/fifo_d2a/Direction_Set1:O)| NONE(*)(XLXI_55/fifo_d2a/Fifo_Direction)| 1     |
-XLXI_55/fifo_a2d/Direction_Set(XLXI_55/fifo_a2d/Direction_Set1:O)| NONE(*)(XLXI_55/fifo_a2d/Fifo_Direction)| 1     |
-N0                                                               | NONE(XLXI_55/fifo_a2d/Mram_Mem2)        | 1     |
-XLXI_55/a2d_fifo_read_flag(XLXI_55/a2d_fifo_read_flag1:O)        | NONE(*)(XLXI_55/wishbone_out_29)        | 4     |
------------------------------------------------------------------+-----------------------------------------+-------+
-(*) These 3 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+ext_pins_in<0>                     | clkgen_inst/DCM_inst:CLKFX| 2374  |
+-----------------------------------+---------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                 | Buffer(FF name)                                                     | Load  |
 -----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
-XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_13_in<60>(XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/rstgen/rstout_or00001:O)       | NONE(XLXI_49/dds_acc/r_reg_hi_0)                                    | 286   |
-N0(XST_GND:G)                                                                                                                                  | NONE(XLXI_56/al)                                                    | 143   |
-N1(XST_VCC:P)                                                                                                                                  | NONE(XLXI_55/fifo_a2d/Fifo_Direction)                               | 2     |
+XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_13_in<60>(XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/rstgen/rstout_or00001:O)       | NONE(XLXI_49/dds_acc/r_reg_hi_0)                                    | 284   |
 XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q_or0000(XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q_or00001:O)| NONE(XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q)| 2     |
 XLXI_49/phase_shifter/shift_stream<0>_i_data_10_and0000(XLXI_49/phase_shifter/shift_stream<0>_i_data_10_and00001:O)                            | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_10)               | 1     |
 XLXI_49/phase_shifter/shift_stream<0>_i_data_10_and0001(XLXI_49/phase_shifter/shift_stream<0>_i_data_10_and00011:O)                            | NONE(XLXI_49/phase_shifter/shift_stream<0>.i_data_10)               | 1     |
@@ -1908,8 +1202,6 @@ XLXI_49/phase_shifter/shift_stream<0>_q_data_8_and0000(XLXI_49/phase_shifter/shi
 XLXI_49/phase_shifter/shift_stream<0>_q_data_8_and0001(XLXI_49/phase_shifter/shift_stream<0>_q_data_8_and00011:O)                              | NONE(XLXI_49/phase_shifter/shift_stream<0>.q_data_8)                | 1     |
 XLXI_49/phase_shifter/shift_stream<0>_q_data_9_and0000(XLXI_49/phase_shifter/shift_stream<0>_q_data_9_and00001:O)                              | NONE(XLXI_49/phase_shifter/shift_stream<0>.q_data_9)                | 1     |
 XLXI_49/phase_shifter/shift_stream<0>_q_data_9_and0001(XLXI_49/phase_shifter/shift_stream<0>_q_data_9_and00011:O)                              | NONE(XLXI_49/phase_shifter/shift_stream<0>.q_data_9)                | 1     |
-XLXI_55/fifo_a2d/PresetEmpty(XLXI_55/fifo_a2d/PresetEmpty1:O)                                                                                  | NONE(XLXI_55/fifo_a2d/Empty_out)                                    | 1     |
-XLXI_55/fifo_d2a/PresetFull(XLXI_55/fifo_d2a/PresetFull1:O)                                                                                    | NONE(XLXI_55/fifo_d2a/Full_out)                                     | 1     |
 -----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
 
 Timing Summary:
@@ -1917,7 +1209,7 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 24.509ns (Maximum Frequency: 40.801MHz)
-   Minimum input arrival time before clock: 2.495ns
+   Minimum input arrival time before clock: 1.829ns
    Maximum output required time after clock: 5.447ns
    Maximum combinational path delay: No path found
 
@@ -1928,7 +1220,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ext_pins_in<0>'
   Clock period: 24.509ns (frequency: 40.801MHz)
-  Total number of paths / destination ports: 97982 / 5496
+  Total number of paths / destination ports: 95067 / 5223
 -------------------------------------------------------------------------
 Delay:               8.170ns (Levels of Logic = 7)
   Source:            XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_24 (FF)
@@ -1944,7 +1236,7 @@ Delay:               8.170ns (Levels of Logic = 7)
      LUT4_D:I0->O         32   0.612   1.225  zpuino/io/slot_cyc_i_5_cmp_eq00001 (zpuino/io/slot_cyc_i_5_cmp_eq0000)
      LUT2:I0->O            4   0.612   0.568  zpuino/io/slot_cyc_i_5_mux00001 (wishbone_slot_5_in<1>)
      end scope: 'XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox'
-     LUT2:I1->O            1   0.612   0.509  XLXI_49/wishbone_out_1_and00001 (XLXN_411<1>)
+     LUT2:I1->O            1   0.612   0.509  XLXI_49/wishbone_out_1_and00001 (XLXN_446<1>)
      begin scope: 'XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox'
      LUT4:I0->O            1   0.612   0.000  zpuino/io/io_device_ack_wg_lut<4> (zpuino/io/io_device_ack_wg_lut<4>)
      MUXCY:S->O            2   0.641   0.383  zpuino/io/io_device_ack_wg_cy<4> (zpuino/io/io_device_ack)
@@ -1956,27 +1248,27 @@ Delay:               8.170ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'ext_pins_in<0>'
-  Total number of paths / destination ports: 40 / 40
+  Total number of paths / destination ports: 38 / 38
 -------------------------------------------------------------------------
-Offset:              2.495ns (Levels of Logic = 2)
-  Source:            WING_AH4 (PAD)
-  Destination:       XLXI_56/byte_ctrl/bit_ctrl/cSDA_0 (FF)
+Offset:              1.829ns (Levels of Logic = 2)
+  Source:            ext_pins_in<1> (PAD)
+  Destination:       XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/ibufmiso/sync/Mshreg_ff2 (FF)
   Destination Clock: ext_pins_in<0> rising 3.0X
 
-  Data Path: WING_AH4 to XLXI_56/byte_ctrl/bit_ctrl/cSDA_0
+  Data Path: ext_pins_in<1> to XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox/ibufmiso/sync/Mshreg_ff2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.106   0.509  WING_AH4_IBUF (WING_AH4_IBUF)
-     LUT2:I0->O            1   0.612   0.000  XLXI_56/byte_ctrl/bit_ctrl/cSDA_mux0001<1>1 (XLXI_56/byte_ctrl/bit_ctrl/cSDA_mux0001<1>)
-     FDC:D                     0.268          XLXI_56/byte_ctrl/bit_ctrl/cSDA_0
+     IBUF:I->O             1   1.106   0.357  ext_pins_in_1_IBUF (ext_pins_in_1_IBUF)
+     begin scope: 'XLXI_48/Inst_ZPUino_Papilio_One_V2_blackbox'
+     SRL16:D                   0.366          ibufmiso/sync/Mshreg_ff2
     ----------------------------------------
-    Total                      2.495ns (1.986ns logic, 0.509ns route)
-                                       (79.6% logic, 20.4% route)
+    Total                      1.829ns (1.472ns logic, 0.357ns route)
+                                       (80.5% logic, 19.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ext_pins_in<0>'
-  Total number of paths / destination ports: 92 / 49
+  Total number of paths / destination ports: 90 / 47
 -------------------------------------------------------------------------
 Offset:              5.447ns (Levels of Logic = 2)
   Source:            XLXI_49/nco_output_enable (FF)
@@ -1997,15 +1289,15 @@ Offset:              5.447ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 34.00 secs
-Total CPU time to Xst completion: 33.71 secs
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 30.46 secs
  
 --> 
 
 
-Total memory usage is 225708 kilobytes
+Total memory usage is 217700 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  725 (   0 filtered)
-Number of infos    :   98 (   0 filtered)
+Number of warnings :  364 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
 

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.2
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Papilio_One_500K.vhf
--- /___/   /\     Timestamp : 10/11/2015 22:44:04
+-- /___/   /\     Timestamp : 10/26/2015 20:08:49
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -27,11 +27,7 @@ use UNISIM.Vcomponents.ALL;
 
 entity Papilio_One_500K is
    port ( ext_pins_in    : in    std_logic_vector (100 downto 0); 
-          WING_AH4       : in    std_logic; 
-          WING_AH6       : in    std_logic; 
           ext_pins_out   : out   std_logic_vector (100 downto 0); 
-          WING_AH5       : out   std_logic; 
-          WING_AH7       : out   std_logic; 
           WING_CH0       : out   std_logic; 
           WING_CH1       : out   std_logic; 
           WING_CH2       : out   std_logic; 
@@ -108,19 +104,11 @@ architecture BEHAVIORAL of Papilio_One_500K is
          downto 0);
    signal XLXN_409                                  : std_logic_vector (200 
          downto 0);
-   signal XLXN_410                                  : std_logic_vector (100 
-         downto 0);
-   signal XLXN_411                                  : std_logic_vector (100 
-         downto 0);
    signal XLXN_412                                  : std_logic_vector (7 
          downto 0);
-   signal XLXN_436                                  : std_logic_vector (100 
+   signal XLXN_445                                  : std_logic_vector (100 
          downto 0);
-   signal XLXN_437                                  : std_logic_vector (100 
-         downto 0);
-   signal XLXN_439                                  : std_logic_vector (100 
-         downto 0);
-   signal XLXN_440                                  : std_logic_vector (100 
+   signal XLXN_446                                  : std_logic_vector (100 
          downto 0);
    signal XLXI_47_Flex_Pin_out_0_openSignal         : std_logic;
    signal XLXI_47_Flex_Pin_out_1_openSignal         : std_logic;
@@ -129,6 +117,10 @@ architecture BEHAVIORAL of Papilio_One_500K is
    signal XLXI_47_Flex_Pin_out_4_openSignal         : std_logic;
    signal XLXI_47_Flex_Pin_out_5_openSignal         : std_logic;
    signal XLXI_48_wishbone_slot_video_in_openSignal : std_logic_vector (100 
+         downto 0);
+   signal XLXI_48_wishbone_slot_6_out_openSignal    : std_logic_vector (100 
+         downto 0);
+   signal XLXI_48_wishbone_slot_8_out_openSignal    : std_logic_vector (100 
          downto 0);
    signal XLXI_48_wishbone_slot_9_out_openSignal    : std_logic_vector (100 
          downto 0);
@@ -142,9 +134,9 @@ architecture BEHAVIORAL of Papilio_One_500K is
          downto 0);
    signal XLXI_48_wishbone_slot_14_out_openSignal   : std_logic_vector (100 
          downto 0);
-   signal XLXI_55_wm_adcdat_i_openSignal            : std_logic;
-   signal XLXI_55_wm_clk_i_openSignal               : std_logic;
-   signal XLXI_55_wm_rst_i_openSignal               : std_logic;
+   signal XLXI_49_rxf_openSignal                    : std_logic;
+   signal XLXI_49_txe_openSignal                    : std_logic;
+   signal XLXI_49_usb_clock_openSignal              : std_logic;
    component Wing_GPIO
       port ( wt_miso : inout std_logic_vector (7 downto 0); 
              wt_mosi : inout std_logic_vector (7 downto 0));
@@ -260,10 +252,17 @@ architecture BEHAVIORAL of Papilio_One_500K is
    end component;
    
    component CORDIC_NCO
-      port ( wishbone_in  : in    std_logic_vector (100 downto 0); 
+      port ( txe          : in    std_logic; 
+             rd           : out   std_logic; 
+             wr           : out   std_logic; 
+             oe           : out   std_logic; 
              d2a_data     : out   std_logic_vector (7 downto 0); 
              wishbone_out : out   std_logic_vector (100 downto 0); 
-             d2a_clk      : out   std_logic);
+             data         : inout std_logic_vector (7 downto 0); 
+             d2a_clk      : out   std_logic; 
+             wishbone_in  : in    std_logic_vector (100 downto 0); 
+             usb_clock    : in    std_logic; 
+             rxf          : in    std_logic);
    end component;
    
    component bus8
@@ -276,29 +275,6 @@ architecture BEHAVIORAL of Papilio_One_500K is
              bus5 : out   std_logic; 
              bus6 : out   std_logic; 
              bus7 : out   std_logic);
-   end component;
-   
-   component WM8731
-      port ( wm_clk_i     : in    std_logic; 
-             wm_rst_i     : in    std_logic; 
-             wm_adcdat_i  : in    std_logic; 
-             wishbone_in  : in    std_logic_vector (100 downto 0); 
-             wm_bclk_o    : out   std_logic; 
-             wm_lrc_o     : out   std_logic; 
-             wm_dacdat_o  : out   std_logic; 
-             wishbone_out : out   std_logic_vector (100 downto 0));
-   end component;
-   
-   component i2c
-      port ( scl_pad_i    : in    std_logic; 
-             sda_pad_i    : in    std_logic; 
-             wishbone_in  : in    std_logic_vector (100 downto 0); 
-             scl_pad_o    : out   std_logic; 
-             scl_padoen_o : out   std_logic; 
-             sda_pad_o    : out   std_logic; 
-             sda_padoen_o : out   std_logic; 
-             wishbone_out : out   std_logic_vector (100 downto 0); 
-             debug        : out   std_logic);
    end component;
    
 begin
@@ -407,9 +383,11 @@ begin
                 gpio_bus_in(200 downto 0)=>XLXN_409(200 downto 0),
                 wishbone_slot_video_in(100 downto 
             0)=>XLXI_48_wishbone_slot_video_in_openSignal(100 downto 0),
-                wishbone_slot_5_out(100 downto 0)=>XLXN_411(100 downto 0),
-                wishbone_slot_6_out(100 downto 0)=>XLXN_440(100 downto 0),
-                wishbone_slot_8_out(100 downto 0)=>XLXN_437(100 downto 0),
+                wishbone_slot_5_out(100 downto 0)=>XLXN_446(100 downto 0),
+                wishbone_slot_6_out(100 downto 
+            0)=>XLXI_48_wishbone_slot_6_out_openSignal(100 downto 0),
+                wishbone_slot_8_out(100 downto 
+            0)=>XLXI_48_wishbone_slot_8_out_openSignal(100 downto 0),
                 wishbone_slot_9_out(100 downto 
             0)=>XLXI_48_wishbone_slot_9_out_openSignal(100 downto 0),
                 wishbone_slot_10_out(100 downto 
@@ -429,9 +407,9 @@ begin
                 gpio_bus_out(200 downto 0)=>XLXN_408(200 downto 0),
                 vgaclkout=>open,
                 wishbone_slot_video_out=>open,
-                wishbone_slot_5_in(100 downto 0)=>XLXN_410(100 downto 0),
-                wishbone_slot_6_in(100 downto 0)=>XLXN_439(100 downto 0),
-                wishbone_slot_8_in(100 downto 0)=>XLXN_436(100 downto 0),
+                wishbone_slot_5_in(100 downto 0)=>XLXN_445(100 downto 0),
+                wishbone_slot_6_in=>open,
+                wishbone_slot_8_in=>open,
                 wishbone_slot_9_in=>open,
                 wishbone_slot_10_in=>open,
                 wishbone_slot_11_in=>open,
@@ -441,10 +419,17 @@ begin
                 ext_pins_inout(100 downto 0)=>ext_pins_inout(100 downto 0));
    
    XLXI_49 : CORDIC_NCO
-      port map (wishbone_in(100 downto 0)=>XLXN_410(100 downto 0),
+      port map (rxf=>XLXI_49_rxf_openSignal,
+                txe=>XLXI_49_txe_openSignal,
+                usb_clock=>XLXI_49_usb_clock_openSignal,
+                wishbone_in(100 downto 0)=>XLXN_445(100 downto 0),
                 d2a_clk=>WING_CH0,
                 d2a_data(7 downto 0)=>XLXN_412(7 downto 0),
-                wishbone_out(100 downto 0)=>XLXN_411(100 downto 0));
+                oe=>open,
+                rd=>open,
+                wishbone_out(100 downto 0)=>XLXN_446(100 downto 0),
+                wr=>open,
+                data=>open);
    
    XLXI_50 : bus8
       port map (bus8(7 downto 0)=>XLXN_412(7 downto 0),
@@ -456,27 +441,6 @@ begin
                 bus5=>WING_CH5,
                 bus6=>WING_CH6,
                 bus7=>WING_CH7);
-   
-   XLXI_55 : WM8731
-      port map (wishbone_in(100 downto 0)=>XLXN_436(100 downto 0),
-                wm_adcdat_i=>XLXI_55_wm_adcdat_i_openSignal,
-                wm_clk_i=>XLXI_55_wm_clk_i_openSignal,
-                wm_rst_i=>XLXI_55_wm_rst_i_openSignal,
-                wishbone_out(100 downto 0)=>XLXN_437(100 downto 0),
-                wm_bclk_o=>open,
-                wm_dacdat_o=>open,
-                wm_lrc_o=>open);
-   
-   XLXI_56 : i2c
-      port map (scl_pad_i=>WING_AH6,
-                sda_pad_i=>WING_AH4,
-                wishbone_in(100 downto 0)=>XLXN_439(100 downto 0),
-                debug=>open,
-                scl_padoen_o=>WING_AH7,
-                scl_pad_o=>open,
-                sda_padoen_o=>WING_AH5,
-                sda_pad_o=>open,
-                wishbone_out(100 downto 0)=>XLXN_440(100 downto 0));
    
 end BEHAVIORAL;
 

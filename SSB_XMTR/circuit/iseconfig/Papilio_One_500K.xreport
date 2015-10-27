@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-10-11T21:53:58</DateModified>
+  <DateModified>2015-10-26T20:14:46</DateModified>
   <ModuleName>Papilio_One_500K</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-10-26T19:55:59</SummaryTimeStamp>
   <SavedFilePath>/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/iseconfig/Papilio_One_500K.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/</ImplementationReportsDirectory>
   <DateInitialized>2015-10-11T18:00:56</DateInitialized>

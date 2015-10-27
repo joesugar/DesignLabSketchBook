@@ -22,6 +22,9 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="../PSL_Papilio_One_500K.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../CORDIC_NCO.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="CORDIC_NCO.spl"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Papilio_One_500K.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="Papilio_One_500K.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Papilio_One_500K.bld"/>
@@ -70,6 +73,8 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="um232h.prj"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="um232h.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -82,7 +87,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444617844" xil_pn:in_ck="-7617511993352190059" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6483124800134535562" xil_pn:start_ts="1444617842">
+    <transform xil_pn:end_ts="1445904529" xil_pn:in_ck="-7617511993352190059" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6483124800134535562" xil_pn:start_ts="1445904528">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Papilio_One_500K.vhf"/>
@@ -107,12 +112,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444617883" xil_pn:in_ck="429095797535368789" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7663177751914279312" xil_pn:start_ts="1444617844">
+    <transform xil_pn:end_ts="1445904967" xil_pn:in_ck="3740498278356009619" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7663177751914279312" xil_pn:start_ts="1445904931">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="Papilio_One_500K.jhd"/>
       <outfile xil_pn:name="Papilio_One_500K.lso"/>
       <outfile xil_pn:name="Papilio_One_500K.ngc"/>
@@ -134,60 +138,50 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Papilio_One_500K.bld"/>
-      <outfile xil_pn:name="Papilio_One_500K.ngd"/>
-      <outfile xil_pn:name="Papilio_One_500K_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1444617905" xil_pn:in_ck="-6693496465005270056" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="2842458847540838050" xil_pn:start_ts="1444617893">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Papilio_One_500K.pcf"/>
-      <outfile xil_pn:name="Papilio_One_500K_map.map"/>
-      <outfile xil_pn:name="Papilio_One_500K_map.mrp"/>
-      <outfile xil_pn:name="Papilio_One_500K_map.ncd"/>
-      <outfile xil_pn:name="Papilio_One_500K_map.ngm"/>
-      <outfile xil_pn:name="Papilio_One_500K_map.xrpt"/>
-      <outfile xil_pn:name="Papilio_One_500K_summary.xml"/>
-      <outfile xil_pn:name="Papilio_One_500K_usage.xml"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1444618431" xil_pn:in_ck="7995037118755645169" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-3872219738485705569" xil_pn:start_ts="1444617905">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Papilio_One_500K.ncd"/>
-      <outfile xil_pn:name="Papilio_One_500K.pad"/>
-      <outfile xil_pn:name="Papilio_One_500K.par"/>
-      <outfile xil_pn:name="Papilio_One_500K.ptwx"/>
-      <outfile xil_pn:name="Papilio_One_500K.unroutes"/>
-      <outfile xil_pn:name="Papilio_One_500K.xpi"/>
-      <outfile xil_pn:name="Papilio_One_500K_pad.csv"/>
-      <outfile xil_pn:name="Papilio_One_500K_pad.txt"/>
-      <outfile xil_pn:name="Papilio_One_500K_par.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1444618452" xil_pn:in_ck="-2393076458113222016" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1444618431">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Papilio_One_500K.bgn"/>
-      <outfile xil_pn:name="Papilio_One_500K.bit"/>
-      <outfile xil_pn:name="Papilio_One_500K.drc"/>
-      <outfile xil_pn:name="Papilio_One_500K.ut"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1444618431" xil_pn:in_ck="-6693496465005270188" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1444618424">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Papilio_One_500K.twr"/>
-      <outfile xil_pn:name="Papilio_One_500K.twx"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

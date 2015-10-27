@@ -1,11 +1,28 @@
-V3 11
-FL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf 2015/10/11.22:44:04 P.28xd
-EN work/Papilio_One_500K 1444617866 \
+V3 20
+FL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf 2015/10/26.20:08:49 P.28xd
+EN work/Papilio_One_500K 1445904962 \
       FL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf \
       PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
       PH unisim/VCOMPONENTS 1341906184
-AR work/Papilio_One_500K/BEHAVIORAL 1444617867 \
+AR work/Papilio_One_500K/BEHAVIORAL 1445904963 \
       FL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf \
-      EN work/Papilio_One_500K 1444617866 CP Wing_GPIO \
+      EN work/Papilio_One_500K 1445904962 CP Wing_GPIO \
       CP Papilio_Default_Wing_Pinout CP ZPUino_Papilio_One_500K_V2 CP CORDIC_NCO \
-      CP bus8 CP WM8731 CP i2c
+      CP bus8
+FL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd 2015/10/26.19:55:19 P.28xd
+EN work/CORDIC_NCO 1445904960 \
+      FL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/MATH_REAL 1341906183 PB ieee/std_logic_misc 1341906178 PB std/TEXTIO 1341906175 \
+      LB UNISIM PH unisim/VCOMPONENTS 1341906184 LB DesignLab
+AR work/CORDIC_NCO/BEHAVIORAL 1445904961 \
+      FL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd \
+      EN work/CORDIC_NCO 1445904960 CP zpuino_dds_acc CP zpuino_phase_shifter \
+      CP um232h
+FL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/um232h.vhd 2015/10/25.22:07:12 P.28xd
+EN work/um232h 1445904958 \
+      FL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/um232h.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/um232h/behavioral 1445904959 \
+      FL /home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/um232h.vhd \
+      EN work/um232h 1445904958 CP async_flagack

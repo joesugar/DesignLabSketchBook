@@ -10,6 +10,7 @@
          <ClosedNode>/Automatic `includes</ClosedNode>
          <ClosedNode>/Papilio_One_500K |home|joseph|DesignLab|sketchbook|SSB_XMTR|circuit|Papilio_One_500K.sch/XLXI_47 - Papilio_Default_Wing_Pinout - BEHAVIORAL</ClosedNode>
          <ClosedNode>/Papilio_One_500K |home|joseph|DesignLab|sketchbook|SSB_XMTR|circuit|Papilio_One_500K.sch/XLXI_48 - ZPUino_Papilio_One_500K_V2 - behave</ClosedNode>
+         <ClosedNode>/Papilio_One_500K |home|joseph|DesignLab|sketchbook|SSB_XMTR|circuit|Papilio_One_500K.sch/XLXI_49 - CORDIC_NCO - BEHAVIORAL</ClosedNode>
          <ClosedNode>/Papilio_One_500K |home|joseph|DesignLab|sketchbook|SSB_XMTR|circuit|Papilio_One_500K.sch/zpupkg_hyperion</ClosedNode>
          <ClosedNode>/Unassigned User Library Modules</ClosedNode>
          <ClosedNode>/Utility |home|joseph|DesignLab|examples|00.Papilio_Schematic_Library|Libraries|ZPUino_1|Utility.sch</ClosedNode>
@@ -17,7 +18,7 @@
       <SelectedItems>
          <SelectedItem>Papilio_One_500K (/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/Papilio_One_500K.sch)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000041e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000041e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
@@ -33,13 +34,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000129000000010000000100000000000000000000000064ffffffff000000810000000000000001000001290000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -81,15 +82,14 @@
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Create Schematic Symbol</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000138000000010000000100000000000000000000000064ffffffff000000810000000000000001000001380000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Create Schematic Symbol</CurrentItem>
    </ItemView>
 </Project>

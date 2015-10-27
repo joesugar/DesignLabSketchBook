@@ -67,3 +67,6 @@ xst -intstyle ise -ifn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/
 xst -intstyle ise -ifn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.xst" -ofn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.syr" 
 xst -intstyle ise -ifn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.xst" -ofn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.syr" 
 xst -intstyle ise -ifn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.xst" -ofn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.syr" 
+xst -intstyle ise -ifn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.xst" -ofn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.syr" 
+xst -intstyle ise -ifn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.xst" -ofn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.syr" 
+xst -intstyle ise -ifn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.xst" -ofn "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.syr" 

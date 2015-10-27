@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: Papilio_One_500K.prj
@@ -135,7 +135,8 @@ Architecture behavioral of Entity bus8 is up to date.
 Compiling vhdl file "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/um232h.vhd" in Library work.
 Architecture behavioral of Entity um232h is up to date.
 Compiling vhdl file "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" in Library work.
-Architecture behavioral of Entity cordic_nco is up to date.
+Entity <cordic_nco> compiled.
+Entity <cordic_nco> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/500K/Papilio_One_500K.vhf" in Library work.
 Architecture behavioral of Entity papilio_one_500k is up to date.
 
@@ -155,6 +156,7 @@ Analyzing hierarchy for entity <CORDIC_NCO> in library <work> (architecture <beh
 	CORDIC_ROM_ADDRESS_WIDTH = 8
 	CORDIC_ROM_DATA_WIDTH = 8
 	D2A_DATA_WIDTH = 8
+	FT232H_BUS_WIDTH = 8
 	IQ_BUS_WIDTH = 8
 	NUMBER_OF_SHIFTS = 7
 	PHASE_ACC_HI_WIDTH = 8
@@ -250,20 +252,15 @@ Analyzing generic Entity <CORDIC_NCO> in library <work> (Architecture <behaviora
 	CORDIC_ROM_ADDRESS_WIDTH = 8
 	CORDIC_ROM_DATA_WIDTH = 8
 	D2A_DATA_WIDTH = 8
+	FT232H_BUS_WIDTH = 8
 	IQ_BUS_WIDTH = 8
 	NUMBER_OF_SHIFTS = 7
 	PHASE_ACC_HI_WIDTH = 8
 	PHASE_ACC_OUT_WIDTH = 8
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 208: Unconnected output port 'carry' of component 'zpuino_dds_acc'.
-WARNING:Xst:754 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected inout port 'data' of component 'um232h'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected output port 'rd' of component 'um232h'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected output port 'wr' of component 'um232h'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected output port 'oe' of component 'um232h'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected output port 'rx_data' of component 'um232h'.
-WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 236: Unconnected output port 'rx_data_ready' of component 'um232h'.
-WARNING:Xst:1610 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 331: Width mismatch. <phase_address> has a width of 8 bits but assigned expression is 14-bit wide.
-WARNING:Xst:790 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 332: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 344: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 213: Unconnected output port 'carry' of component 'zpuino_dds_acc'.
+WARNING:Xst:1610 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 336: Width mismatch. <phase_address> has a width of 8 bits but assigned expression is 14-bit wide.
+WARNING:Xst:790 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 337: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd" line 349: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <i_data_in>, <q_data_in>, <phase_acc_inc_hi_i>, <phase_acc_inc_lo_i>, <nco_output_enable>
 Entity <CORDIC_NCO> analyzed. Unit <CORDIC_NCO> generated.
 
@@ -431,10 +428,12 @@ Synthesizing Unit <async_flagack>.
     Related source file is "../async_flagack.v".
     Found 1-bit xor2 for signal <FlagOut_clkB>.
     Found 1-bit xor2 for signal <Busy_clkA>.
-    Found 1-bit xor2 for signal <FlagToggle_clkA>.
+    Found 1-bit register for signal <FlagToggle_clkA>.
+    Found 1-bit xor2 for signal <FlagToggle_clkA$xor0000> created at line 33.
     Found 3-bit register for signal <SyncA_clkB>.
+    Found 2-bit register for signal <SyncB_clkA>.
     Summary:
-	inferred   3 D-type flip-flop(s).
+	inferred   6 D-type flip-flop(s).
 Unit <async_flagack> synthesized.
 
 
@@ -672,43 +671,32 @@ WARNING:Xst:647 - Input <txe> is never used. This port will be preserved and lef
 WARNING:Xst:1780 - Signal <t_buffer> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <next_xmit_state> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <curr_xmit_state> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:2109 - Contents of latch <rx_data> never changes during circuit operation. The latch is removed and the signal is tied to value 00000000.
-WARNING:Xst:737 - Found 1-bit latch for signal <rx_data_flag>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <rd>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <wr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Using one-hot encoding for signal <curr_recv_state>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <curr_recv_state> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <curr_recv_state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 8-bit register for signal <rx_data>.
+    Found 1-bit register for signal <oe>.
+    Found 1-bit register for signal <rd>.
+    Found 1-bit register for signal <wr>.
+    Found 3-bit register for signal <next_recv_state>.
+    Found 1-bit register for signal <rx_data_flag>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
 Unit <um232h> synthesized.
 
 
 Synthesizing Unit <CORDIC_NCO>.
     Related source file is "/home/joseph/DesignLab/sketchbook/SSB_XMTR/circuit/CORDIC_NCO.vhd".
 WARNING:Xst:1305 - Output <wishbone_out<100:34>> is never assigned. Tied to value 0000000000000000000000000000000000000000000000000000000000000000000.
-WARNING:Xst:2563 - Inout <data<0>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data<1>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data<2>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data<3>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data<4>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data<5>> is never assigned. Tied to value Z.
 WARNING:Xst:647 - Input <wishbone_in<100:62>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <wishbone_in<27:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:2563 - Inout <data<6>> is never assigned. Tied to value Z.
-WARNING:Xst:647 - Input <rxf> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:2563 - Inout <data<7>> is never assigned. Tied to value Z.
-WARNING:Xst:1305 - Output <oe> is never assigned. Tied to value 0.
-WARNING:Xst:1305 - Output <rd> is never assigned. Tied to value 0.
-WARNING:Xst:647 - Input <txe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1305 - Output <wr> is never assigned. Tied to value 0.
-WARNING:Xst:647 - Input <usb_clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <rx_data_ready> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rx_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <q_data_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <phase_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 256x8-bit ROM for signal <mapped_phase$rom0000> created at line 199.
-    Found 1-bit tristate buffer for signal <data<7>>.
-    Found 1-bit tristate buffer for signal <data<6>>.
-    Found 1-bit tristate buffer for signal <data<5>>.
-    Found 1-bit tristate buffer for signal <data<4>>.
-    Found 1-bit tristate buffer for signal <data<3>>.
-    Found 1-bit tristate buffer for signal <data<2>>.
-    Found 1-bit tristate buffer for signal <data<1>>.
-    Found 1-bit tristate buffer for signal <data<0>>.
+    Found 256x8-bit ROM for signal <mapped_phase$rom0000> created at line 204.
     Found 8-bit register for signal <i_data_in>.
     Found 1-bit register for signal <nco_output_enable>.
     Found 8-bit register for signal <phase_acc_inc_hi_i>.
@@ -718,7 +706,6 @@ WARNING:Xst:646 - Signal <phase_out> is assigned but never used. This unconnecte
     Summary:
 	inferred   1 ROM(s).
 	inferred  57 D-type flip-flop(s).
-	inferred   8 Tristate(s).
 Unit <CORDIC_NCO> synthesized.
 
 
@@ -780,20 +767,19 @@ Macro Statistics
  25-bit subtractor                                     : 1
  9-bit adder                                           : 2
  9-bit subtractor                                      : 1
-# Registers                                            : 75
- 1-bit register                                        : 47
+# Registers                                            : 83
+ 1-bit register                                        : 52
  15-bit register                                       : 14
+ 2-bit register                                        : 1
  24-bit register                                       : 2
- 3-bit register                                        : 1
- 8-bit register                                        : 11
-# Latches                                              : 3
- 1-bit latch                                           : 3
+ 3-bit register                                        : 2
+ 8-bit register                                        : 12
 # Comparators                                          : 16
  15-bit comparator less                                : 14
  25-bit comparator greater                             : 1
  9-bit comparator greater                              : 1
-# Tristates                                            : 258
- 1-bit tristate buffer                                 : 258
+# Tristates                                            : 250
+ 1-bit tristate buffer                                 : 250
 # Xors                                                 : 3
  1-bit xor2                                            : 3
 
@@ -881,10 +867,8 @@ Macro Statistics
  25-bit adder                                          : 1
  8-bit subtractor                                      : 1
  9-bit adder                                           : 2
-# Registers                                            : 478
- Flip-Flops                                            : 478
-# Latches                                              : 3
- 1-bit latch                                           : 3
+# Registers                                            : 496
+ Flip-Flops                                            : 496
 # Comparators                                          : 16
  15-bit comparator less                                : 14
  25-bit comparator greater                             : 1
@@ -897,12 +881,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2677 - Node <um232h_int/sample_flag/SyncA_clkB_0> of sequential type is unconnected in block <CORDIC_NCO>.
-WARNING:Xst:2677 - Node <um232h_int/sample_flag/SyncA_clkB_1> of sequential type is unconnected in block <CORDIC_NCO>.
-WARNING:Xst:2677 - Node <um232h_int/sample_flag/SyncA_clkB_2> of sequential type is unconnected in block <CORDIC_NCO>.
-WARNING:Xst:2677 - Node <um232h_int/rx_data_flag> of sequential type is unconnected in block <CORDIC_NCO>.
-WARNING:Xst:2677 - Node <um232h_int/wr> of sequential type is unconnected in block <CORDIC_NCO>.
-WARNING:Xst:2677 - Node <um232h_int/rd> of sequential type is unconnected in block <CORDIC_NCO>.
 WARNING:Xst:1710 - FF/Latch <shift_stream<0>.i_data_6> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_3> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.i_data_5> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
@@ -918,7 +896,6 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_d
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_1> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_stream<0>.q_data_0> (without init value) has a constant value of 0 in block <zpuino_phase_shifter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2042 - Unit Papilio_Default_Wing_Pinout: 12 internal tristates are replaced by logic (pull-up yes): WingType_mosi_AH<4>, WingType_mosi_AH<5>, WingType_mosi_AH<6>, WingType_mosi_AH<7>, WingType_mosi_CH<0>, WingType_mosi_CH<1>, WingType_mosi_CH<2>, WingType_mosi_CH<3>, WingType_mosi_CH<4>, WingType_mosi_CH<5>, WingType_mosi_CH<6>, WingType_mosi_CH<7>.
-WARNING:Xst:2042 - Unit CORDIC_NCO: 8 internal tristates are replaced by logic (pull-up yes): data<0>, data<1>, data<2>, data<3>, data<4>, data<5>, data<6>, data<7>.
 
 Optimizing unit <Papilio_One_500K> ...
 
@@ -926,9 +903,35 @@ Optimizing unit <zpuino_dds_acc> ...
 
 Optimizing unit <zpuino_phase_shifter> ...
 
+Optimizing unit <async_flagack> ...
+
+Optimizing unit <um232h> ...
+INFO:Xst:2261 - The FF/Latch <next_recv_state_0> in Unit <um232h> is equivalent to the following FF/Latch, which will be removed : <oe> 
+INFO:Xst:2261 - The FF/Latch <next_recv_state_0> in Unit <um232h> is equivalent to the following FF/Latch, which will be removed : <oe> 
+
 Optimizing unit <CORDIC_NCO> ...
 
 Optimizing unit <Papilio_Default_Wing_Pinout> ...
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/rx_data_flag> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/rx_data_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/rx_data_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/rx_data_2> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/rx_data_3> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/rx_data_4> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/rx_data_5> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/rx_data_6> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/rx_data_7> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/rd> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/wr> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/next_recv_state_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/next_recv_state_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/next_recv_state_2> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/sample_flag/SyncB_clkA_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/sample_flag/SyncB_clkA_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/sample_flag/SyncA_clkB_2> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/sample_flag/SyncA_clkB_1> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/sample_flag/SyncA_clkB_0> of sequential type is unconnected in block <Papilio_One_500K>.
+WARNING:Xst:2677 - Node <XLXI_49/um232h_int/sample_flag/FlagToggle_clkA> of sequential type is unconnected in block <Papilio_One_500K>.
 WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<0>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
 WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<1>.phase_0> of sequential type is unconnected in block <Papilio_One_500K>.
 WARNING:Xst:2677 - Node <XLXI_49/phase_shifter/shift_stream<1>.phase_1> of sequential type is unconnected in block <Papilio_One_500K>.
@@ -1290,14 +1293,14 @@ Offset:              5.447ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 30.46 secs
+Total CPU time to Xst completion: 29.80 secs
  
 --> 
 
 
-Total memory usage is 217700 kilobytes
+Total memory usage is 217780 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  364 (   0 filtered)
-Number of infos    :   31 (   0 filtered)
+Number of warnings :  355 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
 

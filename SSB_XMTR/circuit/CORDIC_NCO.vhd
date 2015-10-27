@@ -69,7 +69,10 @@ entity CORDIC_NCO is
     PHASE_ACC_OUT_WIDTH : integer := 8;       -- Phase accumulator output width.
     
     -- Constants associated with the D2A
-    D2A_DATA_WIDTH : integer := 8             
+    D2A_DATA_WIDTH : integer := 8;            -- D2A data bus width.
+    
+    -- Constants associated with the FT232H
+    FT232H_BUS_WIDTH : integer := 8           -- FT232H data bus width.
   );
   port ( 
     -- Wishbone signals
@@ -81,7 +84,7 @@ entity CORDIC_NCO is
     d2a_clk     : out   std_logic;
 
     -- FT232H signals
-    data        : inout std_logic_vector(7 downto 0);
+    data        : inout std_logic_vector(FT232H_BUS_WIDTH-1 downto 0);
     rxf         : in    std_logic;
     txe         : in    std_logic;
     rd          : out   std_logic;
@@ -147,7 +150,7 @@ architecture BEHAVIORAL of CORDIC_NCO is
     clk:            in    std_logic;
     reset:          in    std_logic;
     -- FT232H signals
-    data:           inout std_logic_vector(7 downto 0);
+    data:           inout std_logic_vector(FT232H_BUS_WIDTH-1 downto 0);
     rxf:            in    std_logic;
     txe:            in    std_logic;
     rd:             out   std_logic;
@@ -155,10 +158,12 @@ architecture BEHAVIORAL of CORDIC_NCO is
     usb_clock:      in    std_logic;
     oe:             out   std_logic;
     -- FIFO signals
-    rx_data:        out   std_logic_vector(7 downto 0);
+    rx_data:        out   std_logic_vector(FT232H_BUS_WIDTH-1 downto 0);
     rx_data_ready:  out   std_logic  
   );
   end component um232h;
+  signal rx_data        : std_logic_vector(FT232H_BUS_WIDTH-1 downto 0);
+  signal rx_data_ready  : std_logic;
   
   -- Signals associated with the phase accumulator.
   signal phase_acc_reg_o    : std_logic_vector(PHASE_ACC_OUT_WIDTH-1 downto 0);   -- register to hold accumulator value
@@ -207,11 +212,14 @@ begin
   --
   dds_acc: zpuino_dds_acc
   port map (
+    -- system signals
     clk     => wb_clk_i,            -- wishbone clock signal
     reset   => wb_rst_i,            -- wishbone reset signal
+    -- signals into the accumulator
     inc_hi  => phase_acc_inc_hi_i,  -- 7 downto 0
     inc_lo  => phase_acc_inc_lo_i,  -- 23 downto 0
     carry   => open,
+    -- signals out of the accumulator
     q       => phase_acc_reg_o      -- 7 downto 0
   );
 
@@ -220,11 +228,14 @@ begin
   --
   phase_shifter: zpuino_phase_shifter
   port map (
+    -- system signals
     clk         => wb_clk_i,        -- wishbone clock signal
     reset       => wb_rst_i,        -- wishbone reset signal
+    -- signals into the phase shifter
     i_data_in   => i_data_in,       -- in-phase data in
     q_data_in   => q_data_in,       -- quadrature data in
     phase_in    => phase_in,        -- phase shift in
+    -- signals out of the phase shifter
     i_data_out  => i_data_out,      -- in-phase data out
     q_data_out  => q_data_out,      -- quadrature data out
     phase_out   => phase_out        -- phase shift out
@@ -239,17 +250,17 @@ begin
     clk           => wb_clk_i,      -- wishbone clock signal
     reset         => wb_rst_i,      -- wishbone reset signal
     -- FT232H signals
-    -- These signals go out to the external pins
-    data          => open,          -- incoming ft232h 8 bit data bus
-    rxf           => '1',           -- data to be read when low
-    txe           => '1',           -- transmit buffer empty when low
-    rd            => open,          -- read signal
-    wr            => open,          -- write signal
-    usb_clock     => '1',           -- usb clock connection
-    oe            => open,          -- output enable
+    -- These signals connect to external pins
+    data          => data,          -- 8 bit in/out bus for the FT232H
+    rxf           => rxf,           -- data to be read when low
+    txe           => txe,           -- transmit buffer empty when low
+    rd            => rd,            -- read signal
+    wr            => wr,            -- write signal
+    usb_clock     => usb_clock,     -- usb clock connection
+    oe            => oe,            -- output enable
     -- FIFO signals
-    rx_data       => open,          -- data in the zpuino clock domain
-    rx_data_ready => open           -- flag indicating there is rx_data to be read  
+    rx_data       => rx_data,       -- data in the zpuino clock domain
+    rx_data_ready => rx_data_ready  -- flag indicating there is rx_data to be read  
   );
  
   --
@@ -295,9 +306,6 @@ begin
       if (wb_cyc_i='1' and wb_stb_i='1' and wb_we_i='1') then
         case wb_adr_i(4 downto 2) is
           when "000" =>
-            --
-            -- Input signal data.  A constant for now.
-            -- Eventually will be set from the wishbone interface.
             --
             -- The value coming in is a 16 bit value.  Howerver, the
             -- I/Q bus width is not.  We just take the upper bits from

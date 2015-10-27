@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Mon Oct 26 20:15:36 2015">
+  <application stringID="Xst" timeStamp="Tue Oct 27 19:06:59 2015">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -33,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz"/>
-          <item stringID="speed" value="2399.906 MHz"/>
+          <item stringID="speed" value="2400.000 MHz"/>
         </row>
       </table>
     </section>
@@ -97,14 +97,15 @@
     <section stringID="XST_HDL_SYNTHESIS_REPORT">
       <item dataType="int" stringID="XST_ROMS" value="1"></item>
       <item dataType="int" stringID="XST_ADDERSSUBTRACTORS" value="35"></item>
-      <item dataType="int" stringID="XST_REGISTERS" value="75">
-        <item dataType="int" stringID="XST_1BIT_REGISTER" value="47"/>
-        <item dataType="int" stringID="XST_3BIT_REGISTER" value="1"/>
-        <item dataType="int" stringID="XST_8BIT_REGISTER" value="11"/>
+      <item dataType="int" stringID="XST_REGISTERS" value="83">
+        <item dataType="int" stringID="XST_1BIT_REGISTER" value="52"/>
+        <item dataType="int" stringID="XST_2BIT_REGISTER" value="1"/>
+        <item dataType="int" stringID="XST_3BIT_REGISTER" value="2"/>
+        <item dataType="int" stringID="XST_8BIT_REGISTER" value="12"/>
       </item>
       <item dataType="int" stringID="XST_COMPARATORS" value="16"></item>
-      <item dataType="int" stringID="XST_TRISTATES" value="258">
-        <item dataType="int" stringID="XST_1BIT_TRISTATE_BUFFER" value="258"/>
+      <item dataType="int" stringID="XST_TRISTATES" value="250">
+        <item dataType="int" stringID="XST_1BIT_TRISTATE_BUFFER" value="250"/>
       </item>
       <item dataType="int" stringID="XST_XORS" value="3">
         <item dataType="int" stringID="XST_1BIT_XOR2" value="3"/>
@@ -113,8 +114,8 @@
     <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORT">
       <item dataType="int" stringID="XST_ROMS" value="1"></item>
       <item dataType="int" stringID="XST_ADDERSSUBTRACTORS" value="35"></item>
-      <item dataType="int" stringID="XST_REGISTERS" value="478">
-        <item dataType="int" stringID="XST_FLIPFLOPS" value="478"/>
+      <item dataType="int" stringID="XST_REGISTERS" value="496">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="496"/>
       </item>
       <item dataType="int" stringID="XST_COMPARATORS" value="16"></item>
       <item dataType="int" stringID="XST_XORS" value="3">
@@ -217,8 +218,8 @@
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="364"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="31"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="355"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="34"/>
     </section>
   </application>
 

@@ -173,6 +173,11 @@ architecture BEHAVIORAL of CORDIC_NCO is
   signal iq_fifo_data_read  : std_logic;
   signal iq_fifo_read_flag  : std_logic;
         
+  -- Timer signals
+  signal timer_acc  : unsigned(31 downto 0);
+  signal timer_inc  : unsigned(31 downto 0);
+  signal timer_carry: std_logic;
+  
   -- Control signals
   signal nco_output_enable : std_logic;
   signal iack_o            : std_logic;
@@ -290,7 +295,8 @@ begin
       iq_fifo_data_in     <= (others => '0');
       iq_fifo_data_write  <= '0';
       
-      nco_output_enable <= '1';   -- Always enabled for now.
+      nco_output_enable   <= '1';   -- Always enabled for now.
+      timer_inc           <= to_unsigned(2000, 32);
       
     elsif (rising_edge(wb_clk_i)) then
       --
@@ -324,6 +330,11 @@ begin
                 std_logic_vector(wb_dat_i(31-PHASE_ACC_HI_WIDTH downto 0));
           when "010" =>
             --
+            -- Update the timer increment.
+            --
+            timer_inc <= unsigned(wb_dat_i);
+          when "011" =>
+            --
             -- Control register.  The only flag available right now
             -- the the enable flag.
             --
@@ -355,23 +366,19 @@ begin
   begin
     if (iq_fifo_read_flag = '0') then
       --
-      -- Reset the flag.
+      -- Nothing to do at this point.
       --
-      iq_fifo_data_read <= '0';
     else
       --
       -- Process the different address reads.
       --
       case wb_adr_i(4 downto 2) is
         when "000" =>
-          -- 
-          -- Return the value at the head of the FIFO.
-          -- Set the data read flag to increment the read counter
-          -- to the next value.
+          --
+          -- This is the register used to write data to the FIFO.  
+          -- There's nothing to return.
           --
           wb_dat_o <= (others => '0');
-          wb_dat_o(FIFO_DATA_WIDTH-1 downto 0) <= iq_fifo_data_out;
-          iq_fifo_data_read <= '1';
         when "001" =>
           -- 
           -- Return the phase increment (frequency).
@@ -379,25 +386,102 @@ begin
           wb_dat_o(31 downto 31-PHASE_ACC_HI_WIDTH+1) <=
               phase_acc_inc_hi_i;
           wb_dat_o(31-PHASE_ACC_HI_WIDTH downto 0) <=
-              phase_acc_inc_lo_i;
-          iq_fifo_data_read <= '0';              
+              phase_acc_inc_lo_i;  
         when "010" =>
+          --
+          -- Return the timer increment.
+          --
+          wb_dat_o <= std_logic_vector(timer_inc);              
+        when "011" =>
           -- 
           -- Return the status flags.
           --
           wb_dat_o(31 downto 0) <= (others => '0');
           wb_dat_o(2) <= iq_fifo_full;
           wb_dat_o(1) <= iq_fifo_empty;
-          wb_dat_o(0) <= nco_output_enable;
-          iq_fifo_data_read <= '0'; 
+          wb_dat_o(0) <= nco_output_enable; 
         when others =>
           --
           -- All others.
           --
           report ("Illegal read address, setting all values to unknown.");
           wb_dat_o <= (others => 'X');
-          iq_fifo_data_read <= '0'; 
       end case;
+    end if;
+  end process;
+  
+  --
+  -- Timer process
+  --
+  process(wb_clk_i, wb_rst_i)
+    variable timer_val : unsigned(32 downto 0);
+  begin
+    if (wb_rst_i = '1') then
+      --
+      -- Initialize the increment to 48 kHz.
+      -- Initialize the accumulator to 0.
+      --
+      timer_acc <= (others => '0');
+      timer_carry <= '0';
+    elsif rising_edge(wb_clk_i) then
+      --
+      -- Update the accumulator.
+      --
+      timer_val := (others => '0');
+      timer_val(31 downto 0) := timer_acc;
+      timer_val := timer_val + timer_inc;
+      
+      timer_acc   <= timer_val(31 downto 0);
+      timer_carry <= timer_val(32);
+    end if;
+  end process;
+  
+  --
+  -- Process to move data from the FIFO to the NCO
+  -- when the timer goes off.
+  --
+  process(wb_clk_i, wb_rst_i, timer_carry)
+    constant IQ_DATA_WIDTH : integer := FIFO_DATA_WIDTH/2;
+    variable iq_data_upper : signed(IQ_DATA_WIDTH-1 downto 0);
+    variable iq_data_lower : signed(IQ_DATA_WIDTH-1 downto 0);
+  begin
+    if (wb_rst_i = '1') then
+      --
+      -- Initialize the NCO amplitude values.
+      -- These are 8 bit signed values that should max out
+      -- at +/-63 to allow for the multiplication effect
+      -- of the CORDIC algorithm.
+      --
+      i_data_in <= to_signed(63, IQ_BUS_WIDTH);
+      q_data_in <= to_signed( 0, IQ_BUS_WIDTH);
+      iq_fifo_data_read <= '0';
+    elsif rising_edge(wb_clk_i) then
+      --
+      -- Load the data if it's time and there is data
+      -- available.
+      --
+      iq_fifo_data_read <= '0';
+      if (timer_carry = '1') and (iq_fifo_empty = '0') then
+        --
+        -- Time to load new data.
+        -- Split the data from the FIFO into upper and lower halves.
+        -- Upper is the I, lower is the Q.
+        --
+        iq_data_upper := signed(
+            iq_fifo_data_out(FIFO_DATA_WIDTH-1 downto FIFO_DATA_WIDTH-IQ_DATA_WIDTH));
+        iq_data_lower := signed(
+            iq_fifo_data_out(IQ_DATA_WIDTH-1 downto 0));
+            
+        -- 
+        -- Load the data into the NCO and set the flag to increment
+        -- the FIFO read address.
+        --
+        i_data_in <= 
+            iq_data_upper(IQ_DATA_WIDTH-1 downto IQ_DATA_WIDTH-IQ_BUS_WIDTH);
+        q_data_in <=
+            iq_data_lower(IQ_DATA_WIDTH-1 downto IQ_DATA_WIDTH-IQ_BUS_WIDTH);
+        iq_fifo_data_read <= '1';        
+      end if;
     end if;
   end process;
   
@@ -415,7 +499,7 @@ begin
   begin
     if (nco_output_enable = '1') then
       --  
-      -- Output enabled.  Take the highst bits of the i/q data
+      -- Output enabled.  Take the highest bits of the i/q data
       -- and flip the highest bit to convert from signed to
       -- unsigned.
       --

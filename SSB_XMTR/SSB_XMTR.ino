@@ -19,8 +19,8 @@ bool timer(void *)
 
 void setup() 
 {
-  int i_amplitude = 32;
-  int q_amplitude = 32;
+  int i_amplitude = 0;
+  int q_amplitude = 0;
   
   /* Initialization.
    */
@@ -31,31 +31,29 @@ void setup()
    */
   waitForEnter();
   configureNCO();
+  showFlags();
   
-  /* Read the flags.
+  /* Configure the timer.
    */
   waitForEnter();
+  setTimer(2000);   // 48 kHz
+  showFlags();
+
+  waitForEnter();
+  getTimer();
   showFlags();
     
   /* Set the amplitude.
    */
-  waitForEnter();
-  setAmplitude((unsigned)((i_amplitude << 16) | (q_amplitude << 0)));
-  
-  /* Read the flags.
-   */
-  waitForEnter();
-  showFlags();
-  
-  /* Get the amplitude.
-   */
-  waitForEnter();
-  getAmplitude();
-   
-  /* Read the flags.
-   */
-  waitForEnter();
-  showFlags();   
+  for (unsigned i = 77; i <= 78; i += 1)
+  {
+    waitForEnter();
+    Serial.print("i = "); Serial.println(i);
+    i_amplitude = (-1 * i) << 8;
+    q_amplitude = 0 << 8;  
+    setAmplitude((unsigned)((i_amplitude << 16) | (q_amplitude << 0)));
+    showFlags();
+  }
 }
 
 void loop() 
@@ -79,6 +77,18 @@ void showFlags()
     Serial.println("FIFO is empty.");
   else
     Serial.println("Data in FIFO.");
+}
+
+void setTimer(unsigned timer_inc)
+{
+  Serial.print("Setting timer inc = "); Serial.println(timer_inc);
+  cordic.setTimer(timer_inc);
+}
+
+unsigned getTimer()
+{
+  unsigned timer_inc = cordic.getTimer();
+  Serial.print("Current timer inc = "); Serial.println(timer_inc);
 }
 
 void setAmplitude(int i_amplitude, int q_amplitude)

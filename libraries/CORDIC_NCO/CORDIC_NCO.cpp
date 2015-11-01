@@ -92,6 +92,19 @@ void CORDIC_NCO::getAmplitude(unsigned *iq_amplitude)
   (*iq_amplitude) = IQ_AMP;
 }
 
+/* Set/get timer increment.
+ */
+void CORDIC_NCO::setTimer(unsigned timer_inc)
+{
+  TIMER_INC = timer_inc;
+}
+
+unsigned CORDIC_NCO::getTimer()
+{
+  unsigned timer_inc = TIMER_INC;
+  return timer_inc;
+}
+
 /* Enable/disable the PSK hardware.
  */
 void CORDIC_NCO::NcoEnable()

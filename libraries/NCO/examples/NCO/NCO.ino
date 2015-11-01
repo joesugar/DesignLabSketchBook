@@ -20,10 +20,12 @@ void setup()
    */
   Serial.println("NCO setup.");
   NCO.setup(5);      // Wishbone slot 5, default frequency.
+
+  // Set a default frequency of 1000000;
+  NCO.setFrequency(1000000);
 }
 
 void loop() 
 {
-  // Set a default frequency of 1000000;
-  NCO.setFrequency(1000000);
+
 }

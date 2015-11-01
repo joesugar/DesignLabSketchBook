@@ -68,12 +68,17 @@ entity CORDIC_NCO is
                                               -- shifter.
     PHASE_ACC_OUT_WIDTH : integer := 8;       -- Phase accumulator output width.
     
-    -- Constants associated with the D2A
-    D2A_DATA_WIDTH : integer := 8;            -- D2A data bus width.
-    
     -- Constants associated with the FT232H
-    FT232H_BUS_WIDTH : integer := 8           -- FT232H data bus width.
-  );
+    FT232H_BUS_WIDTH : integer := 8;          -- FT232H data bus width.
+    
+    -- FIFO constants.
+    FIFO_ADDRESS_WIDTH : integer := 4;        -- I/Q FIFO address width
+    FIFO_DATA_WIDTH : integer := 32;          -- I/Q FIFO data width
+    
+    -- D2A constants.
+    D2A_DATA_WIDTH : integer := 8             -- D2A data bus width.
+
+  );    
   port ( 
     -- Wishbone signals
     wishbone_in : in    std_logic_vector (100 downto 0); 
@@ -81,16 +86,7 @@ entity CORDIC_NCO is
     
     -- D2A signals
     d2a_data    : out   std_logic_vector(D2A_DATA_WIDTH-1 downto 0);
-    d2a_clk     : out   std_logic;
-
-    -- FT232H signals
-    data        : inout std_logic_vector(FT232H_BUS_WIDTH-1 downto 0);
-    rxf         : in    std_logic;
-    txe         : in    std_logic;
-    rd          : out   std_logic;
-    wr          : out   std_logic;
-    usb_clock   : in    std_logic;
-    oe          : out   std_logic   
+    d2a_clk     : out   std_logic
 	);
 end CORDIC_NCO;
 
@@ -124,6 +120,9 @@ architecture BEHAVIORAL of CORDIC_NCO is
     q:      out std_logic_vector(PHASE_ACC_OUT_WIDTH-1 downto 0)
   );
   end component zpuino_dds_acc;
+  signal phase_acc_reg_o    : std_logic_vector(PHASE_ACC_OUT_WIDTH-1 downto 0);   -- register to hold accumulator value
+  signal phase_acc_inc_hi_i : std_logic_vector(PHASE_ACC_HI_WIDTH-1 downto 0);    -- upper accumulator increment.
+  signal phase_acc_inc_lo_i : std_logic_vector(31-PHASE_ACC_HI_WIDTH downto 0);   -- lower accumulator increment.
   
   --
   -- CORDIC phase shifter
@@ -140,46 +139,43 @@ architecture BEHAVIORAL of CORDIC_NCO is
     phase_out:  out std_logic_vector(CORDIC_ROM_DATA_WIDTH-1 downto 0)
   );
   end component zpuino_phase_shifter;
+  signal i_data_in   : signed(IQ_BUS_WIDTH-1 downto 0);
+  signal q_data_in   : signed(IQ_BUS_WIDTH-1 downto 0);
+  signal phase_in    : std_logic_vector(CORDIC_ROM_DATA_WIDTH-1 downto 0);
+  signal i_data_out  : signed(IQ_BUS_WIDTH-1 downto 0);
+  signal q_data_out  : signed(IQ_BUS_WIDTH-1 downto 0);
+  signal phase_out   : std_logic_vector(CORDIC_ROM_DATA_WIDTH-1 downto 0);
   
+  -- 
+  -- FIFO for incoming data.
   --
-  -- UM232H interface
-  --
-  component um232h is
+  component fifo is
+  generic (
+    ADDRESS_WIDTH : integer := FIFO_ADDRESS_WIDTH;-- FIFO address width in bits
+    DATA_WIDTH    : integer := FIFO_DATA_WIDTH    -- FIFO data width in bits
+  );  
   port (
-    -- system signals
-    clk:            in    std_logic;
-    reset:          in    std_logic;
-    -- FT232H signals
-    data:           inout std_logic_vector(FT232H_BUS_WIDTH-1 downto 0);
-    rxf:            in    std_logic;
-    txe:            in    std_logic;
-    rd:             out   std_logic;
-    wr:             out   std_logic;
-    usb_clock:      in    std_logic;
-    oe:             out   std_logic;
-    -- FIFO signals
-    rx_data:        out   std_logic_vector(FT232H_BUS_WIDTH-1 downto 0);
-    rx_data_ready:  out   std_logic  
+    clk:      in std_logic;                       -- FIFO clock
+    rst:      in std_logic;                       -- FIFO reset
+    wr:       in std_logic;                       -- write flag
+    rd:       in std_logic;                       -- read flag
+    write:    in std_logic_vector(FIFO_DATA_WIDTH-1 downto 0);   -- write data
+    read :    out std_logic_vector(FIFO_DATA_WIDTH-1 downto 0);  -- read data
+    full:     out std_logic;                      -- full when '1'
+    empty:    out std_logic                       -- empty when '1'  
   );
-  end component um232h;
-  signal rx_data        : std_logic_vector(FT232H_BUS_WIDTH-1 downto 0);
-  signal rx_data_ready  : std_logic;
-  
-  -- Signals associated with the phase accumulator.
-  signal phase_acc_reg_o    : std_logic_vector(PHASE_ACC_OUT_WIDTH-1 downto 0);   -- register to hold accumulator value
-  signal phase_acc_inc_hi_i : std_logic_vector(PHASE_ACC_HI_WIDTH-1 downto 0);    -- upper accumulator increment.
-  signal phase_acc_inc_lo_i : std_logic_vector(31-PHASE_ACC_HI_WIDTH downto 0);   -- lower accumulator increment.
-  
-  -- Signals associated with the phase shifter.
-  signal i_data_in         : signed(IQ_BUS_WIDTH-1 downto 0);
-  signal q_data_in         : signed(IQ_BUS_WIDTH-1 downto 0);
-  signal phase_in          : std_logic_vector(CORDIC_ROM_DATA_WIDTH-1 downto 0);
-  signal i_data_out        : signed(IQ_BUS_WIDTH-1 downto 0);
-  signal q_data_out        : signed(IQ_BUS_WIDTH-1 downto 0);
-  signal phase_out         : std_logic_vector(CORDIC_ROM_DATA_WIDTH-1 downto 0);
-  
+  end component fifo;
+  signal iq_fifo_data_in    : std_logic_vector(FIFO_DATA_WIDTH-1 downto 0);
+  signal iq_fifo_data_out   : std_logic_vector(FIFO_DATA_WIDTH-1 downto 0);
+  signal iq_fifo_full       : std_logic;
+  signal iq_fifo_empty      : std_logic;
+  signal iq_fifo_data_write : std_logic;
+  signal iq_fifo_data_read  : std_logic;
+  signal iq_fifo_read_flag  : std_logic;
+        
   -- Control signals
   signal nco_output_enable : std_logic;
+  signal iack_o            : std_logic;
   
   --
   -- Declarations used to define the array of ROM data.
@@ -203,7 +199,7 @@ architecture BEHAVIORAL of CORDIC_NCO is
   
   constant phase_shift_rom_array : rom_array := rom_init(filename =>
       "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/phase_shift_rom.txt");  
-        
+  
 begin
   --
   -- INSTANCE DECLARATIONS
@@ -241,34 +237,29 @@ begin
     phase_out   => phase_out        -- phase shift out
   );
   
-  --
-  -- UM232H interface
-  --
-  um232h_int: um232h
+  iq_fifo: fifo
+  generic map (
+    ADDRESS_WIDTH => FIFO_ADDRESS_WIDTH,  -- FIFO address width
+    DATA_WIDTH    => FIFO_DATA_WIDTH      -- FIFO data width
+  )
   port map (
-    -- system signals
-    clk           => wb_clk_i,      -- wishbone clock signal
-    reset         => wb_rst_i,      -- wishbone reset signal
-    -- FT232H signals
-    -- These signals connect to external pins
-    data          => data,          -- 8 bit in/out bus for the FT232H
-    rxf           => rxf,           -- data to be read when low
-    txe           => txe,           -- transmit buffer empty when low
-    rd            => rd,            -- read signal
-    wr            => wr,            -- write signal
-    usb_clock     => usb_clock,     -- usb clock connection
-    oe            => oe,            -- output enable
-    -- FIFO signals
-    rx_data       => rx_data,       -- data in the zpuino clock domain
-    rx_data_ready => rx_data_ready  -- flag indicating there is rx_data to be read  
+    clk     => wb_clk_i,
+    rst     => wb_rst_i,
+    wr      => iq_fifo_data_write,
+    rd      => iq_fifo_data_read,
+    write   => iq_fifo_data_in,
+    read    => iq_fifo_data_out,
+    full    => iq_fifo_full,
+    empty   => iq_fifo_empty
   );
- 
+     
   --
   -- ARCHITECTURE CODE
   --
   -- Acknowledge all tranfers per the wishbone spec.
   --
-  wb_ack_o <= wb_stb_i and wb_cyc_i; 
+  iack_o <= wb_stb_i and wb_cyc_i; 
+  wb_ack_o <= iack_o;
   
   -- 
   -- Tie interrupt to '0', we never interrupt .
@@ -292,30 +283,40 @@ begin
       --
       -- Reset signal is set.
       --
-      phase_in  <= (others => '0');
-      phase_acc_inc_hi_i <= (others => '0');
-      phase_acc_inc_lo_i <= (others => '0');
-      i_data_in <= (others => '0');
-      q_data_in <= (others => '0');
+      phase_in            <= (others => '0');
+      phase_acc_inc_hi_i  <= (others => '0');
+      phase_acc_inc_lo_i  <= (others => '0');
+      
+      iq_fifo_data_in     <= (others => '0');
+      iq_fifo_data_write  <= '0';
+      
       nco_output_enable <= '1';   -- Always enabled for now.
       
     elsif (rising_edge(wb_clk_i)) then
       --
       -- On the rising edge of the clock...
       --
+      iq_fifo_data_in     <= (others => '0');
+      iq_fifo_data_write  <= '0';
+      
       if (wb_cyc_i='1' and wb_stb_i='1' and wb_we_i='1') then
         case wb_adr_i(4 downto 2) is
           when "000" =>
             --
-            -- The value coming in is a 16 bit value.  Howerver, the
-            -- I/Q bus width is not.  We just take the upper bits from
-            -- the incoming data.
+            -- Incoming amplitude is a 32 bit value, 16 bit I, 16 bit Q.
+            -- Write it to the FIFO.
             --
-            i_data_in <= signed(wb_dat_i(31 downto 32-IQ_BUS_WIDTH));
-            q_data_in <= signed(wb_dat_i(15 downto 16-IQ_BUS_WIDTH));
+            -- All this does is load the value into the FIFO.  We have
+            -- not yet loaded it into the NCO. 
+            --
+            if (iq_fifo_full = '0') then
+              iq_fifo_data_in     <= wb_dat_i(FIFO_DATA_WIDTH-1 downto 0);
+              iq_fifo_data_write  <= '1';
+            end if;
           when "001" =>
             --
-            -- Update the phase acc increment value.
+            -- Update the phase acc increment value.  This determines the
+            -- NCO output frequency.
             --
             phase_acc_inc_hi_i <= 
                 std_logic_vector(wb_dat_i(31 downto 32-PHASE_ACC_HI_WIDTH));
@@ -323,8 +324,8 @@ begin
                 std_logic_vector(wb_dat_i(31-PHASE_ACC_HI_WIDTH downto 0));
           when "010" =>
             --
-            -- Status register.  Set to true for now.
-            -- Eventually will be set from the wishbone interface.
+            -- Control register.  The only flag available right now
+            -- the the enable flag.
             --
             nco_output_enable <= wb_dat_i(0);
           when others =>
@@ -345,46 +346,65 @@ begin
           
     end if;
   end process;   
-  
+    
   --
   -- Load the output data when address is read.
   --
-  process(wb_adr_i)
+  iq_fifo_read_flag <= iack_o and not(wb_we_i);
+  process(iq_fifo_read_flag)
   begin
-    case wb_adr_i(4 downto 2) is
-      when "000" =>
-        -- 
-        -- Return the amplitude.
-        --
-        wb_dat_o <= (others => '0');
-        wb_dat_o(31 downto 32-IQ_BUS_WIDTH) <= std_logic_vector(i_data_in);
-        wb_dat_o(15 downto 16-IQ_BUS_WIDTH) <= std_logic_vector(q_data_in);
-      when "001" =>
-        -- 
-        -- Return the phase increment.
-        --
-        wb_dat_o(31 downto 31-PHASE_ACC_HI_WIDTH+1) <=
-            phase_acc_inc_hi_i;
-        wb_dat_o(31-PHASE_ACC_HI_WIDTH downto 0) <=
-            phase_acc_inc_lo_i;
-      when "010" =>
-        -- 
-        -- Return the status flags.
-        --
-        wb_dat_o(31 downto 0) <= (others => '0');
-        wb_dat_o(0) <= nco_output_enable;
-      when others =>
-        --
-        -- All others.
-        --
-        wb_dat_o(31 downto 0) <= (others => '0');
-    end case;
+    if (iq_fifo_read_flag = '0') then
+      --
+      -- Reset the flag.
+      --
+      iq_fifo_data_read <= '0';
+    else
+      --
+      -- Process the different address reads.
+      --
+      case wb_adr_i(4 downto 2) is
+        when "000" =>
+          -- 
+          -- Return the value at the head of the FIFO.
+          -- Set the data read flag to increment the read counter
+          -- to the next value.
+          --
+          wb_dat_o <= (others => '0');
+          wb_dat_o(FIFO_DATA_WIDTH-1 downto 0) <= iq_fifo_data_out;
+          iq_fifo_data_read <= '1';
+        when "001" =>
+          -- 
+          -- Return the phase increment (frequency).
+          --
+          wb_dat_o(31 downto 31-PHASE_ACC_HI_WIDTH+1) <=
+              phase_acc_inc_hi_i;
+          wb_dat_o(31-PHASE_ACC_HI_WIDTH downto 0) <=
+              phase_acc_inc_lo_i;
+          iq_fifo_data_read <= '0';              
+        when "010" =>
+          -- 
+          -- Return the status flags.
+          --
+          wb_dat_o(31 downto 0) <= (others => '0');
+          wb_dat_o(2) <= iq_fifo_full;
+          wb_dat_o(1) <= iq_fifo_empty;
+          wb_dat_o(0) <= nco_output_enable;
+          iq_fifo_data_read <= '0'; 
+        when others =>
+          --
+          -- All others.
+          --
+          report ("Illegal read address, setting all values to unknown.");
+          wb_dat_o <= (others => 'X');
+          iq_fifo_data_read <= '0'; 
+      end case;
+    end if;
   end process;
-    
+  
   --
   -- Move the D2A data to the output port.
-  -- when doing this need to convert the signed i/q 
-  -- data to unsinged.
+  -- When doing this need to convert the signed i/q 
+  -- data to unsigned.
   --
   process(i_data_out, q_data_out, nco_output_enable)
     --
@@ -399,11 +419,6 @@ begin
       -- and flip the highest bit to convert from signed to
       -- unsigned.
       --
-      --temp_data := std_logic_vector(
-      --    i_data_out(IQ_BUS_WIDTH-1 downto IQ_BUS_WIDTH-D2A_DATA_WIDTH));
-      --sign_bit := not temp_data(D2A_DATA_WIDTH-1);
-      --data_bits := temp_data(D2A_DATA_WIDTH-2 downto 0);
-      --d2a_data <= sign_bit & data_bits;
       data_bits := std_logic_vector(
           i_data_out(IQ_BUS_WIDTH-1 downto IQ_BUS_WIDTH-D2A_DATA_WIDTH));
       xor_mask := '1' & std_logic_vector(to_signed(0, D2A_DATA_WIDTH-1));

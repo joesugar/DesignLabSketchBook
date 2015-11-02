@@ -8,6 +8,7 @@
 
 #include "CORDIC_NCO.h"
 #include "Timer.h"
+#include "math.h"
 
 CORDIC_NCO cordic;
   
@@ -19,8 +20,8 @@ bool timer(void *)
 
 void setup() 
 {
-  int i_amplitude = 0;
-  int q_amplitude = 0;
+  int i_amplitude = 32;
+  int q_amplitude = 32;
   
   /* Initialization.
    */
@@ -36,7 +37,7 @@ void setup()
   /* Configure the timer.
    */
   waitForEnter();
-  setTimer(2000);   // 48 kHz
+  setTimer(1920);
   showFlags();
 
   waitForEnter();
@@ -45,15 +46,16 @@ void setup()
     
   /* Set the amplitude.
    */
-  for (unsigned i = 77; i <= 78; i += 1)
+  int i_amp = 32;
+  int q_amp = 0;
+  while (true)
   {
-    waitForEnter();
-    Serial.print("i = "); Serial.println(i);
-    i_amplitude = (-1 * i) << 8;
-    q_amplitude = 0 << 8;  
-    setAmplitude((unsigned)((i_amplitude << 16) | (q_amplitude << 0)));
-    showFlags();
-  }
+    if (!cordic.FifoFull())
+    {
+      i_amp = i_amp * -1;
+      setAmplitude((unsigned)((i_amp << 24) | (q_amp << 8)));
+    }
+  } 
 }
 
 void loop() 
@@ -63,7 +65,7 @@ void loop()
 void configureNCO()
 {
   Serial.println("Configuring NCO...");
-  unsigned frequency_hz = 10000000;
+  unsigned frequency_hz = 100000;
   cordic.setTransmitFrequencyHz(frequency_hz);
   cordic.NcoEnable();  
   Serial.println("NCO configured.");
@@ -93,16 +95,16 @@ unsigned getTimer()
 
 void setAmplitude(int i_amplitude, int q_amplitude)
 {
-  Serial.println("Setting amplitude:");
-  Serial.print("I = "); Serial.println(i_amplitude);
-  Serial.print("Q = "); Serial.println(q_amplitude);
+  //Serial.println("Setting amplitude:");
+  //Serial.print("I = "); Serial.println(i_amplitude);
+  //Serial.print("Q = "); Serial.println(q_amplitude);
   cordic.setAmplitude(i_amplitude, q_amplitude);
 }
 
 void setAmplitude(unsigned iq_amplitude)
 {
-  Serial.println("Setting amplitude:");
-  Serial.print("I/Q = "); Serial.println(iq_amplitude);
+  //Serial.println("Setting amplitude:");
+  //Serial.print("I/Q = "); Serial.println(iq_amplitude);
   cordic.setAmplitude(iq_amplitude);
 }
 

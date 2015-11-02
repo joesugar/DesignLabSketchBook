@@ -175,7 +175,7 @@ architecture BEHAVIORAL of CORDIC_NCO is
         
   -- Timer signals
   signal timer_acc  : unsigned(31 downto 0);
-  signal timer_inc  : unsigned(31 downto 0);
+  signal timer_val  : unsigned(31 downto 0);
   signal timer_carry: std_logic;
   
   -- Control signals
@@ -296,7 +296,7 @@ begin
       iq_fifo_data_write  <= '0';
       
       nco_output_enable   <= '1';   -- Always enabled for now.
-      timer_inc           <= to_unsigned(2000, 32);
+      timer_val           <= to_unsigned(2000, 32);
       
     elsif (rising_edge(wb_clk_i)) then
       --
@@ -332,7 +332,7 @@ begin
             --
             -- Update the timer increment.
             --
-            timer_inc <= unsigned(wb_dat_i);
+            timer_val <= unsigned(wb_dat_i);
           when "011" =>
             --
             -- Control register.  The only flag available right now
@@ -391,7 +391,7 @@ begin
           --
           -- Return the timer increment.
           --
-          wb_dat_o <= std_logic_vector(timer_inc);              
+          wb_dat_o <= std_logic_vector(timer_val);              
         when "011" =>
           -- 
           -- Return the status flags.
@@ -414,7 +414,7 @@ begin
   -- Timer process
   --
   process(wb_clk_i, wb_rst_i)
-    variable timer_val : unsigned(32 downto 0);
+  
   begin
     if (wb_rst_i = '1') then
       --
@@ -427,12 +427,13 @@ begin
       --
       -- Update the accumulator.
       --
-      timer_val := (others => '0');
-      timer_val(31 downto 0) := timer_acc;
-      timer_val := timer_val + timer_inc;
-      
-      timer_acc   <= timer_val(31 downto 0);
-      timer_carry <= timer_val(32);
+      if ((timer_acc + 1) = timer_val) then
+        timer_carry <= '1';
+        timer_acc   <= (others => '0');
+      else
+        timer_carry <= '0';
+        timer_acc   <= timer_acc + 1;
+      end if;
     end if;
   end process;
   

@@ -52,23 +52,23 @@ use DesignLab.ALL;
 
 entity CORDIC_NCO is
   generic (
-    -- Constants associated with the audio
-    AUDIO_SAMPLE_WIDTH : integer := 16;       -- Audio sample width.
-    IQ_BUS_WIDTH : integer := 8;              -- Phase shifter channel data width.
+    -- Constants associated with the IQ samples.
+    IQ_SAMPLE_WIDTH : integer := 6;           -- I/Q sample width
     
     -- Constants associated with the phase shifter.
+    IQ_BUS_WIDTH : integer := 8;              -- Phase shifter channel data width.
     NUMBER_OF_SHIFTS : integer := 7;
     CORDIC_ROM_ADDRESS_WIDTH : integer := 8;  -- Used to map phase to phase shifts.
     CORDIC_ROM_DATA_WIDTH : integer := 8;     -- NUMBER_OF_SHIFTS+1.
     
-    -- Constants associated with the NCO
+    -- Constants associated with the NCO.
     PHASE_ACC_HI_WIDTH : integer := 8;        -- Width of the upper portion of
                                               -- the phase accumulator.  This is the
                                               -- portion that will feed the phase
                                               -- shifter.
     PHASE_ACC_OUT_WIDTH : integer := 8;       -- Phase accumulator output width.
     
-    -- Constants associated with the FT232H
+    -- Constants associated with the FT232H.
     FT232H_BUS_WIDTH : integer := 8;          -- FT232H data bus width.
     
     -- FIFO constants.
@@ -128,6 +128,9 @@ architecture BEHAVIORAL of CORDIC_NCO is
   -- CORDIC phase shifter
   --
   component zpuino_phase_shifter is
+  generic (
+    BUS_WIDTH : integer := IQ_BUS_WIDTH
+  );
   port (
     clk:        in  std_logic;
     reset:      in  std_logic;
@@ -228,6 +231,9 @@ begin
   -- Instance of the phase shifter.
   --
   phase_shifter: zpuino_phase_shifter
+  generic map (
+    BUS_WIDTH => IQ_BUS_WIDTH
+  )
   port map (
     -- system signals
     clk         => wb_clk_i,        -- wishbone clock signal
@@ -414,11 +420,9 @@ begin
   -- Timer process
   --
   process(wb_clk_i, wb_rst_i)
-  
   begin
     if (wb_rst_i = '1') then
       --
-      -- Initialize the increment to 48 kHz.
       -- Initialize the accumulator to 0.
       --
       timer_acc <= (others => '0');

@@ -53,7 +53,7 @@ use DesignLab.ALL;
 entity CORDIC_NCO is
   generic (
     -- Constants associated with the phase shifter.
-    IQ_BUS_WIDTH : integer := 8;              -- Phase shifter channel data width.
+    IQ_BUS_WIDTH : integer := 18;             -- Phase shifter channel data width.
     NUMBER_OF_SHIFTS : integer := 7;
     CORDIC_ROM_ADDRESS_WIDTH : integer := 8;  -- Used to map phase to phase shifts.
     CORDIC_ROM_DATA_WIDTH : integer := 8;     -- NUMBER_OF_SHIFTS+1.

@@ -46,14 +46,14 @@ void setup()
     
   /* Set the amplitude.
    */
-  int i_amp = 31 << 2;
-  int q_amp = 0;
+  int i_amp = 32767;
+  int q_amp = 32767;
   while (true)
   {
     if (!cordic.FifoFull())
     {
       i_amp = i_amp * -1;
-      setAmplitude((unsigned)((i_amp << 24) | (q_amp << 8)));
+      setAmplitude(i_amp, q_amp);
     }
   } 
 }

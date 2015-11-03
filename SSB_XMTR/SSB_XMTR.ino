@@ -20,8 +20,8 @@ bool timer(void *)
 
 void setup() 
 {
-  int i_amplitude = 32;
-  int q_amplitude = 32;
+  int i_amplitude = 32 << 2;
+  int q_amplitude = 32 << 2;
   
   /* Initialization.
    */
@@ -46,7 +46,7 @@ void setup()
     
   /* Set the amplitude.
    */
-  int i_amp = 32;
+  int i_amp = 31 << 2;
   int q_amp = 0;
   while (true)
   {

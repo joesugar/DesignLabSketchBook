@@ -52,9 +52,6 @@ use DesignLab.ALL;
 
 entity CORDIC_NCO is
   generic (
-    -- Constants associated with the IQ samples.
-    IQ_SAMPLE_WIDTH : integer := 6;           -- I/Q sample width
-    
     -- Constants associated with the phase shifter.
     IQ_BUS_WIDTH : integer := 8;              -- Phase shifter channel data width.
     NUMBER_OF_SHIFTS : integer := 7;
@@ -445,6 +442,12 @@ begin
   -- Process to move data from the FIFO to the NCO
   -- when the timer goes off.
   --
+  -- Because of the nature of the algorithm, the values coming
+  -- out of the phase shifter are up to two bits longer than 
+  -- the values going in.  We adjust for that by taking two 
+  -- fewer bits from the incoming value and sign extending into
+  -- the upper two bits of the value sent to the phase shifter. 
+  --
   process(wb_clk_i, wb_rst_i, timer_carry)
     constant IQ_DATA_WIDTH : integer := FIFO_DATA_WIDTH/2;
     variable iq_data_upper : signed(IQ_DATA_WIDTH-1 downto 0);
@@ -453,12 +456,15 @@ begin
     if (wb_rst_i = '1') then
       --
       -- Initialize the NCO amplitude values.
-      -- These are 8 bit signed values that should max out
-      -- at +/-63 to allow for the multiplication effect
-      -- of the CORDIC algorithm.
+      -- The value occupies the lower bits of the data.
+      -- The top two bits are a sign extension of the value.
       --
-      i_data_in <= to_signed(63, IQ_BUS_WIDTH);
-      q_data_in <= to_signed( 0, IQ_BUS_WIDTH);
+      i_data_in(IQ_BUS_WIDTH-1) <= i_data_in(IQ_BUS_WIDTH-3);
+      i_data_in(IQ_BUS_WIDTH-2) <= i_data_in(IQ_BUS_WIDTH-3);
+      i_data_in(IQ_BUS_WIDTH-3 downto 0) <= to_signed(31, IQ_BUS_WIDTH-2);
+      q_data_in(IQ_BUS_WIDTH-1) <= q_data_in(IQ_BUS_WIDTH-3);
+      q_data_in(IQ_BUS_WIDTH-2) <= q_data_in(IQ_BUS_WIDTH-3);
+      q_data_in(IQ_BUS_WIDTH-3 downto 0) <= to_signed( 0, IQ_BUS_WIDTH-2);
       iq_fifo_data_read <= '0';
     elsif rising_edge(wb_clk_i) then
       --
@@ -482,9 +488,13 @@ begin
         -- the FIFO read address.
         --
         i_data_in <= 
-            iq_data_upper(IQ_DATA_WIDTH-1 downto IQ_DATA_WIDTH-IQ_BUS_WIDTH);
+            iq_data_upper(IQ_DATA_WIDTH-1) & 
+            iq_data_upper(IQ_DATA_WIDTH-1) & 
+            iq_data_upper(IQ_DATA_WIDTH-1 downto IQ_DATA_WIDTH-IQ_BUS_WIDTH+2);
         q_data_in <=
-            iq_data_lower(IQ_DATA_WIDTH-1 downto IQ_DATA_WIDTH-IQ_BUS_WIDTH);
+            iq_data_lower(IQ_DATA_WIDTH-1) &
+            iq_data_lower(IQ_DATA_WIDTH-1) &
+            iq_data_lower(IQ_DATA_WIDTH-1 downto IQ_DATA_WIDTH-IQ_BUS_WIDTH+2);
         iq_fifo_data_read <= '1';        
       end if;
     end if;

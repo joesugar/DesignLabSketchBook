@@ -1,7 +1,7 @@
 Release 14.2 par P.28xd (lin)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-joseph-laptop::  Sat Oct 10 21:00:44 2015
+joseph-laptop::  Tue Mar 01 22:25:22 2016
 
 par -w -intstyle ise -ol high -t 1 Papilio_One_500K_map.ncd
 Papilio_One_500K.ncd Papilio_One_500K.pcf 
@@ -68,43 +68,43 @@ Total REAL time at the beginning of Placer: 3 secs
 Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:fee25ab2) REAL time: 4 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:38debe3b) REAL time: 5 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:fee25ab2) REAL time: 4 secs 
+Phase 2.7  Design Feasibility Check (Checksum:38debe3b) REAL time: 5 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:fee25ab2) REAL time: 4 secs 
+Phase 3.31  Local Placement Optimization (Checksum:38debe3b) REAL time: 5 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:e8706356) REAL time: 5 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:277d348d) REAL time: 6 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:e8706356) REAL time: 5 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:277d348d) REAL time: 6 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:e8706356) REAL time: 5 secs 
+Phase 6.36  Local Placement Optimization (Checksum:277d348d) REAL time: 6 secs 
 
 Phase 7.8  Global Placement
 .......................
-....................................................................................
+.................................................................................
 ..........
-.....................................................................................................
-.............................
-.......................................
-Phase 7.8  Global Placement (Checksum:a64ecd94) REAL time: 24 secs 
+........................................................................
+.............................................................
+.......................................................................
+Phase 7.8  Global Placement (Checksum:d1049af6) REAL time: 26 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:a64ecd94) REAL time: 24 secs 
+Phase 8.5  Local Placement Optimization (Checksum:d1049af6) REAL time: 26 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:1248fc8d) REAL time: 36 secs 
+Phase 9.18  Placement Optimization (Checksum:3f35cc2a) REAL time: 37 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:1248fc8d) REAL time: 36 secs 
+Phase 10.5  Local Placement Optimization (Checksum:3f35cc2a) REAL time: 37 secs 
 
-Total REAL time to Placer completion: 36 secs 
+Total REAL time to Placer completion: 38 secs 
 Total CPU  time to Placer completion: 36 secs 
 Writing design to file Papilio_One_500K.ncd
 
@@ -113,34 +113,34 @@ Writing design to file Papilio_One_500K.ncd
 Starting Router
 
 
-Phase  1  : 17834 unrouted;      REAL time: 42 secs 
+Phase  1  : 17842 unrouted;      REAL time: 43 secs 
 
-Phase  2  : 16073 unrouted;      REAL time: 42 secs 
+Phase  2  : 16086 unrouted;      REAL time: 44 secs 
 
-Phase  3  : 5300 unrouted;      REAL time: 45 secs 
+Phase  3  : 5446 unrouted;      REAL time: 46 secs 
 
-Phase  4  : 5711 unrouted; (Par is working to improve performance)     REAL time: 53 secs 
+Phase  4  : 5879 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 6 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 4 secs 
 
 Updating file: Papilio_One_500K.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 8 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 6 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 mins 53 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 mins 15 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 mins 3 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 mins 44 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 mins 3 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 mins 44 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 mins 4 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 mins 45 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 mins 5 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 mins 46 secs 
 WARNING:Route:455 - CLK Net:XLXN_408<147> may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 9 mins 5 secs 
-Total CPU time to Router completion: 9 mins 5 secs 
+Total REAL time to Router completion: 9 mins 46 secs 
+Total CPU time to Router completion: 9 mins 45 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -158,7 +158,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|       XLXN_408<147> | BUFGMUX_X1Y10| No   | 1509 |  0.074     |  0.177      |
+|       XLXN_408<147> | BUFGMUX_X1Y10| No   | 1509 |  0.070     |  0.173      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -178,8 +178,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     8.460ns|     N/A|           0
-  N_408<147>                                | HOLD        |     0.598ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     8.909ns|     N/A|           0
+  N_408<147>                                | HOLD        |     0.712ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -195,10 +195,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 9 mins 6 secs 
-Total CPU time to PAR completion: 9 mins 6 secs 
+Total REAL time to PAR completion: 9 mins 47 secs 
+Total CPU time to PAR completion: 9 mins 46 secs 
 
-Peak Memory Usage:  210 MB
+Peak Memory Usage:  208 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

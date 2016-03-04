@@ -33,7 +33,7 @@ void setup()
 
   /* Set the operating frequency (frequency is in Hz)
    */
-  unsigned frequency_hz = 20000000;
+  unsigned frequency_hz = 10138000;
   CORDIC_NCO.setTransmitFrequencyHz(frequency_hz);
   CORDIC_NCO.setAmplitude(64 << 8, 0 << 8);
   CORDIC_NCO.NcoEnable();  

@@ -44,9 +44,8 @@
 #define NCO_BASE    IO_SLOT(wishboneSlot) 
 #define IQ_AMP      REGISTER(NCO_BASE, 0)
 #define PHASE_INC   REGISTER(NCO_BASE, 1)
-#define TIMER_INC   REGISTER(NCO_BASE, 2)
-#define CONTROL_REG REGISTER(NCO_BASE, 3)
-#define STATUS_REG  REGISTER(NCO_BASE, 3)
+#define CONTROL_REG REGISTER(NCO_BASE, 2)
+#define STATUS_REG  REGISTER(NCO_BASE, 2)
 
 /* Control values
  */
@@ -79,9 +78,6 @@ class CORDIC_NCO
     void getAmplitude(int *i_amplitude, int *q_amplitude);
     void getAmplitude(unsigned *iq_amplitude);
     
-    void setTimer(unsigned timer_inc);
-    unsigned getTimer();
-    
     void NcoEnable();
     void NcoDisable();
     	  
@@ -91,7 +87,7 @@ class CORDIC_NCO
   private:
     int wishboneSlot;
     int transmit_frequency_Hz;
-	  unsigned clock_frequency;
+    unsigned clock_frequency;
     
     unsigned CalculateDDSInc(unsigned frequency_hz);
 };

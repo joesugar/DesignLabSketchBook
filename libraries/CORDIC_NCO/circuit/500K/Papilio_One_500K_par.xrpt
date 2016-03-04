@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Sat Oct 10 21:00:46 2015">
+  <application stringID="par" timeStamp="Tue Mar  1 22:25:23 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -16,7 +16,7 @@
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.2/ISE_DS/ISE//bin/lin:/home/joseph/DesignLab/java/bin:/home/joseph/Docker/1.3.2-dev/binary:/home/joseph/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"/>
+          <item stringID="value" value="/opt/Xilinx/14.2/ISE_DS/ISE//bin/lin:/home/joseph/DesignLab/java/bin:/home/joseph/Docker/1.3.2-dev/binary:/home/joseph/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/joseph/ESP8266/esp-open-sdk:/home/joseph/Sming/Sming:/opt/groovy/bin"/>
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX"/>
@@ -25,7 +25,7 @@
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Ubuntu"/>
-        <item stringID="User_EnvOsrelease" value="Ubuntu 15.04"/>
+        <item stringID="User_EnvOsrelease" value="Ubuntu 15.10"/>
       </item>
       <item stringID="User_EnvHost" value="joseph-laptop"/>
       <table stringID="User_EnvCpu">
@@ -33,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz"/>
-          <item stringID="speed" value="2296.781 MHz"/>
+          <item stringID="speed" value="1216.312 MHz"/>
         </row>
       </table>
     </section>
@@ -52,12 +52,12 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="9 mins 5 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="9 mins 5 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="9 mins 46 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="9 mins 45 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="9 mins 6 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="9 mins 6 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="9 mins 47 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="9 mins 46 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -77,8 +77,8 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X1Y10"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="1509.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.074000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.177000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.070000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.173000"/>
           </row>
         </table>
       </section>

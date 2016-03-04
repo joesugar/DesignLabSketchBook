@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Reading design: Papilio_One_500K.prj
@@ -102,7 +102,7 @@ Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
 ---- Other Options
-Cores Search Directories           : {"../../../../../libraries/VGA_ZXSpectrum" "../../../../../libraries/AVR_Wishbone_Bridge" "../../../../../libraries/Benchy" "../../../../../libraries/Robot_Control_Library" "../../../../../libraries/Building_Blocks" "../../../../../libraries/VGA_ZPUino" "../../../../../libraries/HQVGA" "../../../../../libraries/Papilio_Hardware" "../../../../../libraries/BitCoin_Miner" "../../../../../libraries/Clocks" "../../../../../libraries/ZPUino_2" "../../../../../libraries/RGB_Matrix" "../../../../../libraries/Gameduino" "../../../../../libraries/ZPUino_Wishbone_Peripherals" "../../../../../libraries/clocks" "../../../i2c" "../../../Template_DesignLab_Library" "../../../PSK31" "../../../NCO" "../.." "../../../WM8731"  }
+Cores Search Directories           : {"../../../../../libraries/VGA_ZXSpectrum" "../../../../../libraries/AVR_Wishbone_Bridge" "../../../../../libraries/Benchy" "../../../../../libraries/Robot_Control_Library" "../../../../../libraries/Building_Blocks" "../../../../../libraries/VGA_ZPUino" "../../../../../libraries/HQVGA" "../../../../../libraries/Papilio_Hardware" "../../../../../libraries/BitCoin_Miner" "../../../../../libraries/Clocks" "../../../../../libraries/ZPUino_2" "../../../../../libraries/RGB_Matrix" "../../../../../libraries/Gameduino" "../../../../../libraries/ZPUino_Wishbone_Peripherals" "../../../../../libraries/clocks" "../../../i2c" "../../../Template_DesignLab_Library" "../../../i2s_slave" "../../../PSK31" "../../../NCO" "../.." "../../../WM8731"  }
 
 =========================================================================
 
@@ -226,9 +226,9 @@ Analyzing generic Entity <CORDIC_NCO> in library <DesignLab> (Architecture <beha
 	PHASE_ACC_HI_WIDTH = 8
 	PHASE_ACC_OUT_WIDTH = 8
 WARNING:Xst:753 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 176: Unconnected output port 'carry' of component 'zpuino_dds_acc'.
-WARNING:Xst:1610 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 275: Width mismatch. <phase_address> has a width of 8 bits but assigned expression is 14-bit wide.
-WARNING:Xst:790 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 276: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 288: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:1610 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 276: Width mismatch. <phase_address> has a width of 8 bits but assigned expression is 14-bit wide.
+WARNING:Xst:790 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 277: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:819 - "/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd" line 289: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <i_data_in>, <q_data_in>, <phase_acc_inc_hi_i>, <phase_acc_inc_lo_i>, <nco_output_enable>
 Entity <CORDIC_NCO> analyzed. Unit <CORDIC_NCO> generated.
 
@@ -969,9 +969,9 @@ Cell Usage :
 #      LUT2_D                      : 20
 #      LUT2_L                      : 28
 #      LUT3                        : 714
-#      LUT3_D                      : 55
+#      LUT3_D                      : 54
 #      LUT3_L                      : 52
-#      LUT4                        : 2135
+#      LUT4                        : 2136
 #      LUT4_D                      : 46
 #      LUT4_L                      : 238
 #      MUXCY                       : 898
@@ -982,9 +982,9 @@ Cell Usage :
 # FlipFlops/Latches                : 2316
 #      FD                          : 224
 #      FDC                         : 235
-#      FDCE                        : 32
+#      FDCE                        : 48
 #      FDCP                        : 23
-#      FDE                         : 1151
+#      FDE                         : 1135
 #      FDP                         : 2
 #      FDPE                        : 1
 #      FDR                         : 177
@@ -1062,7 +1062,7 @@ Asynchronous Control Signals Information:
 -----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                 | Buffer(FF name)                                                     | Load  |
 -----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
-XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_13_in<60>(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/rstgen/rstout_or00001:O)       | NONE(XLXI_41/dds_acc/r_reg_hi_0)                                    | 268   |
+XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/wishbone_slot_13_in<60>(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/rstgen/rstout_or00001:O)       | NONE(XLXI_41/dds_acc/r_reg_hi_0)                                    | 284   |
 XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q_or0000(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q_or00001:O)| NONE(XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/clkgen_inst/rst1_q)| 2     |
 XLXI_41/phase_shifter/shift_stream<0>_i_data_10_and0000(XLXI_41/phase_shifter/shift_stream<0>_i_data_10_and00001:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_10)               | 1     |
 XLXI_41/phase_shifter/shift_stream<0>_i_data_10_and0001(XLXI_41/phase_shifter/shift_stream<0>_i_data_10_and00011:O)                            | NONE(XLXI_41/phase_shifter/shift_stream<0>.i_data_10)               | 1     |
@@ -1116,7 +1116,7 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 24.367ns (Maximum Frequency: 41.040MHz)
+   Minimum period: 24.509ns (Maximum Frequency: 40.801MHz)
    Minimum input arrival time before clock: 1.829ns
    Maximum output required time after clock: 5.447ns
    Maximum combinational path delay: No path found
@@ -1127,10 +1127,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ext_pins_in<0>'
-  Clock period: 24.367ns (frequency: 41.040MHz)
-  Total number of paths / destination ports: 95109 / 5227
+  Clock period: 24.509ns (frequency: 40.801MHz)
+  Total number of paths / destination ports: 95077 / 5227
 -------------------------------------------------------------------------
-Delay:               8.122ns (Levels of Logic = 7)
+Delay:               8.170ns (Levels of Logic = 7)
   Source:            XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/addr_save_q_24 (FF)
   Destination:       XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox/zpuino/io/io_stb (FF)
   Source Clock:      ext_pins_in<0> rising 3.0X
@@ -1142,7 +1142,7 @@ Delay:               8.122ns (Levels of Logic = 7)
     ----------------------------------------  ------------
      FDE:C->Q             14   0.514   1.002  zpuino/io/addr_save_q_24 (wishbone_slot_13_in<25>)
      LUT4_D:I0->O         32   0.612   1.225  zpuino/io/slot_cyc_i_5_cmp_eq00001 (zpuino/io/slot_cyc_i_5_cmp_eq0000)
-     LUT2:I0->O            3   0.612   0.520  zpuino/io/slot_cyc_i_5_mux00001 (wishbone_slot_5_in<1>)
+     LUT2:I0->O            4   0.612   0.568  zpuino/io/slot_cyc_i_5_mux00001 (wishbone_slot_5_in<1>)
      end scope: 'XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox'
      LUT2:I1->O            1   0.612   0.509  XLXI_41/wishbone_out_1_and00001 (XLXN_510<1>)
      begin scope: 'XLXI_52/Inst_ZPUino_Papilio_One_V2_blackbox'
@@ -1151,8 +1151,8 @@ Delay:               8.122ns (Levels of Logic = 7)
      LUT4:I3->O            1   0.612   0.000  zpuino/io/io_stb_rstpot (zpuino/io/io_stb_rstpot)
      FD:D                      0.268          zpuino/io/io_stb
     ----------------------------------------
-    Total                      8.122ns (4.483ns logic, 3.639ns route)
-                                       (55.2% logic, 44.8% route)
+    Total                      8.170ns (4.483ns logic, 3.687ns route)
+                                       (54.9% logic, 45.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'ext_pins_in<0>'
@@ -1197,13 +1197,13 @@ Offset:              5.447ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 29.37 secs
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 29.96 secs
  
 --> 
 
 
-Total memory usage is 217080 kilobytes
+Total memory usage is 217072 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  326 (   0 filtered)

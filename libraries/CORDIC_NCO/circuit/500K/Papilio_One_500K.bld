@@ -12,8 +12,8 @@ ise -dd _ngo -sd ../../../../../libraries/VGA_ZXSpectrum -sd
 -sd ../../../../../libraries/Gameduino -sd
 ../../../../../libraries/ZPUino_Wishbone_Peripherals -sd
 ../../../../../libraries/clocks -sd ../../../i2c -sd
-../../../Template_DesignLab_Library -sd ../../../PSK31 -sd ../../../NCO -sd
-../.. -sd ../../../WM8731 -aul -nt timestamp -uc
+../../../Template_DesignLab_Library -sd ../../../i2s_slave -sd ../../../PSK31
+-sd ../../../NCO -sd ../.. -sd ../../../WM8731 -aul -nt timestamp -uc
 /home/joseph/DesignLab/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
 PSL_Papilio_One_500K/papilio_one.ucf -p xc3s500e-vq100-5 Papilio_One_500K.ngc
 Papilio_One_500K.ngd
@@ -2208,10 +2208,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  74
 
-Total memory usage is 124808 kilobytes
+Total memory usage is 124684 kilobytes
 
 Writing NGD file "Papilio_One_500K.ngd" ...
-Total REAL time to NGDBUILD completion:  6 sec
+Total REAL time to NGDBUILD completion:  7 sec
 Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "Papilio_One_500K.bld"...

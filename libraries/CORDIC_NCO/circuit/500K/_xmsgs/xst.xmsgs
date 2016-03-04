@@ -116,13 +116,13 @@
 <msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd</arg>&quot; line <arg fmt="%d" index="2">176</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">carry</arg>&apos; of component &apos;<arg fmt="%s" index="4">zpuino_dds_acc</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd</arg>&quot; line <arg fmt="%d" index="2">275</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">phase_address</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">14</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd</arg>&quot; line <arg fmt="%d" index="2">276</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">phase_address</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">14</arg>-bit wide.
 </msg>
 
-<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd</arg>&quot; line <arg fmt="%d" index="2">276</arg>: Index value(s) does not match array range, simulation mismatch.
+<msg type="warning" file="Xst" num="790" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd</arg>&quot; line <arg fmt="%d" index="2">277</arg>: Index value(s) does not match array range, simulation mismatch.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd</arg>&quot; line <arg fmt="%d" index="2">288</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/joseph/DesignLab/sketchbook/libraries/CORDIC_NCO/CORDIC_NCO.vhd</arg>&quot; line <arg fmt="%d" index="2">289</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;i_data_in&gt;, &lt;q_data_in&gt;, &lt;phase_acc_inc_hi_i&gt;, &lt;phase_acc_inc_lo_i&gt;, &lt;nco_output_enable&gt;</arg>
 </msg>
 

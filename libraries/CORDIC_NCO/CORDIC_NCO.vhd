@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------
 ----                                                             ----
 ----  CORDIC NCO Wishbone Core                                   ----
-----                                                             ----                                                          ----
+----                                                             ----
 ----  Author: J. Consugar                                        ----
 ----                                                             ----
 ---------------------------------------------------------------------
@@ -242,10 +242,9 @@ begin
         case wb_adr_i(4 downto 2) is
           when "000" =>
             --
-            -- Input signal data.  A constant for now.
-            -- Eventually will be set from the wishbone interface.
+            -- Set the I/Q amplitude.
             --
-            -- The value coming in is a 16 bit value.  Howerver, the
+            -- The value coming in is a 16 bit value.  However, the
             -- I/Q bus width is not.  We just take the upper bits from
             -- the incoming data.
             --
@@ -261,8 +260,8 @@ begin
                 std_logic_vector(wb_dat_i(31-PHASE_ACC_HI_WIDTH downto 0));
           when "010" =>
             --
-            -- Status register.  Set to true for now.
-            -- Eventually will be set from the wishbone interface.
+            -- Control register.  Currently the only thing you can do
+            -- is enable the NCO.  Do this by setting bit 0 high.
             --
             nco_output_enable <= wb_dat_i(0);
           when others =>
@@ -322,7 +321,7 @@ begin
   --
   -- Move the D2A data to the output port.
   -- when doing this need to convert the signed i/q 
-  -- data to unsinged.
+  -- data to unsigned.
   --
   process(i_data_out, q_data_out, nco_output_enable)
     --

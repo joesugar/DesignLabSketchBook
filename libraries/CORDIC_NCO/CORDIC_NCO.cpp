@@ -63,7 +63,7 @@ unsigned CORDIC_NCO::getTransmitFrequencyHz()
   return (*this).transmit_frequency_Hz;
 }
 
-/* Set/get the signal amplitude.
+/* Set the signal amplitude.
  * Note:  Amplitudes are signed values in the range from 
  * -32768 to 32767.
  */
@@ -75,11 +75,20 @@ void CORDIC_NCO::setAmplitude(int i_amplitude, int q_amplitude)
   IQ_AMP = iq_amplitude;
 }
 
+/* Set the signal amplitude.
+ * Amplitude is an I/Q pair.  Upper 16 bits is I, 
+ * lower 16 bits is Q.  I and Q are interpretted as
+ * signed values in the range from -32768 to 32767.
+ * This means bit 31 is the sign bit for the I and
+ * bit 15 is the sign bit for the Q.
+ */
 void CORDIC_NCO::setAmplitude(unsigned iq_amplitude)
 {
   IQ_AMP = iq_amplitude;
 }
 
+/* Get the signal amplitude as I/Q pair.
+ */
 void CORDIC_NCO::getAmplitude(int *i_amplitude, int *q_amplitude)
 {
   unsigned iq_amplitude = IQ_AMP;
@@ -87,43 +96,39 @@ void CORDIC_NCO::getAmplitude(int *i_amplitude, int *q_amplitude)
   (*q_amplitude) = ((int)((iq_amplitude & 0x0000FFFF) << 16)) >> 16;
 }
 
+/* Get the signal amplitude as a packed I/Q pair.
+ * The upper 16 bits are the I, the lower 16 bits are the Q.
+ * I and Q are interpretted as signed 16 bit values in the
+ * range from -32768 to 32767.
+ */
 void CORDIC_NCO::getAmplitude(unsigned *iq_amplitude)
 {
   (*iq_amplitude) = IQ_AMP;
 }
 
-/* Set/get timer increment.
- */
-void CORDIC_NCO::setTimer(unsigned timer_inc)
-{
-  TIMER_INC = timer_inc;
-}
-
-unsigned CORDIC_NCO::getTimer()
-{
-  unsigned timer_inc = TIMER_INC;
-  return timer_inc;
-}
-
-/* Enable/disable the PSK hardware.
+/* Enable the NCO.
  */
 void CORDIC_NCO::NcoEnable()
 {
   CONTROL_REG = NCO_ENABLE;
 }
 
+/* Disable the NCO.
+ */
 void CORDIC_NCO::NcoDisable()
 {
   CONTROL_REG = NCO_DISABLE;
 }
 
-/* Methods to return FIFO status flags.
+/* Return flag indicating if the FIFO is full.
  */
 bool CORDIC_NCO::FifoFull()
 {
   return NCO_FIFO_FULL;
 }
   
+/* Return flag indicating if the FIFO is empty.
+ */
 bool CORDIC_NCO::FifoEmpty()
 {
   return NCO_FIFO_EMPTY;

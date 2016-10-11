@@ -1,4 +1,8 @@
 
+-- This file described an I2S interface with Wishbone interface.
+--
+-- Left channel data is returned in the upper 16 bits of the returned data.
+
 library ieee;
 use ieee.std_logic_1164.ALL;
 use ieee.numeric_std.ALL;
@@ -10,7 +14,8 @@ use DesignLab.ALL;
 
 entity I2S is
   generic (
-    CHANNEL_STATE_LENGTH : integer := 6
+    CHANNEL_STATE_LENGTH : integer := 6;
+    AUDIO_DATA_WIDTH : integer := 16
   );
   port (
     wishbone_in  : in    std_logic_vector (100 downto 0);
@@ -68,8 +73,8 @@ architecture BEHAVIORAL of I2S is
   signal left_channel_state       : unsigned(CHANNEL_STATE_LENGTH-1 downto 0);
 
   -- Registers to hold the left/right channel data.
-  signal left_channel_data        : std_logic_vector(15 downto 0);
-  signal left_channel_reg         : std_logic_vector(15 downto 0);
+  signal left_channel_data        : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
+  signal left_channel_reg         : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
 
 begin
 
@@ -134,8 +139,9 @@ begin
         wb_dat_o(31 downto 0) <= register0;
       when "001" =>
         -- Put out the sound data.
-        wb_dat_o(31 downto  0) <= (others => '0');
-        wb_dat_o(31 downto 16) <= left_channel_reg;
+        wb_dat_o(31 downto 0) <= (others => '0');
+        wb_dat_o(31 downto AUDIO_DATA_WIDTH) <= left_channel_reg;
+        wb_dat_o(AUDIO_DATA_WIDTH-1 downto 0) <= (others => '0');
       when others =>
         wb_dat_o(31 downto 0) <= (others => '0');
     end case;
@@ -191,6 +197,7 @@ begin
       zzzlrclk <= '0';
       lrclk_pos_edge <= '0';
       lrclk_neg_edge <= '0';
+      left_channel_clock <= '0';
     elsif rising_edge(wb_clk_i) then
       zlrclk   <= lrclk_in;
       zzlrclk  <= zlrclk;
@@ -198,28 +205,14 @@ begin
       if zzlrclk = '1' and zzzlrclk = '0' then
         lrclk_pos_edge <= '1';
         lrclk_neg_edge <= '0';
+        left_channel_clock <= '0';
       elsif zzlrclk = '0' and zzzlrclk = '1' then
         lrclk_pos_edge <= '0';
         lrclk_neg_edge <= '1';
+			  left_channel_clock <= '1';
       else
         lrclk_pos_edge <= '0';
         lrclk_neg_edge <= '0';
-      end if;
-    end if;
-  end process;
-
-  --
-  -- Process to create a signal that follows the lrclk.
-  --
-  process(wb_rst_i, wb_clk_i)
-  begin
-    if wb_rst_i = '1' then
-      left_channel_clock <= '0';
-    elsif rising_edge(wb_clk_i) then
-      if lrclk_neg_edge = '1' then
-			  left_channel_clock <= '1';
-      elsif lrclk_pos_edge = '1' then
-        left_channel_clock <= '0';
       end if;
     end if;
   end process;
@@ -259,19 +252,19 @@ begin
           left_channel_state <= to_unsigned(to_integer(left_channel_state) + 1, CHANNEL_STATE_LENGTH);
 
           --
-          -- Update the channel data
+          -- Update the channel and output data.
           --
           if left_state = 0 then
             left_channel_data <= (others => '0');
-          elsif left_state < 17 then
-            left_channel_data <= left_channel_data(14 downto 0) & audio_in;
+          elsif left_state < AUDIO_DATA_WIDTH then
+            left_channel_data <= left_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & audio_in;
           end if;
 
           --
           -- Move data to the output.
           --
           if left_state = 0 then
-            left_channel_reg <= left_channel_data;
+            left_channel_reg <= left_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
           end if;
         else
           left_channel_state <= (others => '0');

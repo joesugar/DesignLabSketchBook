@@ -68,13 +68,17 @@ architecture BEHAVIORAL of I2S is
 
   -- Clocks to define a data frame
   signal left_channel_clock       : std_logic;
+  signal right_channel_clock      : std_logic;
 
   -- State clocks
   signal left_channel_state       : unsigned(CHANNEL_STATE_LENGTH-1 downto 0);
+  signal right_channel_state      : unsigned(CHANNEL_STATE_LENGTH-1 downto 0);
 
   -- Registers to hold the left/right channel data.
   signal left_channel_data        : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
   signal left_channel_reg         : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
+  signal right_channel_data       : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
+  signal right_channel_reg        : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
 
 begin
 
@@ -140,8 +144,8 @@ begin
       when "001" =>
         -- Put out the sound data.
         wb_dat_o(31 downto 0) <= (others => '0');
-        wb_dat_o(31 downto AUDIO_DATA_WIDTH) <= left_channel_reg;
-        wb_dat_o(AUDIO_DATA_WIDTH-1 downto 0) <= (others => '0');
+        wb_dat_o(31 downto 32-AUDIO_DATA_WIDTH) <= left_channel_reg;
+        wb_dat_o(AUDIO_DATA_WIDTH-1 downto 16-AUDIO_DATA_WIDTH) <= right_channel_reg;
       when others =>
         wb_dat_o(31 downto 0) <= (others => '0');
     end case;
@@ -198,6 +202,7 @@ begin
       lrclk_pos_edge <= '0';
       lrclk_neg_edge <= '0';
       left_channel_clock <= '0';
+      right_channel_clock <= '0';
     elsif rising_edge(wb_clk_i) then
       zlrclk   <= lrclk_in;
       zzlrclk  <= zlrclk;
@@ -206,10 +211,12 @@ begin
         lrclk_pos_edge <= '1';
         lrclk_neg_edge <= '0';
         left_channel_clock <= '0';
+        right_channel_clock <= '1';
       elsif zzlrclk = '0' and zzzlrclk = '1' then
         lrclk_pos_edge <= '0';
         lrclk_neg_edge <= '1';
 			  left_channel_clock <= '1';
+        right_channel_clock <= '0';
       else
         lrclk_pos_edge <= '0';
         lrclk_neg_edge <= '0';
@@ -222,15 +229,19 @@ begin
   -- and sample the incoming left channel data.
   --
   process(wb_rst_i, wb_clk_i)
-    variable left_state : integer := 0;
+    variable left_state  : integer := 0;
+    variable right_state : integer := 0;
   begin
     if wb_rst_i = '1' then
       --
       -- Initialize.
       --
-      left_channel_state <= (others => '0');
-      left_channel_data  <= (others => '0');
-      left_channel_reg   <= (others => '0');
+      left_channel_state  <= (others => '0');
+      left_channel_data   <= (others => '0');
+      left_channel_reg    <= (others => '0');
+      right_channel_state <= (others => '0');
+      right_channel_data  <= (others => '0');
+      right_channel_reg   <= (others => '0');
     elsif rising_edge(wb_clk_i) then
       --
       -- Only process on the rising edge of the sclk.
@@ -240,14 +251,15 @@ begin
         -- Set state to a local variable to make things
         -- easier later.
         --
-        left_state := to_integer(left_channel_state);
+        left_state  := to_integer(left_channel_state);
+        right_state := to_integer(right_channel_state);
 
         --
         -- Processing for the left channel.
         --
         if left_channel_clock = '1' then
           --
-          -- Update the channel state
+          -- Update the left channel state
           --
           left_channel_state <= to_unsigned(to_integer(left_channel_state) + 1, CHANNEL_STATE_LENGTH);
 
@@ -266,15 +278,47 @@ begin
           if left_state = 0 then
             left_channel_reg <= left_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
           end if;
+
+          --
+          -- Clear the right channel.
+          --
+          right_channel_state <= (others => '0');
         else
+          --
+          -- Update the right channel state
+          --
+          right_channel_state <= to_unsigned(to_integer(right_channel_state) + 1, CHANNEL_STATE_LENGTH);
+
+          --
+          -- Update the channel and output data.
+          --
+          if right_state = 0 then
+            right_channel_data <= (others => '0');
+          elsif right_state < AUDIO_DATA_WIDTH then
+            right_channel_data <= right_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & audio_in;
+          end if;
+
+          --
+          -- Move data to the output.
+          --
+          if right_state = 0 then
+            right_channel_reg <= right_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
+          end if;
+
+          --
+          -- Clear the left channel
+          --
           left_channel_state <= (others => '0');
         end if;
       end if;
     end if;
   end process;
-  left_channel_out <= left_channel_reg;
+  left_channel_out  <= left_channel_reg;
 
   lrclk_out <= left_channel_clock;       -- debug signal
   sclk_out <= audio_in;                  -- debug signal
 
+  --
+  -- END HARDWARE PROCESSES
+  --
 end BEHAVIORAL;

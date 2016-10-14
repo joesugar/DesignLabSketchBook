@@ -1,10 +1,11 @@
+/*
 ---------------------------------------------------------------------
 ----                                                             ----
----- Copyright (C) 2016 Joseph A. Consugar                       ----                       ----
+---- Copyright (C) 2016 Joseph A. Consugar                       ---- 
 ----                                                             ----
 ---- This source file may be used and distributed without        ----
 ---- restriction provided that this copyright statement is not   ----
----- removed from the file and that any derivative work contains ----
+---- removed from the file and that any derivative work contains ---- 
 ---- the original copyright notice and the associated disclaimer.----
 ----                                                             ----
 ----     THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY     ----
@@ -22,6 +23,7 @@
 ---- POSSIBILITY OF SUCH DAMAGE.                                 ----
 ----                                                             ----
 ---------------------------------------------------------------------
+*/
 
 #include "Arduino.h"
 #include "I2S.h"
@@ -59,6 +61,7 @@ unsigned long I2S::readSample()
 
 /* These are test routines.  The data written to/
  * read from the block doesn't do anything.
+ * Will eventually be used as a control register.
  */
 unsigned long I2S::readData()
 {

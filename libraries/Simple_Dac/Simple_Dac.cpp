@@ -1,6 +1,7 @@
+/*
 ---------------------------------------------------------------------
 ----                                                             ----
----- Copyright (C) 2016 Joseph A. Consugar                       ----                       ----
+---- Copyright (C) 2016 Joseph A. Consugar                       ----
 ----                                                             ----
 ---- This source file may be used and distributed without        ----
 ---- restriction provided that this copyright statement is not   ----
@@ -22,6 +23,7 @@
 ---- POSSIBILITY OF SUCH DAMAGE.                                 ----
 ----                                                             ----
 ---------------------------------------------------------------------
+*/
 
 #include "Arduino.h"
 #include "Simple_Dac.h"

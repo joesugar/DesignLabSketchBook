@@ -244,6 +244,24 @@ begin
       right_channel_reg   <= (others => '0');
     elsif rising_edge(wb_clk_i) then
       --
+      -- Put the data from the last state into the register.
+      -- It gets saved on the changing of the left/right clock.
+      --
+      if lrclk_neg_edge = '1' then
+        --
+        -- Starting the left channel so save the right channel.
+        --
+        right_channel_reg <= right_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
+        left_channel_data <= (others => '0');
+      elsif lrclk_pos_edge = '1' then
+        --
+        -- Starting the right channel so save the left channel.
+        --
+        left_channel_reg <= left_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
+        right_channel_data <= (others => '0');
+      end if;
+
+      --
       -- Only process on the rising edge of the sclk.
       --
       if sclk_pos_edge = '1' then
@@ -273,13 +291,6 @@ begin
           end if;
 
           --
-          -- Move data to the output.
-          --
-          if left_state = 0 then
-            left_channel_reg <= left_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
-          end if;
-
-          --
           -- Clear the right channel.
           --
           right_channel_state <= (others => '0');
@@ -296,13 +307,6 @@ begin
             right_channel_data <= (others => '0');
           elsif right_state < AUDIO_DATA_WIDTH then
             right_channel_data <= right_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & audio_in;
-          end if;
-
-          --
-          -- Move data to the output.
-          --
-          if right_state = 0 then
-            right_channel_reg <= right_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
           end if;
 
           --

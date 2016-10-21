@@ -24,11 +24,7 @@ entity I2S is
     -- Put your external connections here
 	  sclk_in  : in  std_logic;
 	  lrclk_in : in  std_logic;
-    audio_in : in  std_logic;
-    left_channel_out  : out std_logic_vector(15 downto 0);
-
-	  sclk_out : out std_logic;
-	  lrclk_out: out std_logic
+    audio_in : in  std_logic
   );
 end I2S;
 
@@ -145,7 +141,7 @@ begin
         -- Put out the sound data.
         wb_dat_o(31 downto 0) <= (others => '0');
         wb_dat_o(31 downto 32-AUDIO_DATA_WIDTH) <= left_channel_reg;
-        wb_dat_o(AUDIO_DATA_WIDTH-1 downto 16-AUDIO_DATA_WIDTH) <= right_channel_reg;
+        wb_dat_o(15 downto 16-AUDIO_DATA_WIDTH) <= right_channel_reg;
       when others =>
         wb_dat_o(31 downto 0) <= (others => '0');
     end case;
@@ -313,10 +309,6 @@ begin
       end if;
     end if;
   end process;
-  left_channel_out  <= left_channel_reg;
-
-  lrclk_out <= left_channel_clock;       -- debug signal
-  sclk_out <= audio_in;                  -- debug signal
 
   --
   -- END HARDWARE PROCESSES

@@ -284,9 +284,7 @@ begin
           --
           -- Update the channel and output data.
           --
-          if left_state = 0 then
-            left_channel_data <= (others => '0');
-          elsif left_state < AUDIO_DATA_WIDTH then
+          if left_state < AUDIO_DATA_WIDTH then
             left_channel_data <= left_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & audio_in;
           end if;
 
@@ -303,9 +301,7 @@ begin
           --
           -- Update the channel and output data.
           --
-          if right_state = 0 then
-            right_channel_data <= (others => '0');
-          elsif right_state < AUDIO_DATA_WIDTH then
+          if right_state < AUDIO_DATA_WIDTH then
             right_channel_data <= right_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & audio_in;
           end if;
 

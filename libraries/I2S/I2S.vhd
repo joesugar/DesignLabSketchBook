@@ -115,9 +115,13 @@ begin
           when "000" =>
             --
             -- Accessing register 000
-            -- Save the written value.
+            -- Save the control value.
+            -- Bit 0 - LRALIGN.  If 0 audio data is not aligned with the
+            --                   left/right clock.  If 1 the audio data is
+            --                   left aligned with the left/right clock.
             --
-            register0 <= wb_dat_i;
+            register0 <= (others => '0');
+            register0(0) <= wb_dat_i(0);
           when others =>
         end case;
       end if;
@@ -245,16 +249,40 @@ begin
       --
       if lrclk_neg_edge = '1' then
         --
-        -- Starting the left channel so save the right channel.
+        -- Starting the left channel so initialize and save the right channel.
         --
-        right_channel_reg <= right_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
         left_channel_data <= (others => '0');
+        case register0(0) is
+          when '0' =>
+            --
+            -- I2S format.
+            --
+            right_channel_reg <= right_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
+          when '1' =>
+            --
+            -- Left justified.
+            --
+            right_channel_reg <= right_channel_data(AUDIO_DATA_WIDTH-1 downto 0);
+          when others =>
+        end case;
       elsif lrclk_pos_edge = '1' then
         --
-        -- Starting the right channel so save the left channel.
+        -- Starting the right channel so initialize and save the left channel.
         --
-        left_channel_reg <= left_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
         right_channel_data <= (others => '0');
+        case register0(0) is
+          when '0' =>
+            --
+            -- I2S format.
+            --
+            left_channel_reg <= left_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & '0';
+          when '1' =>
+            --
+            -- Left justified.
+            --
+            left_channel_reg <= left_channel_data(AUDIO_DATA_WIDTH-1 downto 0);
+          when others =>
+        end case;
       end if;
 
       --

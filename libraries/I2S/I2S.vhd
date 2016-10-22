@@ -26,6 +26,12 @@
 -- This file described an I2S interface with Wishbone interface.
 --
 -- Left channel data is returned in the upper 16 bits of the returned data.
+-- Right channel data is returned in the lower 16 bits of the returned data.
+--
+-- The AUDIO_DATA_WIDTH can be set to a value less than 16 but the samples
+-- will still be returned as 16 bit data, with the least significant bits
+-- set to 0.
+--
 
 library ieee;
 use ieee.std_logic_1164.ALL;

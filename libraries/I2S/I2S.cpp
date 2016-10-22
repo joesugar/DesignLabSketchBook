@@ -1,11 +1,11 @@
 /*
 ---------------------------------------------------------------------
 ----                                                             ----
----- Copyright (C) 2016 Joseph A. Consugar                       ---- 
+---- Copyright (C) 2016 Joseph A. Consugar                       ----
 ----                                                             ----
 ---- This source file may be used and distributed without        ----
 ---- restriction provided that this copyright statement is not   ----
----- removed from the file and that any derivative work contains ---- 
+---- removed from the file and that any derivative work contains ----
 ---- the original copyright notice and the associated disclaimer.----
 ----                                                             ----
 ----     THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY     ----
@@ -30,8 +30,11 @@
 
 /* Define the registers.
 */
-#define I2S_DATA      REGISTER(IO_SLOT(wishboneSlot), 0)
+#define I2S_CONTROL   REGISTER(IO_SLOT(wishboneSlot), 0)
+#define I2S_STATUS    REGISTER(IO_SLOT(wishboneSlot), 0)
 #define I2S_SAMPLE    REGISTER(IO_SLOT(wishboneSlot), 1)
+
+#define I2S_SAMPLE_READY    0x0002
 
 /* Constructor.
  */
@@ -59,16 +62,28 @@ unsigned long I2S::readSample()
     return I2S_SAMPLE;
 }
 
-/* These are test routines.  The data written to/
- * read from the block doesn't do anything.
- * Will eventually be used as a control register.
+/* Read the status value from the register.
+ * Bit 0 - LRALIGN.  If 0 audio data is not aligned with the
+ *                   left/right clock.  If 1 the audio data is
+ *                   left aligned with the left/right clock.
+ * Bit 1 - DATA_RDY  If 1 there is an audio sample ready to be
+ *                   read.  If 0, it's already been read.
  */
-unsigned long I2S::readData()
+unsigned long I2S::readStatus()
 {
-    return I2S_DATA;
+    return I2S_STATUS;
+}
+bool I2S::sampleIsReady()
+{
+    return (I2S_STATUS & I2S_SAMPLE_READY) == I2S_SAMPLE_READY;
 }
 
-void I2S::writeData(unsigned long value)
+/* Write the control value to the register.
+ * Bit 0 - LRALIGN.  If 0 audio data is not aligned with the
+ *                   left/right clock.  If 1 the audio data is
+ *                   left aligned with the left/right clock.
+ */
+void I2S::writeControl(unsigned long value)
 {
-    I2S_DATA = value;
+    I2S_CONTROL = value;
 }

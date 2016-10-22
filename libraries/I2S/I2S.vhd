@@ -5,6 +5,7 @@
 
 library ieee;
 use ieee.std_logic_1164.ALL;
+use ieee.std_logic_misc.ALL;
 use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
@@ -53,8 +54,8 @@ architecture BEHAVIORAL of I2S is
 
   -- Flags to indicate if a sample is ready to be read or has been read.
   signal sample_flags : std_logic_vector(1 downto 0);
-  alias sample_ready  : std_logic is sample_flags(1);
-  alias sample_read   : std_logic is sample_flags(0);
+  alias  sample_ready : std_logic is sample_flags(1);
+  alias  sample_read  : std_logic is sample_flags(0);
 
   -- Positive/negative edge of the i2s bit clock.
   signal sclk_neg_edge            : std_logic;
@@ -91,7 +92,7 @@ begin
   --
   -- REGION - WISHBONE PROCESSES
   --
-  -- Acknowledge all tranfers per the wishbone spec.
+  -- Acknowledge all transfers per the wishbone spec.
   --
   wb_ack_o <= wb_stb_i and wb_cyc_i;
 
@@ -123,8 +124,7 @@ begin
         case wb_adr_i(4 downto 2) is
           when "000" =>
             --
-            -- Accessing register 000
-            -- Save the control value.
+            -- Setting the control register.
             -- Bit 0 - LRALIGN.  If 0 audio data is not aligned with the
             --                   left/right clock.  If 1 the audio data is
             --                   left aligned with the left/right clock.
@@ -141,23 +141,37 @@ begin
   -- Wishbone read process.
   -- Load the output data when address is read.
   --
-  process(wb_adr_i, register0, left_channel_reg)
+  process(wb_rst_i, wb_adr_i, register0, left_channel_reg)
   begin
-    case wb_adr_i(4 downto 2) is
-      when "000" =>
-        --
-        -- Store the value to be returned.
-        --
-        wb_dat_o(31 downto 0) <= (others => '0');
-        wb_dat_o(31 downto 0) <= register0;
-      when "001" =>
-        -- Put out the sound data.
-        wb_dat_o(31 downto 0) <= (others => '0');
-        wb_dat_o(31 downto 32-AUDIO_DATA_WIDTH) <= left_channel_reg;
-        wb_dat_o(15 downto 16-AUDIO_DATA_WIDTH) <= right_channel_reg;
-      when others =>
-        wb_dat_o(31 downto 0) <= (others => '0');
-    end case;
+    if (wb_rst_i = '1') then
+      sample_read <= '0';
+    else
+      case wb_adr_i(4 downto 2) is
+        when "000" =>
+          --
+          -- Reading the status register.
+          -- Bit 0 - LRALIGN.  If 0 audio data is not aligned with the
+          --                   left/right clock.  If 1 the audio data is
+          --                   left aligned with the left/right clock.
+          -- Bit 1 - DATA_RDY  If 1 there is an audio sample ready to be
+          --                   read.  If 0, it's already been read.
+          --
+          wb_dat_o(31 downto 0) <= (others => '0');
+          wb_dat_o(0) <= register0(0);
+          wb_dat_o(1) <= xor_reduce(sample_flags);
+        when "001" =>
+          --
+          -- Put out the sound data and set the flag indicating
+          -- the sample has been read.
+          --
+          wb_dat_o(31 downto 0) <= (others => '0');
+          wb_dat_o(31 downto 32-AUDIO_DATA_WIDTH) <= left_channel_reg;
+          wb_dat_o(15 downto 16-AUDIO_DATA_WIDTH) <= right_channel_reg;
+          sample_read <= sample_ready;
+        when others =>
+          wb_dat_o(31 downto 0) <= (others => '0');
+      end case;
+    end if;
   end process;
 
   -- END WISHBONE PROCESSES
@@ -234,7 +248,7 @@ begin
   end process;
 
   --
-  -- Process to create state counter for the left channel.
+  -- Process to create state counter for the left channel
   -- and sample the incoming left channel data.
   --
   process(wb_rst_i, wb_clk_i)
@@ -251,6 +265,7 @@ begin
       right_channel_state <= (others => '0');
       right_channel_data  <= (others => '0');
       right_channel_reg   <= (others => '0');
+      sample_ready        <= '0';
     elsif rising_edge(wb_clk_i) then
       --
       -- Prepare to receive channel data on the rising/falling edge of the
@@ -275,6 +290,11 @@ begin
             right_channel_reg <= right_channel_data(AUDIO_DATA_WIDTH-1 downto 0);
           when others =>
         end case;
+        --
+        -- Having saved the right channel sample indicates the end of an audio
+        -- frame.  Set the flag indicating the sample pair is ready.
+        --
+        sample_ready <= not(sample_read);
       elsif lrclk_pos_edge = '1' then
         --
         -- Starting the right channel so initialize and save the left channel.

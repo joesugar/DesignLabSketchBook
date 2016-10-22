@@ -1,11 +1,11 @@
 /*
 ---------------------------------------------------------------------
 ----                                                             ----
----- Copyright (C) 2016 Joseph A. Consugar                       ---- 
+---- Copyright (C) 2016 Joseph A. Consugar                       ----
 ----                                                             ----
 ---- This source file may be used and distributed without        ----
 ---- restriction provided that this copyright statement is not   ----
----- removed from the file and that any derivative work contains ---- 
+---- removed from the file and that any derivative work contains ----
 ---- the original copyright notice and the associated disclaimer.----
 ----                                                             ----
 ----     THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY     ----
@@ -51,15 +51,28 @@ class I2S
      * the left channel, the lower 16 bits are the
      * right channel.  The 16 bit sample is taken to
      * be twos-complement.
-     */        
+     */
     unsigned long readSample();
 
-    /* These are test routines.  The data written to/
-     * read from the block doesn't do anything.
-     * Will eventually be used as a control register.
+    /* Write the control value to the register.
+     * Bit 0 - LRALIGN.  If 0 audio data is not aligned with the
+     *                   left/right clock.  If 1 the audio data is
+     *                   left aligned with the left/right clock.
      */
-    unsigned long readData();
-    void writeData(unsigned long value);
+    void writeControl(unsigned long value);
+
+    /* Read the status value from the register.
+     * Bit 0 - LRALIGN.  If 0 audio data is not aligned with the
+     *                   left/right clock.  If 1 the audio data is
+     *                   left aligned with the left/right clock.
+     * Bit 1 - DATA_RDY  If 1 there is an audio sample ready to be
+     *                   read.  If 0, it's already been read.
+     */
+    unsigned long readStatus();
+
+    /* Helper routines to read the status bits.
+     */
+    bool sampleIsReady();
 
   private:
     int wishboneSlot;

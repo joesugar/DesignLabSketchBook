@@ -1,3 +1,27 @@
+---------------------------------------------------------------------
+----                                                             ----
+---- Copyright (C) 2016 Joseph A. Consugar                       ----
+----                                                             ----
+---- This source file may be used and distributed without        ----
+---- restriction provided that this copyright statement is not   ----
+---- removed from the file and that any derivative work contains ----
+---- the original copyright notice and the associated disclaimer.----
+----                                                             ----
+----     THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY     ----
+---- EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED   ----
+---- TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS   ----
+---- FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE AUTHOR      ----
+---- OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,         ----
+---- INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES    ----
+---- (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE   ----
+---- GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR        ----
+---- BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF  ----
+---- LIABILITY, WHETHER IN  CONTRACT, STRICT LIABILITY, OR TORT  ----
+---- (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT  ----
+---- OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE         ----
+---- POSSIBILITY OF SUCH DAMAGE.                                 ----
+----                                                             ----
+---------------------------------------------------------------------
 
 -- This file described an I2S interface with Wishbone interface.
 --
@@ -51,6 +75,8 @@ architecture BEHAVIORAL of I2S is
   -- Simple register to hold contents of a Wishbone read/write.
   --
   signal register0: std_logic_vector(31 downto 0);
+  alias  control_reg : std_logic_vector(31 downto 0) is register0;
+  alias  status_reg  : std_logic_vector(31 downto 0) is register0;
 
   -- Flags to indicate if a sample is ready to be read or has been read.
   signal sample_flags : std_logic_vector(1 downto 0);
@@ -111,7 +137,7 @@ begin
       --
       -- Circuit reset.
       --
-      register0 <= (others => '0');   -- Initialize register to all '0'
+      control_reg <= (others => '0');   -- Initialize control register to all '0'
 
     elsif (rising_edge(wb_clk_i)) then
       --
@@ -129,8 +155,8 @@ begin
             --                   left/right clock.  If 1 the audio data is
             --                   left aligned with the left/right clock.
             --
-            register0 <= (others => '0');
-            register0(0) <= wb_dat_i(0);
+            control_reg <= (others => '0');
+            control_reg(0) <= wb_dat_i(0);
           when others =>
         end case;
       end if;
@@ -141,7 +167,7 @@ begin
   -- Wishbone read process.
   -- Load the output data when address is read.
   --
-  process(wb_rst_i, wb_adr_i, register0, left_channel_reg)
+  process(wb_rst_i, wb_adr_i, status_reg, left_channel_reg)
   begin
     if (wb_rst_i = '1') then
       sample_read <= '0';
@@ -157,7 +183,7 @@ begin
           --                   read.  If 0, it's already been read.
           --
           wb_dat_o(31 downto 0) <= (others => '0');
-          wb_dat_o(0) <= register0(0);
+          wb_dat_o(0) <= status_reg(0);
           wb_dat_o(1) <= xor_reduce(sample_flags);
         when "001" =>
           --
@@ -277,7 +303,7 @@ begin
         --
         left_channel_data <= (others => '0');
         left_channel_state <= (others => '0');
-        case register0(0) is
+        case control_reg(0) is
           when '0' =>
             --
             -- I2S format.
@@ -301,7 +327,7 @@ begin
         --
         right_channel_data <= (others => '0');
         right_channel_state <= (others => '0');
-        case register0(0) is
+        case control_reg(0) is
           when '0' =>
             --
             -- I2S format.

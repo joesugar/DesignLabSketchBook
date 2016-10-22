@@ -30,7 +30,6 @@ end I2S;
 
 architecture BEHAVIORAL of I2S is
 
-  -- Put your unique register names here
   --
   -- Rather than deal with slices out of the wishbone arrays we'll define some
   -- aliases here that allow use of the original names.
@@ -52,6 +51,11 @@ architecture BEHAVIORAL of I2S is
   --
   signal register0: std_logic_vector(31 downto 0);
 
+  -- Flags to indicate if a sample is ready to be read or has been read.
+  signal sample_flags : std_logic_vector(1 downto 0);
+  alias sample_ready  : std_logic is sample_flags(1);
+  alias sample_read   : std_logic is sample_flags(0);
+
   -- Positive/negative edge of the i2s bit clock.
   signal sclk_neg_edge            : std_logic;
   signal sclk_pos_edge            : std_logic;
@@ -71,9 +75,11 @@ architecture BEHAVIORAL of I2S is
   signal right_channel_state      : unsigned(CHANNEL_STATE_LENGTH-1 downto 0);
 
   -- Registers to hold the left/right channel data.
-  signal left_channel_data        : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
+  signal channel_data             : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
+  alias  left_channel_data        : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0) is channel_data;
+  alias  right_channel_data       : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0) is channel_data;
+
   signal left_channel_reg         : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
-  signal right_channel_data       : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
   signal right_channel_reg        : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
 
 begin
@@ -244,14 +250,15 @@ begin
       right_channel_reg   <= (others => '0');
     elsif rising_edge(wb_clk_i) then
       --
-      -- Put the data from the last state into the register.
-      -- It gets saved on the changing of the left/right clock.
+      -- Prepare to receive channel data on the rising/falling edge of the
+      -- left/right clock.
       --
       if lrclk_neg_edge = '1' then
         --
         -- Starting the left channel so initialize and save the right channel.
         --
         left_channel_data <= (others => '0');
+        left_channel_state <= (others => '0');
         case register0(0) is
           when '0' =>
             --
@@ -270,6 +277,7 @@ begin
         -- Starting the right channel so initialize and save the left channel.
         --
         right_channel_data <= (others => '0');
+        right_channel_state <= (others => '0');
         case register0(0) is
           when '0' =>
             --
@@ -286,7 +294,7 @@ begin
       end if;
 
       --
-      -- Only process on the rising edge of the sclk.
+      -- Process incoming data on the rising edge of the sclk.
       --
       if sclk_pos_edge = '1' then
         --
@@ -311,11 +319,6 @@ begin
           if left_state < AUDIO_DATA_WIDTH then
             left_channel_data <= left_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & audio_in;
           end if;
-
-          --
-          -- Clear the right channel.
-          --
-          right_channel_state <= (others => '0');
         else
           --
           -- Update the right channel state
@@ -328,11 +331,6 @@ begin
           if right_state < AUDIO_DATA_WIDTH then
             right_channel_data <= right_channel_data(AUDIO_DATA_WIDTH-2 downto 0) & audio_in;
           end if;
-
-          --
-          -- Clear the left channel
-          --
-          left_channel_state <= (others => '0');
         end if;
       end if;
     end if;

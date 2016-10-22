@@ -70,15 +70,18 @@ architecture BEHAVIORAL of I2S is
   signal left_channel_clock       : std_logic;
   signal right_channel_clock      : std_logic;
 
-  -- State clocks
-  signal left_channel_state       : unsigned(CHANNEL_STATE_LENGTH-1 downto 0);
-  signal right_channel_state      : unsigned(CHANNEL_STATE_LENGTH-1 downto 0);
+  -- Left/right channel state clocks.
+  signal channel_state            : unsigned(CHANNEL_STATE_LENGTH-1 downto 0);
+  alias  left_channel_state       : unsigned(CHANNEL_STATE_LENGTH-1 downto 0) is channel_state;
+  alias  right_channel_state      : unsigned(CHANNEL_STATE_LENGTH-1 downto 0) is channel_state;
 
   -- Registers to hold the left/right channel data.
   signal channel_data             : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
   alias  left_channel_data        : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0) is channel_data;
   alias  right_channel_data       : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0) is channel_data;
 
+  -- Registers to hold the left and right audio samples.
+  -- Don't alias these.  They do actually have to be separate registers.
   signal left_channel_reg         : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
   signal right_channel_reg        : std_logic_vector(AUDIO_DATA_WIDTH-1 downto 0);
 
@@ -298,20 +301,14 @@ begin
       --
       if sclk_pos_edge = '1' then
         --
-        -- Set state to a local variable to make things
-        -- easier later.
-        --
-        left_state  := to_integer(left_channel_state);
-        right_state := to_integer(right_channel_state);
-
-        --
         -- Processing for the left channel.
         --
         if left_channel_clock = '1' then
           --
           -- Update the left channel state
           --
-          left_channel_state <= to_unsigned(to_integer(left_channel_state) + 1, CHANNEL_STATE_LENGTH);
+          left_state  := to_integer(left_channel_state);
+          left_channel_state <= to_unsigned(left_state + 1, CHANNEL_STATE_LENGTH);
 
           --
           -- Update the channel and output data.
@@ -323,7 +320,8 @@ begin
           --
           -- Update the right channel state
           --
-          right_channel_state <= to_unsigned(to_integer(right_channel_state) + 1, CHANNEL_STATE_LENGTH);
+          right_state := to_integer(right_channel_state);
+          right_channel_state <= to_unsigned(right_state + 1, CHANNEL_STATE_LENGTH);
 
           --
           -- Update the channel and output data.
